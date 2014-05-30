@@ -148,7 +148,7 @@
             <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:{$:searchTerm}">
               <div class="plugin-inner">
                 <div class="plugin-header" style="background-color: #D9D9E6;">
-                  <img src="{{plugin.screenshots.screenshot[0]}}" alt="">
+                  <img src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">
                 </div>
                 <div class="plugin-content">
                   <h2>{{plugin.name}}</h2>
