@@ -145,16 +145,16 @@
             <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Themes</button>
           </div>
           <div class="plugins-grid" >
-            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:{name:searchTerm}">
+            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:{$:searchTerm}">
               <div class="plugin-inner">
                 <div class="plugin-header" style="background-color: #D9D9E6;">
-                  <img src="img/cde-screen-01.png" alt="">
+                  <img src="{{plugin.screenshots.screenshot[0]}}" alt="">
                 </div>
                 <div class="plugin-content">
                   <h2>{{plugin.name}}</h2>
-                  <p class="plugin-description">As in real life it’s OK to trust data, if you can test its integrity.</p>
+                  <p class="plugin-description">{{plugin.description | cut:true:65:'...'}}</p>
 
-                  <p class="plugin-author">By Webdetails</p>
+                  <p class="plugin-author">By <a href="{{plugin.author_url}}" title="{{plugin.author}}">{{plugin.author | cut:false:20:'...'}}</a></p>
                 </div>
                 <div class="dev-stage"></div>
               </div>
