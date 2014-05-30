@@ -29,7 +29,7 @@
     <script src="js/vendor/bootstrap.min.js"></script>
 
   </head>
-  <body>
+  <body ng-controller="MarketplaceController" >
 
       <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -132,7 +132,7 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-3 col-sm-offset-6">
-                <input type="text" class="form-control" id="inputSearch" placeholder="Search">
+                <input type="text" class="form-control" id="inputSearch" placeholder="Search" ng-model="searchTerm">
               </div>
               <div class="col-sm-3">
                 <button type="button" class="btn btn-default btn-block" id="filter-button">Filter</button>
@@ -172,8 +172,8 @@
             <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Language Packs</button>
             <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Themes</button>
           </div>
-          <div class="plugins-grid" ng-controller="MarketplaceController as pluginsList">
-            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList.plugins">
+          <div class="plugins-grid" >
+            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:{name:searchTerm}">
               <div class="plugin-inner">
                 <div class="plugin-header" style="background-color: #D9D9E6;">
                   <img src="img/cde-screen-01.png" alt="">
@@ -194,10 +194,10 @@
     </div>
 
     <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+    <!--script src="js/isotope.pkgd.min.js"></script-->
     <script src="js/main.js"></script>
     <script>
-      var $container = $('.plugins-grid');
+     /* var $container = $('.plugins-grid');
       // init
       $container.isotope({
         // options
@@ -208,7 +208,7 @@
       $('#filter-button, #filter-button-inner').click(function() {
         $('.page-plugins').toggleClass('filtering');
         setTimeout(function() { $container.isotope('layout'); }, 100);
-      });
+      });*/
     </script>
 
     <script>
