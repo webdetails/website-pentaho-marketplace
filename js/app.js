@@ -31,6 +31,7 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, $moda
         var modalInstance = $modal.open({
             templateUrl: 'pluginDetails.html',
             controller: 'ModalInstanceCtrl',
+            windowClass: 'plugin-window',
             resolve: {
                 myPlugin: function() {
                     return plugin;

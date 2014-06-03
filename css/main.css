@@ -557,6 +557,27 @@ span.show-more-dev-stages.active:after {
 	width: 240px;
 	padding: 10px;
 	float: left;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.page-plugins .plugin:hover {
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	transform: scale(0.95);
+	position: relative;
+	z-index: 1000;
 }
 
 .page-plugins .plugin .plugin-inner {
@@ -605,3 +626,62 @@ span.show-more-dev-stages.active:after {
 }
 
 /* ++++ PAGE PLUGINS ++++ */
+
+/* ++++ PLUGIN DETAILS WINDOW ++++ */
+
+.plugin-window .modal-dialog {
+  width: 95%;
+  max-width: 1100px;
+}
+
+.plugin-modal-details-table {
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin-top: 23px;
+}
+
+.plugin-modal-details-table .row {
+	padding-top: 5px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.plugin-modal-details-table .row.last-table-row {
+	border-bottom: none;
+}
+
+.plugin-window .plugin-modal-label {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.plugin-window .plugin-modal-value {
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.plugin-modal-link {
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.plugin-window h1 {
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+
+.plugin-modal-gallery img {
+	max-width: 80%;
+	max-height: 350px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.plugin-modal-author {
+	font-size: 13px;
+	font-weight: 300;
+}
+
+/* ++++ PLUGIN DETAILS WINDOW ++++ */

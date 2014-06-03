@@ -1,9 +1,58 @@
-<div class="modal-header">
-  <h3 class="modal-title">Im a modal!</h3>
+<div class="plugin-modal-gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <img ng-src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">
+      </div>
+    </div>
+  </div>
 </div>
-<div class="modal-body">
-  <p>This is my modal</p>
-</div>
-<div class="modal-footer">
-  <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <h1>{{plugin.name}}</h1>
+      <p class="plugin-modal-author">By <a href="{{plugin.author_url}}" title="{{plugin.author}}" target="_blank">{{plugin.author | cut:false:20:'...'}}</a></p>
+      <p>{{plugin.description}}</p>
+    </div>
+    <div class="col-sm-7 plugin-modal-details-table">
+      <div class="row">
+        <div class="col-sm-4">
+          <span class="plugin-modal-label">Developer:</span><br>
+          <a class="plugin-modal-link" href="{{plugin.author_url}}" title="{{plugin.author}}" target="_blank">{{plugin.author | cut:false:20:'...'}}</a>
+        </div>
+        <div class="col-sm-4">
+          <span class="plugin-modal-label">Version:</span><br>
+          <span class="plugin-modal-value" ng-show="plugin.versions.version[0].version">{{plugin.versions.version[0].version}}</span>
+          <span class="plugin-modal-value" ng-hide="plugin.versions.version[0].version">-</span>
+        </div>
+        <div class="col-sm-4">
+          <span class="plugin-modal-label">Released:</span><br>
+          <span class="plugin-modal-value">release-date</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <span class="plugin-modal-label">Forum:</span><br>
+          <a class="plugin-modal-link" href="{{plugin.author_url}}" title="{{plugin.author}}" target="_blank" ng-show="plugin.forum_url">Forum</a>
+          <span class="plugin-modal-value" ng-hide="plugin.forum_url">-</span>
+        </div>
+        <div class="col-sm-4">
+          <span class="plugin-modal-label">Dependencies:</span><br>
+          <span class="plugin-modal-value" ng-show="plugin.dependencies">{{plugin.dependencies}}</span>
+          <span class="plugin-modal-value" ng-hide="plugin.dependencies">-</span>
+        </div>
+        <div class="col-sm-4">
+          <span class="plugin-modal-label">License:</span><br>
+          <span class="plugin-modal-value" ng-show="plugin.license">{{plugin.license}}</span>
+          <span class="plugin-modal-value" ng-hide="plugin.license">-</span>
+        </div>
+      </div>
+      <div class="row last-table-row">
+        <div class="col-sm-12"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+  </div>
 </div>
