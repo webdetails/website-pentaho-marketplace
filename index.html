@@ -24,6 +24,7 @@
     <script type="text/javascript" src="js/vendor/jquery.xml2json.js"></script>
     <script type="text/javascript" src="js/vendor/angular.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
+    <script type="text/javascript" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body ng-controller="MarketplaceController" >
@@ -144,9 +145,11 @@
             <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Language Packs</button>
             <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Themes</button>
           </div>
+          
+          <!-- plugins list -->
           <div class="plugins-grid" >
             <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:{$:searchTerm}">
-              <div class="plugin-inner">
+              <div class="plugin-inner" ng-click="open(plugin)">
                 <div class="plugin-header" style="background-color: #D9D9E6;">
                   <img src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">
                 </div>
@@ -161,6 +164,8 @@
             </div>
             <div class="clear"></div>
           </div>
+          <!-- end of plugins list -->
+
         </div>
       </div>
     </div>

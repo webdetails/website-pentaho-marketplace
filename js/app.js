@@ -1,10 +1,12 @@
+//create angular module
+var app = angular.module('marketplace', ['ui.bootstrap']);
 
-var app = angular.module('marketplace', ['ngRoute']);
 
 app.value('MarketplaceConfig',{
 	xmlUrl: 'marketplace.xml'
 });
 
+//creating PluginsMetadata service, as an injectable argument, getting the metadata from the provided XML
 app.factory('PluginsMetadata', function($http, MarketplaceConfig){
 	return {
 		getMetadata: function(){
@@ -15,15 +17,37 @@ app.factory('PluginsMetadata', function($http, MarketplaceConfig){
 	}
 });
 
-app.controller('MarketplaceController', function( $scope, PluginsMetadata ){
+//create angular controller to our app
+app.controller('MarketplaceController', function( $scope, PluginsMetadata, $modal ){
 	$scope.pluginsList = [];
 	$scope.searchTerm = "";
 
 	PluginsMetadata.getMetadata().then(function(data){
 		$scope.pluginsList = data;
-	}); 
+	});
+
+    $scope.open = function(plugin) {
+        //console.log(plugin);
+        var modalInstance = $modal.open({
+            templateUrl: 'pluginDetails.html',
+            controller: 'ModalInstanceCtrl',
+            resolve: {
+                myPlugin: function() {
+                    return plugin;
+                }
+            }
+        });
+    };
 });
 
+var ModalInstanceCtrl = function($scope, $modalInstance, myPlugin) {
+    $scope.plugin = myPlugin;
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+};
+
+//angular module to cut strings considering chosen character number, wordwise and tail
 angular.module('ng').filter('cut', function () {
     return function (value, wordwise, max, tail) {
         if (!value) return '';
