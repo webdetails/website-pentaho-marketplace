@@ -14,7 +14,7 @@ app.factory('PluginsMetadata', function($http, MarketplaceConfig){
 				return $.xml2json(result.data).market_entry;
 			});
 		}
-	}
+	};
 });
 
 //create angular controller to our app
@@ -34,7 +34,7 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDia
             scope: $scope,
             className: 'plugin-window',
             showClose: false
-        })
+        });
     };
 
     $rootScope.$on('ngDialog.opened', function (e, $dialog) {
@@ -79,24 +79,24 @@ app.directive('owlcarousel',function(){
                 items: 1,
                 smartSpeed: 800
             });
-        }
+        };
  
         //aplica as ações para o carrosel
         var loadCarouselActions = function(){
-        }
+        };
  
         //toda vez que adicionar ou remover um item da lista ele carrega o carrosel novamente
         scope.$watch("itens", function(value) {
             loadCarousel(element);
-        })
+        });
  
         //inicia o carrosel
         loadCarouselActions();
-    }
+    };
  
     return{
         restrict : "A",
         link: linker
-    }
+    };
  
 });
