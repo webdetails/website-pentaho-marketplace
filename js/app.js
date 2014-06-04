@@ -42,13 +42,13 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDia
     });
 
     $rootScope.$on('ngDialog.closed', function (e, $dialog, $document) {
-        $('.plugin-modal-gallery .owl-carousel').data('owlCarousel').destroy();
+        $('.plugin-modal-gallery .owl-carousel').data('owlCarousel').hide().destroy();
         console.log('ngDialog closed: ' + $dialog.attr('id'));
     });
 });
 
 //angular module to cut strings considering chosen character number, wordwise and tail
-angular.module('ng').filter('cut', function () {
+app.filter('cut', function () {
     return function (value, wordwise, max, tail) {
         if (!value) return '';
 
