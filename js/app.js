@@ -39,12 +39,11 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDia
 
     $rootScope.$on('ngDialog.opened', function (e, $dialog) {
         console.log('ngDialog opened: ' + $dialog.attr('id'));
-        $('.page-slider').trigger('owl.stop');
     });
 
-    $rootScope.$on('ngDialog.closed', function (e, $dialog) {
+    $rootScope.$on('ngDialog.closed', function (e, $dialog, $document) {
+        $('.plugin-modal-gallery .owl-carousel').data('owlCarousel').destroy();
         console.log('ngDialog closed: ' + $dialog.attr('id'));
-        $('.page-slider').trigger('owl.play', 1200);
     });
 });
 
@@ -78,7 +77,6 @@ app.directive('owlcarousel',function(){
                 //loop:true,
                 loop:false,
                 items: 1,
-                autoplayHoverPause: true,
                 smartSpeed: 800
             });
         }

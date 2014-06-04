@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Pentaho Marketplace | Public Site</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -54,17 +54,15 @@
       <div class="page-slider">
         <div class="item dev-stage-03">
           <div class="container">
-            <div class="row">
+            <div class="row" ng-click="open(pluginsList[0])">
               <div class="col-sm-5 item-image text-center">
-                <img src="img/cde-screen-01.png" alt="">
+                  <img ng-src="{{pluginsList[0].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[0].screenshots.screenshot[0]">
               </div>
               <div class="col-sm-7 item-content">
-                <h1 class="item-title">Community Dashboard Editor</h1>
-                <p class="item-description">Create your analytic canvas; <br>
-                Inject data and widgets; <br>
-                Start creating.</p>
+                <h1 class="item-title">{{pluginsList[0].name}}</h1>
+                <p class="item-description">{{pluginsList[0].description}}</p>
 
-                <p class="item-author">by Webdetails</p>
+                <p class="item-author">By <a href="{{pluginsList[0].author_url}}" title="{{pluginsList[0].author}}" target="_blank" ng-click="$event.stopPropagation();">{{pluginsList[0].author | cut:false:40:'...'}}</a></p>
               </div>
               <div class="dev-stage"></div>
             </div>
@@ -72,15 +70,15 @@
         </div>
         <div class="item dev-stage-03">
           <div class="container">
-            <div class="row">
+            <div class="row" ng-click="open(pluginsList[1])">
               <div class="col-sm-5 item-image text-center">
-                <img src="img/cde-screen-01.png" alt="">
+                  <img ng-src="{{pluginsList[1].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[1].screenshots.screenshot[0]">
               </div>
               <div class="col-sm-7 item-content">
-                <h1 class="item-title">Title</h1>
-                <p class="item-description">Description</p>
+                <h1 class="item-title">{{pluginsList[1].name}}</h1>
+                <p class="item-description">{{pluginsList[1].description}}</p>
 
-                <p class="item-author">by Webdetails</p>
+                <p class="item-author">By <a href="{{pluginsList[1].author_url}}" title="{{pluginsList[1].author}}" target="_blank" ng-click="$event.stopPropagation();">{{pluginsList[1].author | cut:false:40:'...'}}</a></p>
               </div>
               <div class="dev-stage"></div>
             </div>
@@ -88,15 +86,15 @@
         </div>
         <div class="item dev-stage-03">
           <div class="container">
-            <div class="row">
+            <div class="row" ng-click="open(pluginsList[2])">
               <div class="col-sm-5 item-image text-center">
-                <img src="img/cde-screen-01.png" alt="">
+                  <img ng-src="{{pluginsList[2].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[2].screenshots.screenshot[0]">
               </div>
               <div class="col-sm-7 item-content">
-                <h1 class="item-title">Title</h1>
-                <p class="item-description">Description</p>
+                <h1 class="item-title">{{pluginsList[2].name}}</h1>
+                <p class="item-description">{{pluginsList[2].description}}</p>
 
-                <p class="item-author">by Webdetails</p>
+                <p class="item-author">By <a href="{{pluginsList[2].author_url}}" title="{{pluginsList[2].author}}" target="_blank" ng-click="$event.stopPropagation();">{{pluginsList[2].author | cut:false:40:'...'}}</a></p>
               </div>
               <div class="dev-stage"></div>
             </div>
@@ -197,7 +195,7 @@
         var featuredPlugins = $('.page-slider');
 
        featuredPlugins.owlCarousel({
-          loop:true,
+          loop:false,
           items: 1,
           autoplay: true,
           autoplayHoverPause: true,

@@ -16,7 +16,6 @@
   <div class="row">
     <div class="col-sm-5">
       <h1>{{plugin.name}}</h1>
-      <p class="plugin-modal-author">By <a href="{{plugin.author_url}}" title="{{plugin.author}}" target="_blank">{{plugin.author | cut:false:20:'...'}}</a></p>
       <p ng-bind-html="plugin.description"></p>
     </div>
     <div class="col-sm-7" ng-class="{ noDocs: !plugin.documentation_url }">

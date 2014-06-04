@@ -164,6 +164,7 @@ h2 {
 	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.15);
 	box-shadow: 0 0 6px rgba(0,0,0,0.15);
+	cursor: pointer;
 }
 
 .page-slider .item .container .item-image {
@@ -184,6 +185,7 @@ h2 {
 	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
 	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.3);
 	box-shadow: 0 0 6px rgba(0,0,0,0.3);
+	width: auto;
 }
 
 .page-slider .item .container .item-content {
@@ -203,7 +205,7 @@ h2 {
 	bottom: 9px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.page-slider.owl-theme .owl-dots .owl-dot.active span, .page-slider.owl-theme .owl-dots .owl-dot:hover span {
 	background: #005da7;
 }
 
@@ -711,9 +713,7 @@ span.show-more-dev-stages.active:after {
 	margin: 30px auto;
 }
 
-.plugin-modal-author {
-	font-size: 13px;
-	font-weight: 300;
+.plugin-window h1 {
 	margin-bottom: 30px;
 }
 
