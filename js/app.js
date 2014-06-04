@@ -1,5 +1,5 @@
 //create angular module
-var app = angular.module('marketplace', ['ui.bootstrap']);
+var app = angular.module('marketplace', ['ui.bootstrap', 'ngDialog', 'ngSanitize']);
 
 
 app.value('MarketplaceConfig',{
@@ -18,7 +18,7 @@ app.factory('PluginsMetadata', function($http, MarketplaceConfig){
 });
 
 //create angular controller to our app
-app.controller('MarketplaceController', function( $scope, PluginsMetadata, $modal, $document ){
+app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDialog, $rootScope ){
 	$scope.pluginsList = [];
 	$scope.searchTerm = "";
 
@@ -27,28 +27,26 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, $moda
 	});
 
     $scope.open = function(plugin) {
-        //console.log(plugin);
-        var modalInstance = $modal.open({
-            templateUrl: 'pluginDetails.html',
-            controller: 'ModalInstanceCtrl',
-            windowClass: 'plugin-window',
-            resolve: {
-                myPlugin: function() {
-                    return plugin;
-                }
-            }
-        });
+        $scope.plugin = plugin;
+
+        ngDialog.open({
+            template: 'pluginDetails.html',
+            scope: $scope,
+            className: 'plugin-window',
+            showClose: false
+        })
     };
+
+    $rootScope.$on('ngDialog.opened', function (e, $dialog) {
+        console.log('ngDialog opened: ' + $dialog.attr('id'));
+        $('.page-slider').trigger('owl.stop');
+    });
+
+    $rootScope.$on('ngDialog.closed', function (e, $dialog) {
+        console.log('ngDialog closed: ' + $dialog.attr('id'));
+        $('.page-slider').trigger('owl.play', 1200);
+    });
 });
-
-var ModalInstanceCtrl = function($scope, $modalInstance, myPlugin) {
-
-    $scope.plugin = myPlugin;
-    $scope.cancel = function ($document) {
-        $('.plugin-modal-gallery .owl-carousel').data('owlCarousel').destroy();
-        $modalInstance.dismiss();
-    };
-};
 
 //angular module to cut strings considering chosen character number, wordwise and tail
 angular.module('ng').filter('cut', function () {
@@ -81,7 +79,7 @@ app.directive('owlcarousel',function(){
                 loop:false,
                 items: 1,
                 autoplayHoverPause: true,
-                smartSpeed: 1200
+                smartSpeed: 800
             });
         }
  
