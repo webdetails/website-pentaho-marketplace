@@ -18,7 +18,7 @@ app.factory('PluginsMetadata', function($http, MarketplaceConfig){
 });
 
 //create angular controller to our app
-app.controller('MarketplaceController', function( $scope, PluginsMetadata, $modal ){
+app.controller('MarketplaceController', function( $scope, PluginsMetadata, $modal, $document ){
 	$scope.pluginsList = [];
 	$scope.searchTerm = "";
 
@@ -42,9 +42,11 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, $moda
 });
 
 var ModalInstanceCtrl = function($scope, $modalInstance, myPlugin) {
+
     $scope.plugin = myPlugin;
-    $scope.cancel = function () {
-        $modalInstance.dismiss('cancel');
+    $scope.cancel = function ($document) {
+        $('.plugin-modal-gallery .owl-carousel').data('owlCarousel').destroy();
+        $modalInstance.dismiss();
     };
 };
 
@@ -67,4 +69,38 @@ angular.module('ng').filter('cut', function () {
 
         return value + (tail || ' …');
     };
+});
+
+//owlcarousel directive
+app.directive('owlcarousel',function(){
+    var linker = function(scope,element,attr){
+        //carrega o carrosel
+        var loadCarousel = function(){
+            element.owlCarousel({
+                //loop:true,
+                loop:false,
+                items: 1,
+                autoplayHoverPause: true,
+                smartSpeed: 1200
+            });
+        }
+ 
+        //aplica as ações para o carrosel
+        var loadCarouselActions = function(){
+        }
+ 
+        //toda vez que adicionar ou remover um item da lista ele carrega o carrosel novamente
+        scope.$watch("itens", function(value) {
+            loadCarousel(element);
+        })
+ 
+        //inicia o carrosel
+        loadCarouselActions();
+    }
+ 
+    return{
+        restrict : "A",
+        link: linker
+    }
+ 
 });
