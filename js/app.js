@@ -24,7 +24,24 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDia
 
 	PluginsMetadata.getMetadata().then(function(data){
 		$scope.pluginsList = data;
+        $scope.totalItems = $scope.pluginsList.length;
 	});
+
+    $scope.itemsPerPage = 12;
+    $scope.currentPage = 1;
+
+    $scope.paginate = function(value) {
+        var begin, end, index;
+        begin = ($scope.currentPage - 1) * $scope.itemsPerPage;
+        end = begin + $scope.itemsPerPage;
+        index = $scope.pluginsList.indexOf(value);
+        return (begin <= index && index < end);
+    };
+
+    $scope.pageChanged = function() {
+        console.log('Page changed to: ' + $scope.currentPage);
+    };
+
 
     $scope.open = function(plugin) {
         $scope.plugin = plugin;

@@ -25,7 +25,7 @@
     <script type="text/javascript" src="js/vendor/jquery.xml2json.js"></script>
     <script type="text/javascript" src="js/vendor/angular.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
-    <script type="text/javascript" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script type="text/javascript" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
     <script type="text/javascript" src="js/vendor/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/vendor/ngDialog.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.js"></script>
@@ -149,8 +149,8 @@
           </div>
           
           <!-- plugins list -->
-          <div class="plugins-grid" >
-            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:{$:searchTerm}">
+          <div class="plugins-grid">
+            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:paginate"> <!-- filter:{$:searchTerm} -->
               <div class="plugin-inner" ng-click="open(plugin)">
                 <div class="plugin-header" style="background-color: #D9D9E6;">
                   <img ng-src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">
@@ -166,6 +166,7 @@
             </div>
             <div class="clear"></div>
           </div>
+          <pagination boundary-links="true" total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
           <!-- end of plugins list -->
 
         </div>
