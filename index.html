@@ -39,14 +39,16 @@
     <div class="backPage">
       <div class="container" id="mainContainer">
         <div class="row" id="page-header">
-          <div class="col-sm-8">
+          <div class="col-sm-5">
             <img id="marketplace-logo" src="img/marketplace-logo.svg" alt="">
           </div>
-          <div class="col-sm-4">
-            <p><a href="">› Purpose of this page.</a></p>
-            <p><a href="">› Where can I find Marketplace?</a></p>
-            <p><a href="">› How can I contribute?</a></p>
-            <p><a href="">› Where are the Development stages?</a></p>
+          <div class="col-sm-7">
+            <div class="btn-group btn-group-md pull-right" id="header-links">
+              <button type="button" class="btn btn-default"><span>Find Marketplace</span></button>
+              <button type="button" class="btn btn-default"><span>Development Stages</span></button>
+              <button type="button" class="btn btn-default"><span>Contribute</span></button>
+              <button type="button" class="btn btn-default"><span>Purpose</span></button>
+            </div>
           </div>
         </div>
       </div>
@@ -62,7 +64,7 @@
                 <h1 class="item-title">{{pluginsList[0].name}}</h1>
                 <p class="item-description">{{pluginsList[0].description}}</p>
 
-                <p class="item-author">By <a href="{{pluginsList[0].author_url}}" title="{{pluginsList[0].author}}" target="_blank" ng-click="$event.stopPropagation();">{{pluginsList[0].author | cut:false:40:'...'}}</a></p>
+                <p class="item-author">{{pluginsList[0].author | cut:false:40:'...'}}</p>
               </div>
               <div class="dev-stage"></div>
             </div>
@@ -78,7 +80,7 @@
                 <h1 class="item-title">{{pluginsList[1].name}}</h1>
                 <p class="item-description">{{pluginsList[1].description}}</p>
 
-                <p class="item-author">By <a href="{{pluginsList[1].author_url}}" title="{{pluginsList[1].author}}" target="_blank" ng-click="$event.stopPropagation();">{{pluginsList[1].author | cut:false:40:'...'}}</a></p>
+                <p class="item-author">{{pluginsList[1].author | cut:false:40:'...'}}</p>
               </div>
               <div class="dev-stage"></div>
             </div>
@@ -94,7 +96,7 @@
                 <h1 class="item-title">{{pluginsList[2].name}}</h1>
                 <p class="item-description">{{pluginsList[2].description}}</p>
 
-                <p class="item-author">By <a href="{{pluginsList[2].author_url}}" title="{{pluginsList[2].author}}" target="_blank" ng-click="$event.stopPropagation();">{{pluginsList[2].author | cut:false:40:'...'}}</a></p>
+                <p class="item-author">{{pluginsList[2].author | cut:false:40:'...'}}</p>
               </div>
               <div class="dev-stage"></div>
             </div>
@@ -157,9 +159,7 @@
                 </div>
                 <div class="plugin-content">
                   <h2>{{plugin.name}}</h2>
-                  <p class="plugin-description">{{plugin.description | cut:true:65:'...'}}</p>
-
-                  <p class="plugin-author">By <a href="{{plugin.author_url}}" title="{{plugin.author}}" target="_blank" ng-click="$event.stopPropagation();">{{plugin.author | cut:false:20:'...'}}</a></p>
+                  <p class="plugin-description">{{plugin.author | cut:false:30:'...'}}</p>
                 </div>
                 <div class="dev-stage"></div>
               </div>
