@@ -42,12 +42,13 @@
           <div class="col-sm-5">
             <img id="marketplace-logo" src="img/marketplace-logo.svg" alt="">
           </div>
-          <div class="col-sm-7">
+          <div class="col-sm-7 header-links-container">
             <div class="btn-group btn-group-md pull-right" id="header-links">
               <button type="button" class="btn btn-default"><span>Find Marketplace</span></button>
               <button type="button" class="btn btn-default"><span>Development Stages</span></button>
               <button type="button" class="btn btn-default"><span>Contribute</span></button>
               <button type="button" class="btn btn-default"><span>Purpose</span></button>
+              <button type="button" class="btn btn-default info-button"><span><img src="img/info-icon.svg" alt="Info"></span></button>
             </div>
           </div>
         </div>
@@ -108,13 +109,13 @@
         <div class="plugins-header">
           <div class="container">
             <div class="row">
-              <div class="col-sm-3 col-sm-offset-6">
+              <div class="col-sm-12">
+                <button type="button" class="btn btn-default btn-block" id="filter-button"></button>
                 <input type="text" class="form-control" id="inputSearch" placeholder="Search" ng-model="searchTerm">
-              </div>
-              <div class="col-sm-3">
-                <button type="button" class="btn btn-default btn-block" id="filter-button">Filter</button>
+                <div class="clear"></div>
               </div>
             </div>
+            <hr id="hr-plugins-header">
           </div>
         </div>
         <div class="plugins-container">
@@ -166,7 +167,7 @@
             </div>
             <div class="clear"></div>
           </div>
-          <pagination boundary-links="true" total-items="totalItems" items-per-page="itemsPerPage" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+          <pagination boundary-links="true" total-items="totalItems" max-size="5" items-per-page="itemsPerPage" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
           <!-- end of plugins list -->
 
         </div>
