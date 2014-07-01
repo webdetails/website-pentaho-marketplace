@@ -1,4 +1,4 @@
-<div class="plugin-modal-gallery">
+<div class="plugin-modal-gallery" ng-class="{empty: !plugin.screenshots.screenshot}">
   <div class="close-plugin-modal" ng-click="closeThisDialog()"></div>
   <div owlcarousel class="owl-carousel">
     <div class="item" ng-repeat="image in plugin.screenshots.screenshot">
@@ -16,6 +16,7 @@
   <div class="row">
     <div class="col-sm-4">
       <h1>{{plugin.name}}</h1>
+      <p class="plugin-modal-author">{{plugin.author | cut:false:20:'...'}}</p>
       <p ng-bind-html="plugin.description"></p>
     </div>
     <div class="col-sm-8" ng-class="{ noDocs: !plugin.documentation_url }">
@@ -32,7 +33,7 @@
           </div>
           <div class="col-xs-6 col-md-4">
             <span class="plugin-modal-label">Released:</span><br>
-            <span class="plugin-modal-value">release-date</span>
+            <span class="plugin-modal-value">n/a</span>
           </div>
           <div class="col-xs-6 col-md-4 forum-cell">
             <span class="plugin-modal-label">Forum:</span><br>
@@ -50,10 +51,42 @@
             <span class="plugin-modal-value" ng-hide="plugin.license">-</span>
           </div>
         </div>
-        <div class="row" ng-show="plugin.documentation_url">
+        <div class="row" ng-show="plugin.credits">
           <div class="col-sm-12">
-            <p class="plugin-modal-documentation">You can find documentation on {{plugin.name}} <a href="{{plugin.documentation_url}}" title="{{plugin.name}} documentation" target="_blank">here</a>.</p>
+            <span class="plugin-modal-label">Credits:</span><br>
+            <p class="plugin-modal-credits" ng-show="plugin.credits">{{plugin.credits}}</p>
+            <p class="plugin-modal-credits" ng-hide="plugin.credits">Diogo Mariano, Duarte Leão, Gonçalo Neto, Nuno Moreira, Pedro Alves, Pedro Vale.</p>
           </div>
+        </div>
+        <div class="row plugin-modal-stage-row" ng-show="plugin.stage == '3'">
+          <div class="col-sm-12">
+            <span class="plugin-modal-label">Stage:</span><br>
+            <div class="row plugin-modal-stage">
+              <div class="col-xs-10"><strong>Limited Support:</strong> Assistance given by Services Development with no contractual support for production environments.</div>
+              <div class="col-xs-2 text-center"><img src="img/dev-stage-03-large.svg" alt=""></div>
+            </div>
+            <p class="plugin-modal-credits" ng-hide="plugin.stage">No stage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="plugin-buttons-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3"><button type="button" class="btn btn-block download-plugin">Download Plugin</button></div>
+      <div class="col-sm-3"><button type="button" class="btn btn-block contact-dev">Contact Dev.</button></div>
+      <div class="col-sm-3"><button type="button" class="btn btn-block live-demo">Live Demo</button></div>
+      <div class="col-sm-3">
+        <p class="recommend-plugin-label">Recommend this plugin:</p>
+        <div class="recommend-plugin-buttons">
+          <div class="recommend-plugin-button recommend-email"></div>
+          <div class="recommend-plugin-button recommend-twitter"></div>
+          <div class="recommend-plugin-button recommend-blogger"></div>
+          <div class="recommend-plugin-button recommend-facebook"></div>
+          <div class="recommend-plugin-button recommend-linkedin"></div>
+          <div class="clear"></div>
         </div>
       </div>
     </div>
