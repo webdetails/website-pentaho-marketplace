@@ -47,7 +47,25 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDia
         $scope.plugin = plugin;
 
         ngDialog.open({
-            template: 'pluginDetails.html',
+            template: 'templates/pluginDetails.html',
+            scope: $scope,
+            className: 'plugin-window',
+            showClose: false
+        });
+    };
+
+    $scope.openDevStages = function() {
+        ngDialog.open({
+            template: 'templates/devStages.html',
+            scope: $scope,
+            className: 'plugin-window',
+            showClose: false
+        });
+    };
+
+    $scope.openContribute = function() {
+        ngDialog.open({
+            template: 'templates/contribute.html',
             scope: $scope,
             className: 'plugin-window',
             showClose: false
@@ -59,7 +77,9 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDia
     });
 
     $rootScope.$on('ngDialog.closed', function (e, $dialog, $document) {
-        $('.plugin-modal-gallery .owl-carousel').data('owlCarousel').hide().destroy();
+        if($('.plugin-modal-gallery .owl-carousel')) {
+            $('.plugin-modal-gallery .owl-carousel').data('owlCarousel').hide().destroy();
+        }
         console.log('ngDialog closed: ' + $dialog.attr('id'));
     });
 });

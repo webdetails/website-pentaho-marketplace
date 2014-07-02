@@ -3,14 +3,14 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-<g>
-	<g>
+<g display="none">
+	<g display="inline">
 		<g>
 			<circle fill="#FFFFFF" cx="25" cy="25" r="22.56"/>
 			<path fill="#FFFFFF" d="M25,25"/>
 		</g>
 	</g>
-	<g>
+	<g display="inline">
 		<g>
 			<path fill="#3D6481" d="M29.627,21.277c0,0.852-0.262,1.576-0.785,2.174c-0.522,0.595-1.261,1.006-2.207,1.229v0.056
 				c1.119,0.137,1.965,0.472,2.537,1c0.576,0.533,0.863,1.248,0.863,2.15c0,1.313-0.482,2.332-1.447,3.061
@@ -106,8 +106,8 @@
 		</g>
 	</g>
 </g>
-<g display="none">
-	<g display="inline">
+<g>
+	<g>
 		<g>
 			<circle fill="#FFFFFF" cx="25" cy="25" r="22.561"/>
 		</g>

@@ -45,9 +45,8 @@
           <div class="col-sm-7 header-links-container">
             <div class="btn-group btn-group-md pull-right" id="header-links">
               <button type="button" class="btn btn-default"><span>Find Marketplace</span></button>
-              <button type="button" class="btn btn-default"><span>Development Stages</span></button>
-              <button type="button" class="btn btn-default"><span>Contribute</span></button>
-              <button type="button" class="btn btn-default"><span>Purpose</span></button>
+              <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
+              <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
               <button type="button" class="btn btn-default info-button"><span><img src="img/info-icon.svg" alt="Info"></span></button>
             </div>
           </div>
@@ -115,12 +114,15 @@
                 <div class="clear"></div>
               </div>
             </div>
-            <hr id="hr-plugins-header">
+            <div class="row">
+              <div class="col-sm-12">
+                <hr id="hr-plugins-header">                
+              </div>
+            </div>
           </div>
         </div>
         <div class="plugins-container">
           <div class="plugins-filters">
-            <button type="button" class="btn btn-default btn-block" id="filter-button-inner">Filter</button>
             <div class="filters-title first-filters-title">Development Stage</div>
             <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true">Show All</button>
             <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Product Release Only</button>
@@ -155,7 +157,7 @@
           <div class="plugins-grid">
             <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:paginate"> <!-- filter:{$:searchTerm} -->
               <div class="plugin-inner" ng-click="open(plugin)">
-                <div class="plugin-header" style="background-color: #D9D9E6;">
+                <div class="plugin-header">
                   <img ng-src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">
                 </div>
                 <div class="plugin-content">
@@ -188,6 +190,7 @@
 
       $('#filter-button, #filter-button-inner').click(function() {
         $('.page-plugins').toggleClass('filtering');
+        $(this).toggleClass('active');
         //setTimeout(function() { $container.isotope('layout'); }, 100);
       });
     </script>
