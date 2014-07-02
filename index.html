@@ -155,7 +155,7 @@
           
           <!-- plugins list -->
           <div class="plugins-grid">
-            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in pluginsList | filter:paginate"> <!-- filter:{$:searchTerm} -->
+            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in filteredList | paginate:currentPage:itemsPerPage "> <!-- filter:{$:searchTerm} -->
               <div class="plugin-inner" ng-click="open(plugin)">
                 <div class="plugin-header">
                   <img ng-src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">

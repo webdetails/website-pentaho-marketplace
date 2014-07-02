@@ -18,30 +18,32 @@ app.factory('PluginsMetadata', function($http, MarketplaceConfig){
 });
 
 //create angular controller to our app
-app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDialog, $rootScope ){
+app.controller('MarketplaceController', function( $filter, $scope, PluginsMetadata, ngDialog, $rootScope, $timeout ){
+    var inputFilter = $filter('filter');
+
 	$scope.pluginsList = [];
+    $scope.filteredList = [];
+
 	$scope.searchTerm = "";
 
+    $scope.$watch('searchTerm', function( oldVal, newVal ){
+        $timeout( function(){
+            $scope.filteredList = inputFilter( $scope.pluginsList, newVal );
+            $scope.totalItems = $scope.filteredList.length;
+        }, 0);
+    });
+
 	PluginsMetadata.getMetadata().then(function(data){
-		$scope.pluginsList = data;
+        $scope.pluginsList = $scope.filteredList = data;
         $scope.totalItems = $scope.pluginsList.length;
-	});
+    });
 
     $scope.itemsPerPage = 12;
     $scope.currentPage = 1;
 
-    $scope.paginate = function(value) {
-        var begin, end, index;
-        begin = ($scope.currentPage - 1) * $scope.itemsPerPage;
-        end = begin + $scope.itemsPerPage;
-        index = $scope.pluginsList.indexOf(value);
-        return (begin <= index && index < end);
-    };
-
     $scope.pageChanged = function() {
         console.log('Page changed to: ' + $scope.currentPage);
     };
-
 
     $scope.open = function(plugin) {
         $scope.plugin = plugin;
@@ -84,6 +86,22 @@ app.controller('MarketplaceController', function( $scope, PluginsMetadata, ngDia
     });
 });
 
+
+app.filter('startFrom', function () {
+    return function (input, start) {
+        start = +start; //parse to int
+        return input.slice(start);
+    };
+});
+app.filter('paginate', function ($filter) {
+    var startFrom = $filter('startFrom'),
+        limitTo = $filter('limitTo');
+
+    return function (items, currentPage, itemsPerPage) {
+        var start = (currentPage - 1) * itemsPerPage;
+        return limitTo( startFrom( items, start ) , itemsPerPage );
+    };
+});
 //angular module to cut strings considering chosen character number, wordwise and tail
 app.filter('cut', function () {
     return function (value, wordwise, max, tail) {
