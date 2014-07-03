@@ -697,22 +697,19 @@ button:focus {
 span.show-more-dev-stages,
 span.show-more-dev-stages:link,
 span.show-more-dev-stages:visited {
-	width: 55px;
+	width: auto;
 	font-size: 11px;
 	background: none;
 	color: #005DA7;
 	float: right;
 	margin-top: 5px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	padding: 2px 5px;
+	padding: 2px 1px;
 	position: relative;
-	padding-right: 20px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
+	text-align: right;
 }
 
 span.show-more-dev-stages:hover,
@@ -727,40 +724,32 @@ span.show-more-dev-stages.active:visited,
 span.show-more-dev-stages.active:hover,
 span.show-more-dev-stages.active:active,
 span.show-more-dev-stages.active:focus {
-	-webkit-border-radius: 6px 6px 0px 0px;
-	-moz-border-radius: 6px 6px 0px 0px;
-	border-radius: 6px 6px 0px 0px;
 }
 
 span.show-more-dev-stages:after {
 	content: '';
 	position: absolute;
-	width: 0; 
-	height: 0; 
-	border-top: 4px solid transparent;
-	border-bottom: 4px solid transparent;
-	border-left: 4px solid #005DA7;
-	top: 7px;
-	right: 9px;
+	width: 12px; 
+	height: 8px; 
+	background: url(../img/more-less-options.svg);
+	background-repeat: no-repeat;
+	background-position: top;
+	top: 6px;
+	left: -20px;
+	opacity: 0;
 }
 
 span.show-more-dev-stages.active:after {
-	content: '';
-	position: absolute;
-	width: 0; 
-	height: 0; 
-	border-left: 4px solid transparent;
-	border-right: 4px solid transparent;
-	border-top: 4px solid #005DA7;
-	top: 9px;
-	right: 7px;
+	background-position: bottom;
+}
+
+span.show-more-dev-stages:hover:after {
+	opacity: 1;
 }
 
 .more-dev-stages {
-	background: #F0EFF1;
-	margin-top: 26px;
 	padding: 5px;
-	margin: 26px -5px 10px -5px;
+	margin: 10px -5px 10px -5px;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -768,11 +757,11 @@ span.show-more-dev-stages.active:after {
 }
 
 .page-plugins .plugins-filters .filters-sub-title {
-	text-align: center;
-	font-size: 12px;
-	color: #005DA7;
+	text-align: left;
+	font-size: 11px;
+	color: #808284;
 	font-weight: 400;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-bottom: 10px;
 }
 

@@ -6,9 +6,9 @@ $('.show-more-dev-stages').click(function() {
 	$(this).toggleClass('active');
 	$('.more-dev-stages').slideToggle();
 	if($(this).hasClass('active')) {
-		$(this).text('Less');
+		$(this).text('Less Options');
 	} else {
-		$(this).text('More');
+		$(this).text('More Options');
 	}
 });
 
