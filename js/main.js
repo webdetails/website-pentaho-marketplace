@@ -18,4 +18,19 @@ $('.plugins-filters .single-filter-button').click(function() {
 	} else {
 		$(this).attr('data-checked', 'true');
 	}
+	/*var activeFilters = $('.plugins-filters button[data-checked=true]').length;
+	$('.filters-header-count-number').html(activeFilters);*/
+});
+
+$('.clear-all-filters').click(function() {
+	$('.plugins-filters  .single-filter-button').attr('data-checked', 'false');
+	$('.plugins-filters  #button-filters-show-all').attr('data-checked', 'true');
+
+	/*var activeFilters = $('.plugins-filters button[data-checked=true]').length;
+	$('.filters-header-count-number').html(0);*/
+});
+
+$('#inputSearch').focus(function() {
+	$('.page-plugins').removeClass('filtering');
+	$('#filter-button').removeClass('active');
 });

@@ -74,6 +74,15 @@ app.controller('MarketplaceController', function( $filter, $scope, PluginsMetada
         });
     };
 
+    $scope.openFindMarketplace = function() {
+        ngDialog.open({
+            template: 'templates/findMarketplace.html',
+            scope: $scope,
+            className: 'plugin-window',
+            showClose: false
+        });
+    };
+
     $rootScope.$on('ngDialog.opened', function (e, $dialog) {
         console.log('ngDialog opened: ' + $dialog.attr('id'));
     });

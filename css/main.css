@@ -460,7 +460,7 @@ hr#hr-plugins-header {
 	-moz-box-shadow: none;
 	box-shadow: none;
 
-	width: 200px;
+	width: 178px;
 	padding-right: 32px;
 	color: #616161;
 	cursor: auto;
@@ -527,9 +527,9 @@ hr#hr-plugins-header {
 	-ms-transition: all .75s;
 	-o-transition: all .75s;
 	transition: all .75s;
-	border-top: 1px solid #e1e0e0;
+	/*border-top: 1px solid #e1e0e0;
 	border-right: 1px solid #e1e0e0;
-	background-color: #f6f7f8 !important;
+	background-color: #f6f7f8 !important;*/
 	border-bottom: none;
 	background-image: url(../img/filter-hover.svg);	
 }
@@ -591,9 +591,9 @@ hr#hr-plugins-header {
 	-o-transition: max-height .75s ease-in-out, padding .75s ease-in-out;
 	transition: max-height .75s ease-in-out, padding .75s ease-in-out;
 	top: -61px;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 	padding-top: 10px;
-	max-height: 700px;
+	max-height: 1500px;
 	border-bottom: 1px solid #e1e0e0;
 }
 
@@ -605,6 +605,31 @@ hr#hr-plugins-header {
 	width: 38px;
 	right: 0;
 	top: -1px;
+}
+
+.page-plugins .plugins-filters .filters-header {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e1e0e0;
+	margin-bottom: 20px;
+}
+
+.page-plugins .plugins-filters .filters-header .filters-header-title {
+	font-size: 18px;
+	font-weight: 300;
+	color: #808284;
+}
+
+.page-plugins .plugins-filters .filters-header .filters-header-count{
+	font-size: 11px;
+	font-weight: 300;
+	color: #006188;
+}
+
+.page-plugins .plugins-filters .filters-header .clear-all-filters {
+	font-size: 11px;
+	font-weight: 300;
+	color: #006188;
+	cursor: pointer;
 }
 
 .page-plugins .plugins-filters .filters-title {
@@ -627,6 +652,7 @@ hr#hr-plugins-header {
 	-moz-box-shadow: none;
 	box-shadow: none;
 	font-weight: 300;
+	position: relative;
 }
 
 .page-plugins .plugins-filters button strong {
@@ -651,7 +677,6 @@ button:focus {
 .page-plugins .plugins-filters button[data-checked="true"]:focus {
 	border: 1px solid #005DA7;
 	color: #005DA7;
-	position: relative;
 }
 
 .page-plugins .plugins-filters button[data-checked="true"]:after,
@@ -679,6 +704,285 @@ button:focus {
 .no-svg .page-plugins .plugins-filters button[data-checked="true"]:focus:after {
 	background-image: url(../img/checked.png);
 }
+
+/* specific buttons for devstages */
+	/*botao customer production release*/
+	.page-plugins .plugins-filters button#button-customer-production-release:after,
+	.page-plugins .plugins-filters button#button-customer-production-release:link:after,
+	.page-plugins .plugins-filters button#button-customer-production-release:visited:after,
+	.page-plugins .plugins-filters button#button-customer-production-release:hover:after,
+	.page-plugins .plugins-filters button#button-customer-production-release:active:after,
+	.page-plugins .plugins-filters button#button-customer-production-release:focus:after {
+		position: absolute;
+		right: 6px;
+		top: 2px;
+		content: '';
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/dev-stage-04-inactive.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-04.svg);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release:focus:after {
+		background-image: url(../img/dev-stage-04-inactive.png);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-04.png);
+	}
+
+	/*botao customer limited release*/
+	.page-plugins .plugins-filters button#button-customer-limited-release:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release:link:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release:visited:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release:hover:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release:active:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release:focus:after {
+		position: absolute;
+		right: 6px;
+		top: 2px;
+		content: '';
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/dev-stage-03-inactive.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-03.svg);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release:focus:after {
+		background-image: url(../img/dev-stage-03-inactive.png);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-03.png);
+	}
+
+	/*botao community mature release*/
+	.page-plugins .plugins-filters button#button-community-mature-release:after,
+	.page-plugins .plugins-filters button#button-community-mature-release:link:after,
+	.page-plugins .plugins-filters button#button-community-mature-release:visited:after,
+	.page-plugins .plugins-filters button#button-community-mature-release:hover:after,
+	.page-plugins .plugins-filters button#button-community-mature-release:active:after,
+	.page-plugins .plugins-filters button#button-community-mature-release:focus:after {
+		position: absolute;
+		right: 6px;
+		top: 2px;
+		content: '';
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/dev-stage-04-inactive.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-community-04.svg);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release:focus:after {
+		background-image: url(../img/dev-stage-04-inactive.png);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-community-04.png);
+	}
+
+	/*botao community stable release*/
+	.page-plugins .plugins-filters button#button-community-stable-release:after,
+	.page-plugins .plugins-filters button#button-community-stable-release:link:after,
+	.page-plugins .plugins-filters button#button-community-stable-release:visited:after,
+	.page-plugins .plugins-filters button#button-community-stable-release:hover:after,
+	.page-plugins .plugins-filters button#button-community-stable-release:active:after,
+	.page-plugins .plugins-filters button#button-community-stable-release:focus:after {
+		position: absolute;
+		right: 6px;
+		top: 2px;
+		content: '';
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/dev-stage-03-inactive.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-community-03.svg);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release:focus:after {
+		background-image: url(../img/dev-stage-03-inactive.png);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-community-03.png);
+	}
+
+	/*botao community snapshot release*/
+	.page-plugins .plugins-filters button#button-community-snapshot-release:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release:link:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release:visited:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release:hover:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release:active:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release:focus:after {
+		position: absolute;
+		right: 6px;
+		top: 2px;
+		content: '';
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/dev-stage-02-inactive.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-community-02.svg);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release:focus:after {
+		background-image: url(../img/dev-stage-02-inactive.png);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-community-02.png);
+	}
+
+	/*botao community development phase*/
+	.page-plugins .plugins-filters button#button-community-development-phase:after,
+	.page-plugins .plugins-filters button#button-community-development-phase:link:after,
+	.page-plugins .plugins-filters button#button-community-development-phase:visited:after,
+	.page-plugins .plugins-filters button#button-community-development-phase:hover:after,
+	.page-plugins .plugins-filters button#button-community-development-phase:active:after,
+	.page-plugins .plugins-filters button#button-community-development-phase:focus:after {
+		position: absolute;
+		right: 6px;
+		top: 2px;
+		content: '';
+		width: 20px;
+		height: 20px;
+		background-image: url(../img/dev-stage-01-inactive.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-community-01.svg);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase:focus:after {
+		background-image: url(../img/dev-stage-01-inactive.png);
+	}
+
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:focus:after {
+		background-image: url(../img/dev-stage-community-01.png);
+	}
+
+/* specific buttons for devstages */
 
 .page-plugins .plugins-filters hr {
 	margin-top: 40px;
@@ -1399,6 +1703,91 @@ p.contribute-description {
 }
 
 /* ++++ CONTRIBUTE DIALOG ++++ */
+
+/* ++++ FIND MARKETPLACE ++++ */
+
+.container.findMarketplace {
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+.findMarketplace .col-sm-8 p.first-paragraph {
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.findMarketplace-bottom-row .col-sm-8 p.first-paragraph {
+	margin-top: 9px;
+}
+
+.findMarketplace-bottom-row {
+	background: #f2f1f1;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #7c7e80;
+	border-top: 1px solid #e1e0e0;
+}
+
+.findMarketplace-bottom-row h4 {
+	font-weight: 300;
+	font-size: 22px;
+	color: #7c7e80;
+	margin-left: 15px;
+	margin-top: 9px;
+}
+
+.download-marketplace-row {
+	margin-top: 40px;
+}
+
+.download-marketplace-row a.btn.btn-block {
+	background: #ffffff;
+	border: 1px solid #e1e0e0;
+	text-align: left;
+	position: relative;
+	color: #7c7e80;
+	padding: 10px 15px;
+	font-size: 15px;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.download-marketplace-row a.btn.btn-block:hover {
+	border: 1px solid #005DA7;
+	color: #005DA7;
+}
+
+.download-marketplace-row a.btn.btn-block:active {
+	border: 1px solid #e1e0e0;
+	color: #005DA7;
+	-webkit-box-shadow: inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
+	-moz-box-shadow:    inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
+}
+
+.download-marketplace-row a.btn.btn-block:after {
+	position: absolute;
+	content: '';
+	width: 24px;
+	height: 24px;
+	top: 50%;
+	margin-top: -12px;
+	right: 10px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-image: url(../img/download-button-icon.svg);
+}
+
+.download-marketplace-row a.btn.btn-block:hover:after {
+	background-position: -24px 0px;
+}
+
+.no-svg .download-marketplace-row a.btn.btn-block:after {
+	background-image: url(../img/download-button-icon.png);
+}
+
+/* ++++ FIND MARKETPLACE ++++ */
 
 /* ++++ CARDS HEADER ++++ */
 

@@ -31,7 +31,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </head>
-  <body ng-controller="MarketplaceController" >
+  <body ng-controller="MarketplaceController">
 
       <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -44,7 +44,7 @@
           </div>
           <div class="col-sm-7 header-links-container">
             <div class="btn-group btn-group-md pull-right" id="header-links">
-              <button type="button" class="btn btn-default"><span>Find Marketplace</span></button>
+              <button type="button" class="btn btn-default" ng-click="openFindMarketplace()"><span>Find Marketplace</span></button>
               <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
               <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
               <button type="button" class="btn btn-default info-button"><span><img src="img/info-icon.svg" alt="Info"></span></button>
@@ -123,18 +123,23 @@
         </div>
         <div class="plugins-container">
           <div class="plugins-filters">
+            <div class="filters-header">
+              <div class="pull-left"><span class="filters-header-title">Filter</span> <span class="filters-header-count">(<span class="filters-header-count-number">{{filteredList.length}}</span>)</span></div>
+              <div class="pull-right"><span class="clear-all-filters">Clear all filters</span></div>
+              <div class="clear"></div>
+            </div>
             <div class="filters-title first-filters-title">Development Stage</div>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true">Show All</button>
+            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true" id="button-filters-show-all">Show All</button>
             <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Product Release Only</button>
             <div class="more-dev-stages">
               <div class="filters-sub-title filters-first-sub-title">Customer</div>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Production Release</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Limited Release</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-production-release">Production Release</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-limited-release">Limited Release</button>
               <div class="filters-sub-title">Community</div>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Mature Release</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Stable Release</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Snapshot Release</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Development Phase</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-mature-release">Mature Release</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-stable-release">Stable Release</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-snapshot-release">Snapshot Release</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-development-phase">Development Phase</button>
             </div>
             <span class="show-more-dev-stages">More Options</span>
             <div class="clear"></div>
