@@ -36,147 +36,149 @@
       <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-    <div class="backPage">
-      <div class="container" id="mainContainer">
-        <div class="row" id="page-header">
-          <div class="col-sm-5">
-            <img id="marketplace-logo" src="img/marketplace-logo.svg" alt="">
-          </div>
-          <div class="col-sm-7 header-links-container">
-            <div class="btn-group btn-group-md pull-right" id="header-links">
-              <button type="button" class="btn btn-default" ng-click="openFindMarketplace()"><span>Find Marketplace</span></button>
-              <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
-              <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
-              <button type="button" class="btn btn-default info-button"><span><img src="img/info-icon.svg" alt="Info"></span></button>
+    <div class="whole-container">
+      <div class="backPage">
+        <div class="container" id="mainContainer">
+          <div class="row" id="page-header">
+            <div class="col-sm-5">
+              <img id="marketplace-logo" src="img/marketplace-logo.svg" alt="">
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-slider">
-        <div class="item dev-stage-03">
-          <div class="container">
-            <div class="row" ng-click="open(pluginsList[0])">
-              <div class="col-sm-5 item-image text-center">
-                  <img ng-src="{{pluginsList[0].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[0].screenshots.screenshot[0]">
-              </div>
-              <div class="col-sm-7 item-content">
-                <h1 class="item-title">{{pluginsList[0].name}}</h1>
-                <p class="item-description">{{pluginsList[0].description}}</p>
-
-                <p class="item-author">{{pluginsList[0].author | cut:false:40:'...'}}</p>
-              </div>
-              <div class="dev-stage"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item dev-stage-03">
-          <div class="container">
-            <div class="row" ng-click="open(pluginsList[1])">
-              <div class="col-sm-5 item-image text-center">
-                  <img ng-src="{{pluginsList[1].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[1].screenshots.screenshot[0]">
-              </div>
-              <div class="col-sm-7 item-content">
-                <h1 class="item-title">{{pluginsList[1].name}}</h1>
-                <p class="item-description">{{pluginsList[1].description}}</p>
-
-                <p class="item-author">{{pluginsList[1].author | cut:false:40:'...'}}</p>
-              </div>
-              <div class="dev-stage"></div>
-            </div>
-          </div>
-        </div>
-        <div class="item dev-stage-03">
-          <div class="container">
-            <div class="row" ng-click="open(pluginsList[2])">
-              <div class="col-sm-5 item-image text-center">
-                  <img ng-src="{{pluginsList[2].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[2].screenshots.screenshot[0]">
-              </div>
-              <div class="col-sm-7 item-content">
-                <h1 class="item-title">{{pluginsList[2].name}}</h1>
-                <p class="item-description">{{pluginsList[2].description}}</p>
-
-                <p class="item-author">{{pluginsList[2].author | cut:false:40:'...'}}</p>
-              </div>
-              <div class="dev-stage"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-plugins">
-        <div class="plugins-header">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12">
-                <button type="button" class="btn btn-default btn-block" id="filter-button"></button>
-                <input type="text" class="form-control" id="inputSearch" placeholder="Search" ng-model="searchTerm">
-                <div class="clear"></div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <hr id="hr-plugins-header">                
+            <div class="col-sm-7 header-links-container">
+              <div class="btn-group btn-group-md pull-right" id="header-links">
+                <button type="button" class="btn btn-default" ng-click="openFindMarketplace()"><span>Find Marketplace</span></button>
+                <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
+                <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
+                <button type="button" class="btn btn-default info-button"><span><img src="img/info-icon.svg" alt="Info"></span></button>
               </div>
             </div>
           </div>
         </div>
-        <div class="plugins-container">
-          <div class="plugins-filters">
-            <div class="filters-header">
-              <div class="pull-left"><span class="filters-header-title">Filter</span> <span class="filters-header-count">(<span class="filters-header-count-number">{{filteredList.length}}</span>)</span></div>
-              <div class="pull-right"><span class="clear-all-filters">Clear all filters</span></div>
-              <div class="clear"></div>
-            </div>
-            <div class="filters-title first-filters-title">Development Stage</div>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true" id="button-filters-show-all">Show All</button>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Product Release Only</button>
-            <div class="more-dev-stages">
-              <div class="filters-sub-title filters-first-sub-title">Customer</div>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-production-release">Production Release</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-limited-release">Limited Release</button>
-              <div class="filters-sub-title">Community</div>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-mature-release">Mature Release</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-stable-release">Stable Release</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-snapshot-release">Snapshot Release</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-development-phase">Development Phase</button>
-            </div>
-            <span class="show-more-dev-stages">More Options</span>
-            <div class="clear"></div>
-            <hr>
-            <div class="filters-title">Apps</div>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true" id="button-filters-all-apps">All Apps</button>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Analysis</button>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Dashboards</button>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Reporting</button>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Lifecycle</button>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Admin</button>
-            <hr>
-            <div class="filters-title">Other</div>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Visualizations</button>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Language Packs</button>
-            <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Themes</button>
-          </div>
-          
-          <!-- plugins list -->
-          <div class="plugins-grid">
-            <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in filteredList | paginate:currentPage:itemsPerPage "> <!-- filter:{$:searchTerm} -->
-              <div class="plugin-inner" ng-click="open(plugin)">
-                <div class="plugin-header">
-                  <img ng-src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">
+
+        <div class="page-slider">
+          <div class="item dev-stage-03">
+            <div class="container">
+              <div class="row" ng-click="open(pluginsList[0])">
+                <div class="col-sm-5 item-image text-center">
+                    <img ng-src="{{pluginsList[0].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[0].screenshots.screenshot[0]">
                 </div>
-                <div class="plugin-content">
-                  <h2>{{plugin.name}}</h2>
-                  <p class="plugin-description">{{plugin.author | cut:false:30:'...'}}</p>
+                <div class="col-sm-7 item-content">
+                  <h1 class="item-title">{{pluginsList[0].name}}</h1>
+                  <p class="item-description">{{pluginsList[0].description}}</p>
+
+                  <p class="item-author">{{pluginsList[0].author | cut:false:40:'...'}}</p>
                 </div>
                 <div class="dev-stage"></div>
               </div>
             </div>
-            <div class="clear"></div>
           </div>
-          <pagination boundary-links="true" total-items="totalItems" max-size="5" items-per-page="itemsPerPage" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
-          <!-- end of plugins list -->
+          <div class="item dev-stage-03">
+            <div class="container">
+              <div class="row" ng-click="open(pluginsList[1])">
+                <div class="col-sm-5 item-image text-center">
+                    <img ng-src="{{pluginsList[1].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[1].screenshots.screenshot[0]">
+                </div>
+                <div class="col-sm-7 item-content">
+                  <h1 class="item-title">{{pluginsList[1].name}}</h1>
+                  <p class="item-description">{{pluginsList[1].description}}</p>
 
+                  <p class="item-author">{{pluginsList[1].author | cut:false:40:'...'}}</p>
+                </div>
+                <div class="dev-stage"></div>
+              </div>
+            </div>
+          </div>
+          <div class="item dev-stage-03">
+            <div class="container">
+              <div class="row" ng-click="open(pluginsList[2])">
+                <div class="col-sm-5 item-image text-center">
+                    <img ng-src="{{pluginsList[2].screenshots.screenshot[0]}}" alt="" ng-show="pluginsList[2].screenshots.screenshot[0]">
+                </div>
+                <div class="col-sm-7 item-content">
+                  <h1 class="item-title">{{pluginsList[2].name}}</h1>
+                  <p class="item-description">{{pluginsList[2].description}}</p>
+
+                  <p class="item-author">{{pluginsList[2].author | cut:false:40:'...'}}</p>
+                </div>
+                <div class="dev-stage"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-plugins">
+          <div class="plugins-header">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <button type="button" class="btn btn-default btn-block" id="filter-button"></button>
+                  <input type="text" class="form-control" id="inputSearch" placeholder="Search" ng-model="searchTerm">
+                  <div class="clear"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <hr id="hr-plugins-header">                
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plugins-container">
+            <div class="plugins-filters">
+              <div class="filters-header">
+                <div class="pull-left"><span class="filters-header-title">Filter</span> <span class="filters-header-count">(<span class="filters-header-count-number">{{filteredList.length}}</span>)</span></div>
+                <div class="pull-right"><span class="clear-all-filters">Clear all filters</span></div>
+                <div class="clear"></div>
+              </div>
+              <div class="filters-title first-filters-title">Development Stage</div>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true" id="button-filters-show-all">Show All</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Product Release Only</button>
+              <div class="more-dev-stages">
+                <div class="filters-sub-title filters-first-sub-title">Customer</div>
+                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-production-release">Production Release</button>
+                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-limited-release">Limited Release</button>
+                <div class="filters-sub-title">Community</div>
+                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-mature-release">Mature Release</button>
+                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-stable-release">Stable Release</button>
+                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-snapshot-release">Snapshot Release</button>
+                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-development-phase">Development Phase</button>
+              </div>
+              <span class="show-more-dev-stages">More Options</span>
+              <div class="clear"></div>
+              <hr>
+              <div class="filters-title">Apps</div>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true" id="button-filters-all-apps">All Apps</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Analysis</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Dashboards</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Reporting</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Lifecycle</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Admin</button>
+              <hr>
+              <div class="filters-title">Other</div>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Visualizations</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Language Packs</button>
+              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Themes</button>
+            </div>
+            
+            <!-- plugins list -->
+            <div class="plugins-grid">
+              <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in filteredList | paginate:currentPage:itemsPerPage "> <!-- filter:{$:searchTerm} -->
+                <div class="plugin-inner" ng-click="open(plugin)">
+                  <div class="plugin-header">
+                    <img ng-src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">
+                  </div>
+                  <div class="plugin-content">
+                    <h2>{{plugin.name}}</h2>
+                    <p class="plugin-description">{{plugin.author | cut:false:30:'...'}}</p>
+                  </div>
+                  <div class="dev-stage"></div>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <pagination boundary-links="true" total-items="totalItems" max-size="5" items-per-page="itemsPerPage" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+            <!-- end of plugins list -->
+
+          </div>
         </div>
       </div>
     </div>
