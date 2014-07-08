@@ -43,6 +43,10 @@ body {
 	overflow: hidden !important;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 .whole-container {
 	overflow-y: scroll;
 	height: 100%;
