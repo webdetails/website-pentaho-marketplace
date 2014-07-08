@@ -23,7 +23,7 @@
       <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-    <div class="whole-container" >
+    <div class="whole-container" ng-cloak>
       <div class="backPage">
         <div class="container" id="mainContainer">
           <div class="row" id="page-header">
@@ -41,8 +41,8 @@
           </div>
         </div>
 
-        <div class="page-slider"  >
-          <div class="item dev-stage-03" ng-cloak>
+        <div class="page-slider" owlcarousel carousel-options="{ autoplay: true, autoplayHoverPause: true, smartSpeed: 1200}"  >
+          <div class="item dev-stage-03" >
             <div class="container">
               <div class="row" ng-click="open(pluginsList[0])">
                 <div class="col-sm-5 item-image text-center">
