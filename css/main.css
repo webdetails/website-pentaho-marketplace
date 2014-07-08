@@ -349,7 +349,7 @@ h4 {
 
 .page-plugins .plugins-header {
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	z-index: 100;
 }
 
@@ -568,7 +568,7 @@ hr#hr-plugins-header {
 	background: #f6f7f8;
 	position: absolute;
 	right: 13px;
-	top: -61px;
+	top: -21px;
 	z-index: 9000;
 	-webkit-transition: max-height .3s ease-in-out, padding .3s ease-in-out;
 	-moz-transition: max-height .3s ease-in-out, padding .3s ease-in-out;
@@ -590,7 +590,7 @@ hr#hr-plugins-header {
 	-ms-transition: max-height .75s ease-in-out, padding .75s ease-in-out;
 	-o-transition: max-height .75s ease-in-out, padding .75s ease-in-out;
 	transition: max-height .75s ease-in-out, padding .75s ease-in-out;
-	top: -61px;
+	top: -21px;
 	padding-bottom: 30px;
 	padding-top: 10px;
 	max-height: 1500px;
@@ -611,6 +611,7 @@ hr#hr-plugins-header {
 	padding-bottom: 5px;
 	border-bottom: 1px solid #e1e0e0;
 	margin-bottom: 20px;
+	margin-top: 18px;
 }
 
 .page-plugins .plugins-filters .filters-header .filters-header-title {
@@ -622,13 +623,13 @@ hr#hr-plugins-header {
 .page-plugins .plugins-filters .filters-header .filters-header-count{
 	font-size: 11px;
 	font-weight: 300;
-	color: #006188;
+	color: #005da7;
 }
 
 .page-plugins .plugins-filters .filters-header .clear-all-filters {
 	font-size: 11px;
 	font-weight: 300;
-	color: #006188;
+	color: #005da7;
 	cursor: pointer;
 }
 
@@ -1437,9 +1438,6 @@ span.show-more-dev-stages:hover:after {
 	float: left;
 	background-repeat: no-repeat;
 	background-position: center 0px;
-	-webkit-transition: all .3s;
-	-o-transition: all .3s;
-	transition: all .3s;
 	cursor: pointer;
 }
 
