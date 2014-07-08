@@ -91,12 +91,12 @@ app.controller('MarketplaceController', function( $filter, $scope, PluginsMetada
         }, 10);
     });
 
-    $rootScope.$on('ngDialog.closed', function (e, $dialog, $document) {
+    /*$rootScope.$on('ngDialog.closed', function (e, $dialog, $document) {
         if($('.plugin-modal-gallery .owl-carousel').length) {
             $('.plugin-modal-gallery .owl-carousel').hide().data('owlCarousel').destroy();
         }
         console.log('ngDialog closed: ' + $dialog.attr('id'));
-    });
+    });*/
 });
 
 
@@ -137,29 +137,30 @@ app.filter('cut', function () {
 });
 
 //owlcarousel directive
-app.directive('owlcarousel',function(){
+app.value('OwlCarouselConfig', {
+    loop:false,
+    items: 1,
+    autoplay: true,
+    autoplayHoverPause: true,
+    smartSpeed: 1200
+});
+app.directive('owlcarousel',function(OwlCarouselConfig){
     var linker = function(scope,element,attr){
+        var owl;
         //carrega o carrosel
         var loadCarousel = function(){
-            element.owlCarousel({
-                //loop:true,
-                loop:false,
-                items: 1,
-                smartSpeed: 800
-            });
+            owl = element.owlCarousel( OwlCarouselConfig );
         };
  
-        //aplica as ações para o carrosel
-        var loadCarouselActions = function(){
-        };
- 
-        //toda vez que adicionar ou remover um item da lista ele carrega o carrosel novamente
-        scope.$watch("itens", function(value) {
-            loadCarousel(element);
+        scope.$watch( function(){
+            return element.children().length;
+        }, function(){
+            owl.trigger('owl.carousel.destroy');
+            loadCarousel();
         });
- 
+
         //inicia o carrosel
-        loadCarouselActions();
+        loadCarousel();
     };
  
     return{
