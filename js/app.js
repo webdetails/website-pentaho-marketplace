@@ -160,7 +160,7 @@ app.directive('owlcarousel',function(OwlCarouselConfig){
             loadCarousel();
         });
 
-        loadCarousel();
+        //loadCarousel();
  
     };
  
