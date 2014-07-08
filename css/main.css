@@ -369,6 +369,7 @@ h4 {
 hr#hr-plugins-header {
 	border-color: #e1e0e0;
 	margin-top: 0;
+	margin-bottom: 0;
 }
 
 /*.page-plugins .plugins-header input#inputSearch,
@@ -450,6 +451,9 @@ hr#hr-plugins-header {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+
+	/* fix for firefox */
+	padding-left: 25px;
 }
 
 
@@ -477,6 +481,7 @@ hr#hr-plugins-header {
 	padding-right: 32px;
 	color: #616161;
 	cursor: auto;
+	padding-left: 10px;
 }
 
 .no-svg .page-plugins .plugins-header input#inputSearch[type=text]:focus {
@@ -1095,6 +1100,7 @@ span.show-more-dev-stages:hover:after {
 
 .page-plugins .plugins-grid {
 	width: 960px;
+	margin-top: 20px;
 }
 
 .page-plugins.filtering .plugins-grid {
