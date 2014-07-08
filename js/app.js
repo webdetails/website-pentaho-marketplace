@@ -47,7 +47,6 @@ app.controller('MarketplaceController', function( $filter, $scope, PluginsMetada
 
     $scope.open = function(plugin) {
         $scope.plugin = plugin;
-
         ngDialog.open({
             template: 'templates/pluginDetails.html',
             scope: $scope,
@@ -84,12 +83,17 @@ app.controller('MarketplaceController', function( $filter, $scope, PluginsMetada
     };
 
     $rootScope.$on('ngDialog.opened', function (e, $dialog) {
-        console.log('ngDialog opened: ' + $dialog.attr('id'));
+        setTimeout(function(){            
+            var dialogContentHeight = $dialog.find('.ngdialog-content').height();
+            var dialogContentTotalHeight = dialogContentHeight+100;
+            $dialog.find('.ngdialog-overlay').css('min-height', dialogContentTotalHeight);
+            console.log('ngDialog opened: ' + $dialog.attr('id') + '; ngDialog height: ' + dialogContentHeight + '; ngDialog height with margins: ' + dialogContentTotalHeight);
+        }, 10);
     });
 
     $rootScope.$on('ngDialog.closed', function (e, $dialog, $document) {
-        if($('.plugin-modal-gallery .owl-carousel')) {
-            $('.plugin-modal-gallery .owl-carousel').data('owlCarousel').hide().destroy();
+        if($('.plugin-modal-gallery .owl-carousel').length) {
+            $('.plugin-modal-gallery .owl-carousel').hide().data('owlCarousel').destroy();
         }
         console.log('ngDialog closed: ' + $dialog.attr('id'));
     });

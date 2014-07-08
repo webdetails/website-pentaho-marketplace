@@ -1176,6 +1176,12 @@ span.show-more-dev-stages:hover:after {
 	padding-bottom: 0px;
 }
 
+.ngdialog-overlay {
+  position: absolute;
+  min-height: 100%;
+  height: auto;
+}
+
 .plugin-window .modal-dialog {
   width: 97%;
   max-width: 960px;
