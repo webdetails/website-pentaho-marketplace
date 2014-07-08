@@ -140,27 +140,28 @@ app.filter('cut', function () {
 app.value('OwlCarouselConfig', {
     loop:false,
     items: 1,
-    autoplay: true,
-    autoplayHoverPause: true,
-    smartSpeed: 1200
+    smartSpeed: 800
 });
 app.directive('owlcarousel',function(OwlCarouselConfig){
-    var linker = function(scope,element,attr){
-        var owl;
+
+    function linker (scope,element,attr){
+
         //carrega o carrosel
         var loadCarousel = function(){
-            owl = element.owlCarousel( OwlCarouselConfig );
+            element.owlCarousel( getOptions() );
         };
+
+        var getOptions = function(){
+            return angular.extend( {}, OwlCarouselConfig, scope.$eval( attr.carouselOptions ) );
+        }
  
-        scope.$watch( function(){
-            return element.children().length;
-        }, function(){
-            owl.trigger('owl.carousel.destroy');
+        //toda vez que adicionar ou remover um item da lista ele carrega o carrosel novamente
+        scope.$watch("batatas", function(value) {
             loadCarousel();
         });
 
-        //inicia o carrosel
         loadCarousel();
+ 
     };
  
     return{
@@ -169,3 +170,5 @@ app.directive('owlcarousel',function(OwlCarouselConfig){
     };
  
 });
+
+
