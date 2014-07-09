@@ -1093,7 +1093,7 @@ span.show-more-dev-stages:hover:after {
 }
 
 .page-plugins .plugin-content {
-	padding: 12px;
+    padding: 9px 12px 12px;
 }
 
 .page-plugins .plugin-content .plugin-description {
