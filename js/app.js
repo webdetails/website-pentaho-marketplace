@@ -171,4 +171,14 @@ app.directive('owlcarousel',function(OwlCarouselConfig){
  
 });
 
-
+app.directive('onFinishRender', function ($timeout) {
+  return {
+    restrict: 'A',
+    link: function (scope, element, attr) {
+      if (scope.$last === true) {
+          scope.$evalAsync(attr.onFinishRender);
+          $('.loading-overlay').delay(3000).fadeOut(300);
+      }
+    }
+  }
+});
