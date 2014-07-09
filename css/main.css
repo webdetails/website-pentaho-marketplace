@@ -2102,7 +2102,13 @@ p.contribute-description {
 
 /* ++++ LOADING OVERLAY ++++ */
 
-.loading-overlay { display: none;}
-.loading-overlay[wd-cloak]{ display: block;}
-.whole-container[wd-cloak]{ display:none;}
+.loading-overlay { 
+	display: none; 
+	opacity:0;   
+	-webkit-transition: all 10s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+  				transition: all 10s ease-out;
+}
+.loading-overlay[ng-cloak]{ opacity:1; }
+.loading-overlay[cloak-delay]{ display: block;}
+.whole-container[ng-cloak]{ display:none;}
 .whole-container{ display: block;}

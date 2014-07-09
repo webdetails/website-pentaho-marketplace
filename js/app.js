@@ -171,13 +171,10 @@ app.directive('owlcarousel',function(OwlCarouselConfig){
  
 });
 
-app.directive('wdCloak', function($timeout){
+app.directive('cloakDelay', function($timeout){
     return {
         link: function(scope, element, attr) {
             var delay = attr.cloakDelay || 0;
-
-            attr.$set('wdCloak', undefined);
-            element.removeClass('wd-cloak');
 
             $timeout(function(){
                 attr.$set('cloakDelay', undefined);
