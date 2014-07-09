@@ -43,9 +43,9 @@ body {
 	overflow: hidden !important;
 }
 
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+/*[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
-}
+}*/
 
 .whole-container {
 	overflow-y: scroll;
@@ -2101,3 +2101,8 @@ p.contribute-description {
 }
 
 /* ++++ LOADING OVERLAY ++++ */
+
+.loading-overlay { display: none;}
+.loading-overlay[ng-cloak]{ display: block;}
+.whole-container[ng-cloak]{ display:none;}
+.whole-container{ display: block;}

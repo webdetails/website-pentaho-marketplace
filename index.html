@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/ngDialog.css">
+    <link rel="stylesheet" href="css/ngDialog.css">    
+    <link rel="stylesheet" href="css/loading-bar.css">
     <link rel="stylesheet" href="css/main.css">
 
   </head>
   <body ng-controller="MarketplaceController">
-    <div class="loading-overlay" ng-show="!isDoneLoading">
+    <div class="loading-overlay" ng-cloak>
       <div id="fountainG">
         <div id="fountainG_1" class="fountainG"></div>
         <div id="fountainG_2" class="fountainG"></div>
@@ -163,7 +164,7 @@
             
             <!-- plugins list -->
             <div class="plugins-grid">
-              <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in filteredList | paginate:currentPage:itemsPerPage" on-finish-render="isDoneLoading = true;"> <!-- filter:{$:searchTerm} -->
+              <div class="plugin dev-stage-03 dashboards" ng-repeat="plugin in filteredList | paginate:currentPage:itemsPerPage"> <!-- filter:{$:searchTerm} -->
                 <div class="plugin-inner" ng-click="open(plugin)">
                   <div class="plugin-header">
                     <img ng-src="{{plugin.screenshots.screenshot[0]}}" alt="" ng-show="plugin.screenshots.screenshot[0]">
@@ -201,6 +202,8 @@
     <script type="text/javascript" src="js/vendor/ngDialog.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/loading-bar.js"></script>
+    <script type="text/javascript" src="js/vendor/angular-animate.min.js"></script>
     
     <script type="text/javascript" src="js/app.js"></script>
     <!--script src="js/vendor/isotope.pkgd.min.js"></script-->
