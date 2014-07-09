@@ -2103,6 +2103,6 @@ p.contribute-description {
 /* ++++ LOADING OVERLAY ++++ */
 
 .loading-overlay { display: none;}
-.loading-overlay[ng-cloak]{ display: block;}
-.whole-container[ng-cloak]{ display:none;}
+.loading-overlay[wd-cloak]{ display: block;}
+.whole-container[wd-cloak]{ display:none;}
 .whole-container{ display: block;}

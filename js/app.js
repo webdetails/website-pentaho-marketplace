@@ -170,3 +170,19 @@ app.directive('owlcarousel',function(OwlCarouselConfig){
     };
  
 });
+
+app.directive('wdCloak', function($timeout){
+    return {
+        link: function(scope, element, attr) {
+            var delay = attr.cloakDelay || 0;
+
+            attr.$set('wdCloak', undefined);
+            element.removeClass('wd-cloak');
+
+            $timeout(function(){
+                attr.$set('cloakDelay', undefined);
+                element.removeClass('cloak-delay');
+            }, delay);
+        }
+    }
+});
