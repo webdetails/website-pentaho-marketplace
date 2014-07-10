@@ -59,7 +59,7 @@ app.controller('MarketplaceController', function( $filter, $scope, PluginsMetada
         ngDialog.open({
             template: 'templates/devStages.html',
             scope: $scope,
-            className: 'plugin-window',
+            className: 'plugin-window-dev-stages',
             showClose: false
         });
     };

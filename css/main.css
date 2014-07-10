@@ -43,9 +43,9 @@ body {
 	overflow: hidden !important;
 }
 
-/*[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
-}*/
+}
 
 .whole-container {
 	overflow-y: scroll;
@@ -186,7 +186,7 @@ h4 {
 
 .page-slider .item .container {
 	position: relative;
-	height: 219px;
+	height: 221px;
 	background: #ffffff;
 }
 
@@ -202,7 +202,7 @@ h4 {
 }
 
 .page-slider .item > .container > .row:hover {
-	border: 1px solid #005da7;
+	border: 1px solid #4b565c;
 }
 
 .page-slider .item .container .item-image {
@@ -637,8 +637,8 @@ hr#hr-plugins-header {
 
 .page-plugins .plugins-filters button:hover,
 .page-plugins .plugins-filters button:active {
-	border: 1px solid #005DA7;
-	color: #005DA7;
+	border: 1px solid #4b565c;
+	color: #4b565c;
 }
 
 button:focus {
@@ -651,8 +651,8 @@ button:focus {
 .page-plugins .plugins-filters button[data-checked="true"]:hover,
 .page-plugins .plugins-filters button[data-checked="true"]:active,
 .page-plugins .plugins-filters button[data-checked="true"]:focus {
-	border: 1px solid #005DA7;
-	color: #005DA7;
+	border: 1px solid #4b565c;
+	color: #4b565c;
 }
 
 .page-plugins .plugins-filters button[data-checked="true"]:after,
@@ -1089,7 +1089,7 @@ span.show-more-dev-stages:hover:after {
 }
 
 .page-plugins .plugin .plugin-inner:hover {
-	border: 1px solid #005DA7;
+	border: 1px solid #4b565c;
 }
 
 .page-plugins .plugin-content {
@@ -1199,12 +1199,16 @@ span.show-more-dev-stages:hover:after {
 	}
 }
 
-.plugin-window .plugin-modal-label {
+.plugin-window .plugin-modal-label,
+.plugin-window-dev-stages .plugin-modal-label,
+.plugin-window-contribute .plugin-modal-label {
 	font-size: 11px;
 	font-weight: 400;
 }
 
-.plugin-window .plugin-modal-value {
+.plugin-window .plugin-modal-value,
+.plugin-window-dev-stages .plugin-modal-value,
+.plugin-window-contribute .plugin-modal-value {
 	font-size: 15px;
 	font-weight: 400;
 }
@@ -1214,7 +1218,9 @@ span.show-more-dev-stages:hover:after {
 	font-weight: 400;
 }
 
-.plugin-window h1 {
+.plugin-window h1,
+.plugin-window-dev-stages h1,
+.plugin-window-contribute h1 {
 	font-size: 26px;
 	margin-bottom: 5px;
 }
@@ -1326,13 +1332,13 @@ span.show-more-dev-stages:hover:after {
 }
 
 .plugin-buttons-row button.btn.btn-block:hover {
-	border: 1px solid #005DA7;
-	color: #005DA7;
+	border: 1px solid #4b565c;
+	color: #4b565c;
 }
 
 .plugin-buttons-row button.btn.btn-block:active {
 	border: 1px solid #e1e0e0;
-	color: #005DA7;
+	color: #4b565c;
 	-webkit-box-shadow: inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
 	box-shadow:         inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
 }
@@ -1495,7 +1501,7 @@ div#header-links button:last-of-type span {
 }
 
 div#header-links button.info-button span img {
-	height: 18px;
+	max-height: 17px;
 }
 
 div#header-links button.info-button {
@@ -1532,13 +1538,17 @@ div#header-links button.info-button {
 	color: #5b5c5d;
 	background-color: #f6f7f8;
 	border: 1px solid #e1e0e0;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
 }
 
 .pagination>li>a:hover, 
 .pagination>li>span:hover {
-	color: #005da7;
+	color: #5b5c5d;
 	background-color: #f6f7f8;
-	border-color: #005da7;
+	border-color: #4b565c;
+	font-weight: 500;
 }
 
 .pagination>.active>a, 
@@ -1547,9 +1557,10 @@ div#header-links button.info-button {
 .pagination>.active>span:hover, 
 .pagination>.active>a:focus, 
 .pagination>.active>span:focus {
-	color: #005da7;
+	color: #5b5c5d;
 	background-color: #f6f7f8;
-	border-color: #005da7;
+	border-color: #4b565c;
+	font-weight: 500;
 }
 
 .pagination>li {
@@ -1571,10 +1582,12 @@ div#header-links button.info-button {
 	position: relative;
 	width: 100%;
 	height: 41px;
+	background: #f8f8f8;
 }
 
 .container.dev-stages {
 	padding-bottom: 20px;
+	margin-top: 4px;
 }
 
 .dev-stages span.plugin-modal-label {
@@ -1702,13 +1715,13 @@ p.contribute-description {
 }
 
 .download-marketplace-row a.btn.btn-block:hover {
-	border: 1px solid #005DA7;
-	color: #005DA7;
+	border: 1px solid #4b565c;
+	color: #4b565c;
 }
 
 .download-marketplace-row a.btn.btn-block:active {
 	border: 1px solid #e1e0e0;
-	color: #005DA7;
+	color: #4b565c;
 	-webkit-box-shadow: inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
 	box-shadow:         inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
 }
