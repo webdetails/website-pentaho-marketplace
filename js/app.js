@@ -171,14 +171,23 @@ app.directive('owlcarousel',function(OwlCarouselConfig){
  
 });
 
-app.directive('cloakDelay', function($timeout){
+app.directive('wdCloak', function($timeout){
     return {
         link: function(scope, element, attr) {
-            var delay = attr.cloakDelay || 0;
+            attr.$set('wdCloak', undefined);
+            element.removeClass('wd-cloak');
+        }
+    }
+});
+
+app.directive('wdCloakDelay', function($timeout){
+    return {
+        link: function(scope, element, attr) {
+            var delay = attr.wdCloakDelay || 0;
 
             $timeout(function(){
-                attr.$set('cloakDelay', undefined);
-                element.removeClass('cloak-delay');
+                attr.$set('wdCloakDelay', undefined);
+                element.removeClass('wd-cloak-delay');
             }, delay);
         }
     }

@@ -2108,7 +2108,7 @@ p.contribute-description {
 	-webkit-transition: all 10s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
   				transition: all 10s ease-out;
 }
-.loading-overlay[ng-cloak]{ opacity:1; }
-.loading-overlay[cloak-delay]{ display: block;}
-.whole-container[ng-cloak]{ display:none;}
+.loading-overlay[wd-cloak]{ opacity:1; }
+.loading-overlay[wd-cloak-delay]{ display: block;}
+.whole-container[wd-cloak]{ display:none;}
 .whole-container{ display: block;}
