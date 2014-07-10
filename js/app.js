@@ -171,24 +171,33 @@ app.directive('owlcarousel',function(OwlCarouselConfig){
  
 });
 
-app.directive('wdCloak', function($timeout){
-    return {
-        link: function(scope, element, attr) {
-            attr.$set('wdCloak', undefined);
-            element.removeClass('wd-cloak');
-        }
+app.directive('onFinishRender', function ($timeout) {
+  return {
+    restrict: 'A',
+    link: function (scope, element, attr) {
+      if (scope.$last === true) {
+          scope.$evalAsync(attr.onFinishRender);
+          $('.loading-overlay').delay(1000).fadeOut(300);
+      }
     }
+  }
 });
 
-app.directive('wdCloakDelay', function($timeout){
+app.directive('ngxTipsy', function() {
+    // jQuery Tipsy Tooltip
     return {
-        link: function(scope, element, attr) {
-            var delay = attr.wdCloakDelay || 0;
-
-            $timeout(function(){
-                attr.$set('wdCloakDelay', undefined);
-                element.removeClass('wd-cloak-delay');
-            }, delay);
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            // possible directions:
+            // nw | n | ne | w | e | sw | s | se
+            element.tooltipster({ 
+                content: attrs.ngxTitle,
+                contentAsHTML: true,
+                theme: 'tooltipster-light',
+                animation: 'grow',
+                maxWidth: 300,
+                position: attrs.ngxPosition
+            });
         }
     }
 });
