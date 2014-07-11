@@ -3,10 +3,11 @@
 	border: 1px solid #e1e0e0;
 	background: #f6f7f8;
 	color: #7c7e80;
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
 }
 .tooltipster-light .tooltipster-content {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 12px;
 	line-height: 16px;
-	padding: 7px 10px;
+	padding: 10px 13px;
 }
