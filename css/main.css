@@ -1191,6 +1191,7 @@ button:focus {
 .ngdialog-content {
 	max-width: 970px;
 	padding-bottom: 0px;
+	position: relative;
 }
 
 .ngdialog-overlay {
