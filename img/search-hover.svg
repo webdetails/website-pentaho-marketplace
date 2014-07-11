@@ -5,7 +5,7 @@
 	 x="0px" y="0px" width="29px" height="24px" viewBox="0 0 29 24" xml:space="preserve">
 <g>
 	
-		<rect x="13.157" y="15.26" transform="matrix(-0.7069 -0.7073 0.7073 -0.7069 16.3984 39.7769)" fill="#616161" width="6.568" height="2.462"/>
-	<circle fill="none" stroke="#616161" stroke-width="2.0152" stroke-miterlimit="10" cx="10.08" cy="10.03" r="5.711"/>
+		<rect x="13.156" y="15.26" transform="matrix(0.7069 0.7073 -0.7073 0.7069 16.4833 -6.7949)" fill="#005CA7" width="6.568" height="2.462"/>
+	<circle fill="none" stroke="#005CA7" stroke-width="2.0152" stroke-miterlimit="10" cx="10.08" cy="10.03" r="5.711"/>
 </g>
 </svg>

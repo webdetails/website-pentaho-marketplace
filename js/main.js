@@ -37,9 +37,9 @@ $('.plugins-filters .single-filter-button').click(function() {
 });
 
 $('.clear-all-filters').click(function() {
-	$('.plugins-filters  .single-filter-button').attr('data-checked', 'false');
-	$('.plugins-filters  #button-filters-show-all').attr('data-checked', 'true');
-	$('.plugins-filters  #button-filters-all-apps').attr('data-checked', 'true');
+	$('.plugins-filters .single-filter-button').attr('data-checked', 'false');
+	$('.plugins-filters .filters-state').removeClass('some-checked');
+	$('.plugins-filters .filters-state').removeClass('all-checked');
 });
 
 $('#inputSearch').focus(function() {
