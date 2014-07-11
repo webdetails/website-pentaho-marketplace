@@ -1546,6 +1546,7 @@ div#header-links button.info-button {
 	cursor: default;
 	position: relative;
 	z-index: 1000;
+	cursor: pointer;
 }
 
 div#header-links.toggled button.info-button {

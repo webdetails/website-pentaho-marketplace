@@ -163,10 +163,10 @@ $('.filters-subsection .filters-state').click(function() {
 	}
 });
 
-/*$('.info-button').click(function() {
-	$(this).closest('.btn-group').find('button:not(.info-button) span').stop().animate({width: 'toggle'});
+$('.info-button').click(function() {
+	$(this).closest('.btn-group').find('button:not(.info-button) span').stop().animate({width: 'toggle', paddingLeft: 'toggle', paddingRight: 'toggle'});
 	$(this).closest('.btn-group').toggleClass('toggled');
-});*/
+});
 
 $.fn.preload = function() {
     this.each(function(){
