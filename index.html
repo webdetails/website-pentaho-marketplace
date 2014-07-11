@@ -134,34 +134,62 @@
                 <div class="pull-right"><span class="clear-all-filters">Clear all filters</span></div>
                 <div class="clear"></div>
               </div>
-              <div class="filters-title first-filters-title">Development Stage</div>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true" id="button-filters-show-all">Show All</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Product Release Only</button>
-              <div class="more-dev-stages">
-                <div class="filters-sub-title filters-first-sub-title">Customer</div>
-                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-production-release">Production Release</button>
-                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-limited-release">Limited Release</button>
-                <div class="filters-sub-title">Community</div>
-                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-mature-release">Mature Release</button>
-                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-stable-release">Stable Release</button>
-                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-snapshot-release">Snapshot Release</button>
-                <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-development-phase">Development Phase</button>
+              <div class="filters-subsection filters-apps">
+                <div class="filters-subsection-header">
+                  <button class="filters-title pull-left">Apps</button>
+                  <button class="filters-state pull-right"></button>
+                  <div class="clear"></div>                  
+                </div>
+                <div class="filters-subsection-items">
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Analysis</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Dashboards</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Reporting</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Lifecycle</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Admin</button>                  
+                </div>             
               </div>
-              <span class="show-more-dev-stages">More Options</span>
+              <div class="filters-subsection filters-pdi-plugins">
+                <div class="filters-subsection-header">
+                  <button class="filters-title pull-left">PDI Plugins</button>
+                  <button class="filters-state pull-right"></button>
+                  <div class="clear"></div>                  
+                </div>
+                <div class="filters-subsection-items">
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Step</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Jobs</button>
+                </div>
+              </div>
+              <div class="filters-subsection filters-others">
+                <div class="filters-subsection-header">
+                  <button class="filters-title pull-left">Other</button>
+                  <button class="filters-state pull-right"></button>
+                  <div class="clear"></div>                  
+                </div>
+                <div class="filters-subsection-items">
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Visualizations</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Language Packs</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Themes</button>  
+                </div>              
+              </div>
+              <hr>
+              <div class="filters-subsection filters-dev-stages">
+                <div class="filters-subsection-header">
+                  <button class="filters-title pull-left">Development Stage</button>
+                  <button class="filters-state pull-right"></button>
+                  <div class="clear"></div>                  
+                </div>
+                <div class="filters-subsection-items">
+                  <div class="filters-sub-title filters-first-sub-title">Customer Lane</div>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-production-release">Production Release</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-limited-release">Limited Release</button>
+                  <div class="filters-sub-title filters-sub-title-community-lane">Community Lane</div>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-mature-release">Mature Release</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-stable-release">Stable Release</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-snapshot-release">Snapshot Release</button>
+                  <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-development-phase">Development Phase</button> 
+                </div>               
+              </div>
               <div class="clear"></div>
-              <hr>
-              <div class="filters-title">Apps</div>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="true" id="button-filters-all-apps">All Apps</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Analysis</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Dashboards</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Reporting</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Lifecycle</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Admin</button>
-              <hr>
-              <div class="filters-title">Other</div>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Visualizations</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Language Packs</button>
-              <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Themes</button>
             </div>
             
             <!-- plugins list -->

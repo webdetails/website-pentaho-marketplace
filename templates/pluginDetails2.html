@@ -1,0 +1,86 @@
+<div class="plugin-modal-gallery" ng-class="{empty: !plugin.screenshots.screenshot}">
+  <div class="close-plugin-modal" ng-click="closeThisDialog()"></div>
+  <div owlcarousel class="owl-carousel">
+    <div class="item" ng-repeat="image in plugin.screenshots.screenshot">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <img ng-src="{{image}}">            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h1>{{plugin.name}}</h1>
+      <p class="plugin-modal-author">{{plugin.author | cut:false:20:'...'}}</p>
+      <p ng-bind-html="plugin.description"></p>
+    </div>
+    <div class="col-sm-8" ng-class="{ noDocs: !plugin.documentation_url }">
+      <div class="panel panel-default">
+        <!-- List group -->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-sm-4">
+                <span class="plugin-modal-label">Developer:</span><br>
+                <a class="plugin-modal-link" href="{{plugin.author_url}}" title="{{plugin.author}}" target="_blank">{{plugin.author | cut:false:20:'...'}}</a>
+              </div>
+              <div class="col-sm-4">
+                <span class="plugin-modal-label">Version:</span><br>
+                <span class="plugin-modal-value" ng-show="plugin.versions.version[0].version">{{plugin.versions.version[0].version}}</span>
+                <span class="plugin-modal-value" ng-hide="plugin.versions.version[0].version">-</span>
+              </div>
+              <div class="col-sm-4">
+                <span class="plugin-modal-label">Released:</span><br>
+                <span class="plugin-modal-value">n/a</span>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-sm-4">
+                <span class="plugin-modal-label">Forum:</span><br>
+                <a class="plugin-modal-link" href="{{plugin.author_url}}" title="{{plugin.author}}" target="_blank" ng-show="plugin.forum_url">Forum</a>
+                <span class="plugin-modal-value" ng-hide="plugin.forum_url">-</span>
+              </div>
+              <div class="col-sm-4">
+                <span class="plugin-modal-label">Dependencies:</span><br>
+                <span class="plugin-modal-value" ng-show="plugin.dependencies">{{plugin.dependencies}}</span>
+                <span class="plugin-modal-value" ng-hide="plugin.dependencies">-</span>
+              </div>
+              <div class="col-sm-4">
+                <span class="plugin-modal-label">License:</span><br>
+                <span class="plugin-modal-value" ng-show="plugin.license">{{plugin.license}}</span>
+                <span class="plugin-modal-value" ng-hide="plugin.license">-</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="plugin-buttons-row">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3"><button type="button" class="btn btn-block download-plugin">Download Plugin</button></div>
+      <div class="col-sm-3"><button type="button" class="btn btn-block contact-dev">Contact Dev.</button></div>
+      <div class="col-sm-3"><button type="button" class="btn btn-block live-demo">Live Demo</button></div>
+      <div class="col-sm-3">
+        <p class="recommend-plugin-label">Recommend this plugin:</p>
+        <div class="recommend-plugin-buttons">
+          <div class="recommend-plugin-button recommend-email"></div>
+          <div class="recommend-plugin-button recommend-twitter"></div>
+          <div class="recommend-plugin-button recommend-blogger"></div>
+          <div class="recommend-plugin-button recommend-facebook"></div>
+          <div class="recommend-plugin-button recommend-linkedin"></div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
