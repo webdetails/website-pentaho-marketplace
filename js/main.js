@@ -1,5 +1,99 @@
 if (!Modernizr.svg) {
-  $("#marketplace-logo").attr("src", "img/marketplace-logo.png");
+  	$("#marketplace-logo").attr("src", "img/marketplace-logo.png");
+
+	$(window).load(function() {
+		$([
+			'img/checked.png',
+			'img/close-details.png',
+			'img/contact-button-icon.png',
+			'img/develop-plugins-icon.png',
+			'img/dev-stage-01.png',
+			'img/dev-stage-01-inactive.png',
+			'img/dev-stage-01-large.png',
+			'img/dev-stage-02.png',
+			'img/dev-stage-02-inactive.png',
+			'img/dev-stage-02-large.png',
+			'img/dev-stage-03.png',
+			'img/dev-stage-03-inactive.png',
+			'img/dev-stage-03-large.png',
+			'img/dev-stage-04.png',
+			'img/dev-stage-04-inactive.png',
+			'img/dev-stage-04-large.png',
+			'img/dev-stage-community-01.png',
+			'img/dev-stage-community-01-large.png',
+			'img/dev-stage-community-02.png',
+			'img/dev-stage-community-02-large.png',
+			'img/dev-stage-community-03.png',
+			'img/dev-stage-community-03-large.png',
+			'img/dev-stage-community-04.png',
+			'img/dev-stage-community-04-large.png',
+			'img/download-button-icon.png',
+			'img/download-marketplace-icon.png',
+			'img/filter.png',
+			'img/filter-hover.png',
+			'img/info-icon.png',
+			'img/live-demo-button-icon.png',
+			'img/marketplace-logo.png',
+			'img/more-less-options.png',
+			'img/search.png',
+			'img/search-hover.png',
+			'img/share-blogger-icon.png',
+			'img/share-email-icon.png',
+			'img/share-fb-icon.png',
+			'img/share-linkedin-icon.png',
+			'img/share-twitter-icon.png',
+			'img/some-checked.png',
+			'img/submit-plugins-icon.png',
+			'img/translate-pentaho-icon.png'
+		]).preload();
+	});
+} else {
+	$(window).load(function() {
+		$([
+			'img/checked.svg',
+			'img/close-details.svg',
+			'img/contact-button-icon.svg',
+			'img/develop-plugins-icon.svg',
+			'img/dev-stage-01.svg',
+			'img/dev-stage-01-inactive.svg',
+			'img/dev-stage-01-large.svg',
+			'img/dev-stage-02.svg',
+			'img/dev-stage-02-inactive.svg',
+			'img/dev-stage-02-large.svg',
+			'img/dev-stage-03.svg',
+			'img/dev-stage-03-inactive.svg',
+			'img/dev-stage-03-large.svg',
+			'img/dev-stage-04.svg',
+			'img/dev-stage-04-inactive.svg',
+			'img/dev-stage-04-large.svg',
+			'img/dev-stage-community-01.svg',
+			'img/dev-stage-community-01-large.svg',
+			'img/dev-stage-community-02.svg',
+			'img/dev-stage-community-02-large.svg',
+			'img/dev-stage-community-03.svg',
+			'img/dev-stage-community-03-large.svg',
+			'img/dev-stage-community-04.svg',
+			'img/dev-stage-community-04-large.svg',
+			'img/download-button-icon.svg',
+			'img/download-marketplace-icon.svg',
+			'img/filter.svg',
+			'img/filter-hover.svg',
+			'img/info-icon.svg',
+			'img/live-demo-button-icon.svg',
+			'img/marketplace-logo.svg',
+			'img/more-less-options.svg',
+			'img/search.svg',
+			'img/search-hover.svg',
+			'img/share-blogger-icon.svg',
+			'img/share-email-icon.svg',
+			'img/share-fb-icon.svg',
+			'img/share-linkedin-icon.svg',
+			'img/share-twitter-icon.svg',
+			'img/some-checked.svg',
+			'img/submit-plugins-icon.svg',
+			'img/translate-pentaho-icon.svg'
+		]).preload();
+	});
 }
 
 $('.show-more-dev-stages').click(function() {
@@ -68,3 +162,14 @@ $('.filters-subsection .filters-state').click(function() {
 		});
 	}
 });
+
+/*$('.info-button').click(function() {
+	$(this).closest('.btn-group').find('button:not(.info-button) span').stop().animate({width: 'toggle'});
+	$(this).closest('.btn-group').toggleClass('toggled');
+});*/
+
+$.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
