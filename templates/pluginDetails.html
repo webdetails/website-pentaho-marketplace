@@ -17,7 +17,7 @@
     <div class="col-sm-4">
       <h1>{{plugin.name}}</h1>
       <p class="plugin-modal-author">{{plugin.author | cut:false:20:'...'}}</p>
-      <p ng-bind-html="plugin.description"></p>
+      <p ng-bind-html="plugin.description" class="plugin-modal-description"></p>
     </div>
     <div class="col-sm-8" ng-class="{ noDocs: !plugin.documentation_url }">
       <div class="col-sm-12 plugin-modal-details-table">
