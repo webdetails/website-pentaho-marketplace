@@ -47,7 +47,7 @@
           </div>
           <div class="col-xs-6 col-md-4 license-cell">
             <span class="plugin-modal-label">License:</span><br>
-            <span class="plugin-modal-value" ng-show="plugin.license">{{plugin.license}}</span>
+            <span class="plugin-modal-value" ng-show="plugin.license" title="{{plugin.license}}">{{plugin.license | cut:false:15:'...'}}</span>
             <span class="plugin-modal-value" ng-hide="plugin.license">-</span>
           </div>
         </div>
