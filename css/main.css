@@ -201,8 +201,8 @@ a, a:link, a:visited, a:hover, a:active {
 	border: 1px solid #E1E0E0;
 	cursor: pointer;
 	position: relative;
-	-webkit-transition: all .3s;
-	transition: all .3s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 }
 
 .page-slider .item > .container > .row:hover {
@@ -1111,8 +1111,8 @@ button:focus {
 	padding: 0;
 	background: #FFFFFF;
 	cursor: pointer;
-	-webkit-transition: all .3s;
-	transition: all .3s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
 }
 
 .page-plugins .plugin .plugin-inner:hover {
