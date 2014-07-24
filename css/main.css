@@ -1163,6 +1163,10 @@ button:focus {
 	position: relative;
 }
 
+.plugin-details-container {
+	padding-top: 30px;
+}
+
 .ngdialog-overlay {
   position: absolute;
   min-height: 100%;
@@ -1183,7 +1187,8 @@ button:focus {
 	border: 1px solid #E1E0E0;
 	border-bottom: none;
 	border-radius: 6px;
-	margin-top: 23px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .plugin-modal-description h1 {
@@ -1255,6 +1260,7 @@ button:focus {
 .plugin-window-contribute h1 {
 	font-size: 26px;
 	margin-bottom: 5px;
+	margin-top: 0;
 }
 
 .plugin-modal-gallery img {
@@ -1345,9 +1351,9 @@ button:focus {
 
 .plugin-buttons-row {
 	background: #F2F1F1;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 20px;
 	border-top: 1px solid #E1E0E0;
 }
 
@@ -1633,13 +1639,14 @@ div#header-links.toggled button:first-of-type {
 }
 
 .container.dev-stages {
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	margin-top: 4px;
 }
 
 .dev-stages span.plugin-modal-label {
 	margin-left: 15px;
-	margin-bottom: 9px;
+	margin-bottom: 3px;
+	margin-top: 6px;
 	display: inline-block;
 	font-size: 12px;
 }
@@ -1665,6 +1672,11 @@ div#header-links.toggled button:first-of-type {
 	border-color: #e1e0e0;
 }
 
+.container.dev-stages hr {
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+
 /* ++++ DEV STAGES DIALOG ++++ */
 
 /* ++++ CONTRIBUTE DIALOG ++++ */
@@ -1675,22 +1687,28 @@ div#header-links.toggled button:first-of-type {
 }
 
 .container.contribute {
-	padding-bottom: 20px;
+	padding-bottom: 30px;
+	padding-top: 25px;
+}
+
+.container.contribute h3 {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .contribute .col-sm-8 p.first-paragraph {
-	margin-top: 30px;
+	margin-top: 0px;
 	margin-bottom: 15px;
 }
 
 .contribute .col-sm-8 p {
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 }
 
 .contribute-bottom-row {
 	background: #F2F1F1;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	color: #7C7E80;
 	border-top: 1px solid #E1E0E0;
 }
@@ -1729,13 +1747,18 @@ p.contribute-description {
 /* ++++ FIND MARKETPLACE ++++ */
 
 .container.findMarketplace {
-	padding-bottom: 40px;
-	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
 .findMarketplace .col-sm-8 p.first-paragraph {
-	margin-top: 30px;
-	margin-bottom: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.findMarketplace .col-sm-4 h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .findMarketplace-bottom-row .col-sm-8 p.first-paragraph {
@@ -1744,8 +1767,8 @@ p.contribute-description {
 
 .findMarketplace-bottom-row {
 	background: #F2F1F1;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 27px;
+	padding-bottom: 30px;
 	color: #7C7E80;
 	border-top: 1px solid #E1E0E0;
 }
