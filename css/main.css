@@ -535,19 +535,14 @@ hr#hr-plugins-header {
 
 .page-plugins .plugins-filters {
 	width: 218px;
-	background: #F6F7F8;
 	position: absolute;
 	right: 13px;
 	top: -21px;
 	z-index: 9000;
 	-webkit-transition: max-height .3s ease-in-out, padding .3s ease-in-out;
 	transition: max-height .3s ease-in-out, padding .3s ease-in-out;
-	padding: 10px;
-	border: 1px solid #E1E0E0;
+	padding: 0;
 	max-height: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-	border-bottom: 0px;
 	overflow: hidden;
 }
 
@@ -555,10 +550,7 @@ hr#hr-plugins-header {
 	-webkit-transition: max-height .75s ease-in-out, padding .75s ease-in-out;
 	transition: max-height .75s ease-in-out, padding .75s ease-in-out;
 	top: -21px;
-	padding-bottom: 30px;
-	padding-top: 10px;
 	max-height: 1500px;
-	border-bottom: 1px solid #E1E0E0;
 }
 
 .page-plugins .plugins-filters:after {
@@ -569,6 +561,39 @@ hr#hr-plugins-header {
 	width: 38px;
 	right: 0;
 	top: -1px;
+}
+
+.page-plugins .plugins-filters .plugins-filters-block {
+	padding: 10px;	
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 0px;
+	border: 1px solid #E1E0E0;
+	background: #F6F7F8;
+	display: block;
+	-webkit-transition: max-height .3s ease-in-out, padding .3s ease-in-out, margin .3s ease-in-out;
+	transition: max-height .3s ease-in-out, padding .3s ease-in-out, margin .3s ease-in-out;
+	max-height: 0px;
+	z-index: 9010;
+}
+
+.page-plugins.filtering .plugins-filters .plugins-filters-block {
+	padding-bottom: 5px;
+	padding-top: 10px;
+	border-bottom: 1px solid #E1E0E0;
+	-webkit-transition: max-height .75s ease-in-out, padding .75s ease-in-out, margin .75s ease-in-out;
+	transition: max-height .75s ease-in-out, padding .75s ease-in-out, margin .75s ease-in-out;
+	max-height: 600px;
+}
+
+.page-plugins .plugins-filters .plugins-filters-block.bottom-plugins-filters {
+	margin-top: 0px;
+	z-index: 9005;
+}
+
+.page-plugins.filtering .plugins-filters .plugins-filters-block.bottom-plugins-filters {
+	margin-top: 10px;
+	max-height: 400px;
 }
 
 .page-plugins .plugins-filters .filters-header {
@@ -661,6 +686,10 @@ hr#hr-plugins-header {
 .page-plugins .plugins-filters button:active {
 	border: 1px solid #005CA7;
 	color: #005CA7;
+}
+
+.page-plugins .plugins-filters button:last-child {
+	margin-bottom: 5px;
 }
 
 button:focus {
