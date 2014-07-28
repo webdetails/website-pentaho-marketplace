@@ -1917,7 +1917,8 @@ p.contribute-description {
 	box-shadow:         inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
 }
 
-.download-marketplace-row a.btn.btn-block:after {
+.download-marketplace-row a.btn.btn-block:after,
+.download-marketplace-row a.btn.btn-block:before {
 	position: absolute;
 	content: '';
 	width: 24px;
@@ -1928,13 +1929,27 @@ p.contribute-description {
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
 	background-image: url(../img/download-button-icon.svg);
+	z-index: 1000;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
 }
 
-.download-marketplace-row a.btn.btn-block:hover:after {
+.download-marketplace-row a.btn.btn-block:before {
 	background-position: -24px 0px;
+	opacity: 0;
+	z-index: 1100;
 }
 
-.no-svg .download-marketplace-row a.btn.btn-block:after {
+.download-marketplace-row a.btn.btn-block:hover:before {
+	opacity: 1;
+}
+.download-marketplace-row a.btn.btn-block:hover:after {
+	opacity: 0;
+}
+
+.no-svg .download-marketplace-row a.btn.btn-block:after,
+.no-svg .download-marketplace-row a.btn.btn-block:before {
 	background-image: url(../img/download-button-icon.png);
 }
 
