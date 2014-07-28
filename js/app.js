@@ -184,12 +184,12 @@ app.directive('onFinishRender', function ($timeout) {
 });
 
 app.directive('ngxTipsy', function() {
-    // jQuery Tipsy Tooltip
+    // jquery tooltipster
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
             // possible directions:
-            // nw | n | ne | w | e | sw | s | se
+            // right | left | top | top-right | top-left | bottom | bottom-right | bottom-left
             element.tooltipster({ 
                 content: attrs.ngxTitle,
                 contentAsHTML: true,
