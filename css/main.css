@@ -1354,8 +1354,27 @@ button:focus {
 	z-index: 3000;
 }
 
-.close-plugin-modal:hover {
+.close-plugin-modal:after {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/close-details.svg);
+	background-repeat: no-repeat;
 	background-position: 0px -40px;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	z-index: 3100;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+.close-plugin-modal:hover:after,
+.close-plugin-modal:active:after {
+	opacity: 1;
 }
 
 .close-plugin-modal:active {	
@@ -1420,7 +1439,8 @@ button:focus {
 	box-shadow:         inset 1px 1px 3px 0px rgba(50, 50, 50, 0.1);
 }
 
-.plugin-buttons-row button.btn.btn-block:after {
+.plugin-buttons-row button.btn.btn-block:after,
+.plugin-buttons-row button.btn.btn-block:before {
 	position: absolute;
 	content: '';
 	width: 24px;
@@ -1430,38 +1450,55 @@ button:focus {
 	right: 10px;
 	background-position: 0px 0px;
 	background-repeat: no-repeat;
+	z-index: 1000;
 }
 
-.plugin-buttons-row button.btn.btn-block:hover:after {
+.plugin-buttons-row button.btn.btn-block:before {
+	opacity: 0;
 	background-position: -24px 0px;
+	-webkit-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
+	z-index: 1100;
 }
 
-.plugin-buttons-row button.btn.btn-block.live-demo:hover:after {
+.plugin-buttons-row button.btn.btn-block:hover:before,
+.plugin-buttons-row button.btn.btn-block:active:before {
+	opacity: 1;
+}
+
+.plugin-buttons-row button.btn.btn-block.live-demo:before {
 	background-position: -32px 0px;
 }
 
-.plugin-buttons-row button.btn.btn-block.download-plugin:after {
+.plugin-buttons-row button.btn.btn-block.download-plugin:after,
+.plugin-buttons-row button.btn.btn-block.download-plugin:before {
 	background-image: url(../img/download-button-icon.svg);
 }
 
-.plugin-buttons-row button.btn.btn-block.contact-dev:after {
+.plugin-buttons-row button.btn.btn-block.contact-dev:after,
+.plugin-buttons-row button.btn.btn-block.contact-dev:before {
 	background-image: url(../img/contact-button-icon.svg);
 }
 
-.plugin-buttons-row button.btn.btn-block.live-demo:after {
+.plugin-buttons-row button.btn.btn-block.live-demo:after,
+.plugin-buttons-row button.btn.btn-block.live-demo:before {
 	background-image: url(../img/live-demo-button-icon.svg);
 	width: 32px;
 }
 
-.no-svg .plugin-buttons-row button.btn.btn-block.download-plugin:after {
+.no-svg .plugin-buttons-row button.btn.btn-block.download-plugin:after,
+.no-svg .plugin-buttons-row button.btn.btn-block.download-plugin:before {
 	background-image: url(../img/download-button-icon.png);
 }
 
-.no-svg .plugin-buttons-row button.btn.btn-block.contact-dev:after {
+.no-svg .plugin-buttons-row button.btn.btn-block.contact-dev:after,
+.no-svg .plugin-buttons-row button.btn.btn-block.contact-dev:before {
 	background-image: url(../img/contact-button-icon.png);
 }
 
-.no-svg .plugin-buttons-row button.btn.btn-block.live-demo:after {
+.no-svg .plugin-buttons-row button.btn.btn-block.live-demo:after,
+.no-svg .plugin-buttons-row button.btn.btn-block.live-demo:before {
 	background-image: url(../img/live-demo-button-icon.png);
 }
 
@@ -1478,10 +1515,33 @@ button:focus {
 	background-repeat: no-repeat;
 	background-position: center 0px;
 	cursor: pointer;
+	position: relative;
 }
 
-.plugin-buttons-row .recommend-plugin-button:hover {
+/*.plugin-buttons-row .recommend-plugin-button:hover {
 	background-position: center -24px;
+}*/
+.plugin-buttons-row .recommend-plugin-button:after {
+	width: 40px;
+	height: 24px;
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	-webkit-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	transition: opacity .3s;
+	background-position: center -24px;
+	background-repeat: no-repeat;
+}
+.plugin-buttons-row .recommend-plugin-button:hover:after {
+	opacity: 1;
+}
+.plugin-buttons-row .recommend-plugin-button.recommend-email:after {
+	background-image: url(../img/share-email-icon.svg);
+	width: 34px;
+	background-position: left -24px;
 }
 
 .plugin-buttons-row .recommend-plugin-button.recommend-email {
@@ -1490,39 +1550,48 @@ button:focus {
 	width: 34px;
 }
 
-.plugin-buttons-row .recommend-plugin-button.recommend-email:hover {
+/* .plugin-buttons-row .recommend-plugin-button.recommend-email:hover {
 	background-position: left -24px;
-}
-.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-email {
+} */
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-email,
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-email:after {
 	background-image: url(../img/share-email-icon.png);
 }
 
-.plugin-buttons-row .recommend-plugin-button.recommend-twitter {
+.plugin-buttons-row .recommend-plugin-button.recommend-twitter,
+.plugin-buttons-row .recommend-plugin-button.recommend-twitter:after {
 	background-image: url(../img/share-twitter-icon.svg);
 }
-.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-twitter {
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-twitter,
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-twitter:after {
 	background-image: url(../img/share-twitter-icon.png);
 }
 
-.plugin-buttons-row .recommend-plugin-button.recommend-blogger {
+.plugin-buttons-row .recommend-plugin-button.recommend-blogger,
+.plugin-buttons-row .recommend-plugin-button.recommend-blogger:after {
 	background-image: url(../img/share-blogger-icon.svg);
 }
-.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-blogger {
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-blogger,
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-blogger:after {
 	background-image: url(../img/share-blogger-icon.png);
 }
 
-.plugin-buttons-row .recommend-plugin-button.recommend-facebook {
+.plugin-buttons-row .recommend-plugin-button.recommend-facebook,
+.plugin-buttons-row .recommend-plugin-button.recommend-facebook:after {
 	background-image: url(../img/share-fb-icon.svg);
 }
-.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-facebook {
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-facebook,
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-facebook:after {
 	background-image: url(../img/share-fb-icon.png);
 }
 
-.plugin-buttons-row .recommend-plugin-button.recommend-linkedin {
+.plugin-buttons-row .recommend-plugin-button.recommend-linkedin,
+.plugin-buttons-row .recommend-plugin-button.recommend-linkedin:after {
 	background-image: url(../img/share-linkedin-icon.svg);
 	border-right: none;
 }
-.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-linkedin {
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-linkedin,
+.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-linkedin:after {
 	background-image: url(../img/share-linkedin-icon.png);
 }
 
