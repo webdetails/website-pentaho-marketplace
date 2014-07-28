@@ -620,6 +620,16 @@ hr#hr-plugins-header {
 	font-weight: 300;
 	color: #005CA7;
 	cursor: pointer;
+	border: none;
+	margin-bottom: 0;
+	padding: 0;
+	background: none;
+	text-align: right;
+}
+
+.page-plugins .plugins-filters .filters-header .clear-all-filters.disabled {
+	color: #bbb;
+	cursor: default;
 }
 
 .page-plugins .plugins-filters .filters-title {
