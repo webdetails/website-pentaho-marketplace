@@ -41,6 +41,7 @@ body {
 	font-size: 15px;
 	color: #7C7E80;
 	overflow: hidden !important;
+	min-width: 320px;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -1196,6 +1197,10 @@ button:focus {
 
 /* ++++ PLUGIN DETAILS WINDOW ++++ */
 
+.ngdialog {
+    min-width: 320px;
+}
+
 .ngdialog-content {
 	max-width: 970px;
 	padding-bottom: 0px;
@@ -1400,7 +1405,7 @@ button:focus {
 }
 
 
-.plugin-modal-stage .col-xs-10 {
+.plugin-modal-stage .col-sm-10 {
 	border-right: 1px solid #E1E0E0;
 	min-height: 50px;
 	padding-top: 5px;
@@ -1681,6 +1686,41 @@ div#header-links.toggled button:first-of-type {
 	overflow-x: hidden;
 }
 
+div#header-links-small {
+	margin-top: 0px;
+	width: 100%;
+}
+
+div#header-links-small button {
+	background: #FFFFFF;
+	padding: 0;
+	border: 1px solid #E1E0E0;
+	-webkit-box-shadow: none;
+	box-shadow:         none;
+	font-size: 13px;
+	font-weight: 300;
+	color: #616161;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	height: 30px;
+}
+
+div#header-links-small button:hover {
+	color: #005CA7;
+}
+
+div#header-links-small button.info-button {
+	background: #F6F7F8;
+	cursor: default;
+	position: relative;
+	z-index: 1000;
+	height: 24px;
+}
+
+div#header-links-small button.info-button span img {
+	height: 14px;
+}
+
 /* ++++ HEADER LINKS ++++ */
 
 /* ++++ PAGINATION ++++ */
@@ -1692,6 +1732,7 @@ div#header-links.toggled button:first-of-type {
 	padding: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
+	outline: 0;
 }
 
 .pagination>li>a, 
@@ -1764,8 +1805,8 @@ div#header-links.toggled button:first-of-type {
 	margin-bottom: 0;
 }
 
-.dev-stages .dev-stage-image {
-	border-left: 1px solid #E1E0E0;
+.dev-stages .dev-stage-description {
+	border-right: 1px solid #E1E0E0;
 }
 
 .list-group.dev-stages-list .list-group-item {
@@ -2355,7 +2396,11 @@ p.contribute-description {
 
 /* ++++ MEDIA QUERIES ++++ */
 
-@media (max-width: 980px) {
+@media (max-width: 991px) {
+	#marketplace-logo {
+		max-width: 250px;
+	}
+
 	.page-header img {
 		max-width: 100%;
 	}
@@ -2379,16 +2424,15 @@ p.contribute-description {
 
 	.page-plugins .plugin .plugin-inner {
 	    width: 100%;
-	    height: 105px;
+	    height: 95px;
 	}
 
 	.page-plugins .plugin-header {
-	    min-height: 100px;
 	    height: auto;
 	    border-radius: 6px 0px 0px 6px;
 	    width: 30%;
 	    float: left;
-	    height: 103px;
+	    height: 93px;
 	}
 
 	.page-plugins .plugin-header img {
@@ -2400,7 +2444,7 @@ p.contribute-description {
 	    width: 70%;
 	    float: left;
 	    padding-right: 50px;
-	    height: 103px;
+	    height: 93px;
 	}
 
 	.dev-stage {
@@ -2414,6 +2458,64 @@ p.contribute-description {
 		height: 24px;
 		line-height: 22px;
 		padding: 0;
+	}
+
+	h2 {
+	    font-size: 15px;
+	    line-height: 18px;
+	}
+
+	h1 {
+	    font-size: 21px;
+	}
+
+	.pentaho-header img,
+	.pentaho-footer img {
+		max-width: 100%;
+	}
+
+	.page-plugins .plugin {
+	    padding-bottom: 0;
+	}
+
+	.page-plugins .plugins-grid {
+	    padding-bottom: 13px;
+	}
+
+	.page-plugins .plugins-filters {
+		position: relative;
+		width: auto;
+		max-width: 726px;
+		margin-left: 13px;
+		margin-right: 13px;
+		margin-top: 0px;
+		top: -1px !important;
+		right: auto;
+	}
+
+	.page-plugins.filtering .plugins-filters {
+		top: auto;
+	}
+
+	.page-plugins .plugins-grid {
+		width: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.page-plugins.filtering .plugins-grid {
+	    width: 750px;
+	}
+
+	.page-plugins .plugins-container {
+	    width: 750px;
+	}
+
+	.download-marketplace-row .col-md-6:nth-child(2),
+	.plugin-buttons-row .contact-dev,
+	.plugin-buttons-row .live-demo,
+	.plugin-buttons-row .recommend-plugin-label {
+		margin-top: 10px;
 	}
 }
 
@@ -2432,7 +2534,43 @@ p.contribute-description {
 	}
 
 	.page-slider .item .container .item-content {
-	    height: 150px;
+	    height: 210px;
+	}
+
+	div#header-links-small {
+		margin-top: 40px;
+	}
+
+	.plugin-modal-details-table {
+		margin-top: 35px;
+	}
+
+	.plugin-modal-stage .col-sm-10 {
+		border-right: none;
+		min-height: 50px;
+		padding-top: 5px;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+
+	.plugin-modal-stage .col-sm-2 {
+		text-align: right;
+	}
+
+	.dev-stages .dev-stage-image {
+		padding-top: 10px;
+	}
+
+	.contribute h3 {
+		margin-bottom: 15px;
+	}
+
+	.contribute-bottom-row .col-sm-4 {
+	    border-right: none;
+	}
+
+	.contribute-bottom-row hr {
+	    border-top: 1px solid #e1e0e0;
 	}
 }
 
