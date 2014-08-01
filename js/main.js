@@ -153,7 +153,7 @@ $('#inputSearch').focus(function() {
 
 $('.filters-subsection .filters-title').click(function() {
 	$(this).toggleClass('open');
-	$(this).closest('.filters-subsection').find('.filters-subsection-items').slideToggle();
+	$(this).closest('.filters-subsection').find('.filters-subsection-items').stop().slideToggle();
 });
 
 $('.filters-subsection .filters-state').click(function() {
