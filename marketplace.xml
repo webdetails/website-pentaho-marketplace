@@ -14,8 +14,8 @@
 		<name>Pentaho Marketplace</name>
 		<documentation_url>http://wiki.pentaho.com/display/PMOPEN/Pentaho+BI+Server+Marketplace+Plugin</documentation_url>
 		<description>Provide Pentaho, Partners, and Community Developers a marketplace for plugins within the BI Server product.</description>
-		<author>Pentaho</author>
-		<author_url>http://pentaho.com</author_url>
+		<author>Pentaho Labs</author>
+		<author_url>http://www.pentaho.com/labs</author_url>
 		<author_logo>http://www.pentaho.com/images/2011/logo.png</author_logo>
 		<license>MPL 2.0</license>
 		<dependencies>CDF, CDA, CDE</dependencies>
@@ -47,8 +47,8 @@
 			that are most relevant to them. This means high quality and useful
 			plugins that users can use to get the most out of their business.
 		</description>
-		<author>Pentaho</author>
-		<author_url>http://pentaho.com</author_url>
+		<author>Pentaho Labs</author>
+		<author_url>http://www.pentaho.com/labs</author_url>
 		<author_logo>http://pentaho.com/sites/all/themes/pentaho/_media/logo-pentaho.svg</author_logo>
 		<credits>Diogo Mariano, Duarte Leão, Gonçalo Neto, Nuno Moreira, Pedro Alves, Pedro Vale.</credits>
 		<stage>3</stage>
@@ -97,8 +97,8 @@
 			that are most relevant to them. This means high quality and useful
 			plugins that users can use to get the most out of their business.
 		</description>
-		<author>Pentaho</author>
-		<author_url>http://pentaho.com</author_url>
+		<author>Pentaho Labs</author>
+		<author_url>http://www.pentaho.com/labs</author_url>
 		<author_logo>http://pentaho.com/sites/all/themes/pentaho/_media/logo-pentaho.svg</author_logo>
 		<license>GLPL v2</license>
 		<dependencies/>
@@ -1357,7 +1357,7 @@
 		<documentation_url/>
 		<description>WAQR (Web Adhoc Query and Reporting) is a report generation tool based on Web 2.0 technology (AJAX, DHTML) designed to help typical business users easily generate adhoc reports using the Pentaho BI platform. It provides a user interface that helps the user quickly identify and group the data of interest, apply constraints to the data, and generate a report. The resulting reports are viewable through WAQR's Preview feature, or through a Pentaho-platform based web application.</description>
 		<author>Pentaho Legacy - Plugins developed by Pentaho but no longer supported</author>
-		<author_url>http://pentaho.com</author_url>
+		<author_url>http://www.pentaho.com/labs</author_url>
 		<author_logo/>
 		<versions>
 			<version>
@@ -1997,7 +1997,7 @@
 		<type>Database</type>
 		<name>PDI MySQL Plugin</name>
 		<description>This plugin also contains the GPL MySQL JDBC Driver version 5</description>
-		<author>Pentaho</author>
+		<author>Pentaho Labs</author>
 		<documentation_url>http://wiki.pentaho.com/display/EAI/MySQL</documentation_url>
 		<versions>
 			<version>
@@ -2110,7 +2110,7 @@
 			This plugin is intended only to show how a plugin works, it's goal is not to be used in production situations.
 			Please consult the documentation referenced below as well as the linked source code.
 		</description>
-		<author>Pentaho</author>
+		<author>Pentaho Labs</author>
 		<documentation_url>http://wiki.pentaho.com/display/EAI/The+PDI+SDK</documentation_url>
 		<versions>
 			<version>
@@ -2144,7 +2144,7 @@
 				<source_url>http://source.pentaho.org/svnkettleroot/plugins/ArffOutput/trunk/</source_url>
 			</version>
 		</versions>
-		<author>Pentaho</author>
+		<author>Pentaho Labs</author>
 		<documentation_url>http://source.pentaho.org/svnkettleroot/plugins/ArffOutput/trunk/docs/ArffOutput.pdf</documentation_url>
 		<forum_url>forums.pentaho.com/forumdisplay.php?135-Pentaho-Data-Integration-Kettle</forum_url>
 		<cases_url>http://jira.pentaho.com/browse/PDI</cases_url>
@@ -2264,7 +2264,7 @@
 		<type>Mixed</type>
 		<name>PDI Marketplace</name>
 		<description>This plugin allows users to install Kettle plugins from the Pentaho Marketplace.</description>
-		<author>Pentaho</author>
+		<author>Pentaho Labs</author>
 		<documentation_url>http://wiki.pentaho.com/display/EAI/The+PDI+SDK</documentation_url>
 		<versions>
 			<version>
@@ -2656,7 +2656,7 @@
 			Intel Distribution of Hadoop clusters (version 2.3). This plugin is compatible with
 			PDI 5.0.x, and is not compatible with prior versions (4.x, etc.).
 		</description>
-		<author>Pentaho</author>
+		<author>Pentaho Labs</author>
 		<documentation_url>http://wiki.pentaho.com/display/EAI/The+PDI+SDK</documentation_url>
 		<versions>
 			<version>
@@ -2685,7 +2685,7 @@
 			Cloudera Distribution of Hadoop clusters (version 3u4). This plugin is compatible with
 			PDI 5.0.x, and is not compatible with prior versions (4.x, etc.).
 		</description>
-		<author>Pentaho</author>
+		<author>Pentaho Labs</author>
 		<documentation_url>http://wiki.pentaho.com/display/EAI/The+PDI+SDK</documentation_url>
 		<versions>
 			<version>
@@ -3119,7 +3119,7 @@ This step detects identical, changed, added and removed rows.</description>
 		<type>Step</type>
 		<name>Teradata TPT Insert Upsert Bulk Loader</name>
 		<description>This step supports Teradata bulk loading via TPT using the tbuild command and supports Insert and Upsert.</description>
-		<author>Pentaho</author>
+		<author>Pentaho Labs</author>
 		<documentation_url>http://wiki.pentaho.com/display/EAI/Teradata+TPT+Insert+Upsert+Bulk+Loader</documentation_url>
 		<versions>
 			<version>

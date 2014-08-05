@@ -2572,6 +2572,17 @@ p.contribute-description {
 	.contribute-bottom-row hr {
 	    border-top: 1px solid #e1e0e0;
 	}
+
+	.plugin-window .panel .list-group-item .row .col-sm-4:not(:last-child) {
+		padding-bottom: 10px;
+	}
+	.plugin-window .panel .list-group-item .row .col-sm-4:not(:first-child) {
+		border-top: 1px solid #e1e0e0;
+		padding-top: 8px;
+	}
+	.plugin-window .panel {
+		margin-top: 30px;
+	}
 }
 
 /* ++++ MEDIA QUERIES ++++ */
