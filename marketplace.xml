@@ -504,6 +504,8 @@
 	            <min_parent_version>5.0</min_parent_version>		
 			</version>			
 		</versions>
+	
+		<stage>customer2</stage>
 	</market_entry>
 
 	<market_entry>
@@ -553,6 +555,8 @@
 				<min_parent_version>5.0</min_parent_version>
 			</version>
 		</versions>
+		
+		<stage>customer2</stage>
 	</market_entry>
 
 	<market_entry>
@@ -603,6 +607,8 @@
 			<screenshot>https://a.fsdn.com/con/app/proj/saikuchartplus/screenshots/geoMapChartPlus.png</screenshot>
 			<screenshot>https://a.fsdn.com/con/app/proj/saikuchartplus/screenshots/PieChartPlus.png</screenshot>
 		</screenshots>
+		
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -661,6 +667,8 @@
 			<screenshot>http://www.ivy-is.co.uk/wp-content/uploads/2014/03/ivyse1.png</screenshot>
 			<screenshot>http://www.ivy-is.co.uk/wp-content/uploads/2014/03/ivyse2.png</screenshot>
 		</screenshots>
+		
+		<stage>community2</stage>
 	</market_entry>
 
 	<market_entry>
@@ -722,6 +730,8 @@
 			<screenshot>http://www.ivy-is.co.uk/wp-content/uploads/2014/04/ivydc_samples.png</screenshot>
 			<screenshot>http://www.ivy-is.co.uk/wp-content/uploads/2014/04/ivydc_docs1.png</screenshot>
 		</screenshots>
+		
+		<stage>customer1</stage>
 	</market_entry>
 
 	<market_entry>
@@ -761,6 +771,8 @@
 				<min_parent_version>5.0</min_parent_version>
 			</version>
 		</versions>
+		
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -790,6 +802,8 @@
 		<screenshots>
 			<screenshot>http://www.pivot4j.org/img/screenshot-pentaho.png</screenshot>
 		</screenshots>
+		
+		<stage>customer4</stage>
 	</market_entry>
 
 	<market_entry>
@@ -839,6 +853,8 @@
 			<screenshot>http://a.fsdn.com/con/app/proj/pentaho5changepassword/screenshots/cp1.PNG</screenshot>
 			<screenshot>http://a.fsdn.com/con/app/proj/pentaho5changepassword/screenshots/cp2.PNG</screenshot>
 		</screenshots>
+		
+		<stage>customer4</stage>
 	</market_entry>
 
 	<market_entry>
@@ -881,6 +897,8 @@
 			<screenshot>http://www.biztech.it/btable/img/BTable-Screenshot-01.png</screenshot>
 			<screenshot>http://www.biztech.it/btable/img/BTable-Screenshot-02.png</screenshot>
 		</screenshots>
+		
+		<stage>customer2</stage>
 	</market_entry>
 
 	<market_entry>
@@ -943,6 +961,8 @@
 			<screenshot>http://francescocorti.files.wordpress.com/2014/01/aaar_marketplace_2.png</screenshot>
 			<screenshot>http://francescocorti.files.wordpress.com/2014/01/aaar_marketplace_3.png</screenshot>
 		</screenshots>
+		
+		<stage>community4</stage>
 	</market_entry>
 
 
@@ -1004,6 +1024,8 @@
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/prs/prs-2.png</screenshot>
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/prs/prs-3.png</screenshot>
 		</screenshots>
+			
+		<stage>community3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -1047,6 +1069,8 @@
 		</screenshots>
 		<cases_url>https://github.com/cdeptula/logManager/issues</cases_url>
 		<support_level>COMMUNITY_SUPPORTED</support_level>
+				
+		<stage>community3</stage>
 	</market_entry>
 
 
@@ -1106,6 +1130,8 @@
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/cdv/cdv-3.png</screenshot>
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/cdv/cdv-4.png</screenshot>
 		</screenshots>
+				
+		<stage>community3</stage>
 	</market_entry>
 
 
@@ -1157,6 +1183,8 @@
             <min_parent_version>5.0</min_parent_version>		
 		</version>						
 		</versions>
+				
+		<stage>community3</stage>
 	</market_entry>
 
 
@@ -1205,6 +1233,8 @@
 		<min_parent_version>5.0</min_parent_version>		
 		</version>                        
         </versions>
+				
+		<stage>community3</stage>
 	</market_entry>
 
 
@@ -1243,6 +1273,8 @@
             <min_parent_version>5.0</min_parent_version>		
         </version>
         </versions>
+				
+		<stage>community3</stage>
 	</market_entry>
 
 
@@ -1288,6 +1320,8 @@
 		<screenshots>
 			<screenshot>https://raw.github.com/webdetails/startupRuleEngine/master/resources/img/screenshot_1.png</screenshot>
 		</screenshots>
+				
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -1328,6 +1362,8 @@
 		<screenshots>
       <screenshot>https://raw.githubusercontent.com/webdetails/environmentDisplay/release/resources/img/screenshot_1.png</screenshot>
 		</screenshots>
+					
+		<stage>customer3</stage>
 	</market_entry>
 
     <market_entry>
@@ -1358,6 +1394,8 @@
 				<min_parent_version>5.0</min_parent_version>
 			</version>
         </versions>
+					
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -1383,6 +1421,8 @@
 			</version>
 		</versions>
 		<screenshots/>
+					
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -1427,6 +1467,8 @@
 			<screenshot>http://www.xpand-it.com/images/xpand_it/fusioncharts-plugin/2.pentaho%20marketplace.png</screenshot>
 			<screenshot>http://www.xpand-it.com/images/xpand_it/fusioncharts-plugin/3.pentaho%20marketplace.png</screenshot>
 		</screenshots>			
+					
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -1479,6 +1521,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/ca/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/ca/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+					
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -1531,6 +1575,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/nl/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/nl/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+					
+		<stage>customer3</stage>
 	</market_entry>
 	<market_entry>
 		<id>languagePack_fr</id>
@@ -1582,6 +1628,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/fr/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/fr/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+					
+		<stage>customer3</stage>
 	</market_entry>
 	<market_entry>
 		<id>languagePack_de</id>
@@ -1633,6 +1681,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/de/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/de/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+					
+		<stage>customer3</stage>
 	</market_entry>
 	<market_entry>
 		<id>languagePack_hi</id>
@@ -1684,6 +1734,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/hi/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/hi/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+						
+		<stage>customer3</stage>
 	</market_entry>
 	<market_entry>
 		<id>languagePack_it</id>
@@ -1740,6 +1792,8 @@
 				https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/it/resources/img/screenshot_2.png
 			</screenshot>
 		</screenshots>
+						
+		<stage>customer3</stage>
 	</market_entry>
 	<market_entry>
 		<id>languagePack_ja</id>
@@ -1791,6 +1845,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/ja/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/ja/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -1843,6 +1899,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/ko/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/ko/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+						
+		<stage>customer3</stage>
 	</market_entry>
 	<market_entry>
 		<id>languagePack_pt_BR</id>
@@ -1894,6 +1952,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/pt_BR/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/pt_BR/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+						
+		<stage>customer3</stage>
 	</market_entry>
 	<market_entry>
 	  <id>languagePack_pt_PT</id>
@@ -1946,6 +2006,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/pt_PT/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/pt_PT/resources/img/screenshot_2.png</screenshot>
 	  </screenshots>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -1998,6 +2060,8 @@
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/es/resources/img/screenshot_1.png</screenshot>
 			<screenshot>https://raw.github.com/webdetails/pentahoLanguagePacks/master/data/es/resources/img/screenshot_2.png</screenshot>
 		</screenshots>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<!-- ***************** -->
@@ -2027,6 +2091,8 @@
 		<support_message>Supported by a Pentaho Data Integration Enterprise Edition support contract.</support_message>
 		<support_organization>Pentaho</support_organization>
 		<support_url>http://www.pentaho.com/services/support/pdi</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2053,7 +2119,9 @@
         <support_message>Supported by a NuoDB Enterprise Edition support contract.</support_message>
         <support_organization>NuoDB</support_organization>
         <support_url>http://www.nuodb.com/</support_url>
-    </market_entry>
+    					
+		<stage>customer3</stage>
+	</market_entry>
 
 
 	<market_entry>
@@ -2082,6 +2150,8 @@
 				<source_url>https://github.com/latinojoel/pdi-apple-pushnotifications/tree/1.0.0</source_url>
 			</version>
 		</versions>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2111,6 +2181,8 @@
 				<source_url>https://github.com/latinojoel/pdi-android-pushnotifications/tree/1.0.0</source_url>
 			</version>
 		</versions>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2140,6 +2212,8 @@
 		<support_message>Supported by a Pentaho Data Integration Enterprise Edition support contract.</support_message>
 		<support_organization>Pentaho</support_organization>
 		<support_url>http://www.pentaho.com/services/support/pdi</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2167,6 +2241,8 @@
 		<support_message>Supported by a Pentaho Data Integration Enterprise Edition support contract.</support_message>
 		<support_organization>Pentaho</support_organization>
 		<support_url>http://www.pentaho.com/services/support/pdi</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2198,6 +2274,8 @@
 		<support_message>Supported by the KFF project on a best-effort bases.</support_message>
 		<support_organization>The KFF project</support_organization>
 		<support_url/>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2226,6 +2304,8 @@
 		<support_message>Professional support, training and consultancy for DataCleaner is offered by Human Inference upon request.</support_message>
 		<support_organization>Human Inference</support_organization>
 		<support_url>http://datacleaner.org/support</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2268,6 +2348,8 @@
 		<support_message>Please contact Human Inference Support at +31 (0)26 3550600 or email support@humaninference.com</support_message>
 		<support_organization>Human Inference</support_organization>
 		<support_url>http://www.easydq.com/faq</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2294,6 +2376,8 @@
 		<support_message>Supported by a Pentaho Data Integration Enterprise Edition support contract.</support_message>
 		<support_organization>Pentaho</support_organization>
 		<support_url>http://www.pentaho.com/services/support/pdi</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2322,6 +2406,8 @@
 				<min_parent_version>5.0</min_parent_version>
 			</version>
 		</versions>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2347,6 +2433,8 @@
 		<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 		<support_organization>Pentaho Developer Community</support_organization>
 		<support_url>http://kettle.pentaho.com</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -2377,6 +2465,8 @@
 				<min_parent_version>4.2</min_parent_version>
 			</version>
 		</versions>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2404,6 +2494,8 @@
 				<min_parent_version>4.2</min_parent_version>
 			</version>
 		</versions>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2446,6 +2538,8 @@
 		<support_message>Please contact Technical Support at 1-800-800-6245 x4 or email tech@melissadata.com</support_message>
 		<support_organization>Melissa Data</support_organization>
 		<support_url>http://www.melissadata.com/webhelp/pentaho/index.htm#Pentaho.htm</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2470,6 +2564,8 @@
 		<support_message>Please contact Technical Support at 1-800-800-6245 x4 or email tech@melissadata.com</support_message>
 		<support_organization>Melissa Data</support_organization>
 		<support_url>http://www.melissadata.com/webhelp/pentaho/index.htm#Pentaho.htm</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2494,6 +2590,8 @@
 		<support_message>Please contact Technical Support at 1-800-800-6245 x4 or email tech@melissadata.com</support_message>
 		<support_organization>Melissa Data</support_organization>
 		<support_url>http://www.melissadata.com/webhelp/pentaho/index.htm#Pentaho.htm</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2521,6 +2619,8 @@
 		<support_message>Report issues  and suggestions to support@stratebi.com</support_message>
 		<support_organization>Stratebi</support_organization>
 		<support_url/>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2548,6 +2648,8 @@
 		<support_message>Report issues  and suggestions to support@stratebi.com</support_message>
 		<support_organization>Stratebi</support_organization>
 		<support_url/>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2570,6 +2672,8 @@
 		<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 		<support_organization>Pentaho Developer Community</support_organization>
 		<support_url>http://kettle.pentaho.com</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -2592,6 +2696,8 @@
 		<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 		<support_organization>Pentaho Developer Community</support_organization>
 		<support_url>http://kettle.pentaho.com</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -2613,6 +2719,8 @@
 		<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 		<support_organization>Pentaho Developer Community</support_organization>
 		<support_url>http://kettle.pentaho.com</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -2657,6 +2765,8 @@
 		<license_text>For more details see:
 			http://www.apache.org/licenses/LICENSE-2.0.html</license_text>
 		<support_level>COMMUNITY_SUPPORTED</support_level>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2686,6 +2796,8 @@
 		<support_message>Supported by a Pentaho Data Integration Enterprise Edition support contract.</support_message>
 		<support_organization>Pentaho</support_organization>
 		<support_url>http://www.pentaho.com/services/support/pdi</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2715,6 +2827,8 @@
 		<support_message>Supported by a Pentaho Data Integration Enterprise Edition support contract.</support_message>
 		<support_organization>Pentaho</support_organization>
 		<support_url>http://www.pentaho.com/services/support/pdi</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2737,6 +2851,8 @@
 		<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 		<support_organization>Pentaho Developer Community</support_organization>
 		<support_url>http://kettle.pentaho.com</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
     <market_entry>
@@ -2761,6 +2877,8 @@
 		<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 		<support_organization>Pentaho Developer Community</support_organization>
 		<support_url>http://kettle.pentaho.com</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -2783,6 +2901,8 @@
 		<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 		<support_organization>Pentaho Developer Community</support_organization>
 		<support_url>http://kettle.pentaho.com</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2812,6 +2932,8 @@
 				<min_parent_version>1.0</min_parent_version>
 			</version>
 		</versions>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -2840,6 +2962,8 @@
 				<min_parent_version>1.0</min_parent_version>
 			</version>
 		</versions>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -2868,6 +2992,8 @@
 		<license_text>For more details see:
 			http://www.apache.org/licenses/LICENSE-2.0.html</license_text>
 		<support_level>COMMUNITY_SUPPORTED</support_level>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -2896,6 +3022,8 @@
 				<min_parent_version>1.0</min_parent_version>
 			</version>
 		</versions>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -2921,6 +3049,8 @@
 		<support_message>Supported by a LegSem</support_message>
 		<support_organization>LegSem</support_organization>
 		<support_url>http://www.legsem.com/</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
     <market_entry>
         <id>PRScript</id>
@@ -2950,7 +3080,9 @@ Note: See also the advanced R script executor plug-in within the Marketplace.
                 <package_url>http://dekarlab.de/download/PRScript.zip</package_url>
             </version>
         </versions>
-    </market_entry>
+    					
+		<stage>customer3</stage>
+	</market_entry>
 
     <market_entry>
         <id>pentaho-kettle-compare-fields-plugin</id>
@@ -2972,7 +3104,9 @@ This step detects identical, changed, added and removed rows.</description>
 		<min_parent_version>5.0.0</min_parent_version>
             </version>
         </versions>
-    </market_entry>
+    					
+		<stage>customer3</stage>
+	</market_entry>
 
     <market_entry>
         <id>ic-riak-plugin</id>
@@ -2989,7 +3123,9 @@ This step detects identical, changed, added and removed rows.</description>
                 <package_url>https://raw.github.com/instaclick/pdi-marketplace-packages/master/ic-riak-plugin-pdi-1.0.0-SNAPSHOT.zip</package_url>
             </version>
         </versions>
-    </market_entry>
+    					
+		<stage>customer3</stage>
+	</market_entry>
 
     <market_entry>
         <id>ic-amqp-plugin</id>
@@ -3006,7 +3142,9 @@ This step detects identical, changed, added and removed rows.</description>
                 <package_url>https://raw.github.com/instaclick/pdi-marketplace-packages/master/ic-amqp-plugin-pdi-1.1.1-SNAPSHOT.zip</package_url>
             </version>
         </versions>
-    </market_entry>
+    					
+		<stage>customer3</stage>
+	</market_entry>
 
     <market_entry>
         <id>ic-filter-plugin</id>
@@ -3023,7 +3161,9 @@ This step detects identical, changed, added and removed rows.</description>
                 <package_url>https://raw.github.com/instaclick/pdi-marketplace-packages/master/ic-filter-plugin-pdi-1.8.1-SNAPSHOT.zip</package_url>
             </version>
         </versions>
-    </market_entry>
+    					
+		<stage>customer3</stage>
+	</market_entry>
 
     <market_entry>
         <id>Jare_Rule_Engine_Plugin</id>
@@ -3057,7 +3197,9 @@ This step detects identical, changed, added and removed rows.</description>
 		<min_parent_version>4.3.0</min_parent_version>
             </version>
         </versions>
-    </market_entry>
+    					
+		<stage>customer3</stage>
+	</market_entry>
 
     <market_entry>
 	<id>jdbcMetaData</id>
@@ -3081,7 +3223,9 @@ This step detects identical, changed, added and removed rows.</description>
 	<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 	<support_organization>Pentaho Developer Community</support_organization>
 	<support_url>http://kettle.pentaho.com</support_url>
-    </market_entry>
+    					
+		<stage>customer3</stage>
+	</market_entry>
 
 
 	<market_entry>
@@ -3103,6 +3247,8 @@ This step detects identical, changed, added and removed rows.</description>
 		<support_message>Supported by the Pentaho Data Integration developer community.</support_message>
 		<support_organization>Pentaho Developer Community</support_organization>
 		<support_url>http://kettle.pentaho.com</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
   <market_entry>
@@ -3124,7 +3270,9 @@ This step detects identical, changed, added and removed rows.</description>
         <min_parent_version>5.0</min_parent_version>
       </version>
     </versions>
-  </market_entry>
+  					
+		<stage>customer3</stage>
+	</market_entry>
 
 	<market_entry>
 		<id>TeraDataBulkLoader</id>
@@ -3147,6 +3295,8 @@ Assistance is given by Services Development with no contractual support for prod
 		</support_message>
 		<support_organization>Pentaho</support_organization>
 		<support_url>http://www.pentaho.com/services/support/pdi</support_url>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 
@@ -3169,6 +3319,8 @@ Assistance is given by Services Development with no contractual support for prod
 		<license_text>For more details see:
 			https://github.com/GlobalTechnology/pdi-google-spreadsheet-plugin/blob/master/LICENSE</license_text>
 		<support_level>NOT_SUPPORTED</support_level>
+						
+		<stage>customer3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -3190,5 +3342,7 @@ Assistance is given by Services Development with no contractual support for prod
 		<license_text>For more details see:
 			https://github.com/OSBI/pdi-sentiment/blob/master/LICENSE</license_text>
 		<support_level>NOT_SUPPORTED</support_level>
+						
+		<stage>customer3</stage>
 	</market_entry>
 </market>

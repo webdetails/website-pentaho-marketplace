@@ -2492,27 +2492,26 @@ p.contribute-description {
 
 	.page-plugins .plugin .plugin-inner {
 	    width: 100%;
-	    height: 95px;
+	    height: 77px;
 	}
 
 	.page-plugins .plugin-header {
 	    height: auto;
 	    border-radius: 6px 0px 0px 6px;
-	    width: 30%;
+	    width: 15px;
 	    float: left;
-	    height: 93px;
+	    height: 75px;
 	}
 
 	.page-plugins .plugin-header img {
-	    max-width: 80%;
-	    max-height: 80%;
+	    display: none;
 	}
 
 	.page-plugins .plugin-content {
-	    width: 70%;
+	    width: calc(100% - 15px);
 	    float: left;
 	    padding-right: 50px;
-	    height: 93px;
+	    height: 75px;
 	}
 
 	.dev-stage {
@@ -2534,7 +2533,7 @@ p.contribute-description {
 	}
 
 	h1 {
-	    font-size: 21px;
+	    font-size: 18px;
 	}
 
 	.pentaho-header img,
@@ -2584,6 +2583,10 @@ p.contribute-description {
 	.plugin-buttons-row .live-demo,
 	.plugin-buttons-row .recommend-plugin-label {
 		margin-top: 10px;
+	}
+
+	div#header-links button {
+		font-size: 13px;
 	}
 }
 
@@ -2654,6 +2657,10 @@ p.contribute-description {
 	.plugin-window .panel {
 		margin-top: 30px;
 	}
+}
+
+@-ms-viewport {
+  width: device-width;
 }
 
 /* ++++ MEDIA QUERIES ++++ */
