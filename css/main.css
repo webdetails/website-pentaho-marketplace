@@ -1840,8 +1840,8 @@ div#header-links-small button.info-button span img {
 	margin-bottom: 0;
 }
 
-.dev-stages .dev-stage-description {
-	border-right: 1px solid #E1E0E0;
+.dev-stages .dev-stage-image {
+	border-left: 1px solid #E1E0E0;
 }
 
 .list-group.dev-stages-list .list-group-item {
@@ -2627,6 +2627,7 @@ p.contribute-description {
 
 	.dev-stages .dev-stage-image {
 		padding-top: 10px;
+		border-left: none;
 	}
 
 	.container.contribute h3,
