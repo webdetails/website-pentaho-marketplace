@@ -1,5 +1,5 @@
 //create angular module
-var app = angular.module('marketplace', ['ui.bootstrap', 'ngDialog', 'ngSanitize', 'angular-loading-bar', 'ngAnimate']);
+var app = angular.module('marketplace', ['ui.bootstrap', 'ngDialog', 'ngSanitize', 'angular-loading-bar', 'ngAnimate', 'ngWhen']);
 
 
 app.value('MarketplaceConfig',{

@@ -80,7 +80,7 @@
 
                   <p class="item-author">{{pluginsList[0].author | cut:false:40:'...'}}</p>
                 </div>
-                <div class="dev-stage" ngx-tipsy ngx-title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[0].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[0].stage})[0].description}}" ngx-position="{{'top'}}" ng-show="pluginsList[0].stage"></div>
+                <div class="dev-stage" title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[0].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[0].stage})[0].description}}" ng-show="pluginsList[0].stage" ng-when="pluginsList[0].stage" do-jquery-init="tooltipster" do-jquery-options="{ contentAsHTML: true, theme: 'tooltipster-light', animation: 'grow', maxWidth: 300, position: 'top'}"></div>
                 <div class="clear"></div>
               </div>
             </div>
@@ -97,7 +97,7 @@
 
                   <p class="item-author">{{pluginsList[1].author | cut:false:40:'...'}}</p>
                 </div>
-                <div class="dev-stage" ngx-tipsy ngx-title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[1].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[1].stage})[0].description}}" ngx-position="{{'top'}}" ng-show="pluginsList[1].stage"></div>
+                <div class="dev-stage" title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[1].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[1].stage})[0].description}}" ng-show="pluginsList[1].stage" ng-when="pluginsList[1].stage" do-jquery-init="tooltipster" do-jquery-options="{ contentAsHTML: true, theme: 'tooltipster-light', animation: 'grow', maxWidth: 300, position: 'top'}"></div>
                 <div class="clear"></div>
               </div>
             </div>
@@ -114,7 +114,7 @@
 
                   <p class="item-author">{{pluginsList[2].author | cut:false:40:'...'}}</p>
                 </div>
-                <div class="dev-stage" ngx-tipsy ngx-title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[2].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[2].stage})[0].description}}" ngx-position="{{'top'}}" ng-show="pluginsList[2].stage"></div>
+                <div class="dev-stage" title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[2].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[2].stage})[0].description}}" ng-show="pluginsList[2].stage" ng-when="pluginsList[2].stage" do-jquery-init="tooltipster" do-jquery-options="{ contentAsHTML: true, theme: 'tooltipster-light', animation: 'grow', maxWidth: 300, position: 'top'}"></div>
                 <div class="clear"></div>
               </div>
             </div>
@@ -250,6 +250,7 @@
     <script type="text/javascript" src="js/vendor/loading-bar.js"></script>
     <script type="text/javascript" src="js/vendor/angular-animate.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="js/vendor/ng-when.js"></script>
     
     <script type="text/javascript" src="js/app.js"></script>
     <!--script src="js/vendor/isotope.pkgd.min.js"></script-->
