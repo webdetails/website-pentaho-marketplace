@@ -51,7 +51,7 @@
 		<author_url>http://www.pentaho.com/labs</author_url>
 		<author_logo>http://pentaho.com/sites/all/themes/pentaho/_media/logo-pentaho.svg</author_logo>
 		<credits>Diogo Mariano, Duarte Leão, Gonçalo Neto, Nuno Moreira, Pedro Alves, Pedro Vale.</credits>
-		<stage>3</stage>
+		<stage>customer3</stage>
 		<license>GLPL v2</license>
 		<dependencies/>
 		<versions>
@@ -131,6 +131,8 @@
 			<screenshot>https://raw2.github.com/pentaho/marketplace/master/marketplace-resources/marketplace-04.png</screenshot>
 			<screenshot>https://raw2.github.com/pentaho/marketplace/master/marketplace-resources/marketplace-05.png</screenshot>
 		</screenshots>
+
+		<stage>customer1</stage>
 	</market_entry>
 
 
@@ -200,6 +202,8 @@
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/cdf/cdf-1.png</screenshot>
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/cdf/cdf-2.png</screenshot>
 		</screenshots>
+
+		<stage>community3</stage>
 	</market_entry>
 
 
@@ -270,6 +274,8 @@
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/cda/cda-01.png</screenshot>
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/cda/cda-02.png</screenshot>
 		</screenshots>
+
+		<stage>community3</stage>
 	</market_entry>
 
 
@@ -345,6 +351,8 @@
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/cde/cde-2.png</screenshot>
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/cde/cde-3.png</screenshot>
 		</screenshots>
+
+		<stage>community3</stage>
 	</market_entry>
 
 
@@ -410,6 +418,8 @@
 
 		</version>
 		</versions>
+
+		<stage>community3</stage>
 	</market_entry>
 
 	<market_entry>
@@ -466,6 +476,8 @@
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/sparkl/sparkl-2.png</screenshot>
 			<screenshot>http://www.webdetails.pt/resources/marketplace-screenshots/sparkl/sparkl-3.png</screenshot>
 		</screenshots>
+
+		<stage>community3</stage>
 	</market_entry>
 
 	<market_entry>

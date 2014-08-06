@@ -91,6 +91,100 @@ app.controller('MarketplaceController', function( $filter, $scope, PluginsMetada
         }, 10);
     });
 
+    $scope.devStagesTypes = [
+        {
+            name:           'Customer Lane',
+            description:    'Always overseen by PM and Engineering, projects in the Customer Lane can either start as customer-sponsored initiatives or as projects developed in the Community Lane that create value for Pentaho subscription customers. Pentaho will provide official support based on current support policies to projects on the Customer Lane.'
+        },
+        {
+            name:           'Community Lane',
+            description:    'The Community Lane will be used for projects created by Pentaho Consulting or Engineering Services, in which case they will be managed so they do not conflict with the long-term architecture and functionality planned in the Pentaho product roadmap.'
+        }
+    ]
+
+    $scope.devStages = [
+        {
+            name:               'Development Phase',
+            id:                 'customer1',
+            description:        'Start up phase of an internal project. Usually a Labs experiment.',
+            image:              'img/dev-stage-01.svg',
+            imagePNG:           'img/dev-stage-01.png',
+            imageLarge:         'img/dev-stage-01-large.svg',
+            imageLargePNG:      'img/dev-stage-01-large.png',
+            type:               'Customer Lane'
+        },
+        {
+            name:               'Snapshot Release',
+            id:                 'customer2',
+            description:        'Unstable and unsupported branch, not recommended for production use.',
+            image:              'img/dev-stage-02.svg',
+            imagePNG:          'img/dev-stage-02.png',
+            imageLarge:        'img/dev-stage-02-large.svg',
+            imageLargePNG:    'img/dev-stage-02-large.png',
+            type:               'Customer Lane'
+        },
+        {
+            name:               'Limited Release',
+            id:                 'customer3',
+            description:        'Assistence given by Services Development with no contractual support for production environments.',
+            image:              'img/dev-stage-03.svg',
+            imagePNG:          'img/dev-stage-03.png',
+            imageLarge:        'img/dev-stage-03-large.svg',
+            imageLargePNG:    'img/dev-stage-03-large.png',
+            type:               'Customer Lane'
+        },
+        {
+            name:               'Production Release',
+            id:                 'customer4',
+            description:        'Production release with PM assigned, fully supported as part of the Pentaho release cycle.',
+            image:              'img/dev-stage-04.svg',
+            imagePNG:          'img/dev-stage-04.png',
+            imageLarge:        'img/dev-stage-04-large.svg',
+            imageLargePNG:    'img/dev-stage-04-large.png',
+            type:               'Customer Lane'
+        },
+        {
+            name:               'Development Phase',
+            id:                 'community1',
+            description:        'Start up phase of an internal project. Usually a Labs experiment.',
+            image:              'img/dev-stage-community-01.svg',
+            imagePNG:          'img/dev-stage-community-01.png',
+            imageLarge:        'img/dev-stage-community-01-large.svg',
+            imageLargePNG:    'img/dev-stage-community-01-large.png',
+            type:               'Community Lane'
+        },
+        {
+            name:               'Snapshot Release',
+            id:                 'community2',
+            description:        'Unstable and unsupported branch, not recommended for production use.',
+            image:              'img/dev-stage-community-02.svg',
+            imagePNG:          'img/dev-stage-community-02.png',
+            imageLarge:        'img/dev-stage-community-02-large.svg',
+            imageLargePNG:    'img/dev-stage-community-02-large.png',
+            type:               'Community Lane'
+        },
+        {
+            name:               'Stable Release',
+            id:                 'community3',
+            description:        'Adoption is ramping up and product could be used in production environments.',
+            image:              'img/dev-stage-community-03.svg',
+            imagePNG:          'img/dev-stage-community-03.png',
+            imageLarge:        'img/dev-stage-community-03-large.svg',
+            imageLargePNG:    'img/dev-stage-community-03-large.png',
+            type:               'Community Lane'
+        },
+        {
+            name:               'Mature Release',
+            id:                 'community4',
+            description:        'Indicates a successfully adopted project in a mature state.',
+            image:              'img/dev-stage-community-04.svg',
+            imagePNG:          'img/dev-stage-community-04.png',
+            imageLarge:        'img/dev-stage-community-04-large.svg',
+            imageLargePNG:    'img/dev-stage-community-04-large.png',
+            type:               'Community Lane'
+        }
+    ]
+
     /*$rootScope.$on('ngDialog.closed', function (e, $dialog, $document) {
         if($('.plugin-modal-gallery .owl-carousel').length) {
             $('.plugin-modal-gallery .owl-carousel').hide().data('owlCarousel').destroy();

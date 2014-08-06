@@ -59,6 +59,32 @@
               </div>
             </div>
           </li>
+          <li class="list-group-item" ng-show="plugin.credits">
+            <div class="row">              
+              <div class="col-sm-12">
+                <span class="plugin-modal-label">Credits:</span><br>
+                <p class="plugin-modal-credits" ng-show="plugin.credits">{{plugin.credits}}</p>
+                <p class="plugin-modal-credits" ng-hide="plugin.credits">Diogo Mariano, Duarte Leão, Gonçalo Neto, Nuno Moreira, Pedro Alves, Pedro Vale.</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item plugin-modal-stage-row">
+            <div class="row" ng-show="plugin.stage">
+              <div class="col-sm-12">
+                <span class="plugin-modal-label">Stage:</span><br>
+                <div class="row plugin-modal-stage">
+                  <div class="col-sm-10"><strong>{{(devStages | filter:{id:plugin.stage})[0].name}}:</strong> {{(devStages | filter:{id:plugin.stage})[0].description}}</div>
+                  <div class="col-sm-2 text-center"><img ng-src="{{(devStages | filter:{id:plugin.stage})[0].imageLarge}}" alt=""></div>
+                </div>
+              </div>
+            </div>  
+            <div class="row" ng-hide="plugin.stage">
+              <div class="col-sm-12">
+                <span class="plugin-modal-label">Stage:</span><br>
+                <p class="plugin-modal-credits">No stage assigned.</p>
+              </div>
+            </div>            
+          </li>
         </ul>
       </div>
     </div>
