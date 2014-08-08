@@ -57,6 +57,10 @@ body {
 	-webkit-overflow-scrolling: touch;
 }
 
+.whole-container * {
+    -webkit-transform: translateX(0);
+}
+
 h1 {
 	font-size: 30px;
 	font-weight: 300;
@@ -182,6 +186,7 @@ a, a:link, a:visited, a:hover, a:active {
     -webkit-box-shadow: none;
     box-shadow:        	none;
     border-bottom: 1px solid #D7D8DB;
+    z-index: 500;
 }
 
 .page-slider .item {
@@ -204,6 +209,7 @@ a, a:link, a:visited, a:hover, a:active {
 	position: relative;
 	-webkit-transition: all .5s;
 	transition: all .5s;
+	overflow: hidden;
 }
 
 .no-touch .page-slider .item > .container > .row:hover {
@@ -246,6 +252,7 @@ a, a:link, a:visited, a:hover, a:active {
 .page-slider .item .container .item-content {
 	padding: 0 30px;
 	height: 219px;
+	background: #fff;
 }
 
 .page-slider .item .container .item-content .item-description {
@@ -445,6 +452,11 @@ hr#hr-plugins-header {
 	padding-left: 25px;
 }
 
+.touch .page-plugins .plugins-header input#inputSearch[type=text] {
+	-webkit-transition: all 0;
+	transition: all 0;	
+}
+
 
 .no-svg .page-plugins .plugins-header input#inputSearch[type=text] {
 	background-color: rgba(255,255,255,0);
@@ -467,7 +479,8 @@ hr#hr-plugins-header {
 	background-position: right center;
 }
 
-.page-plugins .plugins-header input#inputSearch[type=text]:focus {
+.page-plugins .plugins-header input#inputSearch[type=text]:focus,
+.touch .page-plugins .plugins-header input#inputSearch[type=text]:hover {
 	background-color: rgba(255,255,255,1);
 	background-image: url(../img/search-hover.svg);
 	background-repeat: no-repeat;
@@ -484,7 +497,8 @@ hr#hr-plugins-header {
 	padding-left: 10px;
 }
 
-.no-svg .page-plugins .plugins-header input#inputSearch[type=text]:focus {
+.no-svg .page-plugins .plugins-header input#inputSearch[type=text]:focus,
+.no-svg.touch .page-plugins .plugins-header input#inputSearch[type=text]:hover {
 	background-color: rgba(255,255,255,1);
 	background-image: url(../img/search-hover.png);
 	background-repeat: no-repeat;
