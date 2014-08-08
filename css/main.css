@@ -2597,7 +2597,8 @@ p.contribute-description {
 }
 
 @media (min-width: 768px) {
-  .plugin-window .container {
+  .plugin-window .container,
+  .plugin-window-dev-stages .container {
     width: auto;
     max-width: 750px;
   }
