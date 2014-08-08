@@ -54,6 +54,7 @@ body {
 	max-height: 100%;
 	display: block;
 	position: relative;
+	-webkit-overflow-scrolling: touch;
 }
 
 h1 {
