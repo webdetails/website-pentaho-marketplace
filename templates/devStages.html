@@ -16,10 +16,16 @@
 			  <ul class="list-group dev-stages-list">
 			    <li class="list-group-item" ng-repeat="devStage in devStages | filter:{type:devStagesTypes[0].name}">
 			    	<div class="row">
-			    		<div class="col-sm-10 dev-stage-description">
+			    		<div class="col-sm-2 text-center dev-stage-image visible-xs">
+			    			<img ng-src="{{devStage.imageLarge}}" alt="">
+			    		</div>
+			    		<div class="col-sm-10 dev-stage-description visible-xs">
+							<p><strong>{{devStage.name}}</strong><br> {{devStage.description}}</p>
+			    		</div>
+			    		<div class="col-sm-10 dev-stage-description hidden-xs">
 							<p><strong>{{devStage.name}}:</strong> {{devStage.description}}</p>
 			    		</div>
-			    		<div class="col-sm-2 text-center dev-stage-image">
+			    		<div class="col-sm-2 text-center dev-stage-image hidden-xs">
 			    			<img ng-src="{{devStage.imageLarge}}" alt="">
 			    		</div>
 			    	</div>
@@ -45,10 +51,16 @@
 			  <ul class="list-group dev-stages-list">
 			    <li class="list-group-item" ng-repeat="devStage in devStages | filter:{type:devStagesTypes[1].name}">
 			    	<div class="row">
-			    		<div class="col-sm-10 dev-stage-description">
+			    		<div class="col-sm-2 text-center dev-stage-image visible-xs">
+			    			<img ng-src="{{devStage.imageLarge}}" alt="">
+			    		</div>
+			    		<div class="col-sm-10 dev-stage-description visible-xs">
+							<p><strong>{{devStage.name}}</strong><br> {{devStage.description}}</p>
+			    		</div>
+			    		<div class="col-sm-10 dev-stage-description hidden-xs">
 							<p><strong>{{devStage.name}}:</strong> {{devStage.description}}</p>
 			    		</div>
-			    		<div class="col-sm-2 text-center dev-stage-image">
+			    		<div class="col-sm-2 text-center dev-stage-image hidden-xs">
 			    			<img ng-src="{{devStage.imageLarge}}" alt="">
 			    		</div>
 			    	</div>

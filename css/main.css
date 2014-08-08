@@ -158,7 +158,6 @@ a, a:link, a:visited, a:hover, a:active {
 #page-header a:hover,
 #page-header a:visited,
 #page-header a:focus {
-	font-size: 16px;
 	color: #005CA7;
 }
 
@@ -206,7 +205,7 @@ a, a:link, a:visited, a:hover, a:active {
 	transition: all .5s;
 }
 
-.page-slider .item > .container > .row:hover {
+.no-touch .page-slider .item > .container > .row:hover {
 	border: 1px solid #005CA7;
 }
 
@@ -286,6 +285,14 @@ a, a:link, a:visited, a:hover, a:active {
 	border: none;
 	border-radius: 6px 0px 6px 0px;
 	background-position: center center;
+}
+
+.touch .dev-stage.visible-xs {
+	display: block !important;
+}
+
+.touch .dev-stage.hidden-xs {
+	display: none !important;
 }
 
 .customer1 .dev-stage {
@@ -513,10 +520,6 @@ hr#hr-plugins-header {
 	background: url(../img/filter.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-	-webkit-transition: all .3s;
-	transition: all .3s;
-	-webkit-transition-delay: 0s; /* Safari */
-    transition-delay: 0s;
 	padding-left: 0;
 	float: right;
 	width: 40px;
@@ -531,8 +534,6 @@ hr#hr-plugins-header {
 }
 
 #filter-button.active {
-	-webkit-transition: all .75s;
-	transition: all .75s;
 	/*border-top: 1px solid #e1e0e0;
 	border-right: 1px solid #e1e0e0;
 	background-color: #f6f7f8 !important;*/
@@ -551,19 +552,19 @@ hr#hr-plugins-header {
 	background-position: center;
 }
 
-#filter-button:hover,
-#filter-button:active,
-#filter-button-inner:hover,
-#filter-button-inner:active {
+.no-touch #filter-button:hover,
+.no-touch #filter-button:active,
+.no-touch #filter-button-inner:hover,
+.no-touch #filter-button-inner:active {
 	background: url(../img/filter-hover.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.no-svg #filter-button:hover,
-.no-svg #filter-button:active,
-.no-svg #filter-button-inner:hover,
-.no-svg #filter-button-inner:active {
+.no-svg.no-touch #filter-button:hover,
+.no-svg.no-touch #filter-button:active,
+.no-svg.no-touch #filter-button-inner:hover,
+.no-svg.no-touch #filter-button-inner:active {
 	background: url(../img/filter-hover.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -728,8 +729,8 @@ hr#hr-plugins-header {
 	font-weight: 400;
 }
 
-.page-plugins .plugins-filters button:hover,
-.page-plugins .plugins-filters button:active {
+.no-touch .page-plugins .plugins-filters button:hover,
+.no-touch .page-plugins .plugins-filters button:active {
 	border: 1px solid #005CA7;
 	color: #005CA7;
 }
@@ -1190,7 +1191,7 @@ button:focus {
 	transition: all .5s;
 }
 
-.page-plugins .plugin .plugin-inner:hover {
+.no-touch .page-plugins .plugin .plugin-inner:hover {
 	border: 1px solid #005CA7;
 }
 
@@ -1467,7 +1468,7 @@ button:focus {
 	transition: all .3s;
 }
 
-.plugin-buttons-row button.btn.btn-block:hover {
+.no-touch .plugin-buttons-row button.btn.btn-block:hover {
 	border: 1px solid #005CA7;
 	color: #005CA7;
 }
@@ -1661,7 +1662,7 @@ div#header-links button {
 	overflow-y: hidden;
 }
 
-div#header-links button:hover {
+.no-touch div#header-links button:hover {
 	color: #005CA7;
 }
 
@@ -1740,7 +1741,7 @@ div#header-links-small button {
 	height: 30px;
 }
 
-div#header-links-small button:hover {
+.no-touch div#header-links-small button:hover {
 	color: #005CA7;
 }
 
@@ -1780,8 +1781,8 @@ div#header-links-small button.info-button span img {
 	transition: all .3s;
 }
 
-.pagination>li>a:hover, 
-.pagination>li>span:hover {
+.no-touch .pagination>li>a:hover, 
+.no-touch .pagination>li>span:hover {
 	color: #005CA7;
 	background-color: #F6F7F8;
 	border-color: #005CA7;
@@ -1912,7 +1913,7 @@ p.contribute-description {
 	display: inline-block;
 }
 
-.contribute-bottom-row a:hover,
+.no-touch .contribute-bottom-row a:hover,
 .contribute-bottom-row a:active {
 	text-decoration: underline;
 	color: #005CA7;
@@ -1981,7 +1982,7 @@ p.contribute-description {
 	transition: all .3s;
 }
 
-.download-marketplace-row a.btn.btn-block:hover {
+.no-touch .download-marketplace-row a.btn.btn-block:hover {
 	border: 1px solid #005CA7;
 	color: #005CA7;
 }
@@ -2498,7 +2499,7 @@ p.contribute-description {
 	.page-plugins .plugin-header {
 	    height: auto;
 	    border-radius: 6px 0px 0px 6px;
-	    width: 15px;
+	    width: 5px;
 	    float: left;
 	    height: 75px;
 	}
@@ -2508,7 +2509,7 @@ p.contribute-description {
 	}
 
 	.page-plugins .plugin-content {
-	    width: calc(100% - 15px);
+	    width: calc(100% - 5px);
 	    float: left;
 	    padding-right: 50px;
 	    height: 75px;
@@ -2564,6 +2565,10 @@ p.contribute-description {
 		top: auto;
 	}
 
+	.page-plugins .plugins-filters .filters-header {
+		margin-top: -4px;
+	}
+
 	.page-plugins .plugins-grid {
 		width: 750px;
 		margin-left: auto;
@@ -2588,6 +2593,13 @@ p.contribute-description {
 	div#header-links button {
 		font-size: 13px;
 	}
+}
+
+@media (min-width: 768px) {
+  .plugin-window .container {
+    width: auto;
+    max-width: 750px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2629,8 +2641,12 @@ p.contribute-description {
 	}
 
 	.dev-stages .dev-stage-image {
-		padding-top: 10px;
+		padding-bottom: 10px;
 		border-left: none;
+	}
+
+	.dev-stages .dev-stage-description {
+		text-align: center;
 	}
 
 	.container.contribute h3,
