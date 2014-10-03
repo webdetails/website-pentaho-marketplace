@@ -22,12 +22,6 @@ app.controller('MarketplaceController',
     [ '$filter', '$scope', 'PluginsMetadata', 'ngDialog', '$rootScope', '$timeout', 'metadataService',
       function ($filter, $scope, PluginsMetadata, ngDialog, $rootScope, $timeout, metadataService ) {
 
-        var test;
-        metadataService.getPlugins()
-            .then( function ( plugins ) {
-              test = plugins;
-            }
-        );
 
         var inputFilter = $filter('filter');
 
@@ -43,11 +37,20 @@ app.controller('MarketplaceController',
           }, 0);
         });
 
+        metadataService.getPlugins()
+            .then( function ( plugins ) {
+              $scope.pluginsList = $scope.filteredList = plugins;
+              $scope.totalItems = $scope.pluginsList.length;
+            }
+        );
+
+        /*
         PluginsMetadata.getMetadata()
             .then(function (data) {
               $scope.pluginsList = $scope.filteredList = data;
               $scope.totalItems = $scope.pluginsList.length;
             });
+            */
 
         // TODO: get these constants from somewhere else
         $scope.itemsPerPage = 12;
