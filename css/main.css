@@ -1374,8 +1374,37 @@ button:focus {
 	margin-bottom: 10px;
 }
 
-.plugin-modal-description h1 {
-	display: none;
+.plugin-modal-description * {
+	font-size: 15px;
+	line-height: 1.42857143;
+	font-weight: 300;	
+	color: #7C7E80;
+	font-weight: normal;
+}
+.plugin-modal-description img {
+	max-width: 100%;
+}
+.plugin-modal-description h1,
+.plugin-modal-description h2,
+.plugin-modal-description h3,
+.plugin-modal-description h4,
+.plugin-modal-description h5,
+.plugin-modal-description h6 {
+	font-size: 16px;
+	line-height: 1.42857143;
+	font-weight: 600;	
+	color: #7C7E80;
+	margin: 20px 0 5px;
+}
+.plugin-modal-description blockquote,
+.plugin-modal-description blockquote p {
+	font-size: 15px;
+	line-height: 1.42857143;
+	font-weight: 300;		
+	color: #7C7E80;
+	margin: 0 0 10px;
+	border: 0;
+	padding: 0;
 }
 
 .plugin-modal-details-table .row .col-md-4 {
