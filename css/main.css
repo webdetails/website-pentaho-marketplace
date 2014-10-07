@@ -113,7 +113,7 @@ a, a:link, a:visited, a:hover, a:active {
 	overflow: hidden;
 	padding: 50px 0px 0px 0px;
 	background: #FFFFFF;
-	max-width: 1200px;
+	max-width: 1212px;
 	margin: 5px auto 40px;
 	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.15);
 	box-shadow:         0 0 6px rgba(0,0,0,0.15);
@@ -758,22 +758,22 @@ button:focus {
 	outline: 0 !important;
 }
 
-.page-plugins .plugins-filters button[data-is-checked="true"],
-.page-plugins .plugins-filters button[data-is-checked="true"]:link,
-.page-plugins .plugins-filters button[data-is-checked="true"]:visited,
-.page-plugins .plugins-filters button[data-is-checked="true"]:hover,
-.page-plugins .plugins-filters button[data-is-checked="true"]:active,
-.page-plugins .plugins-filters button[data-is-checked="true"]:focus {
+.page-plugins .plugins-filters button[data-checked="true"],
+.page-plugins .plugins-filters button[data-checked="true"]:link,
+.page-plugins .plugins-filters button[data-checked="true"]:visited,
+.page-plugins .plugins-filters button[data-checked="true"]:hover,
+.page-plugins .plugins-filters button[data-checked="true"]:active,
+.page-plugins .plugins-filters button[data-checked="true"]:focus {
 	border: 1px solid #005CA7;
 	color: #005CA7;
 }
 
-.page-plugins .plugins-filters button[data-is-checked="true"]:after,
-.page-plugins .plugins-filters button[data-is-checked="true"]:link:after,
-.page-plugins .plugins-filters button[data-is-checked="true"]:visited:after,
-.page-plugins .plugins-filters button[data-is-checked="true"]:hover:after,
-.page-plugins .plugins-filters button[data-is-checked="true"]:active:after,
-.page-plugins .plugins-filters button[data-is-checked="true"]:focus:after {
+.page-plugins .plugins-filters button[data-checked="true"]:after,
+.page-plugins .plugins-filters button[data-checked="true"]:link:after,
+.page-plugins .plugins-filters button[data-checked="true"]:visited:after,
+.page-plugins .plugins-filters button[data-checked="true"]:hover:after,
+.page-plugins .plugins-filters button[data-checked="true"]:active:after,
+.page-plugins .plugins-filters button[data-checked="true"]:focus:after {
 	position: absolute;
 	right: 4px;
 	top: 5px;
@@ -785,12 +785,12 @@ button:focus {
 	background-position: center center;
 }
 
-.no-svg .page-plugins .plugins-filters button[data-is-checked="true"]:after,
-.no-svg .page-plugins .plugins-filters button[data-is-checked="true"]:link:after,
-.no-svg .page-plugins .plugins-filters button[data-is-checked="true"]:visited:after,
-.no-svg .page-plugins .plugins-filters button[data-is-checked="true"]:hover:after,
-.no-svg .page-plugins .plugins-filters button[data-is-checked="true"]:active:after,
-.no-svg .page-plugins .plugins-filters button[data-is-checked="true"]:focus:after {
+.no-svg .page-plugins .plugins-filters button[data-checked="true"]:after,
+.no-svg .page-plugins .plugins-filters button[data-checked="true"]:link:after,
+.no-svg .page-plugins .plugins-filters button[data-checked="true"]:visited:after,
+.no-svg .page-plugins .plugins-filters button[data-checked="true"]:hover:after,
+.no-svg .page-plugins .plugins-filters button[data-checked="true"]:active:after,
+.no-svg .page-plugins .plugins-filters button[data-checked="true"]:focus:after {
 	background-image: url(../img/checked.png);
 }
 
@@ -814,12 +814,12 @@ button:focus {
 		background-size: contain;
 	}
 
-	.page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:after,
-	.page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:link:after,
-	.page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:visited:after,
-	.page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:hover:after,
-	.page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:active:after,
-	.page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:focus:after {
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-04.svg);
 		background-repeat: no-repeat;
 	}
@@ -834,12 +834,12 @@ button:focus {
 		background-repeat: no-repeat;
 	}
 
-	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:link:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:visited:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:hover:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:active:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-is-checked="true"]:focus:after {
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-production-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-04.png);
 		background-repeat: no-repeat;
 	}
@@ -863,12 +863,12 @@ button:focus {
 		background-size: contain;
 	}
 
-	.page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:after,
-	.page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:link:after,
-	.page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:visited:after,
-	.page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:hover:after,
-	.page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:active:after,
-	.page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:focus:after {
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-03.svg);
 		background-repeat: no-repeat;
 	}
@@ -883,12 +883,12 @@ button:focus {
 		background-repeat: no-repeat;
 	}
 
-	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:link:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:visited:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:hover:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:active:after,
-	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-is-checked="true"]:focus:after {
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-customer-limited-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-03.png);
 		background-repeat: no-repeat;
 	}
@@ -912,12 +912,12 @@ button:focus {
 		background-size: contain;
 	}
 
-	.page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:after,
-	.page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:link:after,
-	.page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:visited:after,
-	.page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:hover:after,
-	.page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:active:after,
-	.page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:focus:after {
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-community-04.svg);
 		background-repeat: no-repeat;
 	}
@@ -932,12 +932,12 @@ button:focus {
 		background-repeat: no-repeat;
 	}
 
-	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:link:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:visited:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:hover:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:active:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-is-checked="true"]:focus:after {
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-mature-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-community-04.png);
 		background-repeat: no-repeat;
 	}
@@ -961,12 +961,12 @@ button:focus {
 		background-size: contain;
 	}
 
-	.page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:after,
-	.page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:link:after,
-	.page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:visited:after,
-	.page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:hover:after,
-	.page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:active:after,
-	.page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:focus:after {
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-community-03.svg);
 		background-repeat: no-repeat;
 	}
@@ -981,12 +981,12 @@ button:focus {
 		background-repeat: no-repeat;
 	}
 
-	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:link:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:visited:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:hover:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:active:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-is-checked="true"]:focus:after {
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-stable-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-community-03.png);
 		background-repeat: no-repeat;
 	}
@@ -1010,12 +1010,12 @@ button:focus {
 		background-size: contain;
 	}
 
-	.page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:after,
-	.page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:link:after,
-	.page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:visited:after,
-	.page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:hover:after,
-	.page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:active:after,
-	.page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:focus:after {
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-community-02.svg);
 		background-repeat: no-repeat;
 	}
@@ -1030,12 +1030,12 @@ button:focus {
 		background-repeat: no-repeat;
 	}
 
-	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:link:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:visited:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:hover:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:active:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-is-checked="true"]:focus:after {
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-snapshot-release[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-community-02.png);
 		background-repeat: no-repeat;
 	}
@@ -1059,12 +1059,12 @@ button:focus {
 		background-size: contain;
 	}
 
-	.page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:after,
-	.page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:link:after,
-	.page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:visited:after,
-	.page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:hover:after,
-	.page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:active:after,
-	.page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:focus:after {
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:link:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:visited:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:hover:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:active:after,
+	.page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-community-01.svg);
 		background-repeat: no-repeat;
 	}
@@ -1079,12 +1079,12 @@ button:focus {
 		background-repeat: no-repeat;
 	}
 
-	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:link:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:visited:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:hover:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:active:after,
-	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-is-checked="true"]:focus:after {
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:link:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:visited:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:hover:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:active:after,
+	.no-svg .page-plugins .plugins-filters button#button-community-development-phase[data-checked="true"]:focus:after {
 		background-image: url(../img/dev-stage-community-01.png);
 		background-repeat: no-repeat;
 	}
@@ -1124,24 +1124,24 @@ button:focus {
 	border-radius: 3px;
 }
 
-.plugins-filters .filters-subsection .filters-state[data-is-checked="Some"] {
+.plugins-filters .filters-subsection .filters-state.some-checked {
 	background-image: url(../img/some-checked.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.no-svg .plugins-filters .filters-subsection .filters-state[data-is-checked="Some"] {
+.no-svg .plugins-filters .filters-subsection .filters-state.some-checked {
 	background-image: url(../img/some-checked.png);
 }
 
-.plugins-filters .filters-subsection .filters-state[data-is-checked="All"] {
+.plugins-filters .filters-subsection .filters-state.all-checked {
 	background-image: url(../img/checked.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 1px solid #005CA7;
 }
 
-.no-svg .plugins-filters .filters-subsection .filters-state[data-is-checked="All"] {
+.no-svg .plugins-filters .filters-subsection .filters-state.all-checked {
 	background-image: url(../img/checked.png);
 }
 
