@@ -131,7 +131,8 @@ $('.plugins-filters .single-filter-button').click(function() {
 	
 	var totalFilters = $this.closest('.filters-subsection-items').find('button.single-filter-button').length;
 	var activeFilters = $this.closest('.filters-subsection-items').find('button.single-filter-button[data-checked=true]').length;
-	
+
+  /*
 	if(activeFilters == totalFilters) {
 		$this.closest('.filters-subsection').find('.filters-state').removeClass('some-checked');
 		$this.closest('.filters-subsection').find('.filters-state').addClass('all-checked');
@@ -142,6 +143,7 @@ $('.plugins-filters .single-filter-button').click(function() {
 		$this.closest('.filters-subsection').find('.filters-state').removeClass('all-checked');
 		$this.closest('.filters-subsection').find('.filters-state').removeClass('some-checked');		
 	}
+	*/
 
 	var globalFilters = $this.closest('.plugins-filters').find('button.single-filter-button[data-checked=true]').length;
 	if(globalFilters == 0) {
@@ -153,8 +155,11 @@ $('.plugins-filters .single-filter-button').click(function() {
 
 $('.clear-all-filters').click(function() {
 	$('.plugins-filters .single-filter-button').attr('data-checked', 'false');
-	$('.plugins-filters .filters-state').removeClass('some-checked');
+
+  /*
+  $('.plugins-filters .filters-state').removeClass('some-checked');
 	$('.plugins-filters .filters-state').removeClass('all-checked');
+	*/
 	$('.clear-all-filters').addClass('disabled');
 });
 
@@ -168,8 +173,9 @@ $('.filters-subsection .filters-title').click(function() {
 	$(this).closest('.filters-subsection').find('.filters-subsection-items').stop().slideToggle();
 });
 
+/*
 $('.filters-subsection .filters-state').click(function() {
-	var $this = $(this);
+  var $this = $(this);
 
 	if($this.hasClass('some-checked') || $this.hasClass('all-checked')) {
 		$this.removeClass('some-checked');
@@ -191,6 +197,7 @@ $('.filters-subsection .filters-state').click(function() {
 		$('.clear-all-filters').removeClass('disabled');
 	}
 });
+ */
 
 $('.info-button').click(function() {
 	$(this).closest('.btn-group').find('button:not(.info-button) span').stop().animate({width: 'toggle', paddingLeft: 'toggle', paddingRight: 'toggle'});

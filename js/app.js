@@ -6,22 +6,22 @@ app.value('MarketplaceConfig', {
   xmlUrl: 'marketplace.xml'
 });
 
-//creating PluginsMetadata service, as an injectable argument, getting the metadata from the provided XML
-app.factory('PluginsMetadata', function ($http, MarketplaceConfig) {
-  return {
-    getMetadata: function () {
-      return $http.get(MarketplaceConfig.xmlUrl).then(function (result) {
-        return $.xml2json(result.data).market_entry;
-      });
-    }
-  };
-});
 
 //create angular controller to our app
 app.controller('MarketplaceController',
-    [ '$filter', '$scope', 'PluginsMetadata', 'ngDialog', '$rootScope', '$timeout', 'metadataService',
-      function ($filter, $scope, PluginsMetadata, ngDialog, $rootScope, $timeout, metadataService ) {
+    [ '$filter', '$scope', 'ngDialog', '$rootScope', '$timeout', 'metadataService',
+      function ($filter, $scope, ngDialog, $rootScope, $timeout, metadataService ) {
 
+        function getCategories ( plugins ) {
+          var categories = _.chain( plugins )
+              .filter( function ( plugin ) { return plugin.category !== undefined && plugin.category !== null; } )
+              .map( function( plugin ) { return plugin.category; } )
+              .uniq( function ( category ) { return category.getId(); } )
+              .sortBy( function ( category ) { return category.mainName + category.subName; })
+              .value();
+
+          return categories;
+        }
 
         var inputFilter = $filter('filter');
 
@@ -39,18 +39,14 @@ app.controller('MarketplaceController',
 
         metadataService.getPlugins()
             .then( function ( plugins ) {
+              $scope.categories = getCategories( plugins );
+              $scope.selectedCategories = [];
+
               $scope.pluginsList = $scope.filteredList = plugins;
               $scope.totalItems = $scope.pluginsList.length;
             }
         );
 
-        /*
-        PluginsMetadata.getMetadata()
-            .then(function (data) {
-              $scope.pluginsList = $scope.filteredList = data;
-              $scope.totalItems = $scope.pluginsList.length;
-            });
-            */
 
         // TODO: get these constants from somewhere else
         $scope.itemsPerPage = 12;

@@ -124,6 +124,9 @@
         </div>
 
         <div class="page-plugins">
+
+
+
           <div class="plugins-header">
             <div class="container">
               <div class="row">
@@ -142,12 +145,20 @@
           </div>
           <div class="plugins-container">
             <div class="plugins-filters">
+
+
+              <div data-multiselect-dropdown
+                  data-selected-options="selectedCategories"  data-options="categories"
+                  data-group-by="main" data-display="sub">
+              </div>
+
               <div class="top-plugins-filters plugins-filters-block">
                 <div class="filters-header">
                   <div class="pull-left"><span class="filters-header-title">Filter</span></div>
                   <div class="pull-right"><button class="btn clear-all-filters disabled">Clear all filters</button></div>
                   <div class="clear"></div>
                 </div>
+
                 <div class="filters-subsection filters-apps">
                   <div class="filters-subsection-header">
                     <button class="filters-title">Apps</button>
@@ -184,7 +195,7 @@
                     <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Language Packs</button>
                     <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false">Themes</button>  
                   </div>              
-                </div>                
+                </div>
               </div>
               <div class="bottom-plugins-filters plugins-filters-block">
                 <div class="filters-subsection filters-dev-stages">
@@ -245,7 +256,7 @@
     <script type="text/javascript" src="js/vendor/jquery.xml2json.js"></script>
     <script type="text/javascript" src="js/vendor/angular.js"></script>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.js"></script>
-    <script type="text/javascript" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script type="text/javascript" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.2.js"></script>
     <script type="text/javascript" src="js/vendor/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/vendor/ngDialog.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-sanitize.js"></script>
@@ -263,10 +274,15 @@
     <!--script src="js/vendor/isotope.pkgd.min.js"></script-->
     <script src="js/main.js"></script>
 
+    <script src="js/events/stopEventDirective.js"></script>
+
     <script src="js/metadataProcessing/metadataService.js"></script>
     <script src="js/metadataProcessing/dtoMapperService.js"></script>
     <script src="js/metadataProcessing/categoryService.js"></script>
     <script src="js/metadataProcessing/developmentStageService.js"></script>
+
+    <script src="js/filters/multiselectDropdown/multiselectDropdownController.js"></script>
+    <script src="js/filters/multiselectDropdown/multiselectDropdownDirective.js"></script>
 
     <script src="js/models/plugin.js"></script>
 
