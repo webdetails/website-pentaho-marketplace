@@ -346,12 +346,8 @@ a.btn.btn-default.tryPentaho:focus {
 .dev-stage {
 	width: 32px;
 	height: 32px;
-	position: absolute;
-	right: 13px;
-	bottom: 12px;
 	background-color: #FFFFFF;
 	border: none;
-	border-radius: 6px 0px 6px 0px;
 	background-position: center center;
 }
 
@@ -363,73 +359,106 @@ a.btn.btn-default.tryPentaho:focus {
 	display: none !important;
 }
 
-.customer1 .dev-stage {
+.plugins-grid .plugin .plugin-inner .stages {
+	bottom: 12px;
+	right: 13px;
+	position: absolute;
+	height: 32px;
+}
+
+.plugins-grid .plugin .plugin-inner .stages .devStageIcon {
+	display: inline-block;
+	position: relative;
+	margin-left: 10px;
+}
+
+.customer1 .dev-stage,
+.devStageIcon .dev-stage-customer-01 {
 	background-image: url(../img/dev-stage-01.svg);
 }
-.no-svg .customer1 .dev-stage {
+.no-svg .customer1 .dev-stage,
+.no-svg .devStageIcon .dev-stage-customer-01 {
 	background-image: url(../img/dev-stage-01.png);
 }
 
-.customer2 .dev-stage {
+.customer2 .dev-stage,
+.devStageIcon .dev-stage-customer-02 {
 	background-image: url(../img/dev-stage-02.svg);
 }
-.no-svg .customer2 .dev-stage {
+.no-svg .customer2 .dev-stage,
+.no-svg .devStageIcon .dev-stage-customer-02 {
 	background-image: url(../img/dev-stage-02.png);
 }
 
-.customer3 .dev-stage {
+.customer3 .dev-stage,
+.devStageIcon .dev-stage-customer-03 {
 	background-image: url(../img/dev-stage-03.svg);
 }
-.no-svg .customer3 .dev-stage {
+.no-svg .customer3 .dev-stage,
+.no-svg .devStageIcon .dev-stage-customer-03 {
 	background-image: url(../img/dev-stage-03.png);
 }
 
-.customer4 .dev-stage {
+.customer4 .dev-stage,
+.devStageIcon .dev-stage-customer-04 {
 	background-image: url(../img/dev-stage-04.svg);
 }
-.no-svg .customer4 .dev-stage {
+.no-svg .customer4 .dev-stage,
+.no-svg .devStageIcon .dev-stage-customer-04 {
 	background-image: url(../img/dev-stage-04.png);
 }
 
-.customer5 .dev-stage {
+.customer5 .dev-stage,
+.devStageIcon .dev-stage-customer-05 {
 	background-image: url(../img/dev-stage-05.svg);
 }
-.no-svg .customer5 .dev-stage {
+.no-svg .customer5 .dev-stage,
+.no-svg .devStageIcon .dev-stage-customer-05 {
 	background-image: url(../img/dev-stage-05.png);
 }
 
-.community1 .dev-stage {
+.community1 .dev-stage,
+.devStageIcon .dev-stage-community-01 {
 	background-image: url(../img/dev-stage-community-01.svg);
 }
-.no-svg .community1 .dev-stage {
+.no-svg .community1 .dev-stage,
+.no-svg .devStageIcon .dev-stage-community-01 {
 	background-image: url(../img/dev-stage-community-01.png);
 }
 
-.community2 .dev-stage {
+.community2 .dev-stage,
+.devStageIcon .dev-stage-community-02 {
 	background-image: url(../img/dev-stage-community-02.svg);
 }
-.no-svg .community2 .dev-stage {
+.no-svg .community2 .dev-stage,
+.no-svg .devStageIcon .dev-stage-community-02 {
 	background-image: url(../img/dev-stage-community-02.png);
 }
 
-.community3 .dev-stage {
+.community3 .dev-stage,
+.devStageIcon .dev-stage-community-03 {
 	background-image: url(../img/dev-stage-community-03.svg);
 }
-.no-svg .community3 .dev-stage {
+.no-svg .community3 .dev-stage,
+.no-svg .devStageIcon .dev-stage-community-03 {
 	background-image: url(../img/dev-stage-community-03.png);
 }
 
-.community4 .dev-stage {
+.community4 .dev-stage,
+.devStageIcon .dev-stage-community-04 {
 	background-image: url(../img/dev-stage-community-04.svg);
 }
-.no-svg .community4 .dev-stage {
+.no-svg .community4 .dev-stage,
+.no-svg .devStageIcon .dev-stage-community-04 {
 	background-image: url(../img/dev-stage-community-04.png);
 }
 
-.community5 .dev-stage {
+.community5 .dev-stage,
+.devStageIcon .dev-stage-community-05 {
 	background-image: url(../img/dev-stage-community-05.svg);
 }
-.no-svg .community5 .dev-stage {
+.no-svg .community5 .dev-stage,
+.no-svg .devStageIcon .dev-stage-community-05 {
 	background-image: url(../img/dev-stage-community-05.png);
 }
 
@@ -2656,6 +2685,10 @@ p.contribute-description {
 	    float: left;
 	    padding-right: 50px;
 	    height: 75px;
+	}
+
+	.plugins-grid .plugin .plugin-inner .stages {
+		height: 24px;
 	}
 
 	.dev-stage {
