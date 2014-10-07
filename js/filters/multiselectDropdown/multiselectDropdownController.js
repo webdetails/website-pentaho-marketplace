@@ -218,10 +218,10 @@
           $scope.groupClicked = function ( group ) {
             switch ( group.selected ) {
               case Group.selectEnum.ALL:
+              case Group.selectEnum.SOME:
                 group.selected = Group.selectEnum.NONE;
                 break;
               case Group.selectEnum.NONE:
-              case Group.selectEnum.SOME:
                 group.selected = Group.selectEnum.ALL;
                 break;
             }

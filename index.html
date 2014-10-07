@@ -212,7 +212,12 @@
               </div>
               <div class="clear"></div>
             </div>
-            <pagination boundary-links="true" total-items="filteredList.length" max-size="5" items-per-page="itemsPerPage" ng-model="currentPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+            <div data-pagination class="pagination-sm"
+                data-ng-model="currentPage"
+                data-boundary-links="true" data-total-items="filteredList.length" data-max-size="5"
+                data-items-per-page="itemsPerPage"
+                data-previous-text="&lsaquo;" data-next-text="&rsaquo;" data-first-text="&laquo;" data-last-text="&raquo;">
+            </div>
             <!-- end of plugins list -->
 
           </div>
