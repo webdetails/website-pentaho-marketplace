@@ -205,9 +205,16 @@
                     <h2>{{plugin.name}}</h2>
                     <p class="plugin-description">{{plugin.author.name | cut:false:30:'...'}}</p>
                   </div>
-                  <div class="dev-stage visible-xs"></div>
-                  <div class="dev-stage hidden-xs" ngx-tipsy ngx-title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:plugin.stage})[0].name}}:</strong> {{(devStages | filter:{id:plugin.stage})[0].description}}" ngx-position="{{'top'}}" ng-show="plugin.stage"></div>
-                  <div class="clear"></div>
+                  <div class="stages">
+                    <div data-ng-repeat="stage in plugin.getStages()"
+                        data-dev-stage-icon
+                        data-version="stage"
+                        data-lane="stage.lane.id"
+                        data-phase="stage.phase" >
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+
                 </div>
               </div>
               <div class="clear"></div>
@@ -252,6 +259,9 @@
     <script src="js/main.js"></script>
 
     <script src="js/events/stopEventDirective.js"></script>
+
+    <script src="js/devStageIcon/devStageIconController.js"></script>
+    <script src="js/devStageIcon/devStageIconDirective.js"></script>
 
     <script src="js/metadataProcessing/metadataService.js"></script>
     <script src="js/metadataProcessing/dtoMapperService.js"></script>

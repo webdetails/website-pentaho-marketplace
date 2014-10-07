@@ -13,13 +13,21 @@
 
 'use strict';
 
-(function( app ) {
+(function( app, _ ) {
 
   app.factory('Plugin',
       [
         function () {
 
           function Plugin() {}
+
+          Plugin.prototype.getStages = function () {
+            return _.chain( this.versions )
+                .map( function ( version ) { return version.devStage; })
+                .filter( function ( stage ) { return stage !== undefined && stage !== null; })
+                .unique()
+                .value();
+          };
 
           Plugin.Version = function ( branch, version, buildId ) {
             this.branch = branch;
@@ -33,4 +41,4 @@
 
       ]);
 }
-)( angular.module('marketplace') );
+)( angular.module('marketplace'), _ );
