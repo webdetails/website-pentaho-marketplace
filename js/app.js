@@ -12,6 +12,64 @@ app.controller('MarketplaceController',
     [ '$filter', '$scope', 'ngDialog', '$rootScope', '$timeout', 'metadataService',
       function ($filter, $scope, ngDialog, $rootScope, $timeout, metadataService ) {
 
+
+        function filterStage ( plugin ) {
+          if ( $scope.selectedStages.length == 0 ) {
+            return true;
+          }
+
+          // plugin is in one of the selected development stages
+          return _.any( $scope.selectedStages,
+              function ( selectedStage ) {
+                return _.any( plugin.versions, function ( version )  {
+                  return version.devStage &&
+                      selectedStage.lane.id == version.devStage.lane.id &&
+                      selectedStage.phase == version.devStage.phase;
+                } );
+              }
+          );
+        };
+
+        function filterCategory ( plugin ) {
+          if ( $scope.selectedCategories.length == 0 ) {
+            return true;
+          }
+
+          // plugin does not have a category
+          if ( !plugin.category ) {
+            return false;
+          }
+
+          // plugin is in one of the selected development stages
+          return _.any( $scope.selectedCategories,
+              function ( selectedType ) {
+                return selectedType.main == plugin.category.main &&
+                    selectedType.sub == plugin.category.sub;
+              }
+          );
+        }
+
+        function applyPluginFilter() {
+           filterAndSetPlugins( $scope.pluginsList );
+        };
+
+        function filterAndSetPlugins ( plugins ) {
+          $scope.filteredList = $filter('filter')( plugins, pluginFilter );
+        };
+
+        /**
+         * Checks if a plugin passes all the conditions set in the view
+         * @param {Plugin} plugin
+         * @returns {Boolean} True if the plugin passes the filter
+         */
+        function pluginFilter ( plugin ) {
+          return filterCategory( plugin );
+              // && filterStage ( plugin );
+
+        };
+
+        $scope.$watchCollection( "selectedCategories", applyPluginFilter );
+
         function getCategories ( plugins ) {
           var categories = _.chain( plugins )
               .filter( function ( plugin ) { return plugin.category !== undefined && plugin.category !== null; } )
