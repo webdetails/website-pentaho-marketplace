@@ -114,7 +114,7 @@ a, a:link, a:visited, a:hover, a:active {
 	padding: 50px 0px 0px 0px;
 	background: #FFFFFF;
 	max-width: 1212px;
-	margin: 5px auto 40px;
+	margin: 10px auto 60px;
 	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.15);
 	box-shadow:         0 0 6px rgba(0,0,0,0.15);
 	min-width: 250px;
@@ -127,6 +127,66 @@ a, a:link, a:visited, a:hover, a:active {
 	clear: both;
 }
 
+
+/* ++++ PENTAHO HEADER ++++ */
+
+.pentaho-header {
+    height: 110px;
+    padding: 45px 0 0;
+}
+
+.pentaho-header .pentaho-link {
+    min-width: 188px;
+    display: block;
+}
+
+a.btn.btn-default.tryPentaho {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 22px 10px;
+    background-color: #005ca7;
+    background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#247dc5),color-stop(100%,#015ea9));
+    background-image: -webkit-linear-gradient(#247dc5,#015ea9);
+    background-image: -moz-linear-gradient(#247dc5,#015ea9);
+    background-image: -o-linear-gradient(#247dc5,#015ea9);
+    background-image: linear-gradient(#247dc5,#015ea9);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    border: none;
+    text-shadow: 0 1px rgba(255,255,255,.3);
+    margin-top: 3px;
+}
+
+a.btn.btn-default.tryPentaho:hover,
+a.btn.btn-default.tryPentaho:active {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 22px 10px;
+    text-decoration: none;
+    background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#015ea9),color-stop(100%,#247dc5));
+    background-image: -webkit-linear-gradient(#015ea9,#247dc5);
+    background-image: -moz-linear-gradient(#015ea9,#247dc5);
+    background-image: -o-linear-gradient(#015ea9,#247dc5);
+    background-image: linear-gradient(#015ea9,#247dc5);
+    border-radius: 4px;
+    border: none;
+    background-position: 0;
+}
+
+a.btn.btn-default.tryPentaho:focus {
+    outline: 0 none;
+}
+
+@media (max-width: 767px) {
+
+    .pentaho-header {
+        text-align: center;
+    }
+
+}
+
+/* ++++ PENTAHO HEADER ++++*/
 
 
 /* ++++ PAGE HEADER ++++ */
