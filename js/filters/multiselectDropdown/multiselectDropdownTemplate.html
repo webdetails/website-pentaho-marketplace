@@ -1,16 +1,19 @@
 
-  <div class="filters-subsection">
+  <div>
 
     <div data-accordion data-close-others="false">
-      <div data-accordion-group
+      <div class="filters-subsection"
+          data-accordion-group
           data-ng-repeat-start="group in groups"
-          data-is-open="status.open">
+          data-is-open="group.isOpen">
 
         <div data-accordion-heading >
-          <button class="filters-title">{{group.name}}</button>
+          <button class="filters-title"
+                  ng-class="{open: group.isOpen}">
+            {{group.name}}
+          </button>
           <button class="filters-state pull-right"
-              data-checked={{group.selected}}
-              data-bChecked={{group.selected}}
+              data-is-checked={{group.selected}}
               data-ng-click="groupClicked( group )"
               data-stop-event="click">
           </button>
@@ -20,9 +23,9 @@
         <div class="REMOVED-filters-subsection-items">
           <button data-ng-repeat="option in group.options"
               class="btn btn-default btn-block single-filter-button"
-              role="checkbox"
+
               data-ng-click="toggleSelection(option)"
-              data-checked="{{option.isSelected}}">
+              data-is-checked={{option.isSelected}}>
             {{option.name}}
           </button>
         </div>
@@ -33,49 +36,4 @@
 
     </div>
 
-
-<!--
-    <div class="btn-group" data-dropdown data-is-open="status.isopen">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-ng-disabled="disabled"
-          data-popover="{{optionsDisplayString}}" data-popover-popup-delay="500"
-          data-popover-trigger="mouseenter" data-popover-placement="bottom">
-        <span class="multiselectButtonText">
-          <span>{{prefix}}</span>
-          <span>{{optionsDisplayString}}</span>
-        </span>
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-
-          <li class="group"
-              data-ng-repeat-start="group in groups"
-              data-ng-click="groupClicked( group )"
-              data-ng-class="group.getCssClass()"
-              data-stop-event="click">
-            <a>
-              <input type="checkbox"
-                  data-ng-model="group.selected" data-ng-true-value="All" data-ng-false-value="None"
-                  data-indeterminate="group.selected == 'Some'"
-                  data-stop-event="click">
-              {{group.name}}
-            </a>
-          </li>
-
-          <li class="option"
-              data-ng-repeat="option in group.options"
-              data-ng-show="option.name"
-              data-ng-click="toggleSelection(option)"
-              data-checked="{{option.isSelected}}"
-              data-stop-event="click">
-            <a>
-              <input type="checkbox" data-ng-model="option.isSelected" data-stop-event="click">
-              {{option.name}}
-            </a>
-          </li>
-
-          <li class="divider" data-ng-show="useDivider" data-ng-repeat-end />
-
-      </ul>
-  </div>
-  -->
 </div>

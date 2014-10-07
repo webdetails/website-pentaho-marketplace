@@ -30,6 +30,13 @@
           }
 
           function Category(main, sub) {
+            // No top level categories allowed.
+            // Use "other" category as parent
+            if( !sub ) {
+              sub = main;
+              main = "Other";
+            }
+
             var that = this;
             that.main = main;
             that.mainName = main;

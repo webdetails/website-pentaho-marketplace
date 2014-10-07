@@ -132,18 +132,6 @@ $('.plugins-filters .single-filter-button').click(function() {
 	var totalFilters = $this.closest('.filters-subsection-items').find('button.single-filter-button').length;
 	var activeFilters = $this.closest('.filters-subsection-items').find('button.single-filter-button[data-checked=true]').length;
 
-  /*
-	if(activeFilters == totalFilters) {
-		$this.closest('.filters-subsection').find('.filters-state').removeClass('some-checked');
-		$this.closest('.filters-subsection').find('.filters-state').addClass('all-checked');
-	} else if((activeFilters != totalFilters) && activeFilters > 0) {
-		$this.closest('.filters-subsection').find('.filters-state').removeClass('all-checked');
-		$this.closest('.filters-subsection').find('.filters-state').addClass('some-checked');		
-	} else if((activeFilters != totalFilters) && activeFilters == 0) {
-		$this.closest('.filters-subsection').find('.filters-state').removeClass('all-checked');
-		$this.closest('.filters-subsection').find('.filters-state').removeClass('some-checked');		
-	}
-	*/
 
 	var globalFilters = $this.closest('.plugins-filters').find('button.single-filter-button[data-checked=true]').length;
 	if(globalFilters == 0) {
@@ -156,10 +144,6 @@ $('.plugins-filters .single-filter-button').click(function() {
 $('.clear-all-filters').click(function() {
 	$('.plugins-filters .single-filter-button').attr('data-checked', 'false');
 
-  /*
-  $('.plugins-filters .filters-state').removeClass('some-checked');
-	$('.plugins-filters .filters-state').removeClass('all-checked');
-	*/
 	$('.clear-all-filters').addClass('disabled');
 });
 
@@ -168,36 +152,7 @@ $('#inputSearch').focus(function() {
 	$('#filter-button').removeClass('active');
 });
 
-$('.filters-subsection .filters-title').click(function() {
-	$(this).toggleClass('open');
-	$(this).closest('.filters-subsection').find('.filters-subsection-items').stop().slideToggle();
-});
 
-/*
-$('.filters-subsection .filters-state').click(function() {
-  var $this = $(this);
-
-	if($this.hasClass('some-checked') || $this.hasClass('all-checked')) {
-		$this.removeClass('some-checked');
-		$this.removeClass('all-checked');
-		$this.closest('.filters-subsection').find('.filters-subsection-items .single-filter-button').each(function() {
-			$(this).attr('data-checked', 'false')
-		});
-	} else {
-		$this.addClass('all-checked');
-		$this.closest('.filters-subsection').find('.filters-subsection-items .single-filter-button').each(function() {
-			$(this).attr('data-checked', 'true')
-		});
-	}
-
-	var globalFilters = $this.closest('.plugins-filters').find('button.single-filter-button[data-checked=true]').length;
-	if(globalFilters == 0) {
-		$('.clear-all-filters').addClass('disabled');
-	} else {
-		$('.clear-all-filters').removeClass('disabled');
-	}
-});
- */
 
 $('.info-button').click(function() {
 	$(this).closest('.btn-group').find('button:not(.info-button) span').stop().animate({width: 'toggle', paddingLeft: 'toggle', paddingRight: 'toggle'});
