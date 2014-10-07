@@ -2075,14 +2075,18 @@ p.contribute-description {
 	margin-top: 40px;
 }
 
+.download-marketplace-row a.btn.btn-block .versionDashSeparator {
+	margin: 0 1px;
+}
+
 .download-marketplace-row a.btn.btn-block {
 	background: #FFFFFF;
 	border: 1px solid #E1E0E0;
 	text-align: left;
 	position: relative;
 	color: #7C7E80;
-	padding: 10px 15px;
-	font-size: 15px;
+	padding: 10px;
+	font-size: 14px;
 	-webkit-transition: all .3s;
 	transition: all .3s;
 }
