@@ -206,6 +206,14 @@ p.copyright {
 	line-height: 34px;
 }
 
+.social-links {
+	display: inline-block;
+}
+
+.social-link.first-social-link {
+	margin-left: 0;
+}
+
 .hi-icon {
 	display: block;
 	font-size: 0px;
@@ -2957,6 +2965,17 @@ p.contribute-description {
 	}
 	.plugin-window .panel {
 		margin-top: 30px;
+	}
+	.footer-container .text-left ,
+	.footer-container .text-right {
+		text-align: center;
+	}
+	p.copyright {
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	.hi-icon {
+		margin: 0 auto;
 	}
 }
 
