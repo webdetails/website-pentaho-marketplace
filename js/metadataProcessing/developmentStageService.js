@@ -24,6 +24,47 @@
 
           var lanes = {};
 
+
+          // TODO remove hardcoded
+          var stagesStrings = {
+            Customer: {
+              1: {
+                name: 'Development Phase',
+                description: 'Start up phase of an internal project. Usually a Labs experiment.'
+              },
+              2: {
+                name: 'Snapshot Release',
+                description: 'Unstable and unsupported branch, not recommended for production use.'
+              },
+              3: {
+                name: 'Limited Release',
+                description: 'Assistence given by Services Development with no contractual support for production environments.'
+              },
+              4: {
+                name: 'Production Release',
+                description: 'Production release with PM assigned, fully supported as part of the Pentaho release cycle.'
+              }
+            },
+            Community: {
+              1: {
+                name: 'Development Phase',
+                description: 'Start up phase of an internal project. Usually a Labs experiment.'
+              },
+              2:  {
+                name: 'Snapshot Release',
+                description: 'Unstable and unsupported branch, not recommended for production use.'
+              },
+              3: {
+                name: 'Stable Release',
+                description: 'Adoption is ramping up and product could be used in production environments.'
+              },
+              4:  {
+                name: 'Mature Release',
+                description: 'Indicates a successfully adopted project in a mature state.'
+              }
+            }
+          }
+
           function Lane(id, name) {
             this.id = id;
             this.name = name;
@@ -37,10 +78,14 @@
 
             //lane.name = $translate.instant( laneNameId );
 
+            lane.name = laneId;
+
+            /*
             $translate(laneNameId)
                 .then(function (name) {
                   lane.name = name;
                 });
+            */
 
             // TODO: check if add here or out of function
             lanes[laneId] = lane;
@@ -79,11 +124,12 @@
               throw "createDevelopmentStage: unknown laneId " + laneId;
             }
 
-            var stage = new DevelopmentStage(lane, phaseId);
+            var stage = new DevelopmentStage(lane, phaseId, stagesStrings[laneId][phaseId].name, stagesStrings[laneId][phaseId].description);
 
 //          stage.name =  $translate.instant( nameTranslationId );
 //          stage.description = $translate.instant( descriptionTranslationId );
 
+            /*
             $translate(nameTranslationId)
                 .then(function (name) {
                   stage.name = name;
@@ -92,7 +138,7 @@
                 .then(function (description) {
                   stage.description = description;
                 });
-
+            */
 
             // TODO: check if add here or out of function
             lane.stages[phaseId] = stage;

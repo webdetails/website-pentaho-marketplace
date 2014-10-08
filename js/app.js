@@ -139,7 +139,7 @@ app.controller('MarketplaceController',
               $scope.selectedCategories = [];
 
               $scope.developmentStages = _.map( devStagesService.getStages(), function ( stage ) {
-                var filterStageOption = { lane: stage.lane.id, name: stage.phase, stage: stage };
+                var filterStageOption = { lane: stage.lane.id, name: stage.name, stage: stage };
                 // NOTE: These watches are necessary because of translation issues in FireFox
                 //$scope.$watch( function () { return stage.name; }, function () { filterStageOption.name = stage.name; } );
                 //$scope.$watch( function () { return stage.lane.name; }, function () { filterStageOption.lane = stage.lane.name; } );
