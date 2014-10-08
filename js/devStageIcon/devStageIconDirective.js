@@ -27,7 +27,8 @@
             //'@' evaluates as a string
             //'=' evaluates in the isolate scope
             lane: "=",
-            phase: "="
+            phase: "=",
+            disablePopup: "@"
           }
         };
       }
