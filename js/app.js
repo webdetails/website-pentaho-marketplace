@@ -225,7 +225,12 @@ app.controller('MarketplaceController',
               var dialogContentHeight = $dialog.find('.ngdialog-content').height();
               var dialogContentTotalHeight = dialogContentHeight + 100;
               $dialog.find('.ngdialog-overlay').css('min-height', dialogContentTotalHeight);
+              //console.log('ngDialog opened: ' + $dialog.attr('id') + '; ngDialog height: ' + dialogContentHeight + '; ngDialog height with margins: ' + dialogContentTotalHeight);
           });
+        });
+
+        $rootScope.$on('ngDialog.closed', function (e, $dialog) {
+          $(window).unbind('resize');
         });
 
         $scope.devStagesTypes = [
