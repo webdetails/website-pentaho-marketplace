@@ -80,7 +80,7 @@
         <div class="page-slider" owlcarousel carousel-options="{ autoplay: true, autoplayHoverPause: true, smartSpeed: 1200}">
           <div class="item"
               ng-cloak
-              data-ng-repeat="plugin in getHighlightedPlugins()">
+              data-ng-repeat="plugin in getHighlightedPlugins() track by $index">
             <div class="container">
               <div class="row" ng-click="open(plugin)">
                 <div class="col-sm-5 item-image text-center">

@@ -332,34 +332,32 @@ app.value('OwlCarouselConfig', {
   items: 1,
   smartSpeed: 800
 });
-app.directive('owlcarousel', function (OwlCarouselConfig) {
+app.directive('owlcarousel',
+    [ 'OwlCarouselConfig', '$timeout',
+      function (OwlCarouselConfig, $timeout) {
 
-  function linker(scope, element, attr) {
+        function linker(scope, element, attr) {
 
-    //carrega o carrosel
-    var loadCarousel = function () {
-      element.owlCarousel(getOptions());
-    };
+          //carrega o carrosel
+          var loadCarousel = function () {
+            element.owlCarousel( getOptions() );
+          };
 
-    var getOptions = function () {
-      return angular.extend({}, OwlCarouselConfig, scope.$eval(attr.carouselOptions));
-    }
+          var getOptions = function () {
+            return angular.extend({}, OwlCarouselConfig, scope.$eval(attr.carouselOptions));
+          }
 
-    //toda vez que adicionar ou remover um item da lista ele carrega o carrosel novamente
-    scope.$watch("batatas", function (value) {
-      loadCarousel();
-    });
+          // timeout is necessary in order for the carousel to load after ng-repeat directives
+          $timeout( loadCarousel, 50);
+        };
 
-    //loadCarousel();
-
-  };
-
-  return{
-    restrict: "A",
-    link: linker
-  };
-
-});
+        return{
+          restrict: "A",
+          link: linker
+        };
+      }
+    ]
+);
 
 app.directive('onFinishRender', function ($timeout) {
   return {
