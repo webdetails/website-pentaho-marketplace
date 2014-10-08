@@ -24,6 +24,7 @@
           <div class="filters-sub-title">{{group.name}}</div>
           <button data-ng-repeat="option in group.options"
               class="btn btn-default btn-block single-filter-button"
+              ng-class="'dev-stage-' + option.selectionValue.lane.id.toLowerCase() + '-' + '0' + option.selectionValue.phase"
               data-ng-click="toggleSelection(option)"
               data-is-checked={{option.isSelected}}>
             {{option.name}}
