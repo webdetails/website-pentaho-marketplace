@@ -1488,9 +1488,9 @@ button:focus {
 .pentahoVersionSelect button.dropdown-toggle:hover,
 .pentahoVersionSelect button.dropdown-toggle:active,
 .pentahoVersionSelect button.dropdown-toggle:focus {
-	background: #fff !important;
+	background: none !important;
 	border-radius: 0 !important;
-	border: 1px solid #e1e0e0 !important;
+	border: 1px solid rgba(0,0,0,0) !important;
 	-webkit-box-shadow: none !important;
 	box-shadow: none !important;
 	text-shadow: none !important;
@@ -1498,17 +1498,18 @@ button:focus {
 	border-bottom: none !important;
 	bottom: -1px;
 	text-align: left;
-	padding: 6px 10px 7px;
+	padding: 6px 10px 7px 0;
 	z-index: 0;
 }
 
 .pentahoVersionSelect button.dropdown-toggle:hover,
 .pentahoVersionSelect.open button.dropdown-toggle {
+	color: #005ca7 !important;
 }
 
 
 .pentahoVersionSelect button.dropdown-toggle .caret {
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .pentahoVersionSelect label {
@@ -1532,6 +1533,7 @@ button:focus {
 	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	background: #F6F7F8;
 }
 
 .pentahoVersionSelect .dropdown-menu > li > a {
@@ -1539,11 +1541,17 @@ button:focus {
 	color: #616161;
 }
 
+.pentahoVersionSelect .dropdown-menu > li.selected > a {
+	color: #b1b1b1 !important;
+    background: #F6F7F8 !important;
+}
+
 .pentahoVersionSelect .dropdown-menu > li > a:hover, 
 .pentahoVersionSelect .dropdown-menu > li > a:focus {
-    background: #e1e0e0;
+    background: #F6F7F8;
     background-image: none;
     cursor: pointer;
+    color: #005ca7;
 }
 
 @media (max-width: 420px) {
