@@ -344,11 +344,12 @@ a.btn.btn-default.tryPentaho:focus {
 }
 
 .dev-stage {
-	width: 32px;
-	height: 32px;
+	width: 24px;
+	height: 24px;
 	background-color: #FFFFFF;
 	border: none;
 	background-position: center center;
+	background-size: contain;
 }
 
 .touch .dev-stage.visible-xs {
@@ -363,7 +364,7 @@ a.btn.btn-default.tryPentaho:focus {
 	bottom: 12px;
 	right: 13px;
 	position: absolute;
-	height: 32px;
+	height: 24px;
 }
 
 .plugins-grid .plugin .plugin-inner .stages .devStageIcon {
