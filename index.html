@@ -78,24 +78,33 @@
         </div>
 
         <div class="page-slider" owlcarousel carousel-options="{ autoplay: true, autoplayHoverPause: true, smartSpeed: 1200}">
-          <div class="item {{pluginsList[0].stage}}" >
+          <div class="item"
+              ng-cloak
+              data-ng-repeat="plugin in getHighlightedPlugins()">
             <div class="container">
-              <div class="row" ng-click="open(pluginsList[0])">
+              <div class="row" ng-click="open(plugin)">
                 <div class="col-sm-5 item-image text-center">
-                    <img ng-src="{{pluginsList[0].screenshotUrls[0]}}" alt="" ng-show="pluginsList[0].screenshotUrls[0]">
+                    <img ng-src="{{plugin.screenshotUrls[0]}}" alt="" ng-show="plugin.screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{pluginsList[0].name}}</h1>
-                  <p class="item-description">{{pluginsList[0].description}}</p>
+                  <h1 class="item-title">{{plugin.name}}</h1>
+                  <p class="item-description">{{plugin.description}}</p>
 
-                  <p class="item-author">{{pluginsList[0].author.name | cut:false:40:'...'}}</p>
+                  <p class="item-author">{{plugin.author.name | cut:false:40:'...'}}</p>
                 </div>
-                <div class="dev-stage visible-xs"></div>
-                <div class="dev-stage hidden-xs" title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[0].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[0].stage})[0].description}}" ng-show="pluginsList[0].stage" ng-when="pluginsList[0].stage" do-jquery-init="tooltipster" do-jquery-options="{ contentAsHTML: true, theme: 'tooltipster-light', animation: 'grow', maxWidth: 300, position: 'top'}"></div>
-                <div class="clear"></div>
+                <div class="stages">
+                  <div data-ng-repeat="stage in plugin.getStages()"
+                      data-dev-stage-icon
+                      data-version="stage"
+                      data-lane="stage.lane.id"
+                      data-phase="stage.phase">
+                  </div>
+                  <div class="clear"></div>
+                </div>
               </div>
             </div>
           </div>
+          <!--
           <div class="item {{pluginsList[1].stage}}" ng-cloak>
             <div class="container">
               <div class="row" ng-click="open(pluginsList[1])">
@@ -132,6 +141,7 @@
               </div>
             </div>
           </div>
+          -->
         </div>
 
         <div class="page-plugins">

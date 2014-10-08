@@ -124,6 +124,14 @@ app.controller('MarketplaceController',
             }
         );
 
+        $scope.getHighlightedPlugins = function () {
+          return [ $scope.pluginsList[5], // sparkl
+            $scope.pluginsList[1], // CDF
+            $scope.pluginsList[2], // CDA
+            $scope.pluginsList[3], // CDE
+            $scope.pluginsList[4] // CGG
+            ];
+        }
 
         // TODO: get these constants from somewhere else
         $scope.itemsPerPage = 12;
