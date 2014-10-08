@@ -1895,6 +1895,18 @@ button:focus {
 	padding-bottom: 5px;
 }
 
+.plugin-modal-stage .dev-stage {
+	width: 100%;
+	height: 46px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: #FFFFFF;
+	border: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 .plugin-buttons-row {
 	background: #F2F1F1;
 	padding-top: 30px;
