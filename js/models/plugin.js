@@ -29,6 +29,26 @@
                 .value();
           };
 
+          var stagesOrder = {
+            Community: { 1: 1, 2: 2, 3: 3, 4: 4 },
+            Customer: { 1: 5, 2: 6, 3: 7, 4: 8 }
+          };
+
+          function getStageOrder ( stage ) {
+            return stagesOrder[stage.lane.id][stage.phase];
+          }
+
+          Plugin.prototype.getHighestStage = function () {
+            if ( this.highestStage === undefined ) {
+              var stages = this.getStages();
+
+              var sortedStages = _.sortBy( stages, getStageOrder );
+              this.highestStage = sortedStages[sortedStages.length -1];
+            }
+
+            return this.highestStage;
+          };
+
           Plugin.Version = function ( branch, version, buildId ) {
             this.branch = branch;
             this.version = version;
