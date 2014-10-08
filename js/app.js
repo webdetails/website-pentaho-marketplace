@@ -13,6 +13,14 @@ app.controller('MarketplaceController',
       function ($filter, $scope, ngDialog, $rootScope, $timeout, metadataService ) {
 
 
+        function applyPluginFilter() {
+          filterAndSetPlugins( $scope.pluginsList );
+        };
+
+        function filterAndSetPlugins ( plugins ) {
+          $scope.filteredList = $filter('filter')( plugins, pluginFilter );
+        };
+
         function filterStage ( plugin ) {
           if ( $scope.selectedStages.length == 0 ) {
             return true;
@@ -49,12 +57,27 @@ app.controller('MarketplaceController',
           );
         }
 
-        function applyPluginFilter() {
-           filterAndSetPlugins( $scope.pluginsList );
+        function contains ( string, subString ) {
+          return string ? string.toLowerCase().indexOf(subString.toLowerCase()) > -1 : false;
         };
 
-        function filterAndSetPlugins ( plugins ) {
-          $scope.filteredList = $filter('filter')( plugins, pluginFilter );
+        function filterText ( plugin, text ) {
+          if ( !text ) {
+            return true;
+          }
+
+          return contains ( plugin.name, text ) ||
+              contains( plugin.description, text ) ||
+              contains( plugin.author.name, text ) ||
+              contains( plugin.dependencies, text ) ||
+              contains( plugin.license.name, text ) ||
+              _.any( plugin.versions, function ( version ) {
+                return contains( version.branch, text ) ||
+                    contains( version.version, text ) ||
+                    contains( version.buildId, text ) ||
+                    contains( version.name , text ) ||
+                    contains( version.description, text );
+              });
         };
 
         /**
@@ -63,12 +86,15 @@ app.controller('MarketplaceController',
          * @returns {Boolean} True if the plugin passes the filter
          */
         function pluginFilter ( plugin ) {
-          return filterCategory( plugin );
+          return filterCategory( plugin )
+                 && filterText( plugin, $scope.searchTerm );
               // && filterStage ( plugin );
 
         };
 
         $scope.$watchCollection( "selectedCategories", applyPluginFilter );
+        $scope.$watch( "searchTerm", applyPluginFilter );
+
 
         function getCategories ( plugins ) {
           var categories = _.chain( plugins )
@@ -87,13 +113,6 @@ app.controller('MarketplaceController',
         $scope.filteredList = [];
 
         $scope.searchTerm = "";
-
-        $scope.$watch('searchTerm', function (oldVal, newVal) {
-          $timeout(function () {
-            $scope.filteredList = inputFilter($scope.pluginsList, newVal);
-            $scope.totalItems = $scope.filteredList.length;
-          }, 0);
-        });
 
         metadataService.getPlugins()
             .then( function ( plugins ) {
