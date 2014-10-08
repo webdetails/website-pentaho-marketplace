@@ -121,17 +121,18 @@ app.controller('MarketplaceController',
 
               $scope.pluginsList = $scope.filteredList = plugins;
               $scope.totalItems = $scope.pluginsList.length;
+
+              $scope.highlightedPlugins = [
+                plugins[5], // sparkl
+                plugins[1], // CDF
+                plugins[2], // CDA
+                plugins[3], // CDE
+                plugins[4] // CGG
+              ];
+
             }
         );
 
-        $scope.getHighlightedPlugins = function () {
-          return [ $scope.pluginsList[5], // sparkl
-            $scope.pluginsList[1], // CDF
-            $scope.pluginsList[2], // CDA
-            $scope.pluginsList[3], // CDE
-            $scope.pluginsList[4] // CGG
-            ];
-        }
 
         // TODO: get these constants from somewhere else
         $scope.itemsPerPage = 12;
@@ -345,10 +346,12 @@ app.directive('owlcarousel',
 
           var getOptions = function () {
             return angular.extend({}, OwlCarouselConfig, scope.$eval(attr.carouselOptions));
-          }
+          };
 
           // timeout is necessary in order for the carousel to load after ng-repeat directives
-          $timeout( loadCarousel, 50);
+          $timeout( loadCarousel, 0);
+          //$watch( 'highlightedPlugins', function () { loadCarousel(); } );
+          //loadCarousel();
         };
 
         return{

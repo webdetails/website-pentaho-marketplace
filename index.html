@@ -79,8 +79,7 @@
 
         <div class="page-slider" owlcarousel carousel-options="{ autoplay: true, autoplayHoverPause: true, smartSpeed: 1200}">
           <div class="item"
-              ng-cloak
-              data-ng-repeat="plugin in getHighlightedPlugins() track by $index">
+              data-ng-repeat="plugin in highlightedPlugins">
             <div class="container">
               <div class="row" ng-click="open(plugin)">
                 <div class="col-sm-5 item-image text-center">
@@ -104,44 +103,7 @@
               </div>
             </div>
           </div>
-          <!--
-          <div class="item {{pluginsList[1].stage}}" ng-cloak>
-            <div class="container">
-              <div class="row" ng-click="open(pluginsList[1])">
-                <div class="col-sm-5 item-image text-center">
-                    <img ng-src="{{pluginsList[1].screenshotUrls[0]}}" alt="" ng-show="pluginsList[1].screenshotUrls[0]">
-                </div>
-                <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{pluginsList[1].name}}</h1>
-                  <p class="item-description">{{pluginsList[1].description}}</p>
 
-                  <p class="item-author">{{pluginsList[1].author.name | cut:false:40:'...'}}</p>
-                </div>
-                <div class="dev-stage visible-xs"></div>
-                <div class="dev-stage hidden-xs" title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[1].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[1].stage})[0].description}}" ng-show="pluginsList[1].stage" ng-when="pluginsList[1].stage" do-jquery-init="tooltipster" do-jquery-options="{ contentAsHTML: true, theme: 'tooltipster-light', animation: 'grow', maxWidth: 300, position: 'top'}"></div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-          <div class="item {{pluginsList[2].stage}}" ng-cloak>
-            <div class="container">
-              <div class="row" ng-click="open(pluginsList[2])">
-                <div class="col-sm-5 item-image text-center">
-                    <img ng-src="{{pluginsList[2].screenshotUrls[0]}}" alt="" ng-show="pluginsList[2].screenshotUrls[0]">
-                </div>
-                <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{pluginsList[2].name}}</h1>
-                  <p class="item-description">{{pluginsList[2].description}}</p>
-
-                  <p class="item-author">{{pluginsList[2].author.name | cut:false:40:'...'}}</p>
-                </div>
-                <div class="dev-stage visible-xs"></div>
-                <div class="dev-stage hidden-xs" title="<span>Development Stage</span><hr><strong>{{(devStages | filter:{id:pluginsList[2].stage})[0].name}}:</strong> {{(devStages | filter:{id:pluginsList[2].stage})[0].description}}" ng-show="pluginsList[2].stage" ng-when="pluginsList[2].stage" do-jquery-init="tooltipster" do-jquery-options="{ contentAsHTML: true, theme: 'tooltipster-light', animation: 'grow', maxWidth: 300, position: 'top'}"></div>
-                <div class="clear"></div>
-              </div>
-            </div>
-          </div>
-          -->
         </div>
 
         <div class="page-plugins">
@@ -233,7 +195,7 @@
               No entry matched your criteria.
             </div>
             <div data-pagination class="pagination-sm"
-                data-ng-show="filteredList.length > 0"
+                data-ng-show="filteredList.length > itemsPerPage"
                 data-ng-model="currentPage"
                 data-boundary-links="true" data-total-items="filteredList.length" data-max-size="5"
                 data-items-per-page="itemsPerPage"
