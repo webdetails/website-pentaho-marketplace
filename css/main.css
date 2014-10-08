@@ -654,7 +654,8 @@ hr#hr-plugins-header {
 }
 
 .page-plugins .plugins-header input#inputSearch[type=text]:focus,
-.touch .page-plugins .plugins-header input#inputSearch[type=text]:hover {
+.touch .page-plugins .plugins-header input#inputSearch[type=text]:hover,
+.page-plugins .plugins-header input#inputSearch[type=text].notEmpty {
 	background-color: rgba(255,255,255,1);
 	background-image: url(../img/search-hover.svg);
 	background-repeat: no-repeat;
@@ -672,7 +673,8 @@ hr#hr-plugins-header {
 }
 
 .no-svg .page-plugins .plugins-header input#inputSearch[type=text]:focus,
-.no-svg.touch .page-plugins .plugins-header input#inputSearch[type=text]:hover {
+.no-svg.touch .page-plugins .plugins-header input#inputSearch[type=text]:hover,
+.no-svg .page-plugins .plugins-header input#inputSearch[type=text].notEmpty {
 	background-color: rgba(255,255,255,1);
 	background-image: url(../img/search-hover.png);
 	background-repeat: no-repeat;
