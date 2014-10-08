@@ -360,17 +360,17 @@ a.btn.btn-default.tryPentaho:focus {
 	display: none !important;
 }
 
-.plugins-grid .plugin .plugin-inner .stages {
+.stages {
 	bottom: 12px;
 	right: 13px;
 	position: absolute;
 	height: 24px;
 }
 
-.plugins-grid .plugin .plugin-inner .stages .devStageIcon {
+.stages .devStageIcon {
 	display: inline-block;
 	position: relative;
-	margin-left: 10px;
+	margin-left: 7px;
 }
 
 .customer1 .dev-stage,
@@ -2692,7 +2692,7 @@ p.contribute-description {
 	    height: 75px;
 	}
 
-	.plugins-grid .plugin .plugin-inner .stages {
+	.stages {
 		height: 24px;
 	}
 
