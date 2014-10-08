@@ -1480,6 +1480,82 @@ button:focus {
 	margin-top: 25px;
 }
 
+/* pentaho version dropdown */
+
+.pentahoVersionSelect button.dropdown-toggle,
+.pentahoVersionSelect button.dropdown-toggle:link,
+.pentahoVersionSelect button.dropdown-toggle:visited,
+.pentahoVersionSelect button.dropdown-toggle:hover,
+.pentahoVersionSelect button.dropdown-toggle:active,
+.pentahoVersionSelect button.dropdown-toggle:focus {
+	background: #fff !important;
+	border-radius: 0 !important;
+	border: 1px solid #e1e0e0 !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	color: #616161 !important;
+	border-bottom: none !important;
+	bottom: -1px;
+	text-align: left;
+	padding: 6px 10px 7px;
+	z-index: 0;
+}
+
+.pentahoVersionSelect button.dropdown-toggle:hover,
+.pentahoVersionSelect.open button.dropdown-toggle {
+}
+
+
+.pentahoVersionSelect button.dropdown-toggle .caret {
+	margin-left: 10px;
+}
+
+.pentahoVersionSelect label {
+	position: absolute;
+	bottom: 30px;
+	display: block;
+	font-size: 11px;
+	font-weight: 300;
+	margin-left: 1px;
+	margin-bottom: 3px;
+	max-width: none;
+	width: 120px;
+	color: #b1b1b1;
+}
+
+.pentahoVersionSelect .dropdown-menu {
+	z-index: 1500;
+	border-radius: 0;
+	margin-top: 0px;
+	border: 1px solid #e1e0e0;
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.pentahoVersionSelect .dropdown-menu > li > a {
+	padding: 3px 10px;
+	color: #616161;
+}
+
+.pentahoVersionSelect .dropdown-menu > li > a:hover, 
+.pentahoVersionSelect .dropdown-menu > li > a:focus {
+    background: #e1e0e0;
+    background-image: none;
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+	.page-plugins .plugins-header input#inputSearch[type="text"]:focus,
+	.touch .page-plugins .plugins-header input#inputSearch[type="text"]:hover, 
+	.page-plugins .plugins-header input#inputSearch.notEmpty[type="text"] {
+	    width: 105px;
+	}
+}
+ 
+/* plugins grid*/
+
 .page-plugins .plugins-container {
 	width: 960px;
 	margin: auto;
@@ -1508,7 +1584,7 @@ button:focus {
 
 .page-plugins .plugin:hover {
 	position: relative;
-	z-index: 1000;
+	z-index: 0;
 }
 
 .page-plugins .plugin .plugin-inner {

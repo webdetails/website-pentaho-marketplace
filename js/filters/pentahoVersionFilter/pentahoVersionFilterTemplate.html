@@ -1,9 +1,10 @@
 <div class="btn-group pentahoVersionSelect"
     dropdown
     is-open="status.isOpen">
+  <label>Pentaho version:</label>
   <button type="button" class="btn btn-primary dropdown-toggle">
     <span class="selectButtonText">
-      {{ selectedVersion}}
+      Pentaho {{ selectedVersion}}
     </span>
     <span class="caret"></span>
   </button>
@@ -12,7 +13,7 @@
     <li data-ng-repeat="version in versions"
         data-ng-click="selectVersion( version )">
       <a>
-        {{ version }}
+        Pentaho {{ version }}
       </a>
     </li>
 
