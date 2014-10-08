@@ -164,7 +164,7 @@ a.btn.btn-default.tryPentaho:hover,
 a.btn.btn-default.tryPentaho:active {
     font-size: 18px;
     color: #fff;
-    padding: 10px 22px 10px;
+    padding: 10px 22px 9px;
     text-decoration: none;
     background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#015ea9),color-stop(100%,#247dc5));
     background-image: -webkit-linear-gradient(#015ea9,#247dc5);
