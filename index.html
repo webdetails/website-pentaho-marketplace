@@ -78,21 +78,120 @@
         </div>
 
         <div class="page-slider" owlcarousel carousel-options="{ autoplay: true, autoplayHoverPause: true, smartSpeed: 1200}">
-          <div class="item"
-              data-ng-repeat="plugin in highlightedPlugins">
+          <div class="item">
             <div class="container">
-              <div class="row" ng-click="open(plugin)">
+              <div class="row" ng-click="open(pluginsList[5])">
                 <div class="col-sm-5 item-image text-center">
-                    <img ng-src="{{plugin.screenshotUrls[0]}}" alt="" ng-show="plugin.screenshotUrls[0]">
+                    <img ng-src="{{pluginsList[5].screenshotUrls[0]}}" alt="" ng-show="pluginsList[5].screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{plugin.name}}</h1>
-                  <p class="item-description">{{plugin.description}}</p>
+                  <h1 class="item-title">{{pluginsList[5].name}}</h1>
+                  <p class="item-description">{{pluginsList[5].description}}</p>
 
-                  <p class="item-author">{{plugin.author.name | cut:false:40:'...'}}</p>
+                  <p class="item-author">{{pluginsList[5].author.name | cut:false:40:'...'}}</p>
                 </div>
                 <div class="stages">
-                  <div data-ng-repeat="stage in plugin.getStages()"
+                  <div data-ng-repeat="stage in pluginsList[5].getStages()"
+                      data-dev-stage-icon
+                      data-version="stage"
+                      data-lane="stage.lane.id"
+                      data-phase="stage.phase">
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row" ng-click="open(pluginsList[1])">
+                <div class="col-sm-5 item-image text-center">
+                  <img ng-src="{{pluginsList[1].screenshotUrls[0]}}" alt="" ng-show="pluginsList[1].screenshotUrls[0]">
+                </div>
+                <div class="col-sm-7 item-content">
+                  <h1 class="item-title">{{pluginsList[1].name}}</h1>
+                  <p class="item-description">{{pluginsList[1].description}}</p>
+
+                  <p class="item-author">{{pluginsList[1].author.name | cut:false:40:'...'}}</p>
+                </div>
+                <div class="stages">
+                  <div data-ng-repeat="stage in pluginsList[1].getStages()"
+                      data-dev-stage-icon
+                      data-version="stage"
+                      data-lane="stage.lane.id"
+                      data-phase="stage.phase">
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row" ng-click="open(pluginsList[2])">
+                <div class="col-sm-5 item-image text-center">
+                  <img ng-src="{{pluginsList[2].screenshotUrls[0]}}" alt="" ng-show="pluginsList[2].screenshotUrls[0]">
+                </div>
+                <div class="col-sm-7 item-content">
+                  <h1 class="item-title">{{pluginsList[2].name}}</h1>
+                  <p class="item-description">{{pluginsList[2].description}}</p>
+
+                  <p class="item-author">{{pluginsList[2].author.name | cut:false:40:'...'}}</p>
+                </div>
+                <div class="stages">
+                  <div data-ng-repeat="stage in pluginsList[2].getStages()"
+                      data-dev-stage-icon
+                      data-version="stage"
+                      data-lane="stage.lane.id"
+                      data-phase="stage.phase">
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row" ng-click="open(pluginsList[3])">
+                <div class="col-sm-5 item-image text-center">
+                  <img ng-src="{{pluginsList[3].screenshotUrls[0]}}" alt="" ng-show="pluginsList[3].screenshotUrls[0]">
+                </div>
+                <div class="col-sm-7 item-content">
+                  <h1 class="item-title">{{pluginsList[3].name}}</h1>
+                  <p class="item-description">{{pluginsList[3].description}}</p>
+
+                  <p class="item-author">{{pluginsList[3].author.name | cut:false:40:'...'}}</p>
+                </div>
+                <div class="stages">
+                  <div data-ng-repeat="stage in pluginsList[3].getStages()"
+                      data-dev-stage-icon
+                      data-version="stage"
+                      data-lane="stage.lane.id"
+                      data-phase="stage.phase">
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="container">
+              <div class="row" ng-click="open(pluginsList[4])">
+                <div class="col-sm-5 item-image text-center">
+                  <img ng-src="{{pluginsList[4].screenshotUrls[0]}}" alt="" ng-show="pluginsList[4].screenshotUrls[0]">
+                </div>
+                <div class="col-sm-7 item-content">
+                  <h1 class="item-title">{{pluginsList[4].name}}</h1>
+                  <p class="item-description">{{pluginsList[4].description}}</p>
+
+                  <p class="item-author">{{pluginsList[4].author.name | cut:false:40:'...'}}</p>
+                </div>
+                <div class="stages">
+                  <div data-ng-repeat="stage in pluginsList[4].getStages()"
                       data-dev-stage-icon
                       data-version="stage"
                       data-lane="stage.lane.id"
