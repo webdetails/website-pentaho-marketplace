@@ -210,7 +210,7 @@
                         data-dev-stage-icon
                         data-version="stage"
                         data-lane="stage.lane.id"
-                        data-phase="stage.phase" >
+                        data-phase="stage.phase">
                     </div>
                     <div class="clear"></div>
                   </div>
@@ -219,7 +219,11 @@
               </div>
               <div class="clear"></div>
             </div>
+            <div data-ng-show="filteredList.length == 0">
+              No entry matched your criteria.
+            </div>
             <div data-pagination class="pagination-sm"
+                data-ng-show="filteredList.length > 0"
                 data-ng-model="currentPage"
                 data-boundary-links="true" data-total-items="filteredList.length" data-max-size="5"
                 data-items-per-page="itemsPerPage"

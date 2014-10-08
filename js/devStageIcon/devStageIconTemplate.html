@@ -2,14 +2,12 @@
 
   <div class="dev-stage hidden-xs"
        data-ng-class="devStageClass"
-       data-ng-if="!disablePopup"
        data-ngx-tipsy
        data-ngx-title="<span>Development Stage</span><hr><strong>{{stage.name}}:</strong> {{stage.description}}"
        data-ngx-position="{{'top'}}">
   </div>
 
   <div class="dev-stage visible-xs"
-      data-ng-if="disablePopup"
       data-ng-class="devStageClass">
   </div>
 
