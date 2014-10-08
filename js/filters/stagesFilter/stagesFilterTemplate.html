@@ -4,7 +4,7 @@
     <div data-accordion data-close-others="false">
       <div class="filters-subsection"
           data-accordion-group
-          data-is-open="group.isOpen">
+          data-is-open="isOpen">
 
         <div data-accordion-heading >
           <button class="filters-title"
@@ -12,10 +12,10 @@
             <!-- TODO: hardcoded -->
             Development Stage
           </button>
-          <button class="filters-state pull-right" >
-              <!--data-is-checked={{group.selected}}
-              data-ng-click="groupClicked( group )"
-              data-stop-event="click"> -->
+          <button class="filters-state pull-right"
+              data-is-checked={{getGroupsSelected()}}
+              data-ng-click="toggleAllGroups()"
+              data-stop-event="click">
           </button>
           <div class="clear"></div>
         </div>
@@ -30,22 +30,7 @@
           </button>
         </div>
 
-        <!--
-        <div class="REMOVED-filters-subsection-items">
-          <button data-ng-repeat="option in group.options"
-              class="btn btn-default btn-block single-filter-button"
-
-              data-ng-click="toggleSelection(option)"
-              data-is-checked={{option.isSelected}}>
-            {{option.name}}
-          </button>
-        </div>
-
       </div>
-
-      <div style="display: none" data-ng-repeat-end></div>
-      -->
-
     </div>
 
 </div>

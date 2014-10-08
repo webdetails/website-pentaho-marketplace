@@ -211,6 +211,18 @@
             }
           }
 
+          function getGroupsSelected () {
+            if (_.all( $scope.groups, function ( group ) { return group.selected == Group.selectEnum.ALL; } ) ) {
+              return Group.selectEnum.ALL;
+            }
+
+            if (_.any( $scope.groups, function( group ) { return group.selected == Group.selectEnum.SOME || group.selected == Group.selectEnum.ALL;  } )) {
+              return Group.selectEnum.SOME;
+            }
+
+            return Group.selectEnum.NONE;
+          }
+
           $scope.toggleSelection = function ( selectable ) {
             selectable.isSelected = !selectable.isSelected;
           };
@@ -227,11 +239,27 @@
             }
           };
 
+          $scope.toggleAllGroups = function() {
+            var allGroupsSelected = getGroupsSelected();
+
+            switch ( allGroupsSelected ) {
+              case Group.selectEnum.ALL:
+              case Group.selectEnum.SOME:
+                _.each( $scope.groups, function ( group ) { group.selected = Group.selectEnum.NONE; });
+                break;
+              case Group.selectEnum.NONE:
+                _.each( $scope.groups, function ( group ) { group.selected = Group.selectEnum.ALL; });
+                break;
+            }
+          };
+
           $scope.$watch( 'options', function () {
             _.each( $scope.groups, function ( group ) { group.stopWatching(); } );
             $scope.groups = createGroups( $scope, $scope.options, $scope.groupBy, $scope.display, $scope.select );
             updateOptionsDisplayString();
           });
+
+          $scope.getGroupsSelected = getGroupsSelected;
 
 
         }
