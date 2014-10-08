@@ -1903,6 +1903,10 @@ button:focus {
 	border-top: 1px solid #E1E0E0;
 }
 
+.plugin-buttons-row .download-plugin-container {
+	text-decoration: none;
+}
+
 .plugin-buttons-row button.btn.btn-block {
 	background: #FFFFFF;
 	border: 1px solid #E1E0E0;
@@ -1913,6 +1917,7 @@ button:focus {
 	font-size: 15px;
 	-webkit-transition: all .3s;
 	transition: all .3s;
+	text-decoration: none;
 }
 
 .no-touch .plugin-buttons-row button.btn.btn-block:hover {

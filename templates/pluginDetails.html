@@ -100,16 +100,14 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-4">
-        <a data-ng-href={{plugin.getVersionWithHighestStage().downloadUrl}} target="_blank">
+        <a data-ng-href={{plugin.getVersionWithHighestStage().downloadUrl}} target="_blank" class="download-plugin-container">
           <button type="button" class="btn btn-block download-plugin" data-ng-disabled="!plugin.getVersionWithHighestStage().downloadUrl" >Download Plugin</button>
         </a>
       </div>
       <div class="col-sm-12 col-md-4">
-        <a ng-href="mailto:">
-          <button type="button" class="btn btn-block contact-dev" disabled>Contact Dev.</button>
-        </a>
+        <button type="button" class="btn btn-block contact-dev" disabled>Contact Dev.</button>
       </div>
-      <div class="col-sm-12 col-md-4">
+      <div class="col-sm-12 col-md-4" class="plugins-buttons-row-button">
         <button type="button" class="btn btn-block live-demo" disabled>Live Demo</button></div>
 
       <!--
