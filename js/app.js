@@ -96,6 +96,18 @@ app.controller('MarketplaceController',
         $scope.$watchCollection( "selectedStages", applyPluginFilter );
         $scope.$watch( "searchTerm", applyPluginFilter );
 
+        function clearAllFilters() {
+          $scope.selectedCategories = [];
+          $scope.selectedStages = [];
+        }
+
+        function isAnyFilterSelected() {
+          return ( $scope.selectedCategories && $scope.selectedCategories.length > 0 ) ||
+                 ( $scope.selectedStages && $scope.selectedStages.length > 0 );
+        }
+
+        $scope.isAnyFilterSelected = isAnyFilterSelected;
+        $scope.clearAllFilters = clearAllFilters;
 
         function getCategories ( plugins ) {
           var categories = _.chain( plugins )
@@ -107,8 +119,6 @@ app.controller('MarketplaceController',
 
           return categories;
         }
-
-        var inputFilter = $filter('filter');
 
         $scope.pluginsList = [];
         $scope.filteredList = [];

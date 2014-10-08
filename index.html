@@ -259,7 +259,12 @@
               <div class="top-plugins-filters plugins-filters-block">
                 <div class="filters-header">
                   <div class="pull-left"><span class="filters-header-title">Filter</span></div>
-                  <div class="pull-right"><button class="btn clear-all-filters disabled">Clear all filters</button></div>
+                  <div class="pull-right">
+                    <button class="btn clear-all-filters"
+                        ng-disabled="!isAnyFilterSelected()"
+                        ng-click="clearAllFilters()">
+                    Clear all filters
+                  </button></div>
                   <div class="clear"></div>
                 </div>
 

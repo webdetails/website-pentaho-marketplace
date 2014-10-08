@@ -259,8 +259,29 @@
             updateOptionsDisplayString();
           });
 
-          $scope.getGroupsSelected = getGroupsSelected;
+          $scope.$watch( 'selectedOptionsValue', function ()  {
+            var options = _.chain( $scope.groups )
+                .map( function ( group ) { return group.options; } )
+                .flatten()
+                .value();
 
+            // get options that are ("preSelected") in the selectedOptionsValue
+            var selectedOptions = _.filter( options, function ( option ) {
+              return _.any( $scope.selectedOptionsValue, function ( selectedOption ) {
+                return _.isEqual( selectedOption, option.selectionValue );
+              })});
+
+            _.each( options, function ( option ) {
+              if (_.contains( selectedOptions, option) ) {
+                option.isSelected = true;
+              }
+              else {
+                option.isSelected = false;
+              }
+            } );
+          });
+
+          $scope.getGroupsSelected = getGroupsSelected;
 
         }
       ]);
