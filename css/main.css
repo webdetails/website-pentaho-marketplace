@@ -1298,6 +1298,10 @@ button:focus {
 	width: 720px;
 }
 
+.no-plugin-entries {
+	text-align: center;
+}
+
 .page-plugins .plugin {
 	width: 240px;
 	padding: 13px;
