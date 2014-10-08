@@ -233,6 +233,10 @@ app.controller('MarketplaceController',
           }
         ]
 
+        $scope.getSingleItemCollection = function ( item ) {
+          return [ item ];
+        }
+
         $scope.devStages = [
           {
             name: 'Development Phase',

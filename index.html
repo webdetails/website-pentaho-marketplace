@@ -115,9 +115,10 @@
                   <p class="item-author">{{pluginsList[5].author.name | cut:false:40:'...'}}</p>
                 </div>
                 <div class="stages">
-                  <div data-dev-stage-icon
-                      data-lane="pluginsList[5].getHighestStage().lane.id"
-                      data-phase="pluginsList[5].getHighestStage().phase">
+                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[5])"
+                      data-dev-stage-icon
+                      data-lane="plugin.getHighestStage().lane.id"
+                      data-phase="plugin.getHighestStage().phase">
                   </div>
                   <div class="clear"></div>
                 </div>
@@ -138,10 +139,10 @@
                   <p class="item-author">{{pluginsList[1].author.name | cut:false:40:'...'}}</p>
                 </div>
                 <div class="stages">
-                  <div data-dev-stage-icon
-                      data-version="pluginsList[1].getHighestStage()"
-                      data-lane="pluginsList[1].getHighestStage().lane.id"
-                      data-phase="pluginsList[1].getHighestStage().phase">
+                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[1])"
+                      data-dev-stage-icon
+                      data-lane="plugin.getHighestStage().lane.id"
+                      data-phase="plugin.getHighestStage().phase">
                   </div>
                   <div class="clear"></div>
                 </div>
@@ -162,10 +163,10 @@
                   <p class="item-author">{{pluginsList[2].author.name | cut:false:40:'...'}}</p>
                 </div>
                 <div class="stages">
-                  <div data-dev-stage-icon
-                      data-version="pluginsList[2].getHighestStage()"
-                      data-lane="pluginsList[2].getHighestStage().lane.id"
-                      data-phase="pluginsList[2].getHighestStage().phase">
+                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[2])"
+                      data-dev-stage-icon
+                      data-lane="plugin.getHighestStage().lane.id"
+                      data-phase="plugin.getHighestStage().phase">
                   </div>
                   <div class="clear"></div>
                 </div>
@@ -186,10 +187,10 @@
                   <p class="item-author">{{pluginsList[3].author.name | cut:false:40:'...'}}</p>
                 </div>
                 <div class="stages">
-                  <div data-dev-stage-icon
-                      data-version="pluginsList[3].getHighestStage()"
-                      data-lane="pluginsList[3].getHighestStage().lane.id"
-                      data-phase="pluginsList[3].getHighestStage().phase">
+                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[3])"
+                      data-dev-stage-icon
+                      data-lane="plugin.getHighestStage().lane.id"
+                      data-phase="plugin.getHighestStage().phase">
                   </div>
                   <div class="clear"></div>
                 </div>
@@ -210,10 +211,10 @@
                   <p class="item-author">{{pluginsList[4].author.name | cut:false:40:'...'}}</p>
                 </div>
                 <div class="stages">
-                  <div data-dev-stage-icon
-                      data-version="pluginsList[4].getHighestStage()"
-                      data-lane="pluginsList[4].getHighestStage().lane.id"
-                      data-phase="pluginsList[4].getHighestStage().phase">
+                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[4])"
+                      data-dev-stage-icon
+                      data-lane="plugin.getHighestStage().lane.id"
+                      data-phase="plugin.getHighestStage().phase">
                   </div>
                   <div class="clear"></div>
                 </div>
