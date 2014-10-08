@@ -1461,19 +1461,16 @@ button:focus {
 	padding-left: 13px;
 }
 
-.page-plugins .plugins-filters .filters-sub-title {
+.filters-sub-title {
 	text-align: left;
 	font-size: 11px;
 	color: #666666;
 	font-weight: 400;
 	margin-bottom: 8px;
-}
-
-.page-plugins .plugins-filters .filters-first-sub-title {
 	margin-top: 15px;
 }
 
-.page-plugins .plugins-filters .filters-sub-title-community-lane {
+.bottom-plugins-filters .dev-stages-filters-group:last-of-type .filters-sub-title {
 	margin-top: 25px;
 }
 
