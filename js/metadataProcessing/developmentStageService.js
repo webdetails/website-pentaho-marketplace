@@ -146,7 +146,7 @@
                   return lane.stages;
                 })
                 .map(function (stages) {
-                  return _.flatten(stages);
+                  return _.values(stages);
                 })
                 .flatten()
               // IE8 requires that undefined and null values are explicitly removed

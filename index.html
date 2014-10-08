@@ -242,25 +242,15 @@
                     data-group-by="main" data-display="sub">
                 </div>
 
+
               </div>
               <div class="bottom-plugins-filters plugins-filters-block">
-                <div class="filters-subsection filters-dev-stages">
-                  <div class="filters-subsection-header">
-                    <button class="filters-title">Development Stage</button>
-                    <button class="filters-state pull-right"></button>
-                    <div class="clear"></div>                  
-                  </div>
-                  <div class="filters-subsection-items">
-                    <div class="filters-sub-title filters-first-sub-title">Customer Lane</div>
-                    <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-production-release">Production Release</button>
-                    <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-customer-limited-release">Limited Release</button>
-                    <div class="filters-sub-title filters-sub-title-community-lane">Community Lane</div>
-                    <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-mature-release">Mature Release</button>
-                    <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-stable-release">Stable Release</button>
-                    <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-snapshot-release">Snapshot Release</button>
-                    <button  class="btn btn-default btn-block single-filter-button" role="checkbox" data-checked="false" id="button-community-development-phase">Development Phase</button> 
-                  </div>               
-                </div>                
+
+                <div data-stages-filter
+                    data-selected-options="selectedStages" data-options="developmentStages"
+                    data-group-by="lane" data-display="name" data-select="stage">
+                </div>
+
               </div>
               <div class="clear"></div>
             </div>
@@ -371,6 +361,8 @@
 
     <script src="js/filters/multiselectDropdown/multiselectDropdownController.js"></script>
     <script src="js/filters/multiselectDropdown/multiselectDropdownDirective.js"></script>
+
+    <script src="js/filters/stagesFilter/stagesFilterDirective.js"></script>
 
     <script src="js/models/plugin.js"></script>
 

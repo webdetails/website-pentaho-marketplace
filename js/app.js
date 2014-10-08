@@ -9,8 +9,8 @@ app.value('MarketplaceConfig', {
 
 //create angular controller to our app
 app.controller('MarketplaceController',
-    [ '$filter', '$scope', 'ngDialog', '$rootScope', '$timeout', 'metadataService',
-      function ($filter, $scope, ngDialog, $rootScope, $timeout, metadataService ) {
+    [ '$filter', '$scope', 'ngDialog', '$rootScope', '$timeout', 'metadataService', 'developmentStageService',
+      function ($filter, $scope, ngDialog, $rootScope, $timeout, metadataService, devStagesService ) {
 
 
         function applyPluginFilter() {
@@ -87,12 +87,13 @@ app.controller('MarketplaceController',
          */
         function pluginFilter ( plugin ) {
           return filterCategory( plugin )
-                 && filterText( plugin, $scope.searchTerm );
-              // && filterStage ( plugin );
+                 && filterText( plugin, $scope.searchTerm )
+                 && filterStage ( plugin );
 
         };
 
         $scope.$watchCollection( "selectedCategories", applyPluginFilter );
+        $scope.$watchCollection( "selectedStages", applyPluginFilter );
         $scope.$watch( "searchTerm", applyPluginFilter );
 
 
@@ -118,6 +119,15 @@ app.controller('MarketplaceController',
             .then( function ( plugins ) {
               $scope.categories = getCategories( plugins );
               $scope.selectedCategories = [];
+
+              $scope.developmentStages = _.map( devStagesService.getStages(), function ( stage ) {
+                var filterStageOption = { lane: stage.lane.id, name: stage.phase, stage: stage };
+                // NOTE: These watches are necessary because of translation issues in FireFox
+                //$scope.$watch( function () { return stage.name; }, function () { filterStageOption.name = stage.name; } );
+                //$scope.$watch( function () { return stage.lane.name; }, function () { filterStageOption.lane = stage.lane.name; } );
+                return filterStageOption;
+              });
+              $scope.selectedStages = [];
 
               $scope.pluginsList = $scope.filteredList = plugins;
               $scope.totalItems = $scope.pluginsList.length;
