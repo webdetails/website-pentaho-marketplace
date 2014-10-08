@@ -50,11 +50,13 @@ body {
 
 .whole-container {
 	overflow-y: scroll;
+	overflow-x: hidden;
 	height: 100%;
 	max-height: 100%;
 	display: block;
 	position: relative;
 	-webkit-overflow-scrolling: touch;
+	padding: 0 5px;
 }
 
 .whole-container * {
@@ -114,7 +116,7 @@ a, a:link, a:visited, a:hover, a:active {
 	padding: 50px 0px 0px 0px;
 	background: #FFFFFF;
 	max-width: 1212px;
-	margin: 10px auto 60px;
+	margin: 10px auto 25px;
 	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.15);
 	box-shadow:         0 0 6px rgba(0,0,0,0.15);
 	min-width: 250px;
@@ -143,7 +145,7 @@ a, a:link, a:visited, a:hover, a:active {
 a.btn.btn-default.tryPentaho {
     font-size: 18px;
     color: #fff;
-    padding: 10px 22px 10px;
+    padding: 10px 22px 9px;
     background-color: #005ca7;
     background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#247dc5),color-stop(100%,#015ea9));
     background-image: -webkit-linear-gradient(#247dc5,#015ea9);
@@ -155,7 +157,7 @@ a.btn.btn-default.tryPentaho {
     box-shadow: 0 0 5px rgba(0,0,0,.3);
     border: none;
     text-shadow: 0 1px rgba(255,255,255,.3);
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 a.btn.btn-default.tryPentaho:hover,
@@ -186,7 +188,89 @@ a.btn.btn-default.tryPentaho:focus {
 
 }
 
-/* ++++ PENTAHO HEADER ++++*/
+/* ++++ PENTAHO HEADER ++++ */
+
+
+/* ++++ PENTAHO FOOTER ++++ */
+
+.footer-container {
+	font-size: 12px;
+	line-height: 1.4;
+	color: #999999;	
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+p.copyright {
+	margin: 0;
+	line-height: 34px;
+}
+
+.hi-icon {
+	display: block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 0;
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	background-image: url(../img/twitter-icon.svg);
+}
+
+.hi-icon:after {
+	width: 34px;
+	height: 34px;
+	content: '';
+	background-image: url(../img/twitter-icon.svg);
+	background-position: -34px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.hi-icon:hover:after {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.hi-icon#facebook,
+.hi-icon#facebook:after {
+	background-image: url(../img/facebook-icon.svg);
+}
+
+.hi-icon#blogger,
+.hi-icon#blogger:after {
+	background-image: url(../img/blogger-icon.svg);
+}
+
+.hi-icon#linkedin,
+.hi-icon#linkedin:after {
+	background-image: url(../img/linkedin-icon.svg);
+}
+
+.hi-icon#rss,
+.hi-icon#rss:after {
+	background-image: url(../img/rss-icon.svg);
+}
+
+.social-link {
+	display: block;
+	margin-bottom: 0px;
+	width: auto;
+	float: right;
+	text-align: left;
+	margin-left: 16px;
+}
+
+/* ++++ PENTAHO FOOTER ++++ */
 
 
 /* ++++ PAGE HEADER ++++ */
@@ -2716,11 +2800,6 @@ p.contribute-description {
 
 	h1 {
 	    font-size: 18px;
-	}
-
-	.pentaho-header img,
-	.pentaho-footer img {
-		max-width: 100%;
 	}
 
 	.page-plugins .plugin {

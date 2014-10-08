@@ -244,6 +244,30 @@
           </div>
         </div>
       </div>
+      <footer>        
+        <div class="container footer-container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-7 col-md-8 text-left">
+              <p class="copyright">Copyright © 2005 - <span id="year"></span> Pentaho Corporation. All Rights Reserved</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-1 text-right">  
+              <div class="social-link">
+                <a href="http://blog.pentaho.com/" class="hi-icon" id="rss" target="pentaho">&nbsp;</a>
+              </div>  
+              <div class="social-link">
+                <a href="http://www.linkedin.com/company/pentaho" class="hi-icon" id="linkedin" target="pentaho">&nbsp;</a>
+              </div>
+              <div class="social-link">
+                <a href="http://www.facebook.com/pentaho" class="hi-icon" id="facebook" target="pentaho" >&nbsp;</a>
+              </div>
+              <div class="social-link">
+                <a href="http://twitter.com/Pentaho" class="hi-icon hi-icon-archive" id="twitter" target="pentaho">&nbsp;</a>
+              </div>
+              <div class="clear"></div>   
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
 
     
@@ -301,6 +325,10 @@
         $(this).toggleClass('active');
         //setTimeout(function() { $container.isotope('layout'); }, 100);
       });
+
+      var d = new Date();
+      var n = d.getFullYear();
+      $('#year').text(n);
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
