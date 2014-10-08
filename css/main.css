@@ -591,6 +591,9 @@ hr#hr-plugins-header {
 .page-plugins .plugins-header input#inputSearch {
 	outline: none;
 }
+.page-plugins .plugins-header input#inputSearch::-ms-clear {
+    display: none;
+}
 .page-plugins .plugins-header input#inputSearch[type=text] {
 	-webkit-appearance: textfield;
 	-webkit-box-sizing: content-box;
