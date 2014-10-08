@@ -139,7 +139,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 .pentaho-header .pentaho-link {
     min-width: 188px;
-    display: block;
+    display: inline-block;
 }
 
 a.btn.btn-default.tryPentaho {
