@@ -204,6 +204,11 @@ app.controller('MarketplaceController',
             var dialogContentHeight = $dialog.find('.ngdialog-content').height();
             var dialogContentTotalHeight = dialogContentHeight + 100;
             $dialog.find('.ngdialog-overlay').css('min-height', dialogContentTotalHeight);
+            setTimeout(function() {
+              var dialogContentHeight = $dialog.find('.ngdialog-content').height();
+              var dialogContentTotalHeight = dialogContentHeight + 100;
+              $dialog.find('.ngdialog-overlay').css('min-height', dialogContentTotalHeight);
+            }, 500);
             console.log('ngDialog opened: ' + $dialog.attr('id') + '; ngDialog height: ' + dialogContentHeight + '; ngDialog height with margins: ' + dialogContentTotalHeight);
           }, 10);
         });

@@ -1591,10 +1591,6 @@ button:focus {
 	padding-bottom: 30px;
 }
 
-.plugin-window .owl-carousel .owl-item {
-	height: 380px;
-}
-
 .plugin-modal-details-table {
 	border: 1px solid #E1E0E0;
 	border-bottom: none;
