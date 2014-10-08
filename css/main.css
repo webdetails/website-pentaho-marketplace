@@ -436,8 +436,8 @@ p.copyright {
 }
 
 .dev-stage {
-	width: 24px;
-	height: 24px;
+	width: 32px;
+	height: 32px;
 	background-color: #FFFFFF;
 	border: none;
 	background-position: center center;
@@ -456,7 +456,7 @@ p.copyright {
 	bottom: 12px;
 	right: 13px;
 	position: absolute;
-	height: 24px;
+	height: 32px;
 }
 
 .stages .devStageIcon {
