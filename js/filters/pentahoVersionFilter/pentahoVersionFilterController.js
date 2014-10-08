@@ -13,20 +13,20 @@
 
 'use strict';
 
-(function ( app ) {
-  app.controller('devStageIconController',
-      ['$scope', 'developmentStageService',
-        function ( $scope, devStages ) {
+(function ( app, _ ) {
+  app.controller('pentahoVersionFilterController',
+      ['$scope',
+        function ( $scope ) {
 
-          if ( $scope.lane && $scope.phase ) {
-            var laneTemplate = $scope.lane.toLowerCase() + "-";
-            var phaseTemplate = "0" + $scope.phase;
-            $scope.devStageClass = "dev-stage-" + laneTemplate + phaseTemplate;
+          $scope.versions = [ "4.8", "5.0", "5.1", "5.2" ];
 
-            $scope.stage = devStages.getStage( $scope.lane, $scope.phase );
+          $scope.selectedVersion = "5.2";
+
+          $scope.selectVersion = function ( version ) {
+            $scope.selectedVersion = version;
           }
 
         }
       ]);
-
-})( angular.module('marketplace') );
+  // TODO: assuming _ is defined
+  })( angular.module('marketplace'), _ );

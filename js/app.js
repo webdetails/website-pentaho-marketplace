@@ -38,6 +38,12 @@ app.controller('MarketplaceController',
           );
         };
 
+        function filterPentahoVersion ( plugin ) {
+          return _.any( plugin.versions, function ( version )  {
+            return version.compatibleWithPentahoVersion( $scope.selectedPentahoVersion );
+          });
+        };
+
         function filterCategory ( plugin ) {
           if ( $scope.selectedCategories.length == 0 ) {
             return true;
@@ -87,14 +93,16 @@ app.controller('MarketplaceController',
          */
         function pluginFilter ( plugin ) {
           return filterCategory( plugin )
-                 && filterText( plugin, $scope.searchTerm )
-                 && filterStage ( plugin );
-
+                 && filterStage ( plugin )
+                 && filterPentahoVersion( plugin )
+                 && filterText( plugin, $scope.searchTerm );
         };
 
         $scope.$watchCollection( "selectedCategories", applyPluginFilter );
         $scope.$watchCollection( "selectedStages", applyPluginFilter );
         $scope.$watch( "searchTerm", applyPluginFilter );
+        $scope.$watch( "selectedPentahoVersion", applyPluginFilter );
+
 
         function clearAllFilters() {
           $scope.selectedCategories = [];

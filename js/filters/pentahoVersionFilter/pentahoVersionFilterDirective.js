@@ -14,19 +14,18 @@
 'use strict';
 
 (function ( app ) {
-  app.controller('devStageIconController',
-      ['$scope', 'developmentStageService',
-        function ( $scope, devStages ) {
-
-          if ( $scope.lane && $scope.phase ) {
-            var laneTemplate = $scope.lane.toLowerCase() + "-";
-            var phaseTemplate = "0" + $scope.phase;
-            $scope.devStageClass = "dev-stage-" + laneTemplate + phaseTemplate;
-
-            $scope.stage = devStages.getStage( $scope.lane, $scope.phase );
+  app.directive('pentahoVersionFilter',
+      function() {
+        return {
+          restrict: 'A', // 'A' must be used for IE8 compatibility
+          replace: true, //replaces the custom directive element with the corresponding expanded HTML, to be HTML-compliant.
+          templateUrl: 'js/filters/pentahoVersionFilter/pentahoVersionFilterTemplate.html',
+          controller: 'pentahoVersionFilterController',
+          scope: {
+            selectedVersion: '='
           }
+        };
+      }
+    );
 
-        }
-      ]);
-
-})( angular.module('marketplace') );
+  })( angular.module('marketplace') );

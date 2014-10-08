@@ -235,6 +235,9 @@
                 <div class="col-sm-12">
                   <button type="button" class="btn btn-default btn-block" id="filter-button"></button>
                   <input type="text" class="form-control" ng-class="{notEmpty: searchTerm.length != 0}" id="inputSearch" placeholder="Search" ng-model="searchTerm">
+                  <div data-pentaho-version-filter
+                    data-selected-version="selectedPentahoVersion">
+                  </div>
                   <div class="clear"></div>
                 </div>
               </div>
@@ -384,8 +387,9 @@
 
     <script src="js/filters/multiselectDropdown/multiselectDropdownController.js"></script>
     <script src="js/filters/multiselectDropdown/multiselectDropdownDirective.js"></script>
-
     <script src="js/filters/stagesFilter/stagesFilterDirective.js"></script>
+    <script src="js/filters/pentahoVersionFilter/pentahoVersionFilterController.js"></script>
+    <script src="js/filters/pentahoVersionFilter/pentahoVersionFilterDirective.js"></script>
 
     <script src="js/models/plugin.js"></script>
 

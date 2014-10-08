@@ -55,6 +55,49 @@
             this.buildId = buildId;
           };
 
+          /**
+           * is leftVersion >= rightVersion ?
+           * @param leftVersionStr
+           * @param rightVersionStr
+           */
+          function pentahoVersionLargerThanOrEqual( leftVersionStr, rightVersionStr ) {
+            if ( !rightVersionStr || !leftVersionStr ) {
+              return true;
+            }
+
+            var leftSplit = leftVersionStr.split(".");
+            var rightSplit = rightVersionStr.split(".");
+
+            var leftVersion = [
+              getVersionIntValue( leftSplit[0] ), // major
+              getVersionIntValue( leftSplit[1] ), // minor
+              getVersionIntValue( leftSplit[2] )  // patch
+            ];
+
+            var rightVersion = [
+              getVersionIntValue( rightSplit[0] ), // major
+              getVersionIntValue( rightSplit[1] ), // minor
+              getVersionIntValue( rightSplit[2] )  // patch
+            ];
+
+            for ( var i = 0; i < leftVersion.length; i++ ) {
+              if ( leftVersion[i] < rightVersion[i] ) {
+                return false;
+              }
+            }
+
+            return true;
+          }
+
+          function getVersionIntValue ( strValue ) {
+            return parseInt( strValue ) || 0;
+          }
+
+          Plugin.Version.prototype.compatibleWithPentahoVersion = function ( pentahoVersion ) {
+            return pentahoVersionLargerThanOrEqual( this.compatiblePentahoVersion.maximum, pentahoVersion ) &&
+                pentahoVersionLargerThanOrEqual( pentahoVersion, this.compatiblePentahoVersion.minimum );
+          }
+
 
           return Plugin;
         }

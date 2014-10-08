@@ -1,0 +1,20 @@
+<div class="btn-group pentahoVersionSelect"
+    dropdown
+    is-open="status.isOpen">
+  <button type="button" class="btn btn-primary dropdown-toggle">
+    <span class="selectButtonText">
+      {{ selectedVersion}}
+    </span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+
+    <li data-ng-repeat="version in versions"
+        data-ng-click="selectVersion( version )">
+      <a>
+        {{ version }}
+      </a>
+    </li>
+
+  </ul>
+</div>
