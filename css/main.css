@@ -2380,8 +2380,8 @@ p.contribute-description {
 }
 
 .page-slider .owl-item:nth-child(1) .item-image {
-	background-color: #BDC4D7;
-	background-image: url(../img/plugins-backgrounds/background-large-01.svg);
+	background-color: #E04968;
+	background-image: url(../img/plugins-backgrounds/background-large-06.svg);
 	background-repeat: no-repeat;
 	background-position: left bottom;	
 }
@@ -2398,6 +2398,20 @@ p.contribute-description {
 	background-image: url(../img/plugins-backgrounds/background-large-03.svg);
 	background-repeat: no-repeat;
 	background-position: right bottom;
+}
+
+.page-slider .owl-item:nth-child(4) .item-image {
+	background-color: #B182B0;
+	background-image: url(../img/plugins-backgrounds/background-large-04.svg);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.page-slider .owl-item:nth-child(5) .item-image {
+	background-color: #6EADB2;
+	background-image: url(../img/plugins-backgrounds/background-large-05.svg);
+	background-repeat: no-repeat;
+	background-position: left bottom;
 }
 
 /* fallback */
@@ -2451,7 +2465,7 @@ p.contribute-description {
 }
 
 .no-svg .page-slider .owl-item:nth-child(1) .item-image {
-	background-image: url(../img/plugins-backgrounds/background-large-01.png);	
+	background-image: url(../img/plugins-backgrounds/background-large-06.png);	
 }
 
 .no-svg .page-slider .owl-item:nth-child(2) .item-image {
@@ -2459,6 +2473,14 @@ p.contribute-description {
 }
 
 .no-svg .page-slider .owl-item:nth-child(3) .item-image {
+	background-image: url(../img/plugins-backgrounds/background-large-03.png);
+}
+
+.no-svg .page-slider .owl-item:nth-child(4) .item-image {
+	background-image: url(../img/plugins-backgrounds/background-large-02.png);
+}
+
+.no-svg .page-slider .owl-item:nth-child(5) .item-image {
 	background-image: url(../img/plugins-backgrounds/background-large-03.png);
 }
 
