@@ -1387,6 +1387,7 @@ button:focus {
 .page-plugins .plugins-grid {
 	width: 960px;
 	margin-top: 20px;
+	min-height: 948px;
 }
 
 .page-plugins.filtering .plugins-grid {
