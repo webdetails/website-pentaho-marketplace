@@ -27,12 +27,12 @@
             <div class="row">
               <div class="col-sm-4">
                 <span class="plugin-modal-label">Developer:</span><br>
-                <a class="plugin-modal-link" href="{{plugin.author.siteUrl}}" title="{{plugin.author.name}}" target="_blank">{{plugin.author.name | cut:false:20:'...'}}</a>
+                <a class="plugin-modal-link" data-ng-href="{{plugin.author.siteUrl}}" title="{{plugin.author.name}}" target="_blank">{{plugin.author.name | cut:false:20:'...'}}</a>
               </div>
               <div class="col-sm-4">
                 <span class="plugin-modal-label">Version:</span><br>
-                <span class="plugin-modal-value" ng-show="plugin.versions[0].version">{{plugin.versions[0].version}}</span>
-                <span class="plugin-modal-value" ng-hide="plugin.versions[0].version">-</span>
+                <span class="plugin-modal-value" ng-show="plugin.getVersionWithHighestStage().version">{{plugin.getVersionWithHighestStage().version}}</span>
+                <span class="plugin-modal-value" ng-hide="plugin.getVersionWithHighestStage().version">-</span>
               </div>
               <div class="col-sm-4">
                 <span class="plugin-modal-label">Released:</span><br>
@@ -44,8 +44,8 @@
             <div class="row">
               <div class="col-sm-4">
                 <span class="plugin-modal-label">Forum:</span><br>
-                <a class="plugin-modal-link" href="{{plugin.author.siteUrl}}" title="{{plugin.author.name}}" target="_blank" ng-show="plugin.forum_url">Forum</a>
-                <span class="plugin-modal-value" ng-hide="plugin.forum_url">-</span>
+                <a class="plugin-modal-link" href="{{plugin.author.forumUrl}}" title="{{plugin.author.name}}" target="_blank" ng-show="plugin.forumUrl">Forum</a>
+                <span class="plugin-modal-value" ng-hide="plugin.forumUrl">-</span>
               </div>
               <div class="col-sm-4">
                 <span class="plugin-modal-label">Dependencies:</span><br>
@@ -69,16 +69,22 @@
             </div>
           </li>
           <li class="list-group-item plugin-modal-stage-row">
-            <div class="row" ng-show="plugin.stage">
+            <div class="row" ng-show="plugin.getVersionWithHighestStage().devStage">
               <div class="col-sm-12">
                 <span class="plugin-modal-label">Stage:</span><br>
                 <div class="row plugin-modal-stage">
-                  <div class="col-sm-10"><strong>{{(devStages | filter:{id:plugin.stage})[0].name}}:</strong> {{(devStages | filter:{id:plugin.stage})[0].description}}</div>
-                  <div class="col-sm-2 text-center"><img ng-src="{{(devStages | filter:{id:plugin.stage})[0].imageLarge}}" alt=""></div>
+                  <div class="col-sm-10"><strong>{{plugin.getVersionWithHighestStage().devStage.name}}:</strong> {{plugin.getVersionWithHighestStage().devStage.description}}</div>
+                  <div class="col-sm-2 text-center">
+                    <div data-dev-stage-icon
+                        data-lane="plugin.getVersionWithHighestStage().devStage.lane.id"
+                        data-phase="plugin.getVersionWithHighestStage().devStage.phase">
+                    </div>
+                    <!-- <img ng-src="{{(devStages | filter:{id:plugin.stage})[0].imageLarge}}" alt=""> -->
+                  </div>
                 </div>
               </div>
             </div>  
-            <div class="row" ng-hide="plugin.stage">
+            <div class="row" ng-hide="plugin.getVersionWithHighestStage().devStage">
               <div class="col-sm-12">
                 <span class="plugin-modal-label">Stage:</span><br>
                 <p class="plugin-modal-credits">No stage assigned.</p>
@@ -93,9 +99,20 @@
 <div class="plugin-buttons-row">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-3"><button type="button" class="btn btn-block download-plugin">Download Plugin</button></div>
-      <div class="col-sm-12 col-md-3"><button type="button" class="btn btn-block contact-dev">Contact Dev.</button></div>
-      <div class="col-sm-12 col-md-3"><button type="button" class="btn btn-block live-demo">Live Demo</button></div>
+      <div class="col-sm-12 col-md-4">
+        <a data-ng-href={{plugin.getVersionWithHighestStage().downloadUrl}} target="_blank">
+          <button type="button" class="btn btn-block download-plugin" data-ng-disabled="!plugin.getVersionWithHighestStage().downloadUrl" >Download Plugin</button>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <a ng-href="mailto:">
+          <button type="button" class="btn btn-block contact-dev" disabled>Contact Dev.</button>
+        </a>
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <button type="button" class="btn btn-block live-demo" disabled>Live Demo</button></div>
+
+      <!--
       <div class="col-sm-12 col-md-3">
         <p class="recommend-plugin-label">Recommend this plugin:</p>
         <div class="recommend-plugin-buttons">
@@ -107,6 +124,7 @@
           <div class="clear"></div>
         </div>
       </div>
+      -->
     </div>
   </div>
 </div>

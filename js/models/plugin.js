@@ -38,6 +38,15 @@
             return stagesOrder[stage.lane.id][stage.phase];
           }
 
+          Plugin.prototype.getVersionWithHighestStage = function () {
+            if ( this.versionWithHighestStage === undefined ) {
+              var highestStage = this.getHighestStage();
+              this.versionWithHighestStage = _.find( this.versions, function ( version ) { return version.devStage === highestStage; });
+            }
+
+            return this.versionWithHighestStage;
+          };
+
           Plugin.prototype.getHighestStage = function () {
             if ( this.highestStage === undefined ) {
               var stages = this.getStages();

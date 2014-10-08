@@ -62,6 +62,9 @@
 
             plugin.category = toCategory( pluginDTO.category );
 
+
+            plugin.forumUrl = pluginDTO.forum_url;
+
             return plugin;
           };
 
