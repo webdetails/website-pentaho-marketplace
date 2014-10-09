@@ -822,7 +822,7 @@ hr#hr-plugins-header {
 	border-bottom: 1px solid #E1E0E0;
 	-webkit-transition: max-height .75s ease-in-out, padding .75s ease-in-out, margin .75s ease-in-out;
 	transition: max-height .75s ease-in-out, padding .75s ease-in-out, margin .75s ease-in-out;
-	max-height: 600px;
+	max-height: 730px;
 }
 
 /* new panels */
