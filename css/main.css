@@ -1580,6 +1580,10 @@ button:focus {
 }
 
 .page-plugins.filtering .plugins-grid {
+	min-height: 1264px;
+}
+
+.page-plugins.filtering .plugins-grid {
 	width: 720px;
 }
 
@@ -3087,6 +3091,11 @@ p.contribute-description {
 
 	div#header-links button {
 		font-size: 13px;
+	}
+
+	.page-plugins.filtering .plugins-grid,
+	.page-plugins .plugins-grid {
+		min-height: 0;
 	}
 }
 
