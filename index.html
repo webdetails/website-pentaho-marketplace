@@ -107,7 +107,8 @@
           <div class="item">
             <div class="container">
               <div class="row" ng-click="open(pluginsList[5])">
-                <div class="col-sm-5 item-image text-center">
+                <div class="col-sm-5 item-image text-center"
+                    data-background={{pluginsList[5].view.background}}>
                     <img ng-src="{{pluginsList[5].screenshotUrls[0]}}" alt="" ng-show="pluginsList[5].screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
@@ -131,8 +132,9 @@
           <div class="item">
             <div class="container">
               <div class="row" ng-click="open(pluginsList[1])">
-                <div class="col-sm-5 item-image text-center">
-                  <img ng-src="{{pluginsList[1].screenshotUrls[0]}}" alt="" ng-show="pluginsList[1].screenshotUrls[0]">
+                <div class="col-sm-5 item-image text-center"
+                    data-background={{pluginsList[1].view.background}}>
+                <img ng-src="{{pluginsList[1].screenshotUrls[0]}}" alt="" ng-show="pluginsList[1].screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
                   <h1 class="item-title">{{pluginsList[1].name}}</h1>
@@ -155,8 +157,9 @@
           <div class="item">
             <div class="container">
               <div class="row" ng-click="open(pluginsList[2])">
-                <div class="col-sm-5 item-image text-center">
-                  <img ng-src="{{pluginsList[2].screenshotUrls[0]}}" alt="" ng-show="pluginsList[2].screenshotUrls[0]">
+                <div class="col-sm-5 item-image text-center"
+                    data-background={{pluginsList[2].view.background}}>
+                <img ng-src="{{pluginsList[2].screenshotUrls[0]}}" alt="" ng-show="pluginsList[2].screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
                   <h1 class="item-title">{{pluginsList[2].name}}</h1>
@@ -179,8 +182,9 @@
           <div class="item">
             <div class="container">
               <div class="row" ng-click="open(pluginsList[3])">
-                <div class="col-sm-5 item-image text-center">
-                  <img ng-src="{{pluginsList[3].screenshotUrls[0]}}" alt="" ng-show="pluginsList[3].screenshotUrls[0]">
+                <div class="col-sm-5 item-image text-center"
+                    data-background={{pluginsList[3].view.background}}>
+                <img ng-src="{{pluginsList[3].screenshotUrls[0]}}" alt="" ng-show="pluginsList[3].screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
                   <h1 class="item-title">{{pluginsList[3].name}}</h1>
@@ -203,8 +207,9 @@
           <div class="item">
             <div class="container">
               <div class="row" ng-click="open(pluginsList[4])">
-                <div class="col-sm-5 item-image text-center">
-                  <img ng-src="{{pluginsList[4].screenshotUrls[0]}}" alt="" ng-show="pluginsList[4].screenshotUrls[0]">
+                <div class="col-sm-5 item-image text-center"
+                    data-background={{pluginsList[4].view.background}}>
+                <img ng-src="{{pluginsList[4].screenshotUrls[0]}}" alt="" ng-show="pluginsList[4].screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
                   <h1 class="item-title">{{pluginsList[4].name}}</h1>
@@ -286,7 +291,9 @@
             
             <!-- plugins list -->
             <div class="plugins-grid">
-              <div class="plugin {{plugin.stage}} dashboards" ng-repeat="plugin in filteredList | paginate:currentPage:itemsPerPage" on-finish-render="isDoneLoading = true"> <!-- filter:{$:searchTerm} -->
+              <div class="plugin dashboards" ng-repeat="plugin in filteredList | paginate:currentPage:itemsPerPage"
+                  on-finish-render="isDoneLoading = true"
+                  data-background={{plugin.view.background}}>
                 <div class="plugin-inner" ng-click="open(plugin)">
                   <div class="plugin-header">
                     <img ng-src="{{plugin.screenshotUrls[0]}}" alt="" ng-show="plugin.screenshotUrls[0]" onError="this.remove();">

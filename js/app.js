@@ -133,8 +133,27 @@ app.controller('MarketplaceController',
 
         $scope.searchTerm = "";
 
+        function formatNumberLength(num, length) {
+          var r = "" + num;
+          while (r.length < length) {
+            r = "0" + r;
+          }
+          return r;
+        }
+
+        var numberOfBackgrounds = 12;
+        function createPluginViewModel ( plugin, index ) {
+          plugin.view = plugin.view || {};
+
+          plugin.view.background = "bg" + formatNumberLength( index % numberOfBackgrounds, 2 );
+        }
+
+
         metadataService.getPlugins()
             .then( function ( plugins ) {
+
+              _.each( plugins, createPluginViewModel );
+
               $scope.categories = getCategories( plugins );
               $scope.selectedCategories = [];
 
