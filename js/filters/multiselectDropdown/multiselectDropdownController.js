@@ -160,7 +160,7 @@
           }
 
           function createGroups ( scope, options, groupBy, display, select ) {
-            return _.chain( options )
+            var groups = _.chain( options )
                 .groupBy( groupBy )
                 .map( function ( options, groupName ) {
                   var group = new Group ( groupName, scope );
@@ -181,6 +181,16 @@
                   return group;
                 })
                 .value();
+
+            // TODO: hack to put Other group in the end
+            if ( groups.length > 2 ) {
+              var other = groups[1];
+              var pdi = groups[2];
+
+              groups[1] = pdi;
+              groups[2] = other;
+            }
+            return groups;
           }
 
           function getOptionDisplayName( option, display ) {
