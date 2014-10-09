@@ -1,4 +1,6 @@
-<div class="plugin-modal-gallery" ng-class="{empty: plugin.screenshotUrls.length == 0}">
+<div class="plugin-modal-gallery" 
+     ng-class="{empty: plugin.screenshotUrls.length == 0}"
+     data-background={{plugin.view.background}}>
   <div class="close-plugin-modal" ng-click="closeThisDialog()"></div>
   <div owlcarousel class="owl-carousel">
     <div class="item" ng-repeat="image in plugin.screenshotUrls">
