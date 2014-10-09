@@ -1822,6 +1822,10 @@ button:focus {
 	min-height: 41px;
 }
 
+.findMarketplaceGallery {
+	background-color: #BDC4D7;
+}
+
 .plugin-modal-gallery.empty {
 	border-bottom: 1px solid #E1E0E0;
 }
