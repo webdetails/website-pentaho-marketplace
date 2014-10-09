@@ -86,6 +86,30 @@ app.controller('MarketplaceController',
               });
         };
 
+        function filterVersion ( version ) {
+          return filterStageVersion( version ) &&
+              filterPentahoVersionVersion( version );
+        }
+
+        function filterStageVersion ( version ) {
+          if ( $scope.selectedStages.length == 0 ) {
+            return true;
+          }
+
+          // version has one selected development stages
+          return _.any( $scope.selectedStages,
+              function ( selectedStage ) {
+                return version.devStage &&
+                    selectedStage.lane.id == version.devStage.lane.id &&
+                    selectedStage.phase == version.devStage.phase;
+              }
+          );
+        }
+
+        function filterPentahoVersionVersion ( version ) {
+          return version.compatibleWithPentahoVersion( $scope.selectedPentahoVersion );
+        }
+
         /**
          * Checks if a plugin passes all the conditions set in the view
          * @param {Plugin} plugin
@@ -93,8 +117,7 @@ app.controller('MarketplaceController',
          */
         function pluginFilter ( plugin ) {
           return filterCategory( plugin )
-                 && filterStage ( plugin )
-                 && filterPentahoVersion( plugin )
+                 && _.any( plugin.versions, filterVersion )
                  && filterText( plugin, $scope.searchTerm );
         };
 
@@ -191,6 +214,7 @@ app.controller('MarketplaceController',
 
         $scope.open = function (plugin) {
           $scope.plugin = plugin;
+          $scope.highestStageVersion = plugin.getFilteredVersionWithHighestStage( $scope.selectedPentahoVersion, $scope.selectedStages );
           ngDialog.open({
             template: 'templates/pluginDetails.html',
             scope: $scope,

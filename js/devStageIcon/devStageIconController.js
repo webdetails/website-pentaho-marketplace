@@ -18,14 +18,20 @@
       ['$scope', 'developmentStageService',
         function ( $scope, devStages ) {
 
-          if ( $scope.lane && $scope.phase ) {
-            var laneTemplate = $scope.lane.toLowerCase() + "-";
-            var phaseTemplate = "0" + $scope.phase;
-            $scope.devStageClass = "dev-stage-" + laneTemplate + phaseTemplate;
+          function update() {
+            if ( $scope.lane && $scope.phase ) {
+              var laneTemplate = $scope.lane.toLowerCase() + "-";
+              var phaseTemplate = "0" + $scope.phase;
+              $scope.devStageClass = "dev-stage-" + laneTemplate + phaseTemplate;
 
-            $scope.stage = devStages.getStage( $scope.lane, $scope.phase );
+              $scope.stage = devStages.getStage( $scope.lane, $scope.phase );
+            }
           }
 
+          $scope.$watch('lane',  update );
+          $scope.$watch('phase', update );
+
+          update();
         }
       ]);
 

@@ -118,6 +118,8 @@
             this.description = description;
           }
 
+          //DevelopmentStage.prototype.
+
           function createDevelopmentStage(laneId, phaseId, nameTranslationId, descriptionTranslationId) {
             var lane = getLane(laneId);
             if (lane === undefined) {

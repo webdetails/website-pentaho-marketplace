@@ -35,8 +35,36 @@
           };
 
           function getStageOrder ( stage ) {
+            if ( stage === undefined || stage === null ) {
+              return 0;
+            }
+
             return stagesOrder[stage.lane.id][stage.phase];
           }
+
+
+          Plugin.prototype.getFilteredHighestStage = function ( pentahoVersion, stages ) {
+            var sortedFilteredStages = _.chain( this.versions )
+                .filter( function ( version ) {
+                  return version.compatibleWithPentahoVersion( pentahoVersion ) &&
+                      ( stages.length == 0 || _.contains( stages, version.devStage ))})
+                .map( function ( version ) { return version.devStage; } )
+                .sortBy( getStageOrder )
+                .value();
+
+            return sortedFilteredStages[ sortedFilteredStages.length -1 ];
+          };
+
+          Plugin.prototype.getFilteredVersionWithHighestStage = function ( pentahoVersion, stages ) {
+            var sortedFilteredVersions = _.chain( this.versions )
+                .filter( function ( version ) {
+                  return version.compatibleWithPentahoVersion( pentahoVersion ) &&
+                      ( stages.length == 0 || _.contains( stages, version.devStage ))})
+                .sortBy( function ( version ) { return getStageOrder ( version.devStage ); } )
+                .value();
+
+            return sortedFilteredVersions[ sortedFilteredVersions.length -1 ];
+          };
 
           Plugin.prototype.getVersionWithHighestStage = function () {
             if ( this.versionWithHighestStage === undefined ) {

@@ -304,8 +304,8 @@
                   </div>
                   <div class="stages">
                     <div data-dev-stage-icon
-                        data-lane="plugin.getHighestStage().lane.id"
-                        data-phase="plugin.getHighestStage().phase">
+                        data-lane="plugin.getFilteredHighestStage( selectedPentahoVersion, selectedStages ).lane.id"
+                        data-phase="plugin.getFilteredHighestStage( selectedPentahoVersion, selectedStages ).phase">
                     </div>
                     <div class="clear"></div>
                   </div>
