@@ -227,7 +227,7 @@
     <small_img>http://www.webdetails.pt/ficheiros/cda_plugin.png</small_img>
     <name>Community Data Access</name>
     <category>
-      <name>Data Integration</name>
+      <name>Data</name>
       <parent>
         <name>Apps</name>
       </parent>
@@ -1616,7 +1616,7 @@ Having trouble with this project? Feel free to report a issue on <a target='NO_B
     <small_img>http://www.webdetails.pt/ficheiros/cdb_plugin.png</small_img>
     <name>Community Data Browser</name>
     <category>
-      <name>Data Integration</name>
+      <name>Data</name>
       <parent>
         <name>Apps</name>
       </parent>
@@ -3166,9 +3166,9 @@ any translation issues or suggestions for improvement
     <type>Database</type>
     <name>PDI MySQL Plugin</name>
     <category>
-      <name>Database</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin also contains the GPL MySQL JDBC Driver version 5</description>
@@ -3203,9 +3203,9 @@ any translation issues or suggestions for improvement
     <type>Database</type>
     <name>PDI NuoDB Plugin</name>
     <category>
-      <name>Database</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin also contains the NuoDB JDBC Driver</description>
@@ -3242,9 +3242,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Apple Push Notification</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This is a plugin that allows to you send push notifications from Pentaho Data Integration to any iOS
@@ -3287,9 +3287,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Android Push Notification</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This is a plugin that allows you to send push notifications from Pentaho Data Integration to any
@@ -3333,9 +3333,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Dummy step plugin</name>
     <category>
-      <name>Step</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This is a plugin that is provided as an example on how to create a step plugin for PDI.
@@ -3370,9 +3370,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>ARFF Output</name>
     <category>
-      <name>Step</name>
+      <name>Data Mining</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Saves data to a file in WEKA's ARFF (Attribute Relation File Format).
@@ -3411,9 +3411,9 @@ any translation issues or suggestions for improvement
     <type>Mixed</type>
     <name>KFF</name>
     <category>
-      <name>Plugin Package</name>
+      <name>Lifecycle Management</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This market entry contains a number of step and jobentry plugins from the KFF project:
@@ -3453,9 +3453,9 @@ any translation issues or suggestions for improvement
     <type>Mixed</type>
     <name>DataCleaner Data Profiling for Kettle version 5 or higher</name>
     <category>
-      <name>Plugin Package</name>
+      <name>Data Profiling</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Use DataCleaner to profile your Pentaho Data Integration transformations, step by step.
@@ -3498,9 +3498,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>EasyDataQuality for Pentaho</name>
     <category>
-      <name>Plugin Package</name>
+      <name>Data Quality</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>
@@ -3554,9 +3554,9 @@ any translation issues or suggestions for improvement
     <type>Mixed</type>
     <name>PDI Marketplace</name>
     <category>
-      <name>Spoon plugin</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin allows users to install Kettle plugins from the Pentaho Marketplace.</description>
@@ -3593,9 +3593,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>CMIS Input</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>The CMIS Input plugin make you able to extract from your Enterprise Content Management System.
@@ -3634,9 +3634,9 @@ any translation issues or suggestions for improvement
     <type>Partitioner</type>
     <name>Bucket Partitioner</name>
     <category>
-      <name>Partitioner</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Partitions rows based on the quotient (rather than the remainder)</description>
@@ -3669,9 +3669,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>MaxMind GeoIP Lookup</name>
     <category>
-      <name>Step</name>
+      <name>Lookup</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This step uses the MaxMind GeoIP library to look up Countries, region and city information with an IP
@@ -3713,9 +3713,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Weka Scoring</name>
     <category>
-      <name>Step</name>
+      <name>Data Mining</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This step allows you to push data into a Weka model and get scoring out in a transformation.
@@ -3751,9 +3751,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>MDCheck</name>
     <category>
-      <name>Step</name>
+      <name>Data Quality</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Melissa Data Contact Verification Tools:
@@ -3818,9 +3818,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>MDGlobalVerify</name>
     <category>
-      <name>Step</name>
+      <name>Data Quality</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Global Verify Component
@@ -3860,9 +3860,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>MDPersonator</name>
     <category>
-      <name>Step</name>
+      <name>Data Quality</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Melissa Data Personator Component - Offering Melissa Data's flagship service
@@ -3907,9 +3907,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>CiviCrmInput</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This step allows reading data from CiviCRM version 1.1
@@ -3945,9 +3945,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>CiviCrmOutput</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This step allows write/update data into CiviCRM version 1.1
@@ -3983,9 +3983,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Load Text From File</name>
     <category>
-      <name>Step</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin uses Apache Tika to extract text from files in many different formats, such as PDF, XLS,
@@ -4025,9 +4025,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Top / Bottom / First / Last filter</name>
     <category>
-      <name>Step</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin filters rows based on a field's values or row numbers, which allows the user to perform
@@ -4059,9 +4059,9 @@ any translation issues or suggestions for improvement
     <type>Mixed</type>
     <name>Map (key/value pair) type</name>
     <category>
-      <name>Value type</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin provides a ValueMeta plugin for key/value pairs (backed by a java.util.Map)</description>
@@ -4091,9 +4091,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>PDI Tableau Data Extract Output Plugin</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>The Tableau Data Extract plugin for Pentaho Data Integration allows you to use Pentaho's ETL
@@ -4153,9 +4153,9 @@ any translation issues or suggestions for improvement
     <type>HadoopShim</type>
     <name>IDH 2.3 Hadoop Configuration</name>
     <category>
-      <name>Shim</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This is a Hadoop Configuration plugin that allows PDI to interact with
@@ -4193,9 +4193,9 @@ any translation issues or suggestions for improvement
     <type>HadoopShim</type>
     <name>CDH 3u4 Hadoop Configuration</name>
     <category>
-      <name>Shim</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This is a Hadoop Configuration plugin that allows PDI to interact with
@@ -4233,9 +4233,9 @@ any translation issues or suggestions for improvement
     <type>Database</type>
     <name>CSV JDBC Connector</name>
     <category>
-      <name>Database</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin uses csvjdbc (http://csvjdbc.sourceforge.net) to provide a PDI database dialect for CSV
@@ -4267,9 +4267,9 @@ any translation issues or suggestions for improvement
     <type>Database</type>
     <name>Neo4j JDBC Connector</name>
     <category>
-      <name>Database</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin uses neo4j-jdbc (http://www.neo4j.org/develop/tools/jdbc) to provide a PDI database dialect
@@ -4304,9 +4304,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>HTML to XML</name>
     <category>
-      <name>Step</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin uses JTidy to convert HTML into XML or XHTML, and is inspired by Roland Bouman's blog using
@@ -4342,9 +4342,9 @@ any translation issues or suggestions for improvement
     <small_img>https://kafka.apache.org/images/kafka_logo.png</small_img>
     <name>Apache Kafka Consumer</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <documentation_url>http://wiki.pentaho.com/display/EAI/Apache+Kafka+Consumer</documentation_url>
@@ -4383,9 +4383,9 @@ any translation issues or suggestions for improvement
     <small_img>https://kafka.apache.org/images/kafka_logo.png</small_img>
     <name>Apache Kafka Producer</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <documentation_url>http://wiki.pentaho.com/display/EAI/Apache+Kafka+Producer</documentation_url>
@@ -4422,9 +4422,9 @@ any translation issues or suggestions for improvement
     <type>JobEntry</type>
     <name>Refresh Tableau Server Extract Plugin</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>The Refresh Tableau Extract plugin allows you to refresh an extract on a Tableau
@@ -4466,9 +4466,9 @@ any translation issues or suggestions for improvement
     <small_img>https://ssl.gstatic.com/codesite/ph/images/search-48.gif</small_img>
     <name>Google Protocol Buffers Decode</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <documentation_url>http://wiki.pentaho.com/display/EAI/Google+Protocol+Buffers+Decoder</documentation_url>
@@ -4508,9 +4508,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>LegStar z/OS File reader Plugin</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This step reads raw z/OS records from a file and transforms them to PDI rows</description>
@@ -4541,9 +4541,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Execute R Script</name>
     <category>
-      <name>Step</name>
+      <name>Data Mining</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Execute R script from file by specifying input and output variables.
@@ -4582,9 +4582,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Compare Fields</name>
     <category>
-      <name>Step</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Compares 2 sets of fields in a row and directs it to the appropriate destination step based on the
@@ -4617,9 +4617,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>IC Riak Plugin</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Riak Consumer/Producer</description>
@@ -4647,9 +4647,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>IC AMQP Plugin</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>AMQP Consumer/Producer</description>
@@ -4677,9 +4677,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>IC Bloom filter Plugin</name>
     <category>
-      <name>Step</name>
+      <name>Data Mining</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Bloom filter for pentaho PDI</description>
@@ -4709,9 +4709,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>JaRE - Java Rule Engine</name>
     <category>
-      <name>Step</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>
@@ -4767,9 +4767,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>JDBC Metadata</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>
@@ -4806,9 +4806,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Memcached Input/Output</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin offers Input/Output steps for reading from or writing to memcached servers</description>
@@ -4838,9 +4838,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>BA Server Utils</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>Collection of kettle steps to interact with BA Server services.</description>
@@ -4871,9 +4871,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Lookup Time Dimension</name>
     <category>
-      <name>Step</name>
+      <name>Lookup</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>LookupTimeDimension is a step for Kettle transformation to lookup/create an entry on DW dimension time
@@ -4903,9 +4903,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Teradata TPT Insert Upsert Bulk Loader</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This step supports Teradata bulk loading via TPT using the tbuild command and supports Insert and
@@ -4941,9 +4941,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Google Spreadsheet Input/Output</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <documentation_url>https://github.com/GlobalTechnology/pdi-google-spreadsheet-plugin/blob/master/README.md
@@ -4977,9 +4977,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Sentiment Analysis</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <documentation_url>https://github.com/OSBI/pdi-sentiment/blob/master/README.md</documentation_url>
@@ -5009,9 +5009,9 @@ any translation issues or suggestions for improvement
     <type>Mixed</type>
     <name>Probabilistic Row Distributions for PDI</name>
     <category>
-      <name>Row distribution</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>
@@ -5060,9 +5060,9 @@ any translation issues or suggestions for improvement
     <type>SpoonPlugin</type>
     <name>PDI Groovy Console</name>
     <category>
-      <name>Spoon plugin</name>
+      <name>Enhancements</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin (for PDI 5.0+) adds a Groovy console to the Help menu that has some helper methods
@@ -5098,9 +5098,9 @@ any translation issues or suggestions for improvement
     <type>Step</type>
     <name>Gremlin Script step</name>
     <category>
-      <name>Step</name>
+      <name>Connectivity</name>
       <parent>
-        <name>Data Integration</name>
+        <name>PDI Plugins</name>
       </parent>
     </category>
     <description>This plugin offers a Gremlin (see https://github.com/tinkerpop/gremlin/wiki) script
