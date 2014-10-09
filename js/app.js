@@ -223,6 +223,17 @@ app.controller('MarketplaceController',
           });
         };
 
+        $scope.openHighlightDetail = function (plugin) {
+          $scope.plugin = plugin;
+          $scope.highestStageVersion = plugin.getVersionWithHighestStage();
+          ngDialog.open({
+            template: 'templates/pluginDetails.html',
+            scope: $scope,
+            className: 'plugin-window',
+            showClose: false
+          });
+        };
+
         $scope.openDevStages = function () {
           ngDialog.open({
             template: 'templates/devStages.html',
