@@ -51,11 +51,7 @@ $(document).ready(function() {
 			'img/share-twitter-icon.png',
 			'img/some-checked.png',
 			'img/submit-plugins-icon.png',
-			'img/translate-pentaho-icon.png',
-			'img/pentaho-marketplace-images/01.png',
-			'img/pentaho-marketplace-images/02.png',
-			'img/pentaho-marketplace-images/03.png',
-			'img/pentaho-marketplace-images/04.png'
+			'img/translate-pentaho-icon.png'
 		);
 	} else {
 		$.preloadImages(
@@ -100,11 +96,7 @@ $(document).ready(function() {
 			'img/share-twitter-icon.svg',
 			'img/some-checked.svg',
 			'img/submit-plugins-icon.svg',
-			'img/translate-pentaho-icon.svg',
-			'img/pentaho-marketplace-images/01.png',
-			'img/pentaho-marketplace-images/02.png',
-			'img/pentaho-marketplace-images/03.png',
-			'img/pentaho-marketplace-images/04.png'
+			'img/translate-pentaho-icon.svg'
 		);
 	}
 
