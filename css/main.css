@@ -2515,318 +2515,107 @@ p.contribute-description {
 
 /* ++++ CARDS HEADER ++++ */
 
+.page-slider .item .container .item-image[data-background="bg00"],
+.plugin-modal-gallery[data-background="bg00"],
 .plugins-grid .plugin[data-background="bg00"] .plugin-header {
 	background-color: #edeef0;
-	background-image: url(../img/plugins-backgrounds/background-01.svg);
-	background-repeat: no-repeat;
-	background-position: left bottom;
 }
 
+.page-slider .item .container .item-image[data-background="bg01"],
+.plugin-modal-gallery[data-background="bg01"],
 .plugins-grid .plugin[data-background="bg01"] .plugin-header {
 	background-color: #dbe4e3;
-	background-image: url(../img/plugins-backgrounds/background-02.svg);
-	background-repeat: no-repeat;
-	background-position: bottom left;
 }
 
+.page-slider .item .container .item-image[data-background="bg02"],
+.plugin-modal-gallery[data-background="bg02"],
 .plugins-grid .plugin[data-background="bg02"] .plugin-header {
 	background-color: #d6dde3;
-	background-image: url(../img/plugins-backgrounds/background-03.svg);
-	background-repeat: no-repeat;
-	background-position: right bottom;
 }
 
+.page-slider .item .container .item-image[data-background="bg03"],
+.plugin-modal-gallery[data-background="bg03"],
 .plugins-grid .plugin[data-background="bg03"] .plugin-header {
 	background-color: #e3dde3;
-	background-image: url(../img/plugins-backgrounds/background-04.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
 }
 
+.page-slider .item .container .item-image[data-background="bg04"],
+.plugin-modal-gallery[data-background="bg04"],
 .plugins-grid .plugin[data-background="bg04"] .plugin-header {
 	background-color: #d9e0e1;
-	background-image: url(../img/plugins-backgrounds/background-05.svg);
-	background-repeat: no-repeat;
-	background-position: right bottom;
 }
 
+.page-slider .item .container .item-image[data-background="bg05"],
+.plugin-modal-gallery[data-background="bg05"],
 .plugins-grid .plugin[data-background="bg05"] .plugin-header {
 	background-color: #e8d5d9;
-	background-image: url(../img/plugins-backgrounds/background-06.svg);
-	background-repeat: no-repeat;
-	background-position: right bottom;
 }
 
+.page-slider .item .container .item-image[data-background="bg06"],
+.plugin-modal-gallery[data-background="bg06"],
 .plugins-grid .plugin[data-background="bg06"] .plugin-header {
 	background-color: #e1eaf2;
-	background-image: url(../img/plugins-backgrounds/background-07.svg);
-	background-repeat: no-repeat;
-	background-position: right bottom;
 }
 
+.page-slider .item .container .item-image[data-background="bg07"],
+.plugin-modal-gallery[data-background="bg07"],
 .plugins-grid .plugin[data-background="bg07"] .plugin-header {
 	background-color: #f0e7dc;
-	background-image: url(../img/plugins-backgrounds/background-08.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
 }
 
+.page-slider .item .container .item-image[data-background="bg08"],
+.plugin-modal-gallery[data-background="bg08"],
 .plugins-grid .plugin[data-background="bg08"] .plugin-header {
 	background-color: #ededed;
-	background-image: url(../img/plugins-backgrounds/background-09.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
 }
 
+.page-slider .item .container .item-image[data-background="bg09"],
+.plugin-modal-gallery[data-background="bg09"],
 .plugins-grid .plugin[data-background="bg09"] .plugin-header {
 	background-color: #dbe6e9;
-	background-image: url(../img/plugins-backgrounds/background-10.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
 }
 
+.page-slider .item .container .item-image[data-background="bg10"],
+.plugin-modal-gallery[data-background="bg10"],
 .plugins-grid .plugin[data-background="bg10"] .plugin-header {
 	background-color: #e4e7dd;
-	background-image: url(../img/plugins-backgrounds/background-11.svg);
-	background-repeat: no-repeat;
-	background-position: bottom left;
 }
 
+.page-slider .item .container .item-image[data-background="bg11"],
+.plugin-modal-gallery[data-background="bg11"],
 .plugins-grid .plugin[data-background="bg11"] .plugin-header {
 	background-color: #ebe0e4;
-	background-image: url(../img/plugins-backgrounds/background-12.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
 }
 
-.page-slider .owl-item .item-image[data-background="bg00"] {
-	background-color: #edeef0;
-	background-image: url(../img/plugins-backgrounds/background-large-01.svg);
-	background-repeat: no-repeat;
-	background-position: left bottom;
+.plugins-grid .plugin .plugin-header {
+	background-image: url(../img/plugins-backgrounds/background.svg);	
 }
 
-.page-slider .owl-item .item-image[data-background="bg01"] {
-	background-color: #dbe4e3;
-	background-image: url(../img/plugins-backgrounds/background-large-02.svg);
-	background-repeat: no-repeat;
-	background-position: top right;
+.no-svg .plugins-grid .plugin .plugin-header {
+	background-image: url(../img/plugins-backgrounds/background.png);
 }
 
-.page-slider .owl-item .item-image[data-background="bg02"] {
-	background-color: #d6dde3;
-	background-image: url(../img/plugins-backgrounds/background-large-03.svg);
-	background-repeat: no-repeat;
-	background-position: right bottom;
+.page-slider .item .container .item-image {
+	background-image: url(../img/plugins-backgrounds/background-large.svg);
 }
 
-.page-slider .owl-item .item-image[data-background="bg03"] {
-	background-color: #e3dde3;
-	background-image: url(../img/plugins-backgrounds/background-large-04.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
+.no-svg .page-slider .item .container .item-image {
+	background-image: url(../img/plugins-backgrounds/background-large.png);
 }
 
-.page-slider .owl-item .item-image[data-background="bg04"] {
-	background-color: #d9e0e1;
-	background-image: url(../img/plugins-backgrounds/background-large-05.svg);
+.plugin-modal-gallery {
+	background-image: url(../img/plugins-backgrounds/background-huge.svg);
+}
+
+.no-svg .plugin-modal-gallery {
+	background-image: url(../img/plugins-backgrounds/background-huge.png);
+}
+
+.plugins-grid .plugin .plugin-header,
+.page-slider .item .container .item-image,
+.plugin-modal-gallery {
 	background-repeat: no-repeat;
 	background-position: left bottom;
-}
-
-.page-slider .owl-item .item-image[data-background="bg05"] {
-	background-color: #e8d5d9;
-	background-image: url(../img/plugins-backgrounds/background-large-06.svg);
-	background-repeat: no-repeat;
-	background-position: left bottom;	
-}
-
-.page-slider .owl-item .item-image[data-background="bg06"] {
-	background-color: #e1eaf2;
-	background-image: url(../img/plugins-backgrounds/background-large-07.svg);
-	background-repeat: no-repeat;
-	background-position: right bottom;
-}
-
-.page-slider .owl-item .item-image[data-background="bg07"] {
-	background-color: #f0e7dc;
-	background-image: url(../img/plugins-backgrounds/background-large-08.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
-}
-
-.page-slider .owl-item .item-image[data-background="bg08"] {
-	background-color: #ededed;
-	background-image: url(../img/plugins-backgrounds/background-large-09.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
-}
-
-.page-slider .owl-item .item-image[data-background="bg09"] {
-	background-color: #dbe6e9;
-	background-image: url(../img/plugins-backgrounds/background-large-10.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
-}
-
-.page-slider .owl-item .item-image[data-background="bg10"] {
-	background-color: #e4e7dd;
-	background-image: url(../img/plugins-backgrounds/background-large-11.svg);
-	background-repeat: no-repeat;
-	background-position: bottom left;
-}
-
-.page-slider .owl-item .item-image[data-background="bg11"] {
-	background-color: #ebe0e4;
-	background-image: url(../img/plugins-backgrounds/background-large-12.svg);
-	background-repeat: no-repeat;
-	background-position: right top;
-}
-
-/* fallback */
-
-.no-svg .plugins-grid .plugin[data-background="bg00"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-01.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg01"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-02.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg02"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-03.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg03"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-04.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg04"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-05.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg05"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-06.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg06"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-07.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg07"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-08.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg08"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-09.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg09"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-10.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg10"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-11.png);
-}
-
-.no-svg .plugins-grid .plugin[data-background="bg11"] .plugin-header {
-	background-image: url(../img/plugins-backgrounds/background-12.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg00"] {
-	background-image: url(../img/plugins-backgrounds/background-large-01.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg01"] {
-	background-image: url(../img/plugins-backgrounds/background-large-02.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg02"] {
-	background-image: url(../img/plugins-backgrounds/background-large-03.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg03"] {
-	background-image: url(../img/plugins-backgrounds/background-large-04.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg04"] {
-	background-image: url(../img/plugins-backgrounds/background-large-05.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg05"] {
-	background-image: url(../img/plugins-backgrounds/background-large-06.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg06"] {
-	background-image: url(../img/plugins-backgrounds/background-large-07.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg07"] {
-	background-image: url(../img/plugins-backgrounds/background-large-08.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg08"] {
-	background-image: url(../img/plugins-backgrounds/background-large-09.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg09"] {
-	background-image: url(../img/plugins-backgrounds/background-large-10.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg10"] {
-	background-image: url(../img/plugins-backgrounds/background-large-11.png);
-}
-
-.no-svg .page-slider .owl-item .item-image[data-background="bg11"] {
-	background-image: url(../img/plugins-backgrounds/background-large-12.png);
-}
-
-.plugin-modal-gallery[data-background="bg00"] {
-	background-color: #edeef0;
-}
-
-.plugin-modal-gallery[data-background="bg01"] {
-	background-color: #dbe4e3;
-}
-
-.plugin-modal-gallery[data-background="bg02"] {
-	background-color: #d6dde3;
-}
-
-.plugin-modal-gallery[data-background="bg03"] {
-	background-color: #e3dde3;
-}
-
-.plugin-modal-gallery[data-background="bg04"] {
-	background-color: #d9e0e1;
-}
-
-.plugin-modal-gallery[data-background="bg05"] {
-	background-color: #e8d5d9;
-}
-
-.plugin-modal-gallery[data-background="bg06"] {
-	background-color: #e1eaf2;
-}
-
-.plugin-modal-gallery[data-background="bg07"] {
-	background-color: #f0e7dc;
-}
-
-.plugin-modal-gallery[data-background="bg08"] {
-	background-color: #ededed;
-}
-
-.plugin-modal-gallery[data-background="bg09"] {
-	background-color: #dbe6e9;
-}
-
-.plugin-modal-gallery[data-background="bg10"] {
-	background-color: #e4e7dd;
-}
-
-.plugin-modal-gallery[data-background="bg11"] {
-	background-color: #ebe0e4;
 }
 
 /* ++++ CARDS HEADER ++++ */
