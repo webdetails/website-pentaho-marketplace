@@ -66,13 +66,14 @@ body {
 h1 {
 	font-size: 30px;
 	font-weight: 300;
-	color: #005CA7;
+	color: #333;
 }
 
 h2 {
 	font-size: 18px;
 	line-height: 22px;
-	color: #005CA7;
+	color: #333;
+	font-weight: 400;
 	margin-top: 0px;
 	margin-bottom: 3px;
 }
@@ -396,8 +397,8 @@ p.copyright {
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
-	box-shadow:         0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3);
+	box-shadow:         0 0 2px rgba(0,0,0,0.3);
 	width: auto;
 }
 
@@ -919,6 +920,10 @@ hr#hr-plugins-header {
 	line-height: 23px;
 }
 
+.page-plugins .plugins-filters .filters-title:hover {
+	color: #005ca7 !important;
+}
+
 .page-plugins .plugins-filters .filters-title:before {
 	width: 0; 
 	height: 0; 
@@ -933,6 +938,10 @@ hr#hr-plugins-header {
 	margin-top: -5px;
 }
 
+.page-plugins .plugins-filters .filters-title:hover:before {
+	border-left: 5px solid #005ca7;
+}
+
 .page-plugins .plugins-filters .filters-title.open:before {
 	width: 0; 
 	height: 0; 
@@ -944,6 +953,10 @@ hr#hr-plugins-header {
 	left: 0;
 	top: 50%;
 	margin-top: -2px;
+}
+
+.page-plugins .plugins-filters .filters-title.open:hover:before {
+	border-top: 5px solid #005ca7;
 }
 
 .page-plugins .plugins-filters button,
@@ -1643,8 +1656,8 @@ button:focus {
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);
-	box-shadow:         0 0 6px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3);
+	box-shadow:         0 0 2px rgba(0,0,0,0.3);
 }
 
 .page-plugins .plugin-author {
@@ -1801,8 +1814,9 @@ button:focus {
 	width: auto !important;
 	max-width: 80%;
 	max-height: 350px;
-	max-height: 350px;
-	margin: 30px auto 0px;
+	margin: 30px auto 2px;
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3);
+	box-shadow:         0 0 2px rgba(0,0,0,0.3);
 }
 
 .plugin-modal-author {
@@ -2110,6 +2124,10 @@ button:focus {
 	background-image: url(../img/share-linkedin-icon.png);
 }
 
+.plugin-buttons-row button[disabled] {
+	display: none;
+}
+
 /* ++++ PLUGIN DETAILS WINDOW ++++ */
 
 /* ++++ HEADER LINKS ++++ */
@@ -2158,7 +2176,7 @@ div#header-links button:active span,
 div#header-links button:focus span {
 	display: block;
 	margin: 5px 0px;
-	padding: 5px 10px;
+	padding: 4px 10px 6px;
 	border-right: 1px solid #E1E0E0;
 }
 
@@ -2169,6 +2187,8 @@ div#header-links button:last-of-type span {
 
 div#header-links button.info-button span img {
 	max-height: 17px;
+	position: relative;
+	top: -1px;
 }
 
 div#header-links button.info-button {
@@ -2518,7 +2538,7 @@ p.contribute-description {
 .page-slider .item .container .item-image[data-background="bg00"],
 .plugin-modal-gallery[data-background="bg00"],
 .plugins-grid .plugin[data-background="bg00"] .plugin-header {
-	background-color: #edeef0;
+	background-color: #dce3da;
 }
 
 .page-slider .item .container .item-image[data-background="bg01"],
@@ -2548,7 +2568,7 @@ p.contribute-description {
 .page-slider .item .container .item-image[data-background="bg05"],
 .plugin-modal-gallery[data-background="bg05"],
 .plugins-grid .plugin[data-background="bg05"] .plugin-header {
-	background-color: #e8d5d9;
+	background-color: #edeef0;
 }
 
 .page-slider .item .container .item-image[data-background="bg06"],
