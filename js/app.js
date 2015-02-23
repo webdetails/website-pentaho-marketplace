@@ -256,7 +256,7 @@ app.controller('MarketplaceController',
           ngDialog.open({
             template: 'templates/findMarketplace.html',
             scope: $scope,
-            className: 'plugin-window',
+            className: 'plugin-window find-marketplace-window',
             showClose: false
           });
         };

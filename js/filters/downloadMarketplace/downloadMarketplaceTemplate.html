@@ -1,0 +1,30 @@
+<div>
+    <div class="row download-marketplace-row">
+      <div class="col-md-4">
+        <div class="btn-group marketplaceDownloadSelect"
+            dropdown
+            is-open="status.isOpen">
+              <label>Select version:</label>
+              <button type="button" class="btn btn-primary dropdown-toggle">
+                <span class="selectButtonText">
+                  Marketplace {{ selectedMarketplaceVersion }}
+                </span>
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+
+                <li data-ng-repeat="version in marketplaceVersions"
+                    data-ng-click="selectMarketplaceVersion( version )"
+                    data-ng-class="{selected: version === selectedMarketplaceVersion }">
+                  <a>
+                    Marketplace {{ version }}
+                  </a>
+                </li>
+
+              </ul> 
+        </div>    
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"><a ng-href="{{ selectedMarketplaceUrl }}" target="_blank" type="button" class="btn btn-block download-marketplace-button">Download</a></div>      
+    </div>
+</div>

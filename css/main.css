@@ -1570,6 +1570,79 @@ button:focus {
     color: #005ca7;
 }
 
+/* marketplace version dropdown */
+
+.marketplaceDownloadSelect button.dropdown-toggle,
+.marketplaceDownloadSelect button.dropdown-toggle:link,
+.marketplaceDownloadSelect button.dropdown-toggle:visited,
+.marketplaceDownloadSelect button.dropdown-toggle:hover,
+.marketplaceDownloadSelect button.dropdown-toggle:active,
+.marketplaceDownloadSelect button.dropdown-toggle:focus {
+	background: none !important;
+	border-radius: 0 !important;
+	border: 1px solid rgba(0,0,0,0) !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	text-shadow: none !important;
+	color: #616161 !important;
+	border-bottom: none !important;
+	bottom: -1px;
+	text-align: left;
+	padding: 6px 10px 7px 0;
+	z-index: 0;
+}
+
+.marketplaceDownloadSelect button.dropdown-toggle:hover,
+.marketplaceDownloadSelect.open button.dropdown-toggle {
+	color: #005ca7 !important;
+}
+
+
+.marketplaceDownloadSelect button.dropdown-toggle .caret {
+	margin-left: 5px;
+}
+
+.marketplaceDownloadSelect label {
+	position: relative;
+	display: block;
+	font-size: 11px;
+	font-weight: 300;
+	margin-left: 1px;
+	margin-bottom: 3px;
+	max-width: none;
+	width: 120px;
+	color: #616161;
+}
+
+.marketplaceDownloadSelect .dropdown-menu {
+	z-index: 1500;
+	border-radius: 0;
+	margin-top: 0px;
+	border: 1px solid #e1e0e0;
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	background: #F6F7F8;
+}
+
+.marketplaceDownloadSelect .dropdown-menu > li > a {
+	padding: 3px 10px;
+	color: #616161;
+}
+
+.marketplaceDownloadSelect .dropdown-menu > li.selected > a {
+	color: #b1b1b1 !important;
+    background: #F6F7F8 !important;
+}
+
+.marketplaceDownloadSelect .dropdown-menu > li > a:hover, 
+.marketplaceDownloadSelect .dropdown-menu > li > a:focus {
+    background: #F6F7F8;
+    background-image: none;
+    cursor: pointer;
+    color: #005ca7;
+}
+
 @media (max-width: 420px) {
 	.page-plugins .plugins-header input#inputSearch[type="text"]:focus,
 	.touch .page-plugins .plugins-header input#inputSearch[type="text"]:hover, 
@@ -1695,6 +1768,15 @@ button:focus {
   width: 97%;
   max-width: 960px;
   margin: 50px auto;
+}
+
+.find-marketplace-window .ngdialog-content {
+  overflow: visible;
+}
+
+.find-marketplace-window .plugin-modal-gallery {
+    border-radius: 6px 6px 0px 0px;
+    overflow: hidden;
 }
 
 .plugin-window .modal-content {
@@ -2452,6 +2534,7 @@ p.contribute-description {
 	padding-bottom: 30px;
 	color: #7C7E80;
 	border-top: 1px solid #E1E0E0;
+	border-radius: 0 0 6px 6px;
 }
 
 .findMarketplace-bottom-row h4 {
