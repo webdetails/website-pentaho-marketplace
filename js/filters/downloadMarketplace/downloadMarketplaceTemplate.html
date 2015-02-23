@@ -13,11 +13,11 @@
               </button>
               <ul class="dropdown-menu" role="menu">
 
-                <li data-ng-repeat="version in marketplaceVersions"
+                <li data-ng-repeat="version in marketplaceDownloadLinks"
                     data-ng-click="selectMarketplaceVersion( version )"
-                    data-ng-class="{selected: version === selectedMarketplaceVersion }">
+                    data-ng-class="{selected: version.id === selectedMarketplaceVersion }">
                   <a>
-                    Marketplace {{ version }}
+                    Marketplace {{ version.id }}
                   </a>
                 </li>
 

@@ -18,8 +18,6 @@
       ['$scope',
         function ( $scope ) {
 
-          $scope.marketplaceVersions = [ '4.8', '5.1 / 5.0', '5.2', '5.3' ];
-
           $scope.marketplaceDownloadLinks = [
             {
               id: '5.3',
@@ -39,16 +37,12 @@
             }
           ];
 
-          $scope.selectedMarketplaceVersion = "5.3";
-          $scope.selectedMarketplaceVersionObject = $scope.marketplaceDownloadLinks.filter( function(o) { return o.id == $scope.selectedMarketplaceVersion; });
-          $scope.selectedMarketplaceUrl = $scope.selectedMarketplaceVersionObject[0].downloadUrl;
-
-
+          $scope.selectedMarketplaceVersion = $scope.marketplaceDownloadLinks[0].id;
+          $scope.selectedMarketplaceUrl = $scope.marketplaceDownloadLinks[0].downloadUrl;
 
           $scope.selectMarketplaceVersion = function ( version ) {
-            $scope.selectedMarketplaceVersion = version;
-            $scope.selectedMarketplaceVersionObject = $scope.marketplaceDownloadLinks.filter( function(o) { return o.id == $scope.selectedMarketplaceVersion; });
-            $scope.selectedMarketplaceUrl = $scope.selectedMarketplaceVersionObject[0].downloadUrl;
+            $scope.selectedMarketplaceVersion = version.id;
+            $scope.selectedMarketplaceUrl = version.downloadUrl;
           }
 
         }
