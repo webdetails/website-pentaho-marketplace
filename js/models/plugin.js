@@ -118,11 +118,15 @@
             ];
 
             for ( var i = 0; i < leftVersion.length; i++ ) {
+              if ( leftVersion[i] > rightVersion[i] ) {
+                return true;
+              }
               if ( leftVersion[i] < rightVersion[i] ) {
                 return false;
               }
             }
 
+            // equal versions
             return true;
           }
 
