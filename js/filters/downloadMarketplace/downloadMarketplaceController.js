@@ -21,15 +21,15 @@
           $scope.marketplaceDownloadLinks = [
             {
               id: '5.3',
-              downloadUrl: 'http://nexus.pentaho.org/content/repositories/pentaho-public-release-repos/pentaho/marketplace/5.3.0.0-213/marketplace-5.3.0.0-213.zip'
+              downloadUrl: 'http://nexus.pentaho.org/content/groups/omni/pentaho/marketplace/5.3.0.0-213/marketplace-5.3.0.0-213.zip'
             },
             {
               id: '5.2',
-              downloadUrl: 'http://nexus.pentaho.org/content/repositories/pentaho-public-release-repos/pentaho/marketplace/5.2.0.0-209/marketplace-5.2.0.0-209.zip'
+              downloadUrl: 'http://nexus.pentaho.org/content/groups/omni/pentaho/marketplace/5.2.0.0-209/marketplace-5.2.0.0-209.zip'
             },
             {
               id: '5.1 / 5.0',
-              downloadUrl: 'http://nexus.pentaho.org/content/repositories/pentaho-public-release-repos/pentaho/marketplace/5.1.0.0-752/marketplace-5.1.0.0-752.zip'
+              downloadUrl: 'http://nexus.pentaho.org/content/groups/omni/pentaho/marketplace/5.1.0.0-752/marketplace-5.1.0.0-752.zip'
             },
             {
               id: '4.8',
