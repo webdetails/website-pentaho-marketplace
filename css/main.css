@@ -145,8 +145,12 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .pentaho-header .pentaho-link {
-    min-width: 188px;
-    display: inline-block;
+	min-width: 188px;
+	display: inline-block;
+	width: 268px;
+	top: -13px;
+	position: relative;
+	left: -2px;
 }
 
 a.btn.btn-default.tryPentaho {
@@ -192,6 +196,10 @@ a.btn.btn-default.tryPentaho:focus {
     .pentaho-header {
         text-align: center;
     }
+
+    .pentaho-header .pentaho-link {
+		top: -17px;
+	}
 
 }
 
