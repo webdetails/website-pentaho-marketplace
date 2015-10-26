@@ -2537,6 +2537,44 @@ p.contribute-description {
 	margin-top: 9px;
 }
 
+.findMarketplace ol {
+	padding-left: 20px;
+}
+
+.findMarketplace ol li {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.findMarketplace ol li:last-child {
+	margin-bottom: 0;
+}
+
+.findMarketplace ol li span {
+	font-weight: 400;
+}
+
+.findMarketplace code {
+	font-weight: 400;
+	font-size: 14px;
+	color: #7C7E80;
+	border: 1px solid #E1E0E0;
+	background: #F2F1F1;
+	position: relative;
+	top: -1px;
+}
+
+.findMarketplace pre {
+	font-weight: 400;
+	color: #7C7E80;
+	border: 1px solid #E1E0E0;
+	background: #F2F1F1;
+	font-size: 14px;
+	padding: 5px 8px;
+	margin-top: 5px;
+}
+
+
 .download-marketplace-row a.btn.btn-block .versionDashSeparator {
 	margin: 0 1px;
 }

@@ -9,6 +9,16 @@
     </div>
     <div class="col-sm-8">
       <p class="first-paragraph">Pentaho Marketplace allows users to explore and test the plugins that are most relevant for them. It means high quality and useful plugins that users can use to get the most out of their business.</p>
+      <br><br>
+      <p><b>Important:</b><br>If you're using <b>Pentaho 6.0 Enterprise Edition</b>, you no longer need to download the Marketplace plugin. The reason for that? It's an OSGi plugin and you already have it, but it comes disabled by default. Here are the instructions on how to enable it:</p>
+      <ol>
+        <li><span>Edit the file <code>pentaho-solution/system/karaf/etc/org.apache.kara.features.cfg</code></span></li>
+        <li><span>Find the key "featuresBoot" and add the feature "pentaho-marketplace". That line will then be something like:
+          <pre>featuresBoot=config,management,kar,cxf,camel,camel-blueprint,camel-stream,pentaho-server,mongolap,pentaho-metaverse,pdi-dataservice-client,pentaho-yarn-obf,pentaho-marketplace</pre></span>
+        </li>
+        <li><span>Restart your server, and you're done!</span></li>
+      </ol>
+
     </div>
   </div>
   <!-- Marketplace The Project -->
