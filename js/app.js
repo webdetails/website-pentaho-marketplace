@@ -205,7 +205,7 @@ app.controller('MarketplaceController',
 
 
         // TODO: get these constants from somewhere else
-        $scope.itemsPerPage = 12;
+        $scope.itemsPerPage = 20;
         $scope.currentPage = 1;
 
         $scope.pageChanged = function () {
