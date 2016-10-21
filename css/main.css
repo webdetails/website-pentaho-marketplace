@@ -425,6 +425,9 @@ p.copyright {
 h1.item-title {
 	margin-top: 0;
 	padding-top: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {

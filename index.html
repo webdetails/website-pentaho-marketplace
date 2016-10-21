@@ -301,7 +301,7 @@
                     <img ng-src="{{plugin.screenshotUrls[0]}}" alt="" ng-show="plugin.screenshotUrls[0]" onError="this.remove();">
                   </div>
                   <div class="plugin-content">
-                    <h2>{{plugin.name}}</h2>
+                    <h2>{{plugin.name | cut:false:50:'...'}}</h2>
                     <p class="plugin-description">{{plugin.author.name | cut:false:30:'...'}}</p>
                   </div>
                   <div class="stages">
