@@ -2576,6 +2576,9 @@ p.contribute-description {
 	background: #F2F1F1;
 	position: relative;
 	top: -1px;
+	word-break: break-all;
+    display: inline-block;
+    margin: 5px 0 0;
 }
 
 .findMarketplace pre {
@@ -2586,6 +2589,7 @@ p.contribute-description {
 	font-size: 14px;
 	padding: 5px 8px;
 	margin-top: 5px;
+	white-space: pre-wrap;
 }
 
 
@@ -2606,6 +2610,7 @@ p.contribute-description {
 	padding: 8px 15px;
 	font-size: 14px;
 	margin-top: 6px;
+	margin-bottom: 6px;
 	outline: 0 none !important;
 	border-radius: 0;
 }

@@ -21,23 +21,7 @@
           $scope.marketplaceDownloadLinks = [
             {
               id: '5.4',
-              downloadUrl: 'http://nexus.pentaho.org/content/groups/omni/pentaho/marketplace/5.4.0.0-128/marketplace-5.4.0.0-128.zip'
-            },
-            {
-              id: '5.3',
-              downloadUrl: 'http://nexus.pentaho.org/content/groups/omni/pentaho/marketplace/5.3.0.0-213/marketplace-5.3.0.0-213.zip'
-            },
-            {
-              id: '5.2',
-              downloadUrl: 'http://nexus.pentaho.org/content/groups/omni/pentaho/marketplace/5.2.0.0-209/marketplace-5.2.0.0-209.zip'
-            },
-            {
-              id: '5.1 / 5.0',
-              downloadUrl: 'http://nexus.pentaho.org/content/groups/omni/pentaho/marketplace/5.1.0.0-752/marketplace-5.1.0.0-752.zip'
-            },
-            {
-              id: '4.8',
-              downloadUrl: 'http://ci.pentaho.com/job/marketplace-4.8/lastSuccessfulBuild/artifact/dist/marketplace-plugin-TRUNK-SNAPSHOT.zip'
+              downloadUrl: 'http://ctools.pentaho.com/files/marketplace/marketplace-5.4.0.1-130.zip'
             }
           ];
 
