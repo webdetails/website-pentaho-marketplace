@@ -200,6 +200,10 @@ app.controller('MarketplaceController',
                 plugins[4] // CGG
               ];
 
+              $scope.headerPlugin = plugins.filter(function(plugin) {
+                return plugin.name == "PDI MQTT Steps";
+              })[0];
+
             }
         );
 

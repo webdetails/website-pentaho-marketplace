@@ -108,19 +108,17 @@
         <div class="page-slider" owlcarousel carousel-options="{ autoplay: true, autoplayHoverPause: true, smartSpeed: 1200}">
           <div class="item">
             <div class="container">
-              <div class="row" ng-click="openHighlightDetail(pluginsList[5])">
+              <div class="row" ng-click="openHighlightDetail(headerPlugin)">
                 <div class="col-sm-5 item-image text-center"
-                    data-background={{pluginsList[5].view.background}}>
-                    <img ng-src="{{pluginsList[5].screenshotUrls[0]}}" alt="" ng-show="pluginsList[5].screenshotUrls[0]">
+                    data-background={{headerPlugin.view.background}}>
+                    <img ng-src="{{headerPlugin.screenshotUrls[0]}}" alt="" ng-show="headerPlugin.screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{pluginsList[5].name}}</h1>
-                  <p class="item-description">{{pluginsList[5].description | cut:true:160:' (...)'}}</p>
-
-                  <p class="item-author">{{pluginsList[5].author.name | cut:false:40:'...'}}</p>
+                  <h1 class="item-title">{{headerPlugin.name}}</h1>
+                  <p class="item-description">{{headerPlugin.description | cut:true:160:' (...)'}}</p>
                 </div>
                 <div class="stages">
-                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[5])"
+                  <div data-ng-repeat="plugin in getSingleItemCollection(headerPlugin)"
                       data-dev-stage-icon
                       data-lane="plugin.getHighestStage().lane.id"
                       data-phase="plugin.getHighestStage().phase">
@@ -130,107 +128,6 @@
               </div>
             </div>
           </div>
-
-          <div class="item">
-            <div class="container">
-              <div class="row" ng-click="openHighlightDetail(pluginsList[1])">
-                <div class="col-sm-5 item-image text-center"
-                    data-background={{pluginsList[1].view.background}}>
-                <img ng-src="{{pluginsList[1].screenshotUrls[0]}}" alt="" ng-show="pluginsList[1].screenshotUrls[0]">
-                </div>
-                <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{pluginsList[1].name}}</h1>
-                  <p class="item-description">{{pluginsList[1].description | cut:true:160:' (...)'}}</p>
-
-                  <p class="item-author">{{pluginsList[1].author.name | cut:false:40:'...'}}</p>
-                </div>
-                <div class="stages">
-                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[1])"
-                      data-dev-stage-icon
-                      data-lane="plugin.getHighestStage().lane.id"
-                      data-phase="plugin.getHighestStage().phase">
-                  </div>
-                  <div class="clear"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="container">
-              <div class="row" ng-click="openHighlightDetail(pluginsList[2])">
-                <div class="col-sm-5 item-image text-center"
-                    data-background={{pluginsList[2].view.background}}>
-                <img ng-src="{{pluginsList[2].screenshotUrls[0]}}" alt="" ng-show="pluginsList[2].screenshotUrls[0]">
-                </div>
-                <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{pluginsList[2].name}}</h1>
-                  <p class="item-description">{{pluginsList[2].description | cut:true:160:' (...)'}}</p>
-
-                  <p class="item-author">{{pluginsList[2].author.name | cut:false:40:'...'}}</p>
-                </div>
-                <div class="stages">
-                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[2])"
-                      data-dev-stage-icon
-                      data-lane="plugin.getHighestStage().lane.id"
-                      data-phase="plugin.getHighestStage().phase">
-                  </div>
-                  <div class="clear"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="container">
-              <div class="row" ng-click="openHighlightDetail(pluginsList[3])">
-                <div class="col-sm-5 item-image text-center"
-                    data-background={{pluginsList[3].view.background}}>
-                <img ng-src="{{pluginsList[3].screenshotUrls[0]}}" alt="" ng-show="pluginsList[3].screenshotUrls[0]">
-                </div>
-                <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{pluginsList[3].name}}</h1>
-                  <p class="item-description">{{pluginsList[3].description | cut:true:160:' (...)'}}</p>
-
-                  <p class="item-author">{{pluginsList[3].author.name | cut:false:40:'...'}}</p>
-                </div>
-                <div class="stages">
-                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[3])"
-                      data-dev-stage-icon
-                      data-lane="plugin.getHighestStage().lane.id"
-                      data-phase="plugin.getHighestStage().phase">
-                  </div>
-                  <div class="clear"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="container">
-              <div class="row" ng-click="openHighlightDetail(pluginsList[4])">
-                <div class="col-sm-5 item-image text-center"
-                    data-background={{pluginsList[4].view.background}}>
-                <img ng-src="{{pluginsList[4].screenshotUrls[0]}}" alt="" ng-show="pluginsList[4].screenshotUrls[0]">
-                </div>
-                <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{pluginsList[4].name}}</h1>
-                  <p class="item-description">{{pluginsList[4].description | cut:true:160:' (...)'}}</p>
-
-                  <p class="item-author">{{pluginsList[4].author.name | cut:false:40:'...'}}</p>
-                </div>
-                <div class="stages">
-                  <div data-ng-repeat="plugin in getSingleItemCollection(pluginsList[4])"
-                      data-dev-stage-icon
-                      data-lane="plugin.getHighestStage().lane.id"
-                      data-phase="plugin.getHighestStage().phase">
-                  </div>
-                  <div class="clear"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
         <div class="page-plugins">
