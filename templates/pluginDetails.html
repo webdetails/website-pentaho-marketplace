@@ -29,7 +29,8 @@
             <div class="row">
               <div class="col-sm-4">
                 <span class="plugin-modal-label">Developer:</span><br>
-                <a class="plugin-modal-link" data-ng-href="{{plugin.author.siteUrl}}" title="{{plugin.author.name}}" target="_blank">{{plugin.author.name | cut:false:20:'...'}}</a>
+                <a class="plugin-modal-link" ng-show="plugin.author.siteUrl" data-ng-href="{{plugin.author.siteUrl}}" title="{{plugin.author.name}}" target="_blank">{{plugin.author.name | cut:false:20:'...'}}</a>
+                <span class="plugin-modal-value" ng-hide="plugin.author.siteUrl" title="{{plugin.author.name}}">{{plugin.author.name | cut:false:20:'...'}}</span>
               </div>
               <div class="col-sm-4">
                 <span class="plugin-modal-label">Version:</span><br>
