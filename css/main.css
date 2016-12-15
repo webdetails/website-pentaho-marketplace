@@ -398,8 +398,6 @@ p.copyright {
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3);
-	box-shadow:         0 0 2px rgba(0,0,0,0.3);
 	width: auto;
 }
 
@@ -1732,8 +1730,6 @@ button:focus {
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3);
-	box-shadow:         0 0 2px rgba(0,0,0,0.3);
 }
 
 .page-plugins .plugin-author {
@@ -1906,8 +1902,6 @@ button:focus {
 	max-width: 80%;
 	max-height: 350px;
 	margin: 30px auto 2px;
-	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.3);
-	box-shadow:         0 0 2px rgba(0,0,0,0.3);
 }
 
 .plugin-modal-author {
