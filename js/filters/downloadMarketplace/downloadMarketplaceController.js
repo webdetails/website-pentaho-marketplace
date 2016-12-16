@@ -22,6 +22,22 @@
             {
               id: '5.4',
               downloadUrl: 'http://ctools.pentaho.com/files/marketplace/marketplace-5.4.0.1-130.zip'
+            },
+            {
+              id: '5.3',
+              downloadUrl: 'http://ctools.pentaho.com/files/marketplace/marketplace-5.3.0.0-213.zip'
+            },
+            {
+              id: '5.2',
+              downloadUrl: 'http://ctools.pentaho.com/files/marketplace/marketplace-5.2.0.0-209.zip'
+            },
+            {
+              id: '5.1 / 5.0',
+              downloadUrl: 'http://ctools.pentaho.com/files/marketplace/marketplace-5.1.0.0-752.zip'
+            },
+            {
+              id: '4.8',
+              downloadUrl: 'http://ctools.pentaho.com/files/marketplace/marketplace-1.0.0.zip'
             }
           ];
 
