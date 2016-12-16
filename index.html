@@ -114,8 +114,12 @@
                     <img ng-src="{{headerPlugin.screenshotUrls[0]}}" alt="" ng-show="headerPlugin.screenshotUrls[0]">
                 </div>
                 <div class="col-sm-7 item-content">
-                  <h1 class="item-title">{{headerPlugin.name}}</h1>
-                  <p class="item-description">{{headerPlugin.description | cut:true:160:' (...)'}}</p>
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h1 class="item-title">{{headerPlugin.name}}</h1>
+                      <p class="item-description">{{headerPlugin.description | cut:true:160:' (...)'}}</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="stages">
                   <div data-ng-repeat="plugin in getSingleItemCollection(headerPlugin)"
