@@ -167,8 +167,6 @@ app.controller('MarketplaceController',
         var numberOfBackgrounds = 12;
         function createPluginViewModel ( plugin, index ) {
           plugin.view = plugin.view || {};
-
-          plugin.view.background = "bg" + formatNumberLength( index % numberOfBackgrounds, 2 );
         }
 
 
