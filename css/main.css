@@ -1923,7 +1923,7 @@ button:focus {
 	width: auto !important;
 	max-width: 80%;
 	max-height: 350px;
-	margin: 30px auto 2px;
+	margin: 40px auto 2px;
 }
 
 .plugin-modal-author {
@@ -1949,6 +1949,7 @@ button:focus {
 
 .plugin-modal-gallery.empty {
 	border-bottom: 1px solid #E1E0E0;
+    background: #F8F8F8;
 }
 
 .plugin-modal-gallery .owl-theme .owl-dots .owl-dot.active span {
@@ -2675,7 +2676,7 @@ p.contribute-description {
 }
 
 .plugin-modal-gallery {
-	background-image: url(../img/plugins-backgrounds/background-huge.svg);
+	/*background-image: url(../img/plugins-backgrounds/background-huge.svg);*/
 }
 
 .no-svg .plugin-modal-gallery {
