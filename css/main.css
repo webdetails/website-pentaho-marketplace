@@ -436,16 +436,16 @@ h1.item-title {
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-	background: #616161 !important;
+	background: #005DA6 !important;
 	border: none;
-	width: 10px;
-	height: 10px;
-	margin: 6px 8px;
+	width: 12px;
+	height: 12px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
 	background: #ffffff;
-	border: 1px solid #616161;
+	border: 1px solid #005DA6;
+	margin: 6px 5px;
 	width: 12px;
 	height: 12px;
 }
@@ -1549,11 +1549,9 @@ button:focus {
 }
 
 .pentahoVersionSelect .dropdown-menu {
-	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     z-index: 1500;
     border-radius: 0;
+	box-shadow: none;
     margin-top: 0px;
     border: 1px solid #e1e0e0;
     background: #F6F7F8;
@@ -1569,6 +1567,10 @@ button:focus {
 .pentahoVersionSelect.open .dropdown-menu {
     -webkit-transition: max-height .75s ease-in-out, padding .75s ease-in-out;
     transition: max-height .75s ease-in-out, padding .75s ease-in-out;
+
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     max-height: 1000px;
     padding: 5px 0;
     border-bottom: 1px solid #e1e0e0;
