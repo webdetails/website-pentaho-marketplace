@@ -183,11 +183,19 @@ a.btn.btn-default.tryPentaho:focus {
     outline: 0 none;
 }
 
+.pentaho-header img{
+	width: 100%;
+}
+
 @media (max-width: 767px) {
 
-    .pentaho-header {
-        text-align: center;
+    .pentaho-header{
+		
     }
+
+	.pentaho-header img{
+		width: 60%;
+	}
 
 }
 
@@ -3280,4 +3288,33 @@ pointer-events: none;
     right: -190px;
     top: 20px;
     color: #005DA6;
+}
+
+@media (max-width: 767px) {
+
+.pentaho-header .pentaho-link.title:before {
+    content: "";
+    position: absolute;
+    right: 95px;
+    top: 0;
+    height: 50px;
+    width: 1px;
+    background: #E1E0E0;
+}
+
+.pentaho-header .pentaho-link.title:after {
+    pointer-events: none;
+    content: "Marketplace";
+    font-size: 24px;
+    font-weight: 300;
+    position: absolute;
+    right: -55px;
+    top: 8px;
+    color: #005DA6;
+}
+
+.pentaho-header{
+	height: 90px;
+}
+
 }
