@@ -70,40 +70,18 @@
       <div class="pentaho-header-backPage">
         <div class="container pentaho-header">
           <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <a href="http://www.pentaho.com/" class="pentaho-link" target="_blank">
+            <div class="col-sm-6 col-xs-12">
+              <a href="http://www.pentaho.com/" class="pentaho-link title" target="_blank">
                 <img src="img/logo.svg" alt="">
               </a>
             </div>
-            <div class="col-xs-6 hidden-xs text-right">
+            <div class="col-sm-6 col-xs-6 hidden-xs text-right">
               <a href="http://www.pentaho.com/testdrive" class="btn btn-default tryPentaho" target="_blank">Try Pentaho</a>
             </div>
           </div>
         </div>        
       </div>
       <div class="backPage">
-        <div class="container" id="mainContainer">
-          <div class="row" id="page-header">
-            <div class="col-sm-5">
-              <img id="marketplace-logo" src="img/marketplace-logo.svg" alt="">
-            </div>
-            <div class="col-sm-7 header-links-container hidden-xs">
-              <div class="btn-group btn-group-md pull-right" id="header-links">
-                <button type="button" class="btn btn-default" ng-click="openFindMarketplace()"><span>Find Marketplace</span></button>
-                <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
-                <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
-                <button type="button" class="btn btn-default info-button"><span><img src="img/info-icon.svg" alt="Info"></span></button>
-              </div>
-            </div>
-            <div class="col-sm-7 header-links-container visible-xs">
-              <div class="btn-group-md pull-right btn-group-vertical" id="header-links-small">
-                <button type="button" class="btn btn-default" ng-click="openFindMarketplace()"><span>Find Marketplace</span></button>
-                <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
-                <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <div class="page-slider" owlcarousel carousel-options="{ autoplay: true, autoplayHoverPause: true, smartSpeed: 1200}">
           <div class="item">
@@ -141,12 +119,31 @@
           <div class="plugins-header">
             <div class="container">
               <div class="row">
+                <div class="col-xs-12 header-links-container visible-xs">
+                    <div class="btn-group-md pull-right btn-group-vertical" id="header-links-small">
+                      <button type="button" class="btn btn-default" ng-click="openFindMarketplace()"><span>Find Marketplace</span></button>
+                      <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
+                      <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
                 <div class="col-sm-12">
                   <button type="button" class="btn btn-default btn-block" id="filter-button"></button>
                   <input type="text" class="form-control" ng-class="{notEmpty: searchTerm.length != 0}" id="inputSearch" placeholder="Search" ng-model="searchTerm">
                   <div data-pentaho-version-filter
                     data-selected-version="selectedPentahoVersion">
                   </div>
+
+                  <div class="header-links-container hidden-xs">
+                    <div class="btn-group btn-group-md pull-right" id="header-links">
+                      <button type="button" class="btn btn-default" ng-click="openFindMarketplace()"><span>Find Marketplace</span></button>
+                      <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
+                      <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
+                      <!--<button type="button" class="btn btn-default info-button"><span><img src="img/info-icon.svg" alt="Info"></span></button>-->
+                    </div>
+                  </div>
+
                   <div class="clear"></div>
                 </div>
               </div>

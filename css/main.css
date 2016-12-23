@@ -119,7 +119,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 .backPage {
 	overflow: hidden;
-	padding: 50px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 	margin: 10px auto 25px;
 	min-width: 250px;
 	min-height: 500px;
@@ -151,7 +151,6 @@ a, a:link, a:visited, a:hover, a:active {
 .pentaho-header .pentaho-link {
 	min-width: 188px;
 	display: inline-block;
-	width: 268px;
 	top: -25px;
 	position: relative;
 	left: 10px;
@@ -1562,6 +1561,7 @@ button:focus {
     max-height: 0;
     padding: 0;
     border-bottom: 0;
+	min-width: 150px;
 }
 
 .pentahoVersionSelect.open .dropdown-menu {
@@ -2212,8 +2212,7 @@ button:focus {
 
 /* ++++ HEADER LINKS ++++ */
 div#header-links {
-	margin-top: 40px;
-	height: 43px;
+	height: 34px;
 	overflow-y: hidden;
 }
 
@@ -2228,7 +2227,7 @@ div#header-links button {
 	color: #616161;
 	-webkit-transition: all .3s;
 	transition: all .3s;
-	height: 43px;
+	height: 34px;
 	overflow-y: hidden;
 	text-shadow: none;
 	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
@@ -2256,8 +2255,7 @@ div#header-links button:hover span,
 div#header-links button:active span,
 div#header-links button:focus span {
 	display: block;
-	margin: 5px 0px;
-	padding: 4px 10px 6px;
+	padding: 5px 10px 5px;
 	border-right: 1px solid #E1E0E0;
 }
 
@@ -2295,8 +2293,11 @@ div#header-links.toggled button:first-of-type {
 	margin-left: 0; 
 }
 
-.header-links-container {
+.header-links-container:not(.visible-xs) {
 	overflow-x: hidden;
+	display: inline-block;
+	margin-bottom: -14px;
+	margin-left: 40px;
 }
 
 div#header-links-small {
@@ -2316,6 +2317,7 @@ div#header-links-small button {
 	-webkit-transition: all .3s;
 	transition: all .3s;
 	height: 30px;
+	border-radius: 0;
 }
 
 .no-touch div#header-links-small button:hover {
@@ -3148,9 +3150,9 @@ p.contribute-description {
 		min-height: 0;
 	}
 
-    .pentaho-header {
+/*    .pentaho-header {
         padding-right: 15px;
-    }
+    }*/
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3186,9 +3188,10 @@ p.contribute-description {
 	}
 
 	div#header-links-small {
-		margin-top: 40px;
+		/*margin-top: 40px;*/
+		margin-bottom: 40px;
 	}
-
+3
 	.plugin-modal-details-table {
 		margin-top: 35px;
 	}
@@ -3256,3 +3259,25 @@ p.contribute-description {
 }
 
 /* ++++ MEDIA QUERIES ++++ */
+
+
+.pentaho-header .pentaho-link.title:before{
+	content: "";
+	position: absolute;
+	right: -35px;
+    top: 0;
+	height: 70px;
+	width: 1px;
+	background: #E1E0E0;
+}
+
+.pentaho-header .pentaho-link.title:after{
+pointer-events: none;
+    content: "Marketplace";
+    font-size: 24px;
+    font-weight: 300;
+    position: absolute;
+    right: -190px;
+    top: 20px;
+    color: #005DA6;
+}
