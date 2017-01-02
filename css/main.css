@@ -2263,7 +2263,7 @@ div#header-links button:hover span,
 div#header-links button:active span,
 div#header-links button:focus span {
 	display: block;
-	padding: 5px 10px 5px;
+	padding: 6px 10px 5px;
 	border-right: 1px solid #E1E0E0;
 }
 
@@ -3272,7 +3272,7 @@ p.contribute-description {
 .pentaho-header .pentaho-link.title:before{
 	content: "";
 	position: absolute;
-	right: -35px;
+	right: -30px;
     top: 0;
 	height: 70px;
 	width: 1px;
@@ -3305,11 +3305,12 @@ pointer-events: none;
 .pentaho-header .pentaho-link.title:after {
     pointer-events: none;
     content: "Marketplace";
-    font-size: 24px;
+    font-size: 18px;
+	line-height: 18px;
     font-weight: 300;
     position: absolute;
-    right: -55px;
-    top: 8px;
+    left: 195px;
+    top: 18px;
     color: #005DA6;
 }
 
