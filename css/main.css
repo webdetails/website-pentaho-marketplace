@@ -42,6 +42,11 @@ body {
 	color: #7C7E80;
 	overflow: hidden !important;
 	min-width: 320px;
+	
+}
+
+body .ngdialog.find-marketplace-window *{
+	-webkit-transform: inherit;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
@@ -169,7 +174,7 @@ a.btn.btn-default.tryPentaho {
     -webkit-box-shadow: 0 none;
     box-shadow: none;
     text-shadow: none;
-    margin-top: 9px;
+	margin-top: -7px;
     line-height: normal;
 }
 
@@ -1558,7 +1563,6 @@ button:focus {
 .pentahoVersionSelect .dropdown-menu {
     z-index: 1500;
     border-radius: 0;
-	box-shadow: none;
     margin-top: 0px;
     border: 1px solid #e1e0e0;
     background: #F6F7F8;
@@ -1566,10 +1570,13 @@ button:focus {
     display: block;
     -webkit-transition: max-height .75s ease-in-out, padding .75s ease-in-out;
     transition: max-height .75s ease-in-out, padding .75s ease-in-out;
+    -webkit-box-shadow: 2px 0 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 2px 0px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0 0 rgba(0, 0, 0, 0.1);
     max-height: 0;
     padding: 0;
     border-bottom: 0;
-	min-width: 150px;
+    min-width: 150px;
 }
 
 .pentahoVersionSelect.open .dropdown-menu {
@@ -2198,7 +2205,7 @@ button:focus {
 	background-image: url(../img/share-fb-icon.svg);
 }
 .no-svg .plugin-buttons-row .recommend-plugin-button.recommend-facebook,
-.no-svg .plugin-buttons-row .recommend-plugin-button.recommend-facebook:after {
+.no-svg .plugin-buttons-row .recom§mend-plugin-button.recommend-facebook:after {
 	background-image: url(../img/share-fb-icon.png);
 }
 
@@ -2227,9 +2234,7 @@ div#header-links {
 div#header-links button {
 	background: #FFFFFF;
 	padding: 0;
-	border: 1px solid #E1E0E0;
-	border-right: none;
-	border-left: none;
+	border: 0;
 	font-size: 15px;
 	font-weight: 300;
 	color: #616161;
@@ -2238,8 +2243,7 @@ div#header-links button {
 	height: 34px;
 	overflow-y: hidden;
 	text-shadow: none;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
-	box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+	box-shadow: none;
 	border-radius:0 !important;
 }
 
@@ -2248,12 +2252,20 @@ div#header-links button {
 }
 
 div#header-links button:last-of-type {
-	border-right: 1px solid #E1E0E0;
 }
 
 div#header-links button:first-of-type {
-	border-left: 1px solid #E1E0E0;
 	margin-left: 1px;
+}
+
+div#header-links button:not(:last-of-type):after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background: #E1E0E0;
+    bottom: 10px;
+    right: 0;
 }
 
 div#header-links button span,
@@ -2264,7 +2276,6 @@ div#header-links button:active span,
 div#header-links button:focus span {
 	display: block;
 	padding: 6px 10px 5px;
-	border-right: 1px solid #E1E0E0;
 }
 
 div#header-links button:nth-of-type(3) span,
@@ -2619,7 +2630,6 @@ p.contribute-description {
 .download-marketplace-row a.btn.btn-block {
 	background: #005DA6;
 	font-weight: 400;
-	text-shadow: 0px 1px rgba(255, 255, 255, 0.3);
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border: 1px solid none;
@@ -2635,14 +2645,10 @@ p.contribute-description {
 
 .no-touch .download-marketplace-row a.btn.btn-block:hover {
 	background: #0072CE;
-	-webkit-box-shadow: 0px 3px 5px 0px #0066b9 inset;
-	box-shadow: 0px 3px 5px 0px #0066b9 inset;
 }
 
 .download-marketplace-row a.btn.btn-block:hover:active {
 	background: #005DA6;
-	-webkit-box-shadow: 0px 3px 5px 0px #004985 inset;
-	box-shadow: 0px 3px 5px 0px #004985 inset;
 }
 
 .download-marketplace-row a.btn.btn-block:after {
@@ -3272,22 +3278,21 @@ p.contribute-description {
 .pentaho-header .pentaho-link.title:before{
 	content: "";
 	position: absolute;
-	right: -30px;
-    top: 0;
-	height: 70px;
+	right: -45px;
+	top: 18px;
+	height: 40px;
 	width: 1px;
 	background: #E1E0E0;
 }
 
 .pentaho-header .pentaho-link.title:after{
-pointer-events: none;
-    content: "Marketplace";
-    font-size: 24px;
-    font-weight: 300;
-    position: absolute;
-    right: -190px;
-    top: 20px;
-    color: #005DA6;
+	pointer-events: none;
+	content: "Marketplace";
+	font-size: 16px;
+	position: absolute;
+	right: -150px;
+	top: 27px;
+	color: #343e47;
 }
 
 @media (max-width: 767px) {
@@ -3305,13 +3310,12 @@ pointer-events: none;
 .pentaho-header .pentaho-link.title:after {
     pointer-events: none;
     content: "Marketplace";
-    font-size: 18px;
-	line-height: 18px;
-    font-weight: 300;
+    font-size: 16px;
+	line-height: 16px;
     position: absolute;
     left: 195px;
     top: 18px;
-    color: #005DA6;
+	color: #343e47;
 }
 
 .pentaho-header{
