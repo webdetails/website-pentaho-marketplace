@@ -18,9 +18,9 @@
       ['$scope',
         function ( $scope ) {
 
-          $scope.versions = [ "7.0", "6.1", "6.0", "5.4", "5.3", "5.2", "5.1", "5.0", "4.8" ];
+          $scope.versions = [ "7.1", "7.0", "6.1", "6.0", "5.4", "5.3", "5.2", "5.1", "5.0", "4.8" ];
 
-          $scope.selectedVersion = "7.0";
+          $scope.selectedVersion = "7.1";
 
           $scope.selectVersion = function ( version ) {
             $scope.selectedVersion = version;
