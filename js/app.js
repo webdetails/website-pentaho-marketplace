@@ -199,7 +199,7 @@ app.controller('MarketplaceController',
               ];
 
               $scope.headerPlugin = plugins.filter(function(plugin) {
-                return plugin.name == "PDI MQTT Steps";
+                return plugin.name == "Plugin Machine Intelligence";
               })[0];
 
             }

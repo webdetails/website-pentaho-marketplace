@@ -452,6 +452,7 @@ h1.item-title {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 40px;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
