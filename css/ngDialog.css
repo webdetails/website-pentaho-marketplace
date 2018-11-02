@@ -150,10 +150,7 @@
   max-width: 1150px;
   margin: 40px auto;
   width: 96%;
-  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.15);
-  box-shadow:         0 0 6px rgba(0,0,0,0.15);
   padding-bottom: 30px;
-  border: 1px solid #DADADA;
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;

@@ -5,22 +5,21 @@
       <div class="filters-subsection"
           data-accordion-group
           data-ng-repeat-start="group in groups"
-          data-is-open="group.isOpen">
+          data-is-open="group.isOpen"
+          ng-class="{open: group.isOpen}">
 
         <div data-accordion-heading >
           <button class="filters-title"
                   ng-class="{open: group.isOpen}">
             {{group.name}}
           </button>
-          <button class="filters-state pull-right"
-              data-is-checked={{group.selected}}
-              data-ng-click="groupClicked( group )"
-              data-stop-event="click">
-          </button>
           <div class="clear"></div>
         </div>
 
-        <div class="REMOVED-filters-subsection-items">
+<div class="REMOVED-filters-subsection-items ">
+          <button class="filters-state btn btn-default btn-block single-filter-button" data-is-checked={{group.selected}} data-ng-click="groupClicked( group )"
+            data-stop-event="click"> All
+          </button>
           <button data-ng-repeat="option in group.options"
               class="btn btn-default btn-block single-filter-button"
 

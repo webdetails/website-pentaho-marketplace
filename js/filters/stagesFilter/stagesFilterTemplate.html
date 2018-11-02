@@ -4,7 +4,7 @@
     <div data-accordion data-close-others="false">
       <div class="filters-subsection"
           data-accordion-group
-          data-is-open="isOpen">
+          data-is-open="isOpen" ng-class="{open: isOpen}">
 
         <div data-accordion-heading >
           <button class="filters-title"
@@ -12,16 +12,16 @@
             <!-- TODO: hardcoded -->
             Development Stage
           </button>
-          <button class="filters-state pull-right"
-              data-is-checked={{getGroupsSelected()}}
-              data-ng-click="toggleAllGroups()"
-              data-stop-event="click">
-          </button>
           <div class="clear"></div>
         </div>
 
         <div data-ng-repeat="group in groups" class="dev-stages-filters-group">
           <div class="filters-sub-title">{{group.name}} Lane</div>
+<button class="filters-state btn btn-default btn-block single-filter-button"
+              data-is-checked={{getGroupsSelected()}}
+              data-ng-click="toggleAllGroups()"
+              data-stop-event="click"> All
+          </button>
           <button data-ng-repeat="option in group.options"
               class="btn btn-default btn-block single-filter-button"
               ng-class="'dev-stage-' + option.selectionValue.lane.id.toLowerCase() + '-' + '0' + option.selectionValue.phase"

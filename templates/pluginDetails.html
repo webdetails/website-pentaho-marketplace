@@ -6,7 +6,7 @@
     <div class="item" ng-repeat="image in plugin.screenshotUrls">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 text-center">
+          <div class="col-sm-12 text-center ">
             <img ng-src="{{image}}">            
           </div>
         </div>
@@ -16,12 +16,12 @@
 </div>
 <div class="container plugin-details-container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-5">
       <h1>{{plugin.name}}</h1>
       <p class="plugin-modal-author">{{plugin.author.name | cut:false:20:'...'}}</p>
       <p ng-bind-html="plugin.description" class="plugin-modal-description"></p>
     </div>
-    <div class="col-sm-8" ng-class="{ noDocs: !plugin.documentationUrl }">
+    <div class="col-sm-7" ng-class="{ noDocs: !plugin.documentationUrl }">
       <div class="panel panel-default">
         <!-- List group -->
         <ul class="list-group">
@@ -76,8 +76,8 @@
               <div class="col-sm-12">
                 <span class="plugin-modal-label">Stage:</span><br>
                 <div class="row plugin-modal-stage">
-                  <div class="col-sm-10"><strong>{{highestStageVersion.devStage.name}}:</strong> {{highestStageVersion.devStage.description}}</div>
-                  <div class="col-sm-2 text-center">
+                  <div class="col-sm-8"><strong>{{highestStageVersion.devStage.name}}:</strong> {{highestStageVersion.devStage.description}}</div>
+                  <div class="col-sm-4">
                     <div data-dev-stage-icon
                         data-disable-popup="true"
                         data-lane="highestStageVersion.devStage.lane.id"
