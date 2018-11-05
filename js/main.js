@@ -79,7 +79,7 @@ $(document).ready(function() {
 			'img/dev-stage-community-03-large.svg',
 			'img/dev-stage-community-04.svg',
 			'img/dev-stage-community-04-large.svg',
-			'img/download-button-icon.svg',
+			//'img/download-button-icon.svg',
 			'img/download-marketplace-icon.svg',
 			'img/filter.svg',
 			'img/filter-hover.svg',

@@ -175,6 +175,21 @@ a:active {
     border-radius: 0;
 }
 
+body #loading-bar-spinner .spinner-icon{
+    border-color: #cc0000;
+}
+
+body #loading-bar .bar{
+    background: #cc0000;
+}
+
+body #loading-bar .peg {
+      -moz-box-shadow: #cc0000 1px 0 6px 1px;
+      -ms-box-shadow: #cc0000 1px 0 6px 1px;
+      -webkit-box-shadow: #cc0000 1px 0 6px 1px;
+      box-shadow: #cc0000 1px 0 6px 1px;
+}
+
 /* ++++ PENTAHO HEADER ++++ */
 
 .pentaho-header-backPage {}
