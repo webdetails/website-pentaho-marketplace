@@ -175,19 +175,19 @@ a:active {
     border-radius: 0;
 }
 
-body #loading-bar-spinner .spinner-icon{
+body #loading-bar-spinner .spinner-icon {
     border-color: #cc0000;
 }
 
-body #loading-bar .bar{
+body #loading-bar .bar {
     background: #cc0000;
 }
 
 body #loading-bar .peg {
-      -moz-box-shadow: #cc0000 1px 0 6px 1px;
-      -ms-box-shadow: #cc0000 1px 0 6px 1px;
-      -webkit-box-shadow: #cc0000 1px 0 6px 1px;
-      box-shadow: #cc0000 1px 0 6px 1px;
+    -moz-box-shadow: #cc0000 1px 0 6px 1px;
+    -ms-box-shadow: #cc0000 1px 0 6px 1px;
+    -webkit-box-shadow: #cc0000 1px 0 6px 1px;
+    box-shadow: #cc0000 1px 0 6px 1px;
 }
 
 /* ++++ PENTAHO HEADER ++++ */
@@ -5461,7 +5461,8 @@ label {
     text-decoration: none;
 }
 
-.plugin-buttons-row button.btn.btn-block {
+.plugin-buttons-row button.btn,
+.tryPentaho button.btn {
     background: #ffffff;
     font-weight: 600;
     border: 1px solid none;
@@ -5477,7 +5478,12 @@ label {
     border: 1px solid #CC0000;
 }
 
-.no-touch .plugin-buttons-row button.btn.btn-block:hover {
+.tryPentaho button.btn {
+    margin-top: 68px;
+}
+
+.plugin-buttons-row.plugin-buttons-row button.btn:hover,
+.tryPentaho.tryPentaho button.btn:hover {
     background: #CC0000;
     color: #ffffff;
 }
