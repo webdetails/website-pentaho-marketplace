@@ -23,10 +23,11 @@
   <link rel="stylesheet" href="css/loading-bar.css">
   <link rel="stylesheet" href="css/tooltipster.css">
   <link rel="stylesheet" href="css/tooltipster-light.css">
+  <link rel="stylesheet" href="css/hv-parts.css">
 
 
   <!-- SEO -->
-  <meta name="author" content="Pentaho">
+  <meta name="author" content="Hitachi Vantara">
   <meta name="description" content="Pentaho Marketplace allows users to explore and test the plugins that are most relevant for them. It means high quality and useful plugins that users can use to get the most out of their business.">
   <link rel="canonical" href="https://www.pentaho.com/marketplace/">
 
@@ -54,6 +55,920 @@
 
 <body ng-controller="MarketplaceController">
 
+  <div class="hv-header">
+    <div class="hds-global-header clearfix" id="26f920c7globalheader">
+      <div class="header-container content-container container">
+        <a class="" target="_self" href="https://www.hitachivantara.com/en-us/home.html">
+          <img src="./globalheader_files/hitachi-inspire-next-logo.png" alt="" class="hitachi-logo hidden-xs hidden-sm ">
+        </a>
+        <a href="https://www.hitachivantara.com/en-us/home.html" target="_self">
+          <img src="./globalheader_files/hitachi-inspire-next-logo.png" alt="Hitachi Vantara" class="hitachi-logo-mobile hidden-md hidden-lg ">
+        </a>
+        <div class="hds-quick-navigation hidden-xs hidden-sm" id="top-nav-bar">
+          <ul>
+            <li class="search">
+              <input type="text" placeholder="Search" data-href="/en-us/search.html" id="gsaSearchBox"><span class="icon nav-search"></span><input
+                type="hidden" id="searchloc" value="&amp;site=hitachi_insight&amp;client=hitachi_insight&amp;proxystylesheet=hitachi_insight&amp;getfields=content-type">
+              <div class="search_suggestion">
+                <div class="suggest_btm">
+                  <div class="suggestion clearfix">
+                    <a href="javascript:void(0);" class="search_close" title="Close"><span class="glyphicon glyphicon-remove"></span>
+                      Close</a>
+                  </div>
+                  <div class="suggest_content"></div>
+                </div>
+              </div>
+            </li>
+            <li><a id="showGeo" href="javascript:void(0);"> <span class="icon nav-globe" style="background-image: url(/im/nav-globe.png);background-position: 0 0;"></span>
+                <span class="labelText hidden-lg hidden-md">Global: </span> <span id="localeName"></span>
+                <span class="icon-accordion-closed"></span>
+                <span class="icon-accordion-opened"></span>
+                <span class="caret-arrow hidden-sm hidden-xs"></span>
+              </a>
+            </li>
+            <li>
+              <a href="http://community.hitachivantara.com/" target="_blank"> <span class="icon nav-globe" style="background-image: url(img/nav-community.png);background-position: 0 0;"></span>
+                Community <span class="glyphicon glyphicon-new-window hidden-md hidden-lg" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://support.hitachivantara.com/" target="_blank"> <span class="icon nav-globe" style="background-image: url(img/support.png);background-position: 0 0;"></span>
+                Support <span class="glyphicon glyphicon-new-window hidden-md hidden-lg" aria-hidden="true"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://partner.hitachivantara.com/" target="_blank"> <span class="icon nav-globe" style="background-image: url(img/nav-partner-portal.png);background-position: 0 0;"></span>
+                Partner Portal <span class="glyphicon glyphicon-new-window hidden-md hidden-lg" aria-hidden="true"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="navbar-toggle collapsed nav-button" type="button" data-toggle="collapse" data-target="#bs-navbar"
+          aria-controls="bs-navbar" aria-expanded="false" id="hdsMobileNaV">
+          <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+        </button>
+        <div class="search-mobile hidden-md hidden-lg">
+          <span class="sprite icon-search-mobile"></span>
+        </div>
+        <div class="search-mobile-container hidden-md hidden-lg">
+          <div class="search-section">
+            <div class="col-sm-12 col-no-pad">
+              <input type="text" size="20" maxlength="40" data-href="https://www.hitachivantara.com/en-us/search.html" id="gsaMobSearchBox"
+                class="search-txt">
+              <input type="submit" value="Search" class="btn-search" id="gsaMobSearchBtn">
+              <div class="search_suggestion">
+                <div class="suggest_btm">
+                  <div class="suggestion clearfix">
+                    <a href="javascript:void(0);" class="search_close" title="Close"><span class="glyphicon glyphicon-remove"></span>
+                      Close</a>
+                  </div>
+                  <div class="suggest_content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Geo OverLay-->
+        <div class="overlay basepage page">
+        
+          <!-- Load sidekick only when viewing page on its own -->
+          <div class="par parsys">
+            <div class="geowebsiteoverlay parbase section">
+              <div class="hds_globalNav_geo clearfix">
+                <div class="hds_globalNav_geo-selc">
+                  <div class="content-container global-sel">
+                    <div class="col-sm-12">
+                      <div class="hidden-xs hidden-sm title">SELECT A COUNTRY/REGION</div>
+                      <div class="geo_close_btn hidden-xs hidden-sm"></div>
+                      <ul class="nav nav-pills nav-justified hidden-xs hidden-sm hdsGeoLocator">
+                        <li class="active"><a data-toggle="tab" href="https://www.hitachivantara.com/etc/designs/hitachiinsight/en_us/jcr:content/globalheader.html#america">Americas</a></li>
+                        <li class=""><a data-toggle="tab" href="https://www.hitachivantara.com/etc/designs/hitachiinsight/en_us/jcr:content/globalheader.html#apac">ASIA
+                            PACIFIC</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="https://www.hitachivantara.com/etc/designs/hitachiinsight/en_us/jcr:content/globalheader.html#emea">EUROPE,
+                            MIDDLE EAST AND AFRICA</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div id="america" class="tab-pane fade in active">
+                          <div class="states-names">
+                            <div class="megamenu-heading">
+                              <h2 class="hidden-md hidden-lg">Americas</h2>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-no-pad">
+                              <ul>
+                                <li><a href="https://www.hitachivantara.com/es-latam/home.html" target="_blank">LATAM<span
+                                      style="display: none">Latam</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/pt-br/home.html" target="_blank">Brasil
+                                    <em>(Brazil)</em><span style="display: none">Brasil</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/en-us/home.html" target="_blank">United
+                                    States<span style="display: none">U.S.A.</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="apac" class="tab-pane fade in ">
+                          <div class="states-names">
+                            <div class="megamenu-heading">
+                              <h2 class="hidden-md hidden-lg">ASIA PACIFIC</h2>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-no-pad">
+                              <ul>
+                                <li><a href="https://www.hitachivantara.com/en-anz/home.html" target="_blank">Australia/New
+                                    Zealand<span style="display: none">Australia/New Zealand</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/zh-cn/home.html" target="_blank">中国
+                                    <em>(China)</em><span style="display: none">中国</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/en-hk/home.html" target="_blank">Hong
+                                    Kong<span style="display: none">Hong Kong</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/en-in/home.html" target="_blank">India<span
+                                      style="display: none">India</span>
+                                  </a>
+                                </li>
+                                <li><a href="http://www.hitachi.co.jp/products/it/storage-solutions/" target="_blank">日本
+                                    <em>(Japan)</em><span style="display: none">日本</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/ko-kr/home.html" target="_blank">한국
+                                    <em>(Korea)</em><span style="display: none">한국</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/zh-tw/home.html" target="_blank">台湾
+                                    <em>(Taiwan)</em><span style="display: none">台湾</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="emea" class="tab-pane fade in ">
+                          <div class="states-names">
+                            <div class="megamenu-heading">
+                              <h2 class="hidden-md hidden-lg">EUROPE, MIDDLE EAST AND AFRICA</h2>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-no-pad">
+                              <ul>
+                                <li><a href="https://www.hitachivantara.com/de-de/home.html" target="_blank">Deutschland
+                                    <em>(Germany)</em><span style="display: none">Deutschland</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/de-at/home.html" target="_blank">Österreich
+                                    <em>(Austria)</em><span style="display: none">Österreich</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/ru-ru/home.html" target="_blank">Россия
+                                    <em>(Russia)</em><span style="display: none">Россия</span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/etc/designs/hitachiinsight/en_us/jcr:content/globalheader.html"
+                                    target="_self">blank<span style="display: none"></span>
+                                  </a>
+                                </li>
+                                <li><a href="https://www.hitachivantara.com/de-ch/home.html" target="_blank">Schweiz
+                                    <em>(Switzerland)</em><span style="display: none">Schweiz</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="browser-upgrade section">
+              <!--[if lt IE 10]>
+                      <p class="browserupgrade">You are using an <b>outdated</b> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                      <![endif]-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hds-main-navigation-container">
+        <div class="hds-main-navigation">
+          <div class="col-md-3">
+            <a href="https://www.hitachivantara.com/en-us/home.html" target="_self">
+              <span class="hv-txt-header-logo">Hitachi Vantara</span>
+            </a>
+          </div>
+          <ul itemscope="" itemtype="http://schema.org/SiteNavigationElement" class="col-md-9 col-xs-12 removePosRelative globalNavWrapper  hidden-xs hidden-sm">
+            <li id="navTitle0" class=" hds-default-nav  ">
+              <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/solutions.html" href="https://www.hitachivantara.com/en-us/solutions.html">
+                <span itemprop="name">Solutions</span>
+                <span class="icon-accordion-closed"></span>
+                <span class="icon-accordion-opened"></span>
+              </a>
+              <div class="megamenu basepage page">
+                <!-- Load sidekick only when viewing page on its own -->
+                <div class="megamenupar megamenucontainer">
+                  <div class="parsys">
+                    <div class="solutions section">
+                      <div class="hds-megaMenuWrapper full-nav-solution" style="background-image:url(); background-repeat:no-repeat; background-position:bottom right;"
+                        data-parent-title="Solutions" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/solutions/solutions-mega-menu-bg.png"
+                        data-parent-path="/en-us/solutions.html">
+                        <div class="hds-megaMenu">
+                          <div class="content-container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="megamenu-heading">
+                                  <div class="icon hidden-xs hidden-sm">
+                                    <img src="./globalheader_files/solutions-mega-menu-icon.png" alt="Solutions" title="Solutions">
+                                  </div>
+                                  <div class="title">
+                                    <a href="javascript:void(0)" class="animateLink">Solutions</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-9 col-xs-12 megamenu-list">
+                                <ul class="col-md-4">
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights.html"
+                                      class="animateLink"><span itemprop="name">Deliver IoT Insights
+                                        and Outcomes</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                    <ul>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/lumada-applications-iiot.html"
+                                          class="animateLink"><span itemprop="name">Lumada
+                                            Applications for Industrial IoT</span></a>
+                                      </li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/smart-cities.html"
+                                          class="animateLink"><span itemprop="name">Smart Cities</span></a></li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/iot-analytics.html"
+                                          class="animateLink"><span itemprop="name">IoT Analytics</span></a></li>
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/data-analytics.html"
+                                      class="animateLink"><span itemprop="name">Innovate with Data and
+                                        Analytics</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/digital-transformation.html"
+                                      class="animateLink"><span itemprop="name">Accelerate Digital
+                                        Transformation</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                </ul>
+                                <ul class="col-md-4">
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/hybrid-cloud.html"
+                                      class="animateLink"><span itemprop="name">Transform to Hybrid
+                                        Cloud</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/application-ecosystem.html"
+                                      class="animateLink"><span itemprop="name">Optimize Your
+                                        Application Ecosystem</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/data-center-modernization.html"
+                                      class="animateLink"><span itemprop="name">Data Center
+                                        Modernization</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                </ul>
+                                <ul class="col-md-4">
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions.html"
+                                      class="animateLink"><span itemprop="name">Industry Solutions
+                                      </span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                    <ul>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/communications.html"
+                                          class="animateLink"><span itemprop="name">Communications</span></a></li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/energy.html"
+                                          class="animateLink"><span itemprop="name">Energy</span></a></li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/financial-services.html"
+                                          class="animateLink"><span itemprop="name">Financial
+                                            Services</span></a>
+                                      </li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/government.html"
+                                          class="animateLink"><span itemprop="name">Government</span></a></li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/healthcare.html"
+                                          class="animateLink"><span itemprop="name">Healthcare and
+                                            Life Sciences</span></a>
+                                      </li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/lumada-applications-iiot.html"
+                                          class="animateLink"><span itemprop="name">Industrial and
+                                            Manufacturing</span></a>
+                                      </li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/media-entertainment.html"
+                                          class="animateLink"><span itemprop="name">Media and
+                                            Entertainment</span></a>
+                                      </li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/retail.html"
+                                          class="animateLink"><span itemprop="name">Retail</span></a></li>
+                                      <li><a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/smart-cities.html"
+                                          class="animateLink"><span itemprop="name">Smart Cities</span></a></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-3 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html">
+                                <div class="col-xs-12 col-md-12" id="solutionsdsc0">
+                                  <div class="mm-spotlightNavigation hidden-xs hidden-sm">Get Faster ROI
+                                    from Your Data
+                                  </div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>Accelerate business insights and increase revenue opportunities
+                                      with proven, best practice architectures from big data use cases.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="https://www.hitachivantara.com/en-us/solutions/data-analytics.html" target="_self"
+                                      class="animateLink">EXPLORE BIG DATA SOLUTIONS<span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span></a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Close
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="navTitle1" class=" hds-default-nav  ">
+              <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/products.html" href="https://www.hitachivantara.com/en-us/products.html">
+                <span itemprop="name">Products</span>
+                <span class="icon-accordion-closed"></span>
+                <span class="icon-accordion-opened"></span>
+              </a>
+              <div class="megamenu basepage page">
+                <!-- Load sidekick only when viewing page on its own -->
+                <div class="megamenupar megamenucontainer">
+                  <div class="parsys">
+                    <div class="servicesmagamenu section">
+                      <div class="hds-megaMenuWrapper" style="background-image:url(); background-repeat:no-repeat; background-position:bottom right;"
+                        data-parent-title="Products" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/product-mega-bg.png"
+                        data-parent-path="/en-us/products.html">
+                        <div class="hds-megaMenu">
+                          <div class="content-container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="megamenu-heading">
+                                  <div class="icon hidden-xs hidden-sm">
+                                    <img src="./globalheader_files/products-mega-menu-icon.png" alt="" title="">
+                                  </div>
+                                  <div class="title">
+                                    <a href="javascript:void(0)" class="animateLink">Products</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-xs-12 megamenu-list">
+                                <ul>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/iot-operations-intelligence.html"
+                                      class="animateLink"><span itemprop="name">IoT and Operations
+                                        Intelligence</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/big-data-integration-analytics.html"
+                                      class="animateLink"><span itemprop="name">Big Data Integration
+                                        and Analytics</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/converged-systems.html"
+                                      class="animateLink"><span itemprop="name">Converged Systems</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/cloud-object-platform.html"
+                                      class="animateLink"><span itemprop="name">Cloud Object Platform</span><span
+                                        aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/storage.html"
+                                      class="animateLink"><span itemprop="name">Storage</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/data-protection.html"
+                                      class="animateLink"><span itemprop="name">Data Protection</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/data-center-management.html"
+                                      class="animateLink"><span itemprop="name">Data Center Management</span><span
+                                        aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html">
+                                <div class="col-xs-12 col-md-6">
+                                  <div class="hidden-xs hidden-sm mm-spotlightNavigation">Lumada
+                                    Applications Provide Intelligent Maintenance Insights
+                                  </div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>Highly accurate, prescriptive, predictive algorithms help
+                                      customers anticipate breakdowns so they can improve operations
+                                      and avoid equipment downtime.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="https://www.hitachivantara.com/en-us/solutions/iot-insights/lumada-applications-iiot/lumada-maintenance-insights.html"
+                                      target="_self" class="animateLink">LEARN ABOUT LUMADA MAINTENANCE
+                                      APPLICATIONS<span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span></a>
+                                  </p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                  <div class="hidden-xs hidden-sm mm-spotlightNavigation">Ingest, Blend,
+                                    Cleanse and Prepare Data From Any Source
+                                  </div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>Pentaho Data Integration eliminates coding and complexity, and
+                                      puts data from any source at the fingertips of business users.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="https://www.hitachivantara.com/en-us/products/big-data-integration-analytics/pentaho-data-integration.html"
+                                      target="_self" class="animateLink">LEARN ABOUT PENTAHO DATA
+                                      INTEGRATION<span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span></a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Close
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="navTitle2" class=" hds-default-nav  ">
+              <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/services.html" href="https://www.hitachivantara.com/en-us/services.html">
+                <span itemprop="name">Services</span>
+                <span class="icon-accordion-closed"></span>
+                <span class="icon-accordion-opened"></span>
+              </a>
+              <div class="megamenu basepage page">
+                <!-- Load sidekick only when viewing page on its own -->
+                <div class="megamenupar megamenucontainer">
+                  <div class="parsys">
+                    <div class="servicesmagamenu section">
+                      <div class="hds-megaMenuWrapper" style="background-image:url(); background-repeat:no-repeat; background-position:bottom right;"
+                        data-parent-title="Services" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/services-mega-bg.png"
+                        data-parent-path="/en-us/services.html">
+                        <div class="hds-megaMenu">
+                          <div class="content-container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="megamenu-heading">
+                                  <div class="icon hidden-xs hidden-sm">
+                                    <img src="./globalheader_files/services_heading.png" alt="" title="">
+                                  </div>
+                                  <div class="title">
+                                    <a href="javascript:void(0)" class="animateLink">Services</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-xs-12 megamenu-list">
+                                <ul>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/co-creation.html"
+                                      class="animateLink"><span itemprop="name">Co-creation Services</span><span
+                                        aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/cloud-services.html"
+                                      class="animateLink"><span itemprop="name">Cloud Services</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/big-data-analytics-services.html"
+                                      class="animateLink"><span itemprop="name">Big Data Analytics
+                                        Services</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/modern-data-protection-services.html"
+                                      class="animateLink"><span itemprop="name">Modern Data Protection
+                                        Services</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/infrastructure-services.html"
+                                      class="animateLink"><span itemprop="name">Infrastructure Services</span><span
+                                        aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/application-services.html"
+                                      class="animateLink"><span itemprop="name">Application Services</span><span
+                                        aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/customer-support.html"
+                                      class="animateLink"><span itemprop="name">Customer Support
+                                        Services</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/training-certification.html"
+                                      class="animateLink"><span itemprop="name">Training and
+                                        Certification</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html">
+                                <div class="col-xs-12 col-md-6">
+                                  <div class="hidden-xs hidden-sm mm-spotlightNavigation">Boost Your
+                                    Skills
+                                  </div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>Expand your career opportunities and prove your new technical
+                                      knowledge by earning certifications.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="https://www.hitachivantara.com/en-us/services/training-certification.html"
+                                      target="_self" class="animateLink">GET CERTIFIED<span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span></a>
+                                  </p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                  <div class="hidden-xs hidden-sm mm-spotlightNavigation">Support Connect</div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>Find help in one location: submit service requests, download
+                                      software, enroll in classes and more.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="https://support.hitachivantara.com/en_us/anonymous-dashboard.html" target="_blank"
+                                      class="animateLink">LOG IN FOR SUPPORT<span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span></a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Close
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="navTitle3" class=" hds-default-nav  ">
+              <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/news-resources.html" href="https://www.hitachivantara.com/en-us/news-resources.html">
+                <span itemprop="name">News &amp; Resources</span>
+                <span class="icon-accordion-closed"></span>
+                <span class="icon-accordion-opened"></span>
+              </a>
+              <div class="megamenu basepage page">
+                <!-- Load sidekick only when viewing page on its own -->
+                <div class="megamenupar megamenucontainer">
+                  <div class="parsys">
+                    <div class="newsinsightsmegamenu section">
+                      <div class="hds-megaMenuWrapper" style="background-image:url(); background-repeat:no-repeat; background-position:bottom right;"
+                        data-parent-title="News &amp; Resources" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/news-mega-bg.png"
+                        data-parent-path="/en-us/news-resources.html">
+                        <div class="hds-megaMenu">
+                          <div class="content-container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="megamenu-heading">
+                                  <div class="icon hidden-xs hidden-sm">
+                                    <img src="./globalheader_files/news_heading.png" alt="" title="">
+                                  </div>
+                                  <div class="title">
+                                    <a href="javascript:void(0)" class="animateLink">News &amp;
+                                      Resources</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 col-xs-12 megamenu-list">
+                                <ul class="single-col">
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/news-resources/resources.html"
+                                      class="animateLink"><span itemprop="name">Resources</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/news-resources/news.html"
+                                      class="animateLink"><span itemprop="name">News</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/news-resources/press-releases.html"
+                                      class="animateLink"><span itemprop="name">Press Releases</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/news-resources/events-webcasts.html"
+                                      class="animateLink"><span itemprop="name">Events and Webcasts</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_blank" href="https://community.hitachivantara.com/community/blogs"
+                                      class="animateLink"><span itemprop="name">Blogs</span><span aria-hidden="true" class="glyphicon glyphicon-new-window animateIcon"></span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-8 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html">
+                                <div class="col-xs-12 col-md-6" id="newsandinsight0">
+                                  <div class="mm-spotlightNavigation hidden-xs hidden-sm">What's New at
+                                    Hitachi Vantara?
+                                  </div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>Learn about the latest products, solutions and news at Hitachi
+                                      when they happen. Don't miss a thing.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="https://www.hitachivantara.com/en-us/news-resources/press-releases.html"
+                                      target="_self" class="animateLink">See What's New<span class="glyphicon glyphicon-menu-right animateIcon"
+                                        aria-hidden="true"></span></a>
+                                  </p>
+                                </div>
+                                <div class="col-xs-12 col-md-6" id="newsandinsight1">
+                                  <div class="mm-spotlightNavigation hidden-xs hidden-sm">HITACHI NEXT
+                                    2018<br>
+                                    The Premier Event for the Digital Revolution
+                                  </div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>September 25-27, 2018: San Diego, CA<br>
+                                      Your data. Your innovation. Your future.<br>
+                                      Bring back insights to transform your business and change the way
+                                      your world works.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="http://www.hitachinext.com/?icid=ip_us_en_nxtvv720" target="_blank" class="animateLink">LEARN
+                                      MORE<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Close
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="navTitle4" class=" hds-default-nav  ">
+              <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/partners.html" href="https://www.hitachivantara.com/en-us/partners.html">
+                <span itemprop="name">Partners</span>
+                <span class="icon-accordion-closed"></span>
+                <span class="icon-accordion-opened"></span>
+              </a>
+              <div class="megamenu basepage page">
+                <!-- Load sidekick only when viewing page on its own -->
+                <div class="megamenupar megamenucontainer">
+                  <div class="parsys">
+                    <div class="partnersmegamenu section">
+                      <div class="hds-megaMenuWrapper" style="background-image:url(); background-repeat:no-repeat; background-position:bottom right;"
+                        data-parent-title="Partners" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/partners-mega-menu-bg.png"
+                        data-parent-path="/en-us/partners.html">
+                        <div class="hds-megaMenu">
+                          <div class="content-container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="megamenu-heading">
+                                  <div class="icon hidden-xs hidden-sm">
+                                    <img src="./globalheader_files/partners-icon.png" alt="" title="">
+                                  </div>
+                                  <div class="title">
+                                    <a href="javascript:void(0)" class="animateLink">Partners</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-xs-12 megamenu-list">
+                                <ul>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/partner-program.html"
+                                      class="animateLink"><span itemprop="name">Partner Program</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/create-solutions.html"
+                                      class="animateLink"><span itemprop="name">Create Solutions</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/deliver-outcomes.html"
+                                      class="animateLink"><span itemprop="name">Deliver Outcomes</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/manage-services.html"
+                                      class="animateLink"><span itemprop="name">Manage Services</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/resell-solutions.html"
+                                      class="animateLink"><span itemprop="name">Resell Solutions</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html">
+                                <div class="col-xs-12 col-md-12">
+                                  <div class="mm-spotlightNavigation hidden-xs hidden-sm">Business
+                                    Transformation Begins With Innovative Solutions From Our World-Class
+                                    Partners and Hitachi
+                                  </div>
+                                  <div class="col-xs-12 col-md-4 override-left" id="partner0">
+                                    <div class="hidden-xs hidden-sm">
+                                      <p>Search for a partner with the right expertise for your needs.</p>
+                                    </div>
+                                    <p>
+                                      <a href="https://www.hitachivantara.com/partnerlocator/en_us/partnerlocator.html"
+                                        target="_blank" class="animateLink">FIND A PARTNER<span aria-hidden="true" class="glyphicon glyphicon-new-window animateIcon"></span></a>
+                                    </p>
+                                  </div>
+                                  <div class="col-xs-12 col-md-4 override-left" id="partner1">
+                                    <div class="hidden-xs hidden-sm">
+                                      <p>We're in this together. Join the award-winning program that
+                                        sets you up for success.
+                                      </p>
+                                    </div>
+                                    <p>
+                                      <a href="https://www.hitachivantara.com/en-us/partners/partner-program.html" target="_self"
+                                        class="animateLink">BECOME A PARTNER<span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span></a>
+                                    </p>
+                                  </div>
+                                  <div class="col-xs-12 col-md-4 override-left" id="partner2">
+                                    <div class="hidden-xs hidden-sm">
+                                      <p>Get the partner information you need, from product news to
+                                        training and tools.
+                                      </p>
+                                    </div>
+                                    <p>
+                                      <a href="https://partner.hitachivantara.com/" target="_blank" class="animateLink">PARTNER
+                                        PORTAL<span aria-hidden="true" class="glyphicon glyphicon-new-window animateIcon"></span></a>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Close
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="navTitle5" class=" hds-default-nav  ">
+              <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/company.html" href="https://www.hitachivantara.com/en-us/company.html">
+                <span itemprop="name">Company</span>
+                <span class="icon-accordion-closed"></span>
+                <span class="icon-accordion-opened"></span>
+              </a>
+              <div class="megamenu basepage page">
+                <!-- Load sidekick only when viewing page on its own -->
+                <div class="megamenupar megamenucontainer">
+                  <div class="parsys">
+                    <div class="servicesmagamenu section">
+                      <div class="hds-megaMenuWrapper" style="background-image:url(); background-repeat:no-repeat; background-position:bottom right;"
+                        data-parent-title="Company" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/abouthds-mega-bg.png"
+                        data-parent-path="/en-us/company.html">
+                        <div class="hds-megaMenu">
+                          <div class="content-container">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <div class="megamenu-heading">
+                                  <div class="icon hidden-xs hidden-sm">
+                                    <img src="./globalheader_files/abouthds_heading.png" alt="" title="">
+                                  </div>
+                                  <div class="title">
+                                    <a href="javascript:void(0)" class="animateLink">Company</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 col-xs-12 megamenu-list">
+                                <ul>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/social-innovation.html"
+                                      class="animateLink"><span itemprop="name">Social Innovation</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/leadership.html"
+                                      class="animateLink"><span itemprop="name">Leadership</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/stories.html"
+                                      class="animateLink"><span itemprop="name">Hitachi Vantara Stories</span><span
+                                        aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/careers.html"
+                                      class="animateLink"><span itemprop="name">Careers</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/blog/" class="animateLink"><span
+                                        itemprop="name">Hitachi Vantara Blog</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/customer-stories.html"
+                                      class="animateLink"><span itemprop="name">Customer Stories</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/labs.html"
+                                      class="animateLink"><span itemprop="name">Hitachi Vantara Labs</span><span
+                                        aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/corporate-social-responsibility.html"
+                                      class="animateLink"><span itemprop="name">Corporate Social
+                                        Responsibility</span><span aria-hidden="true" class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                  <li>
+                                    <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/contact.html"
+                                      class="animateLink"><span itemprop="name">Contact Us</span><span aria-hidden="true"
+                                        class="glyphicon  animateIcon"></span></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-6 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html">
+                                <div class="col-xs-12 col-md-6">
+                                  <div class="hidden-xs hidden-sm mm-spotlightNavigation">Get to Know
+                                    Hitachi Vantara
+                                  </div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>Learn how our history, experience and values help us drive
+                                      outcomes that matter.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="https://www.hitachivantara.com/en-us/company.html" target="_self" class="animateLink">EXPLORE
+                                      HITACHI VANTARA<span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span></a>
+                                  </p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                  <div class="hidden-xs hidden-sm mm-spotlightNavigation">Visit Us</div>
+                                  <div class="hidden-xs hidden-sm">
+                                    <p>Come to one of our global locations and see intelligent
+                                      innovation in action.
+                                    </p>
+                                  </div>
+                                  <p>
+                                    <a href="https://www.hitachivantara.com/en-us/company/contact/worldwide-locations.html"
+                                      target="_self" class="animateLink">FIND A LOCATION<span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span></a>
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+                          <span class="glyphicon glyphicon-remove"></span>
+                          Close
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="breadcrumbpar breadcrumb">
+        <div class="breadcrumb-container">
+          <div class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- HEADER ENDS HERE -->
+
   <div class="loading-overlay" ng-show="!isDoneLoading">
     <div id="floatingBarsG">
       <div class="blockG" id="rotateG_01"></div>
@@ -70,6 +985,1101 @@
   <!--[if lt IE 7]>
           <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
+<div class="hds-MobileMenu hds-megaMenu-right">
+  <div class="closeHDSMenu">
+    <a href="javascript:void(0);" title="Close" id="closeHDSMenu">Close</a>
+  </div>
+  <div class="hds-mobile-navigation">
+    <ul itemscope="" itemtype="http://schema.org/SiteNavigationElement" class="col-md-9 col-xs-12 removePosRelative globalNavWrapper">
+      <li id="navTitle0" class="hds-default-nav">
+        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/solutions.html" href="javascript:void(0);"
+          class="hds-default-nav-anchor">
+          <span itemprop="name">Solutions</span>
+          <span class="icon-accordion-closed"></span>
+          <span class="icon-accordion-opened"></span>
+        </a>
+        <!-- Load sidekick only when viewing page on its own -->
+        <div class="hds-megaMenuWrapper full-nav-solution" style="background-image: url(&quot;https://www.hitachivantara.com/content/dam/public/en_us/images/solutions/solutions-mega-menu-bg.png&quot;); background-repeat: no-repeat; background-position: right bottom; display: none;"
+          data-parent-title="Solutions" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/solutions/solutions-mega-menu-bg.png"
+          data-parent-path="/en-us/solutions.html">
+          <div class="hds-megaMenu">
+            <div class="content-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="megamenu-heading">
+                    <div class="icon hidden-xs hidden-sm">
+                      <img src="https://www.hitachivantara.com/content/dam/public/en_us/images/solutions/solutions-mega-menu-icon.png"
+                        alt="Solutions" title="Solutions">
+                    </div>
+                    <div class="title">
+                      <a href="https://www.hitachivantara.com/en-us/solutions.html" class="animateLink">
+                        <div class="true" style="display:inline-block;">Solutions</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9 col-xs-12 megamenu-list">
+                  <ul class="col-md-4">
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Deliver IoT Insights and Outcomes</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                      <ul>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/lumada-applications-iiot.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Lumada Applications for Industrial IoT</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/smart-cities.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Smart Cities</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/iot-analytics.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">IoT Analytics</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/data-analytics.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Innovate with Data and Analytics</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/digital-transformation.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Accelerate Digital Transformation</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="col-md-4">
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/hybrid-cloud.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Transform to Hybrid Cloud</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/application-ecosystem.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Optimize Your Application Ecosystem</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/data-center-modernization.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Data Center Modernization</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="col-md-4">
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Industry Solutions </span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                      <ul>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/communications.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Communications</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/energy.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Energy</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/financial-services.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Financial Services</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/government.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Government</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/healthcare.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Healthcare and Life Sciences</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/lumada-applications-iiot.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Industrial and Manufacturing</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/media-entertainment.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Media and Entertainment</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/industry-solutions/retail.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Retail</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/solutions/iot-insights/smart-cities.html"
+                            class="animateLink">
+                            <div class="true" style="display:inline-block;">
+                              <span itemprop="name">Smart Cities</span>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-3 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html"
+                  style="background-image: url(&quot;https://www.hitachivantara.com/.html&quot;); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;">
+                  <div class="col-xs-12 col-md-12" id="solutionsdsc0">
+                    <div class="mm-spotlightNavigation hidden-xs hidden-sm">Get Faster ROI from Your Data</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Accelerate business insights and increase revenue opportunities with proven, best practice
+                        architectures from big data use cases.</p>
+                    </div>
+                    <p>
+                      <a href="https://www.hitachivantara.com/en-us/solutions/data-analytics.html" target="_self" class="animateLink">EXPLORE
+                        BIG DATA
+                        <div class="true" style="display:inline-block;">SOLUTIONS
+                          <span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+            Close
+
+          </div>
+        </div>
+      </li>
+      <li id="navTitle1" class="hds-default-nav">
+        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/products.html" href="javascript:void(0);"
+          class="hds-default-nav-anchor">
+          <span itemprop="name">Products</span>
+          <span class="icon-accordion-closed"></span>
+          <span class="icon-accordion-opened"></span>
+        </a>
+        <!-- Load sidekick only when viewing page on its own -->
+        <div class="hds-megaMenuWrapper" style="background-image: url(&quot;https://www.hitachivantara.com/content/dam/public/en_us/images/product-mega-bg.png&quot;); background-repeat: no-repeat; background-position: right bottom; display: none;"
+          data-parent-title="Products" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/product-mega-bg.png"
+          data-parent-path="/en-us/products.html">
+          <div class="hds-megaMenu">
+            <div class="content-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="megamenu-heading">
+                    <div class="icon hidden-xs hidden-sm">
+                      <img src="https://www.hitachivantara.com/content/dam/public/en_us/images/products/products-mega-menu-icon.png"
+                        alt="" title="">
+                    </div>
+                    <div class="title">
+                      <a href="https://www.hitachivantara.com/en-us/products.html" class="animateLink">
+                        <div class="true" style="display:inline-block;">Products</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 megamenu-list">
+                  <ul>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/iot-operations-intelligence.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">IoT and Operations Intelligence</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/big-data-integration-analytics.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Big Data Integration and Analytics</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/converged-systems.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Converged Systems</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/cloud-object-platform.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Cloud Object Platform</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/storage.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Storage</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/data-protection.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Data Protection</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/products/data-center-management.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Data Center Management</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html"
+                  style="background-image: url(&quot;https://www.hitachivantara.com/.html&quot;); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="hidden-xs hidden-sm mm-spotlightNavigation">Lumada Applications Provide Intelligent
+                      Maintenance Insights</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Highly accurate, prescriptive, predictive algorithms help customers anticipate breakdowns so
+                        they can improve operations and avoid equipment downtime.</p>
+                    </div>
+                    <p>
+                      <a href="https://www.hitachivantara.com/en-us/solutions/iot-insights/lumada-applications-iiot/lumada-maintenance-insights.html"
+                        target="_self" class="animateLink">LEARN ABOUT LUMADA MAINTENANCE
+                        <div class="true" style="display:inline-block;">APPLICATIONS
+                          <span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="hidden-xs hidden-sm mm-spotlightNavigation">Ingest, Blend, Cleanse and Prepare Data
+                      From Any Source</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Pentaho Data Integration eliminates coding and complexity, and puts data from any source at
+                        the fingertips of business users.</p>
+                    </div>
+                    <p>
+                      <a href="https://www.hitachivantara.com/en-us/products/big-data-integration-analytics/pentaho-data-integration.html"
+                        target="_self" class="animateLink">LEARN ABOUT PENTAHO DATA
+                        <div class="true" style="display:inline-block;">INTEGRATION
+                          <span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+            Close
+
+          </div>
+        </div>
+      </li>
+      <li id="navTitle2" class="hds-default-nav">
+        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/services.html" href="javascript:void(0);"
+          class="hds-default-nav-anchor">
+          <span itemprop="name">Services</span>
+          <span class="icon-accordion-closed"></span>
+          <span class="icon-accordion-opened"></span>
+        </a>
+        <!-- Load sidekick only when viewing page on its own -->
+        <div class="hds-megaMenuWrapper" style="background-image: url(&quot;https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/services-mega-bg.png&quot;); background-repeat: no-repeat; background-position: right bottom;"
+          data-parent-title="Services" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/services-mega-bg.png"
+          data-parent-path="/en-us/services.html">
+          <div class="hds-megaMenu">
+            <div class="content-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="megamenu-heading">
+                    <div class="icon hidden-xs hidden-sm">
+                      <img src="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/services_heading.png"
+                        alt="" title="">
+                    </div>
+                    <div class="title">
+                      <a href="https://www.hitachivantara.com/en-us/services.html" class="animateLink">
+                        <div class="true" style="display:inline-block;">Services</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 megamenu-list">
+                  <ul>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/co-creation.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Co-creation Services</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/cloud-services.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Cloud Services</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/big-data-analytics-services.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Big Data Analytics Services</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/modern-data-protection-services.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Modern Data Protection Services</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/infrastructure-services.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Infrastructure Services</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/application-services.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Application Services</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/customer-support.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Customer Support Services</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/services/training-certification.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Training and Certification</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html"
+                  style="background-image: url(&quot;https://www.hitachivantara.com/.html&quot;); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="hidden-xs hidden-sm mm-spotlightNavigation">Boost Your Skills</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Expand your career opportunities and prove your new technical knowledge by earning
+                        certifications.</p>
+                    </div>
+                    <p>
+                      <a href="https://www.hitachivantara.com/en-us/services/training-certification.html" target="_self"
+                        class="animateLink">GET
+                        <div class="true" style="display:inline-block;">CERTIFIED
+                          <span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="hidden-xs hidden-sm mm-spotlightNavigation">Support Connect</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Find help in one location: submit service requests, download software, enroll in classes and
+                        more.</p>
+                    </div>
+                    <p>
+                      <a href="https://support.hitachivantara.com/en_us/anonymous-dashboard.html" target="_blank" class="animateLink">LOG
+                        IN FOR
+                        <div class="true" style="display:inline-block;">SUPPORT
+                          <span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+            Close
+
+          </div>
+        </div>
+      </li>
+      <li id="navTitle3" class="hds-default-nav">
+        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/news-resources.html" href="javascript:void(0);"
+          class="hds-default-nav-anchor">
+          <span itemprop="name">News &amp; Resources</span>
+          <span class="icon-accordion-closed"></span>
+          <span class="icon-accordion-opened"></span>
+        </a>
+        <!-- Load sidekick only when viewing page on its own -->
+        <div class="hds-megaMenuWrapper" style="background-image: url(&quot;https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/news-mega-bg.png&quot;); background-repeat: no-repeat; background-position: right bottom; display: none;"
+          data-parent-title="News &amp; Resources" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/news-mega-bg.png"
+          data-parent-path="/en-us/news-resources.html">
+          <div class="hds-megaMenu">
+            <div class="content-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="megamenu-heading">
+                    <div class="icon hidden-xs hidden-sm">
+                      <img src="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/news_heading.png"
+                        alt="" title="">
+                    </div>
+                    <div class="title">
+                      <a href="https://www.hitachivantara.com/en-us/news-resources.html" class="animateLink">News &amp;
+                        <div class="true" style="display:inline-block;">Resources</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-xs-12 megamenu-list">
+                  <ul class="single-col">
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/news-resources/resources.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Resources</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/news-resources/news.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">News</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/news-resources/press-releases.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Press Releases</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/news-resources/events-webcasts.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Events and Webcasts</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_blank" href="https://community.hitachivantara.com/community/blogs"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Blogs</span>
+                          <span aria-hidden="true" class="glyphicon glyphicon-new-window animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-8 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html"
+                  style="background-image: url(&quot;https://www.hitachivantara.com/.html&quot;); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;">
+                  <div class="col-xs-12 col-md-6" id="newsandinsight0">
+                    <div class="mm-spotlightNavigation hidden-xs hidden-sm">What's New at Hitachi Vantara?</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Learn about the latest products, solutions and news at Hitachi when they happen. Don't miss a
+                        thing.</p>
+                    </div>
+                    <p>
+                      <a href="https://www.hitachivantara.com/en-us/news-resources/press-releases.html" target="_self"
+                        class="animateLink">See What's
+                        <div class="true" style="display:inline-block;">New
+                          <span class="glyphicon glyphicon-menu-right animateIcon" aria-hidden="true"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6" id="newsandinsight1">
+                    <div class="mm-spotlightNavigation hidden-xs hidden-sm">Pentaho Community Meeting 2018</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Pentaho Community Meeting is the yearly gathering of Pentaho users from around the world. The
+                        200-300 attendees meet to discuss the latest and greatest in Pentaho big data analytics
+                        platform.</p>
+                    </div>
+                    <p>
+                      <a href="https://it-novum.com/en/pcm18/?utm_source=hitachivantara.com&amp;utm_medium=partner&amp;utm_campaign=pcm18?wm=pcm18-eventeintrag-hitachi"
+                        target="_blank" class="animateLink">REGISTER
+                        <div class="true" style="display:inline-block;">NOW
+                          <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+            Close
+
+          </div>
+        </div>
+      </li>
+      <li id="navTitle4" class="hds-default-nav">
+        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/partners.html" href="javascript:void(0);"
+          class="hds-default-nav-anchor">
+          <span itemprop="name">Partners</span>
+          <span class="icon-accordion-closed"></span>
+          <span class="icon-accordion-opened"></span>
+        </a>
+        <!-- Load sidekick only when viewing page on its own -->
+        <div class="hds-megaMenuWrapper" style="background-image: url(&quot;https://www.hitachivantara.com/content/dam/public/en_us/images/partners-mega-menu-bg.png&quot;); background-repeat: no-repeat; background-position: right bottom;"
+          data-parent-title="Partners" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/partners-mega-menu-bg.png"
+          data-parent-path="/en-us/partners.html">
+          <div class="hds-megaMenu">
+            <div class="content-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="megamenu-heading">
+                    <div class="icon hidden-xs hidden-sm">
+                      <img src="https://www.hitachivantara.com/content/dam/public/en_us/images/partners/partners-icon.png"
+                        alt="" title="">
+                    </div>
+                    <div class="title">
+                      <a href="https://www.hitachivantara.com/en-us/partners.html" class="animateLink">
+                        <div class="true" style="display:inline-block;">Partners</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 megamenu-list">
+                  <ul>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/partner-program.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Partner Program</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/create-solutions.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Create Solutions</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/deliver-outcomes.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Deliver Outcomes</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/manage-services.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Manage Services</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/partners/resell-solutions.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Resell Solutions</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html"
+                  style="background-image: url(&quot;https://www.hitachivantara.com/.html&quot;); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;">
+                  <div class="col-xs-12 col-md-12">
+                    <div class="mm-spotlightNavigation hidden-xs hidden-sm">Business Transformation Begins With
+                      Innovative Solutions From Our World-Class Partners and Hitachi</div>
+                    <div class="col-xs-12 col-md-4 override-left" id="partner0">
+                      <div class="hidden-xs hidden-sm">
+                        <p>Search for a partner with the right expertise for your needs.</p>
+                      </div>
+                      <p>
+                        <a href="https://www.hitachivantara.com/partnerlocator/en_us/partnerlocator.html" target="_blank"
+                          class="animateLink">FIND A
+                          <div class="true" style="display:inline-block;">PARTNER
+                            <span aria-hidden="true" class="glyphicon glyphicon-new-window animateIcon"></span>
+                          </div>
+                        </a>
+                      </p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 override-left" id="partner1">
+                      <div class="hidden-xs hidden-sm">
+                        <p>We're in this together. Join the award-winning program that sets you up for success.</p>
+                      </div>
+                      <p>
+                        <a href="https://www.hitachivantara.com/en-us/partners/partner-program.html" target="_self"
+                          class="animateLink">BECOME A
+                          <div class="true" style="display:inline-block;">PARTNER
+                            <span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span>
+                          </div>
+                        </a>
+                      </p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 override-left" id="partner2">
+                      <div class="hidden-xs hidden-sm">
+                        <p>Get the partner information you need, from product news to training and tools.</p>
+                      </div>
+                      <p>
+                        <a href="https://partner.hitachivantara.com" target="_blank" class="animateLink">PARTNER
+                          <div class="true" style="display:inline-block;">PORTAL
+                            <span aria-hidden="true" class="glyphicon glyphicon-new-window animateIcon"></span>
+                          </div>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+            Close
+
+          </div>
+        </div>
+      </li>
+      <li id="navTitle5" class="hds-default-nav">
+        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/company.html" href="javascript:void(0);"
+          class="hds-default-nav-anchor">
+          <span itemprop="name">Company</span>
+          <span class="icon-accordion-closed"></span>
+          <span class="icon-accordion-opened"></span>
+        </a>
+        <!-- Load sidekick only when viewing page on its own -->
+        <div class="hds-megaMenuWrapper" style="background-image: url(&quot;https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/abouthds-mega-bg.png&quot;); background-repeat: no-repeat; background-position: right bottom; display: none;"
+          data-parent-title="Company" data-bg-url="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/abouthds-mega-bg.png"
+          data-parent-path="/en-us/company.html">
+          <div class="hds-megaMenu">
+            <div class="content-container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="megamenu-heading">
+                    <div class="icon hidden-xs hidden-sm">
+                      <img src="https://www.hitachivantara.com/content/dam/public/en_us/images/common/icons/abouthds_heading.png"
+                        alt="" title="">
+                    </div>
+                    <div class="title">
+                      <a href="https://www.hitachivantara.com/en-us/company.html" class="animateLink">
+                        <div class="true" style="display:inline-block;">Company</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-xs-12 megamenu-list">
+                  <ul>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/social-innovation.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Social Innovation</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/leadership.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Leadership</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/stories.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Hitachi Vantara Stories</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/careers.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Careers</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/blog/" class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Hitachi Vantara Blog</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/customer-stories.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Customer Stories</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/labs.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Hitachi Vantara Labs</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/corporate-social-responsibility.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Corporate Social Responsibility</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a itemprop="url" target="_self" href="https://www.hitachivantara.com/en-us/company/contact.html"
+                        class="animateLink">
+                        <div class="true" style="display:inline-block;">
+                          <span itemprop="name">Contact Us</span>
+                          <span aria-hidden="true" class="glyphicon  animateIcon"></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-xs-12 spotlightNavigation" data-style="https://www.hitachivantara.com/.html"
+                  style="background-image: url(&quot;https://www.hitachivantara.com/.html&quot;); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;">
+                  <div class="col-xs-12 col-md-6">
+                    <div class="hidden-xs hidden-sm mm-spotlightNavigation">Get to Know Hitachi Vantara</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Learn how our history, experience and values help us drive outcomes that matter.</p>
+                    </div>
+                    <p>
+                      <a href="https://www.hitachivantara.com/en-us/company.html" target="_self" class="animateLink">EXPLORE
+                        HITACHI
+                        <div class="true" style="display:inline-block;">VANTARA
+                          <span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                    <div class="hidden-xs hidden-sm mm-spotlightNavigation">Visit Us</div>
+                    <div class="hidden-xs hidden-sm">
+                      <p>Come to one of our global locations and see intelligent innovation in action.</p>
+                    </div>
+                    <p>
+                      <a href="https://www.hitachivantara.com/en-us/company/contact/worldwide-locations.html" target="_self"
+                        class="animateLink">FIND A
+                        <div class="true" style="display:inline-block;">LOCATION
+                          <span aria-hidden="true" class="glyphicon glyphicon-menu-right animateIcon" style="left: 5px;"></span>
+                        </div>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+            Close
+
+          </div>
+        </div>
+      </li>
+      <!-- <li>
+        <a id="showGeo" href="javascript:void(0);">
+          <span class="icon nav-globe" style="background-image: url(/im/nav-globe.png);background-position: 0 0;"></span>
+          <span class="labelText hidden-lg hidden-md">Global: </span>
+          <span id="localeName">U.S.A.</span>
+          <span class="icon-accordion-closed"></span>
+          <span class="icon-accordion-opened"></span>
+          <span class="caret-arrow hidden-sm hidden-xs"></span>
+        </a>
+        <div class="hds_globalNav_geo clearfix" style="display: none;">
+          <div class="hds_globalNav_geo-selc">
+            <div class="content-container global-sel">
+              <div class="col-sm-12">
+                <div class="hidden-xs hidden-sm title">SELECT A COUNTRY/REGION</div>
+                <div class="geo_close_btn hidden-xs hidden-sm"></div>
+                <ul class="nav nav-pills nav-justified hidden-xs hidden-sm hdsGeoLocator">
+                  <li class="active">
+                    <a data-toggle="tab" href="#america">Americas</a>
+                  </li>
+                  <li class="">
+                    <a data-toggle="tab" href="#apac">ASIA PACIFIC</a>
+                  </li>
+                  <li class="">
+                    <a data-toggle="tab" href="#emea">EUROPE, MIDDLE EAST AND AFRICA</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div id="america" class="tab-pane fade in active">
+                    <div class="states-names">
+                      <div class="megamenu-heading">
+                        <h2 class="hidden-md hidden-lg">Americas</h2>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-no-pad">
+                        <ul>
+                          <li>
+                            <a href="/es-latam/home.html" target="_blank">LATAM
+                              <span style="display: none">Latam</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/pt-br/home.html" target="_blank">Brasil
+                              <em>(Brazil)</em>
+                              <span style="display: none">Brasil</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/en-us/home.html" target="_blank">United States
+                              <span style="display: none">U.S.A.</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="apac" class="tab-pane fade in">
+                    <div class="states-names">
+                      <div class="megamenu-heading">
+                        <h2 class="hidden-md hidden-lg">ASIA PACIFIC</h2>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-no-pad">
+                        <ul>
+                          <li>
+                            <a href="/en-anz/home.html" target="_blank">Australia/New Zealand
+                              <span style="display: none">Australia/New Zealand</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/zh-cn/home.html" target="_blank">中国
+                              <em>(China)</em>
+                              <span style="display: none">中国</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/en-hk/home.html" target="_blank">Hong Kong
+                              <span style="display: none">Hong Kong</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/en-in/home.html" target="_blank">India
+                              <span style="display: none">India</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="http://www.hitachi.co.jp/products/it/storage-solutions/" target="_blank">日本
+                              <em>(Japan)</em>
+                              <span style="display: none">日本</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/ko-kr/home.html" target="_blank">한국
+                              <em>(Korea)</em>
+                              <span style="display: none">한국</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/zh-tw/home.html" target="_blank">台湾
+                              <em>(Taiwan)</em>
+                              <span style="display: none">台湾</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="emea" class="tab-pane fade in">
+                    <div class="states-names">
+                      <div class="megamenu-heading">
+                        <h2 class="hidden-md hidden-lg">EUROPE, MIDDLE EAST AND AFRICA</h2>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-no-pad">
+                        <ul>
+                          <li>
+                            <a href="/de-de/home.html" target="_blank">Deutschland
+                              <em>(Germany)</em>
+                              <span style="display: none">Deutschland</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/de-at/home.html" target="_blank">Österreich
+                              <em>(Austria)</em>
+                              <span style="display: none">Österreich</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/ru-ru/home.html" target="_blank">Россия
+                              <em>(Russia)</em>
+                              <span style="display: none">Россия</span>
+                            </a>
+                          </li>
+                          <li style="display: none;">
+                            <a href="" target="_self">blank
+                              <span style="display: none"></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="/de-ch/home.html" target="_blank">Schweiz
+                              <em>(Switzerland)</em>
+                              <span style="display: none">Schweiz</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li> -->
+      <li>
+        <a href="http://community.hitachivantara.com/" target="_blank">
+          <span class="icon nav-globe" style="background-image: url(img/nav-community.png);background-position: 0 0;"></span>
+          Community
+          <span class="glyphicon glyphicon-new-window hidden-md hidden-lg" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://support.hitachivantara.com/" target="_blank">
+          <span class="icon nav-globe" style="background-image: url(img/support.png);background-position: 0 0;"></span>
+          Support
+          <span class="glyphicon glyphicon-new-window hidden-md hidden-lg" aria-hidden="true"></span>
+        </a>
+      </li>
+      <li>
+        <a href="https://partner.hitachivantara.com" target="_blank">
+          <span class="icon nav-globe" style="background-image: url(img/nav-partner-portal.png);background-position: 0 0;"></span>
+          Partner Portal
+          <span class="glyphicon glyphicon-new-window hidden-md hidden-lg" aria-hidden="true"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
   <div class="whole-container clearfix" ng-cloak>
 
     <div class="pentaho-header-backPage">
@@ -86,10 +2096,10 @@
           </div> -->
         <div class="content-header">
           <div class="row">
-            <div class="col-xs-9">
-              <div class="header-links-container hidden-xs">
-                <h1>Marketplace</h1>
-                <div class="header-links btn-group btn-group-md pull-right" id="header-links">
+            <div class="col-xs-4 col-sm-9">
+              <div class="header-links-container">
+                <h1 class="pull-left">Marketplace</h1>
+                <div class="header-links btn-group btn-group-md pull-left" id="header-links">
                   <button type="button" class="btn btn-default" ng-click="openFindMarketplace()"><span>Find Marketplace</span></button>
                   <button type="button" class="btn btn-default" ng-click="openDevStages()"><span>Development Stages</span></button>
                   <button type="button" class="btn btn-default" ng-click="openContribute()"><span>Contribute</span></button>
@@ -97,7 +2107,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-3 tryPentaho text-right">
+            <div class="col-sm-3 col-xs-8 tryPentaho text-right">
               <button class=" button btn" style="text-align: center; padding: 0 30px;" onclick="window.location.href='https://www.hitachivantara.com/en-us/products/big-data-integration-analytics/pentaho-trial-download.html'">Try Pentaho</button>
             </div>
           </div>
@@ -170,6 +2180,34 @@
                 <button class="btn clear-all-filters" ng-disabled="!isAnyFilterSelected()" ng-click="clearAllFilters()">
                   Clear all
                 </button>
+                <div class="plugins-filters">
+                
+                  <div class="top-plugins-filters plugins-filters-block">
+                    <span class="filter-selection-status" ng-hide="isAnyFilterSelected()">All</span>
+                    <span class="filter-selection-status" ng-hide="!isAnyFilterSelected()">Some</span>
+                
+                    <!-- <div class="filters-header">
+                                  <div class="pull-left"><span class="filters-header-title">Filter</span></div>
+                                  <div class="pull-right">
+                                    </div>
+                                  <div class="clear"></div>
+                                </div> -->
+                
+                    <div data-multiselect-dropdown data-selected-options="selectedCategories" data-options="categories" data-group-by="main"
+                      data-display="sub">
+                    </div>
+                
+                
+                  </div>
+                  <div class="bottom-plugins-filters plugins-filters-block">
+                
+                    <div data-stages-filter data-selected-options="selectedStages" data-options="developmentStages" data-group-by="lane"
+                      data-display="name" data-select="stage">
+                    </div>
+                
+                  </div>
+                  <div class="clear"></div>
+                </div>
               </div>
             </div>
             <div class="row">
@@ -180,34 +2218,6 @@
           </div>
         </div>
         <div class="container">
-          <div class="plugins-filters">
-
-            <div class="top-plugins-filters plugins-filters-block">
-              <span class="filter-selection-status" ng-hide="isAnyFilterSelected()">All</span>
-              <span class="filter-selection-status" ng-hide="!isAnyFilterSelected()">Some</span>
-
-              <!-- <div class="filters-header">
-                  <div class="pull-left"><span class="filters-header-title">Filter</span></div>
-                  <div class="pull-right">
-                    </div>
-                  <div class="clear"></div>
-                </div> -->
-
-              <div data-multiselect-dropdown data-selected-options="selectedCategories" data-options="categories"
-                data-group-by="main" data-display="sub">
-              </div>
-
-
-            </div>
-            <div class="bottom-plugins-filters plugins-filters-block">
-
-              <div data-stages-filter data-selected-options="selectedStages" data-options="developmentStages"
-                data-group-by="lane" data-display="name" data-select="stage">
-              </div>
-
-            </div>
-            <div class="clear"></div>
-          </div>
 
           <!-- plugins list -->
           <div class="plugins-grid row">
@@ -303,10 +2313,10 @@
   <script type="text/javascript" src="js/vendor/underscore-min.js"></script>
 
 
-  <script type="text/javascript" src="js/app.js"></script>
   <!--script src="js/vendor/isotope.pkgd.min.js"></script-->
   <script type="text/javascript" src="js/app.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/hvnav.js"></script>
 
   <script src="js/events/stopEventDirective.js"></script>
 

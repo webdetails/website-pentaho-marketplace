@@ -18,8 +18,8 @@
         <div data-ng-repeat="group in groups" class="dev-stages-filters-group">
           <div class="filters-sub-title">{{group.name}} Lane</div>
 <button class="filters-state btn btn-default btn-block single-filter-button"
-              data-is-checked={{getGroupsSelected()}}
-              data-ng-click="toggleAllGroups()"
+data-is-checked={{option.isSelected}}
+data-ng-click="toggleGroupSelection(group)"
               data-stop-event="click"> All
           </button>
           <button data-ng-repeat="option in group.options"

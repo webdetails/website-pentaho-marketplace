@@ -6,21 +6,264 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/opensans-light.ttf);
+    unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/opensans-light.ttf);
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/opensans-light.ttf);
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/opensans-light.ttf);
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/opensans-light.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans-regular.ttf);
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans-regular.ttf);
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans-regular.ttf);
+    unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans-regular.ttf);
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans-regular.ttf);
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans-regular.ttf);
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url(/fonts/opensans-regular.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(/fonts/opensans-semibold.ttf);
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(/fonts/opensans-semibold.ttf);
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(/fonts/opensans-semibold.ttf);
+    unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(/fonts/opensans-semibold.ttf);
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(/fonts/opensans-semibold.ttf);
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(/fonts/opensans-semibold.ttf);
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(/fonts/opensans-semibold.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans-bold.ttf);
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans-bold.ttf);
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans-bold.ttf);
+    unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans-bold.ttf);
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans-bold.ttf);
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans-bold.ttf);
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/opensans-bold.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(/fonts/opensans-extrabold.ttf);
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(/fonts/opensans-extrabold.ttf);
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(/fonts/opensans-extrabold.ttf);
+    unicode-range: U+1F00-1FFF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(/fonts/opensans-extrabold.ttf);
+    unicode-range: U+0370-03FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(/fonts/opensans-extrabold.ttf);
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(/fonts/opensans-extrabold.ttf);
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(/fonts/opensans-extrabold.ttf);
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215
 }
 
 /* ==========================================================================
@@ -42,7 +285,7 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
     color: #414141;
-    overflow: hidden !important;
+    overflow: auto;
     min-width: 320px;
     text-shadow: none !important;
     letter-spacing: 0.02em;
@@ -62,8 +305,8 @@ body .ngdialog.find-marketplace-window * {
 }
 
 .whole-container {
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
     height: 100%;
     max-height: 100%;
     display: block;
@@ -436,7 +679,7 @@ p.copyright {
 }
 
 .no-touch .page-slider .item>.container>.row:hover {
-    border: 1px solid #CC0000;
+    border: 1px solid #414141;
 }
 
 .page-slider .item .container .item-image {
@@ -487,7 +730,7 @@ p.copyright {
 }
 
 .owl-item .item {
-    padding: 30px 30px 15px 30px;
+    /* padding: 30px 30px 15px 30px; */
     background-color: #F9F9F9;
 }
 
@@ -661,7 +904,7 @@ h1.item-title {
 }
 
 hr#hr-plugins-header {
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -696,7 +939,7 @@ hr#hr-plugins-header {
     float: left;
     padding: 0 15px;
     background-position: right center;
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
     cursor: auto;
     box-sizing: border-box;
     height: 32px;
@@ -733,7 +976,7 @@ hr#hr-plugins-header {
     background-image: url(../img/search-hover.svg);
     background-repeat: no-repeat;
     background-position: right center;
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
     
     
     width: 178px;
@@ -1779,7 +2022,7 @@ label {
 }
 
 .no-touch .page-plugins .plugin .plugin-inner:hover {
-    border: 1px solid #CC0000;
+    border: 1px solid #414141;
 }
 
 .page-plugins .plugin-content {
@@ -2231,7 +2474,7 @@ label {
 }
 
 .no-svg .plugin-buttons-row .recommend-plugin-button.recommend-facebook,
-.no-svg .plugin-buttons-row .recom§mend-plugin-button.recommend-facebook:after {
+.no-svg .plugin-buttons-row .recomÂ§mend-plugin-button.recommend-facebook:after {
     background-image: url(../img/share-fb-icon.png);
 }
 
@@ -2259,6 +2502,7 @@ div#header-links {
     float: left;
     top: 9px;
     margin-left: 15px;
+    margin-top: 21px;
 }
 
 div#header-links button {
@@ -2442,7 +2686,7 @@ div#header-links-small button.info-button span img {
 .no-touch .pagination>.disabled>a:hover,
 .no-touch .pagination>.disabled>a:focus {
     background-color: #F6F7F8;
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
     color: #5B5C5D;
     opacity: .5;
 }
@@ -2482,7 +2726,7 @@ div#header-links-small button.info-button span img {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 0;
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
 }
 
 .dev-stages-list .dev-stage-image img {
@@ -2490,7 +2734,7 @@ div#header-links-small button.info-button span img {
 }
 
 .panel-default {
-    border-color: #e1e0e0;
+    border-color: #bcbcbc;
 }
 
 .container.dev-stages hr {
@@ -2999,7 +3243,7 @@ p.contribute-description {
 
 @media (min-width: 1260px) {
     .container {
-        /* width: 1230px; */
+        width: 100%;
     }
 }
 
@@ -3104,8 +3348,6 @@ p.contribute-description {
         height: 75px;
     }
 
-
-
     .stages {
         height: 24px;
     }
@@ -3192,11 +3434,26 @@ p.contribute-description {
     /*    .pentaho-header {
         padding-right: 15px;
     }*/
+
+    .pentahoVersionSelect.open .dropdown-menu {
+        position: relative;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     #marketplace-logo {
         margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-links-container {
+        padding-top: 15px !important;
+    }
+
+    .header-links-container h1 {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -3210,6 +3467,10 @@ p.contribute-description {
 }
 
 @media (max-width: 767px) {
+    div#header-links {
+        margin: 0 !important;
+    }
+
     .page-slider .item .container .item-image {
         height: 150px;
         border-radius: 0;
@@ -3233,7 +3494,7 @@ p.contribute-description {
         margin-bottom: 40px;
     }
 
-    3 .plugin-modal-details-table {
+    .plugin-modal-details-table {
         margin-top: 35px;
     }
 
@@ -3353,7 +3614,7 @@ p.contribute-description {
     }
 
     .pentaho-header {
-        height: 90px;
+        /* height: 90px; */
     }
 }
 
@@ -3396,17 +3657,6 @@ body {
     text-shadow: none !important;
 }
 
-body {
-    background: #F9F9F9;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 14px;
-    color: #414141;
-    overflow: hidden !important;
-    min-width: 320px;
-    text-shadow: none !important;
-    letter-spacing: 0.02em;
-}
-
 body .ngdialog.find-marketplace-window * {
     -webkit-transform: inherit;
 }
@@ -3418,17 +3668,6 @@ body .ngdialog.find-marketplace-window * {
 .ng-cloak,
 .x-ng-cloak {
     display: none !important;
-}
-
-.whole-container {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100%;
-    max-height: 100%;
-    display: block;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    padding: 0;
 }
 
 .whole-container * {
@@ -3503,7 +3742,7 @@ a:active {
 }
 
 .container {
-    max-width: 1230px !important;
+    max-width: 1300px !important;
 }
 
 #mainContainer {
@@ -3513,9 +3752,11 @@ a:active {
 .backPage {
     overflow: hidden;
     padding: 0;
+    width: 100%;
     margin: 0 auto 25px;
     min-width: 250px;
     min-height: 500px;
+    margin-bottom: 100px;
 }
 
 .clear {
@@ -3533,7 +3774,7 @@ a:active {
 .pentaho-header-backPage {}
 
 .pentaho-header {
-    max-width: 1200px !important;
+    /* max-width: 1280px !important; */
     margin-bottom: 30px;
 }
 
@@ -3777,7 +4018,7 @@ p.copyright {
 }
 
 .no-touch .page-slider .item>.container>.row:hover {
-    border: 1px solid #CC0000;
+    border: 1px solid #414141;
 }
 
 .page-slider .item .container .item-image {
@@ -3828,7 +4069,7 @@ p.copyright {
 }
 
 .owl-item .item {
-    padding: 30px 30px 15px 30px;
+    padding: 30px 0 15px 0;
     background-color: #F9F9F9;
 }
 
@@ -4002,7 +4243,7 @@ h1.item-title {
 }
 
 hr#hr-plugins-header {
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -4078,7 +4319,7 @@ hr#hr-plugins-header {
     background-image: url(../img/search-hover.svg);
     background-repeat: no-repeat;
     background-position: right center;
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
     
     
     width: 178px;
@@ -4174,16 +4415,20 @@ hr#hr-plugins-header {
     background-position: center;
 }
 
+.page-plugins .plugins-filters:hover {
+    border-color: #414141;
+}
+
 .page-plugins .plugins-filters {
-    width: calc(25% - 30px);
+    width: calc(100% - 30px);
     border: 1px solid #bcbcbc;
-    top: -34px;
+    top: 0;
     min-height: 32px;
     background: #fff;
     padding: 0 15px;
     padding-top: 10px;
     position: absolute;
-    right: 15px;
+    left: 15px;
     z-index: 9000;
     /* -webkit-transition: max-height .3s ease-in-out, padding .3s ease-in-out; */
     /* transition: max-height .3s ease-in-out, padding .3s ease-in-out; */
@@ -4260,6 +4505,10 @@ hr#hr-plugins-header {
     text-align: left;
     padding-left: 24px;
     z-index: 9001;
+}
+
+#filter-button:not(.active):hover~.plugins-filters {
+    border-color: #414141;
 }
 
 .page-plugins.filtering .filter-selection-status {
@@ -4913,6 +5162,7 @@ button:focus {
     margin: 0;
     border-radius: 0;
     line-height: 32px;
+    display: none;
 }
 
 .plugins-filters .filters-subsection .filters-state[data-is-checked="Some"] {}
@@ -4969,12 +5219,13 @@ button:focus {
 }
 
 .pentahoVersionSelect.open button.dropdown-toggle {
-    border-color: #424242;
+    border-color: #414141;
+    border-bottom: 1px solid transparent;
 }
 
 .pentahoVersionSelect:not(.open) button.dropdown-toggle:hover,
 .page-plugins .plugins-header input#inputSearch[type=text]:hover {
-    border: 1px solid #cc0000;
+    border: 1px solid #414141;
 }
 
 .pentahoVersionSelect button.dropdown-toggle .caret {
@@ -5006,6 +5257,7 @@ label {
 }
 
 .pentahoVersionSelect .dropdown-menu {
+    position: absolute;
     z-index: 1500;
     border-radius: 0;
     margin-top: 0px;
@@ -5031,7 +5283,6 @@ label {
     border: 1px solid #414141;
     border-top-color: transparent;
     box-shadow: none;
-    margin-top: 1px;
     border-top: none;
 }
 
@@ -5166,10 +5417,12 @@ label {
     cursor: pointer;
     -webkit-transition: all .5s;
     transition: all .5s;
+    display: block;
+    float: left;
 }
 
 .no-touch .page-plugins .plugin .plugin-inner:hover {
-    border: 1px solid #CC0000;
+    border: 1px solid #414141;
 }
 
 .page-plugins .plugin-content {
@@ -5627,7 +5880,7 @@ label {
 }
 
 .no-svg .plugin-buttons-row .recommend-plugin-button.recommend-facebook,
-.no-svg .plugin-buttons-row .recom§mend-plugin-button.recommend-facebook:after {
+.no-svg .plugin-buttons-row .recomÂ§mend-plugin-button.recommend-facebook:after {
     background-image: url(../img/share-fb-icon.png);
 }
 
@@ -5724,8 +5977,10 @@ div#header-links.toggled button:first-of-type {
 }
 
 .header-links-container:not(.visible-xs) {
-    padding-top: 60px;
+    padding-top: 40px;
     position: relative;
+    display: block;
+    float: left;
 }
 
 .header-links-container.hidden-xs,
@@ -5796,9 +6051,9 @@ div#header-links-small button.info-button span img {
 
 .no-touch .container .pagination>li:not(.active)>a:hover,
 .no-touch .container .pagination>li:not(.active)>span:hover {
-    color: #CC0000;
+    color: #414141;
     background-color: #ffffff;
-    border-color: #CC0000;
+    border-color: #414141;
     font-weight: 500;
 }
 
@@ -5838,7 +6093,7 @@ div#header-links-small button.info-button span img {
 .no-touch .pagination>.disabled>a:hover,
 .no-touch .pagination>.disabled>a:focus {
     background-color: #F6F7F8;
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
     color: #5B5C5D;
     opacity: .5;
 }
@@ -5878,7 +6133,9 @@ div#header-links-small button.info-button span img {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 0;
-    border-color: #E1E0E0;
+    border-color: #bcbcbc;
+    display: block;
+    float: left;
 }
 
 .dev-stages-list .dev-stage-image img {
@@ -5886,7 +6143,7 @@ div#header-links-small button.info-button span img {
 }
 
 .panel-default {
-    border-color: #e1e0e0;
+    border-color: #bcbcbc;
 }
 
 .container.dev-stages hr {
@@ -5942,7 +6199,7 @@ p.contribute-description {
 .contribute-bottom-row a:link,
 .contribute-bottom-row a:visited {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     color: #CC0000;
     margin-bottom: 5px;
     display: inline-block;
@@ -6471,16 +6728,19 @@ p.contribute-description {
     .page-plugins .plugin {
         width: 100%;
         padding: 13px;
-        margin-top: 3px;
+        margin-top: 15px;
     }
 
     .page-plugins .plugin .plugin-inner .plugin-description {
         margin-bottom: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: auto;
     }
 
     .page-plugins .plugin .plugin-inner {
         width: 100%;
-        height: 77px;
+        height: auto;
     }
 
     .page-plugins .plugin-header {
@@ -6503,10 +6763,7 @@ p.contribute-description {
         height: 90px;
     }
 
-
-    .pentaho-header-backPage {
-        display: none;
-    }
+    .pentaho-header-backPage {}
 
     .plugins-header label {
         position: relative;
@@ -6521,15 +6778,17 @@ p.contribute-description {
     }
 
     .clear-all-filters.clear-all-filters.btn.btn {
-        top: 105px;
+        top: 22px;
     }
 
     .plugins-header #filter-button {
         background-position: 10px 10px !important;
     }
 
-    .stages {
+    .item-content .stages {
         height: 24px;
+        right: 20px;
+        top: 34px;
     }
 
     .dev-stage {
@@ -6549,14 +6808,22 @@ p.contribute-description {
     h2 {
         font-size: 15px;
         line-height: 18px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     h1 {
         font-size: 18px;
     }
 
+    h1.item-title {
+        padding-right: 35px;
+    }
+
     .page-plugins .plugin {
         padding-bottom: 0;
+        padding: 0;
     }
 
     .page-plugins .plugins-grid {
@@ -6572,6 +6839,8 @@ p.contribute-description {
         margin-top: 0px;
         top: -32px !important;
         right: auto;
+        left: 0;
+        width: 100%;
     }
 
     .page-plugins.filtering .plugins-filters {
@@ -6615,6 +6884,13 @@ p.contribute-description {
     .pentaho-header {
         padding-right: 15px;
     }
+
+    .item-context-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6633,6 +6909,10 @@ p.contribute-description {
 }
 
 @media (max-width: 767px) {
+    .plugin-modal-label {
+        visibility: hidden;
+    }
+
     .page-slider .item .container .item-image {
         height: 150px;
         border-radius: 0;
@@ -6648,7 +6928,7 @@ p.contribute-description {
     }
 
     .page-slider .item .container .item-content {
-        height: 210px;
+        height: auto;
     }
 
     div#header-links-small {
@@ -6656,7 +6936,7 @@ p.contribute-description {
         margin-bottom: 40px;
     }
 
-    3 .plugin-modal-details-table {
+    .plugin-modal-details-table {
         margin-top: 35px;
     }
 
@@ -6674,7 +6954,7 @@ p.contribute-description {
 
     .dev-stages .dev-stage-image {
         padding-bottom: 10px;
-        çl border-left: none;
+        border-left: none;
     }
 
     .dev-stages .dev-stage-description {
@@ -6776,7 +7056,7 @@ p.contribute-description {
     }
 
     .pentaho-header {
-        height: 90px;
+        /* height: 90px; */
     }
 }
 
@@ -6797,4 +7077,13 @@ p.contribute-description {
 .hds-global-header .hds-quick-navigation>ul>li a#showGeo,
 .hds-global-header .search-mobile {
     display: none;
+}
+
+body .tooltipster-light hr {
+    visibility: hidden;
+}
+
+body .tooltipster-light .tooltipster-content {
+    padding: 15px;
+    background: #fff;
 }

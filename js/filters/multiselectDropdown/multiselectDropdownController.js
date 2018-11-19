@@ -237,6 +237,22 @@
             selectable.isSelected = !selectable.isSelected;
           };
 
+          $scope.toggleGroupSelection = function (selectable) {
+            var valueSetter;
+            selectable.isSelected = !selectable.isSelected;
+            if (!selectable.isSelected) {
+              selectable.selected = "All";
+              valueSetter = true;
+            } else {
+              selectable.selected = "None";
+              valueSetter = false;
+            }
+          
+            _.each(this.group.options, function (option) {
+              option.isSelected = valueSetter;
+            });
+          };
+
           $scope.groupClicked = function ( group ) {
             switch ( group.selected ) {
               case Group.selectEnum.ALL:
@@ -250,7 +266,6 @@
           };
 
           $scope.toggleAllGroups = function() {
-            var allGroupsSelected = getGroupsSelected();
 
             switch ( allGroupsSelected ) {
               case Group.selectEnum.ALL:
@@ -262,6 +277,32 @@
                 break;
             }
           };
+
+          $scope.toggleLaneGroup = function () {
+            var allGroupsSelected = getGroupsSelected();
+            debugger
+          };
+
+
+          // $scope.toggleSmallGroups = function () {
+          //   var allGroupsSelected = getGroupsSelected();
+          //   var clearGroup = true;
+          //   debugger
+          //   if(this.group.selected == "None"){
+          //     clearGroup = true;
+          //   } else {
+          //     clearGroup = false;
+          //   }
+
+          //   for (var i = 0; i < this.group.options.length; i++) {
+
+          //     this.group.options[i].isSelected = clearGroup;
+
+          //     console.log("⚠️ " + this.group.options[i].name + ' was set to ' + clearGroup);
+
+          //   }
+
+          // };
 
           $scope.$watch( 'options', function () {
             _.each( $scope.groups, function ( group ) { group.stopWatching(); } );
