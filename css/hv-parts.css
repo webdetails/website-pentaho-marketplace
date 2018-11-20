@@ -398,6 +398,11 @@ HDS Global Header and Navigation
       display: none;
    }
 
+   .spotlightNavigation,
+   .mm-spotlightNavigation{
+      margin: 0 !important;
+   }
+
 
 }
 
