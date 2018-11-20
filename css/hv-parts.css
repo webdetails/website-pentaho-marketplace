@@ -3,8 +3,12 @@ HDS Global Header and Navigation
 ************* */
 
 @font-face {
-   font-family: 'Glyphicons Halflings';
-   src: url("/fonts/glyphicons-halflings-regular.woff2");
+   font-family: 'Glyphicons';
+   src: url("../fonts/glyphicons-halflings-regular.woff2");
+}
+
+.glyphicon.glyphicon.glyphicon{
+   font-family: 'Glyphicons';
 }
 
 .hv-header .hds-global-header {
@@ -1370,7 +1374,7 @@ HDS Global Header and Navigation
 
 .animateLink .animateIcon {
    position: relative;
-   font-size: 1.2em;
+   font-size: 14px;
    top: 3px;
    left: 5px;
    transition: all .5s ease;
