@@ -5,12 +5,13 @@ var hds = window.hds || {};
             hds.buildShowNav.desktopMobileFunction();
         },
         desktopMobileFunction: function() {
-            $('.globalNavWrapper > li').hover(function() {
-                $('.globalNavWrapper li').removeClass('open');               
+            $('.globalNavWrapper > li.hds-default-nav').hover(function() {
+                $('.globalNavWrapper li.hds-default-nav').removeClass('open');
                 $('.hds-megaMenuWrapper', this).stop(true, true).delay(200).slideDown(100);
                 var megaMenuWrapper = $(this).find( ".hds-megaMenuWrapper");
                 var bgImgUrl = $(megaMenuWrapper).attr('data-bg-url');
-                $(megaMenuWrapper).css("background-image", "url("+bgImgUrl+")");
+                //$(megaMenuWrapper).css("background-image", "url("+bgImgUrl+")");
+                $(megaMenuWrapper).css("background-image", "url(" + bgImgUrl == null ? '' : bgImgUrl + ")");
                 $(this).addClass('open');
             }, function() {
                 $(this).removeClass('open');

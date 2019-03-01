@@ -54,6 +54,18 @@
 </head>
 
 <body ng-controller="MarketplaceController">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+  </script>
+  <script class="mktoMobileHide"> document.write("<script src='https://stage.hitachivantara.com/etc/clientlibs/hdscorp/tealium.js?tmstmp=" + (new Date()).getTime()+parseInt((Math.random() * 10000000000000), 10) + "'><\/script>");</script>
+  <script type="text/javascript">
+      (function(a,b,c,d){
+      a='//tags.tiqcdn.com/utag/hitachi/main/qa/utag.js';
+      b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+      })();
+  </script>
 
   <div class="hv-header">
     <div class="hds-global-header clearfix" id="26f920c7globalheader">
@@ -953,6 +965,40 @@
                 </div>
               </div>
             </li>
+            <li class="contact-main-nav" id="header-contact">
+              <a target="_self" href="javascript:void(0);" class="hds-default-nav-anchor">
+                <span itemprop="name">Contact us</span>
+
+                <span class="icon-accordion-closed"></span>
+                <span class="icon-accordion-opened"></span>
+
+              </a>
+              <!-- Mobile Contact Nav Start -->
+              <div class="hds-megaMenuWrapper contact-main-box" style="">
+                <ul id="webchat-change">
+                  <li id="contact-tel"><a href="tel://+14084570155" class="call" onclick="return phoneDialNumber;"><img alt="Call Us at 1.408.457.0155"
+                      src="img/call-us-icon.png">Call Us at 1.408.457.0155</a>
+                  </li>
+                  <li id="contact-iframe"><a data-formtitle="LET US HELP YOU FIND THE BEST SOLUTIONS" href="https://pages.hitachivantara.com/contact-sales-aem.html"
+                    rel="iframemodal" target="_self"><img alt="Contact Sales" src="img/email-icon.png">Contact
+                    Sales</a>
+                  </li>
+                  <!-- <li id="LP-Click"><a href="javascript:void(0);" data-formtitle="Live Chat"><img alt="Live chat" src="img/live-chat-icon.png">Live
+                    chat</a>
+                  </li>
+                  <script type="text/javascript">
+                    $(document).on('click', '#LP-Click', function () {
+                      $('.LPMcontainer').click();
+                    })
+                  </script> -->
+                  <li id="contact-link"><a href="https://www.hitachivantara.com/partnerlocator/en_us/partnerlocator.html/" target="_blank"><img
+                        alt="Find a Partner" src="img/patner-icon.png">Find a
+                      Partner</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Mobile Contact Nav End -->
+            </li>
           </ul>
         </div>
       </div>
@@ -1623,6 +1669,59 @@
         </div>
       </li>
       <li id="navTitle4" class="hds-default-nav">
+        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/news-resources.html" href="javascript:void(0);"
+          class="hds-default-nav-anchor">
+          <span itemprop="name">Contact us</span>
+          <span class="icon-accordion-closed"></span>
+          <span class="icon-accordion-opened"></span>
+        </a>
+        <!-- Load sidekick only when viewing page on its own -->
+        <div class="hds-megaMenuWrapper contact-main-box">
+          <div class="hds-megaMenu">
+            <div class="content-container">
+              <div class="row">
+                <div class="col-md-12">
+
+                </div>
+                <div class="col-md-4 col-xs-12 megamenu-list">
+                  <ul id="webchat-change" class="">
+                    <li id="contact-tel">
+                      <a href="tel://+14084570155" class="call" onclick="return phoneDialNumber;">
+                        <img alt="Call Us at 1.408.457.0155" src="img/call-us-icon.png">Call
+                        Us at 1.408.457.0155
+                      </a>
+                    </li>
+                    <li id="contact-iframe">
+                      <a data-formtitle="LET US HELP YOU FIND THE BEST SOLUTIONS" href="https://pages.hitachivantara.com/contact-sales-aem.html"
+                        rel="iframemodal" target="_self">
+                        <img alt="Contact Sales" src="img/email-icon.png">Contact
+                        Sales
+                      </a>
+                    </li>
+                    <!-- <li id="LP-Click">
+                      <a href="javascript:void(0);" data-formtitle="Live Chat">
+                        <img alt="Live chat" src="img/live-chat-icon.png">Live chat
+                      </a>
+                    </li> -->
+                    <li id="contact-link">
+                      <a href="https://www.hitachivantara.com/partnerlocator/en_us/partnerlocator.html/" target="_blank">
+                        <img alt="Find a Partner" src="img/patner-icon.png">Find a
+                        Partner
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="closeIpadMMenu hidden-lg hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-remove"></span>
+            Close
+
+          </div>
+        </div>
+      </li>
+      <li id="navTitle5" class="hds-default-nav">
         <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/partners.html" href="javascript:void(0);"
           class="hds-default-nav-anchor">
           <span itemprop="name">Partners</span>
@@ -1753,8 +1852,8 @@
           </div>
         </div>
       </li>
-      <li id="navTitle5" class="hds-default-nav">
-        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/company.html" href="javascript:void(0);"
+      <li id="navTitle6" class="hds-default-nav">
+        <a itemprop="url" data-href="https://www.hitachivantara.com/en-us/hds-MobileMenu hds-megaMenu-right hds-megaMenu-openny.html" href="javascript:void(0);"
           class="hds-default-nav-anchor">
           <span itemprop="name">Company</span>
           <span class="icon-accordion-closed"></span>
@@ -2291,10 +2390,6 @@
 
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
-  </script>
 
   <script type="text/javascript" src="js/vendor/jquery.xml2json.js"></script>
   <script type="text/javascript" src="js/vendor/angular.js"></script>
@@ -2356,24 +2451,6 @@
     var d = new Date();
     var n = d.getFullYear();
     $('#year').text(n);
-  </script>
-
-  <!-- Google Analytics -->
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-40336231-2', 'auto');
-    ga('send', 'pageview');
   </script>
 </body>
 

@@ -51,7 +51,10 @@ $(document).ready(function() {
 			'img/share-twitter-icon.png',
 			'img/some-checked.png',
 			'img/submit-plugins-icon.png',
-			'img/translate-pentaho-icon.png'
+			'img/translate-pentaho-icon.png',
+			'img/call-us-icon.png',
+			'img/email-icon.png',
+			'img/partner-icon.png',
 		);
 	} else {
 		$.preloadImages(
@@ -107,7 +110,9 @@ $(document).ready(function() {
 				hds.buildShowNav.desktopMobileFunction();
 			},
 			desktopMobileFunction: function () {
-				$('.globalNavWrapper > li').hover(function () {
+				$('.globalNavWrapper > li.hds-default-nav').hover(
+					function () {
+					$('.globalNavWrapper li.contact-main-nav a').removeClass('active');
 					$('.globalNavWrapper li').removeClass('open');
 					$('.hds-megaMenuWrapper', this).stop(true, true).delay(200).slideDown(100);
 					var megaMenuWrapper = $(this).find(".hds-megaMenuWrapper");
@@ -118,6 +123,19 @@ $(document).ready(function() {
 					$(this).removeClass('open');
 					$('.hds-megaMenuWrapper', this).stop(true, true).slideUp(200);
 				});
+
+				$('.globalNavWrapper li.contact-main-nav').click(
+					function () {
+						$('.globalNavWrapper li').removeClass('open');
+						//$('.hds-megaMenuWrapper', this).stop(true, true).delay(200).slideDown(100);
+						$(this).find('a').addClass('active');
+				});
+
+				$(document).on("click", function (e) {
+					if ($(e.target).is(".globalNavWrapper .contact-main-nav *") == false) {
+						$('.globalNavWrapper li.contact-main-nav a').removeClass('active');
+					}
+					});
 			}
 		}
 	}(window, document, jQuery, hds));
