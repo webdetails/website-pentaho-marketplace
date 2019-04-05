@@ -53,11 +53,12 @@
             // TODO check license on server DTO
             plugin.license = {};
             plugin.license.name = pluginDTO.license_name;
+
             // pluginDTO.license takes precedence over pluginDTO.license_name
-            if( pluginDTO.license !== null ||
-                pluginDTO.license !== undefined ) {
+            if( pluginDTO.license !== undefined ) {
               plugin.license.name = pluginDTO.license;
             }
+
             plugin.license.text = pluginDTO.license_text;
 
             plugin.category = toCategory( pluginDTO.category );

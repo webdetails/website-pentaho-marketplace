@@ -1146,7 +1146,7 @@ hr#hr-plugins-header {
 }
 
 .filter-selection-status {
-    position: fixed;
+    position: absolute;
     margin-top: -25px;
     text-align: left;
     padding-left: 24px;
@@ -2236,6 +2236,9 @@ label {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 30px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .plugin-modal-credits {
@@ -2727,6 +2730,7 @@ div#header-links-small button.info-button span img {
     padding-bottom: 15px;
     padding-left: 0;
     border-color: #bcbcbc;
+    width:100%;
 }
 
 .dev-stages-list .dev-stage-image img {
@@ -6047,6 +6051,18 @@ div#header-links-small button.info-button span img {
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
+    border: 0px;
+    height: 32px;
+    width: 32px;
+    padding: 0px;
+    line-height: 32px;
+    background-color: transparent;
+}
+
+.container .pagination>li.active>a{
+    background-color:#414141;
+    color: #f9f9f9;
+    font-weight:600;
 }
 
 .no-touch .container .pagination>li:not(.active)>a:hover,

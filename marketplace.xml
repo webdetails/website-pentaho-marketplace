@@ -145,7 +145,7 @@
       create friendly, powerful and fully featured Dashboards on top of
       the Pentaho Business Intelligence server.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -393,7 +393,7 @@
       cons of the older implementation, CDA allows you to access any of
       the various Pentaho data sources.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <dependencies>CDF</dependencies>
@@ -639,7 +639,7 @@
       develop and deploy dashboards in the Pentaho platform in a fast and
       effective way.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <dependencies>CDF, CDA</dependencies>
@@ -887,7 +887,7 @@
       plugin is able to render, on server-side, exactly the same chart
       that is rendered on the browser by CDE/CDF.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -1090,7 +1090,7 @@
       of our existing stack, anyone familiar with those tools will be
       able to build plugins.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -1218,7 +1218,7 @@
     ]]>
     </description>
     <documentation_url>http://redmine.webdetails.org/projects/prs</documentation_url>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://www.webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/images/wdlogo.png</author_logo>
     <img/>
@@ -1315,7 +1315,7 @@ Thanks to CST, the list of tabs opened right after the login can be automaticall
 
 A landing tab can optionally be presented, which can be used to any of the predefined list of tabs and each user's favorite files.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -1394,7 +1394,7 @@ A landing tab can optionally be presented, which can be used to any of the prede
       CLP (Community Launch Pad) is a new CTool Plugin that lists the contents of a folder in the Pentaho Repository
       (accessible via the Pentaho User Console), allowing for the selection and display of these contents.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <dependencies/>
@@ -1444,7 +1444,7 @@ A landing tab can optionally be presented, which can be used to any of the prede
       (be it within the JCR repository, a mondrian schema, or from the file system) directly
       from the Pentaho User Console.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <dependencies/>
@@ -1497,7 +1497,7 @@ A landing tab can optionally be presented, which can be used to any of the prede
       errors, CDV, is key to achieve absolute accuracy in the numbers our
       dashboards display.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -1632,7 +1632,7 @@ A landing tab can optionally be presented, which can be used to any of the prede
     <description>CDC stands for Community Distributed Cache and allows for high-performance, scalable and distributed
       memory clustering cache based on Hazelcast for both CDA and Mondrian.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -1729,7 +1729,7 @@ A landing tab can optionally be presented, which can be used to any of the prede
       repository from inside Pentaho. You can use it to manage your file needs, allowing uploads and downloads from
       inside your dashboards.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -1830,7 +1830,7 @@ A landing tab can optionally be presented, which can be used to any of the prede
       ]]>
     </description>
     <documentation_url>https://www.github.com/webdetails/startupRuleEngine</documentation_url>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://www.webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -1925,7 +1925,7 @@ A landing tab can optionally be presented, which can be used to any of the prede
       The idea is to provide some helper functions that allows to quickly port examples from the d3 gallery page and
       implement them as components to be used in the Pentaho platform.
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -3653,7 +3653,7 @@ Some <a href="http://bonomma.blogspot.it/2017/01/btable-pre-or-post-installation
                issues or suggestions for improvement ]]>
     </description>
     <documentation_url>https://github.com/webdetails/environmentDisplay</documentation_url>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://www.webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -5754,7 +5754,7 @@ any translation issues or suggestions for improvement
       ]]>
     </description>
     <documentation_url>https://github.com/webdetails/pentaho-emerald-theme</documentation_url>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://wwww.webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -5802,7 +5802,7 @@ any translation issues or suggestions for improvement
     </category>
     <documentation_url>https://github.com/webdetails/svg-component/raw/master/README.md</documentation_url>
     <description>SVG Component is a CTools component that can be used to change SVG style atributes or text strings, according to values submitted by it's own datasource.</description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -5853,7 +5853,7 @@ any translation issues or suggestions for improvement
             For more reference and documentation about these visualizations, please go to <a target='NO_BLANK' href='https://github.com/webdetails/Viz-SVG'>Viz-SVG on github.</a>
         ]]>
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -5931,7 +5931,7 @@ any translation issues or suggestions for improvement
             For more reference and documentation about these visualizations, please visit <a target='NO_BLANK' href='https://github.com/webdetails/Viz-SVG'>Viz-SVG on github.</a>
         ]]>
     </description>
-    <author>Webdetails</author>
+    <author>Hitachi Vantara</author>
     <author_url>http://webdetails.pt</author_url>
     <author_logo>http://www.webdetails.pt/ficheiros/wd_logo.png</author_logo>
     <license>MPL 2.0</license>
@@ -11664,8 +11664,8 @@ Capabilities:
       </version>
     </versions>
     <screenshots>
-      <screenshot>https://github.com/atolcd/pentaho-cde-atolcd-plugins/blob/master/docs/SVG%20Component/images/legendInputInterface.png</screenshot>
-      <screenshot>https://github.com/atolcd/pentaho-cde-atolcd-plugins/blob/master/docs/SVG%20Component/images/dynamicSelectors.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/atolcd/pentaho-cde-atolcd-plugins/master/docs/SVG%20Component/images/legendInputInterface.png</screenshot>
+      <screenshot>https://raw.githubusercontent.com/atolcd/pentaho-cde-atolcd-plugins/master/docs/SVG%20Component/images/dynamicSelectors.png</screenshot>
     </screenshots>
   </market_entry>
 

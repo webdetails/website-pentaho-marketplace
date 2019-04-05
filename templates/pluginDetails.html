@@ -18,7 +18,7 @@
   <div class="row">
     <div class="col-sm-5">
       <h1>{{plugin.name}}</h1>
-      <p class="plugin-modal-author">{{plugin.author.name | cut:false:20:'...'}}</p>
+      <p class="plugin-modal-author">{{plugin.author.name}}</p>
       <p ng-bind-html="plugin.description" class="plugin-modal-description"></p>
     </div>
     <div class="col-sm-7" ng-class="{ noDocs: !plugin.documentationUrl }">
@@ -47,7 +47,7 @@
             <div class="row">
               <div class="col-sm-4">
                 <span class="plugin-modal-label">Forum:</span><br>
-                <a class="plugin-modal-link" href="{{plugin.author.forumUrl}}" title="{{plugin.author.name}}" target="_blank" ng-show="plugin.forumUrl">Forum</a>
+                <a class="plugin-modal-link" href="{{plugin.forumUrl}}" title="{{plugin.author.name}}" target="_blank" ng-show="plugin.forumUrl">Forum</a>
                 <span class="plugin-modal-value" ng-hide="plugin.forumUrl">-</span>
               </div>
               <div class="col-sm-4">

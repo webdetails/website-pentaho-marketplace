@@ -170,5 +170,5 @@
 }
 
 body.ngdialog-open {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
