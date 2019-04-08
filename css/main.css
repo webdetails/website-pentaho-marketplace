@@ -5232,7 +5232,8 @@ button:focus {
     border: 1px solid #414141;
 }
 
-.pentahoVersionSelect button.dropdown-toggle .caret {
+.pentahoVersionSelect button.dropdown-toggle .caret,
+.complexDropdown.caret {
     position: absolute;
     right: 15px;
     top: 12px;
@@ -5244,7 +5245,8 @@ button:focus {
     transform: rotate(-45deg);
 }
 
-.pentahoVersionSelect.open button.dropdown-toggle .caret {
+.pentahoVersionSelect.open button.dropdown-toggle .caret,
+.active .complexDropdown.caret {
     transform: rotate(135deg);
     top: 14px;
 }
@@ -6047,11 +6049,10 @@ div#header-links-small button.info-button span img {
     color: #414141;
     padding: 5px 0px;
     text-align: center;
-    border: 1px solid #BCBCBC;
+    border: 1px solid transparent;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
-    border: 0px;
     height: 32px;
     width: 32px;
     padding: 0px;
@@ -6068,8 +6069,8 @@ div#header-links-small button.info-button span img {
 .no-touch .container .pagination>li:not(.active)>a:hover,
 .no-touch .container .pagination>li:not(.active)>span:hover {
     color: #414141;
-    background-color: #ffffff;
-    border-color: #414141;
+    background-color: white;
+    border-color: #CC0000;
     font-weight: 500;
 }
 
@@ -6108,10 +6109,10 @@ div#header-links-small button.info-button span img {
 .no-touch .pagination>.disabled>a,
 .no-touch .pagination>.disabled>a:hover,
 .no-touch .pagination>.disabled>a:focus {
-    background-color: #F6F7F8;
-    border-color: #bcbcbc;
+    background-color: transparent !important;
+    border:0px;
     color: #5B5C5D;
-    opacity: .5;
+    opacity: .5 !important;
 }
 
 /* ++++ PAGINATION ++++ */

@@ -55,7 +55,7 @@
             plugin.license.name = pluginDTO.license_name;
 
             // pluginDTO.license takes precedence over pluginDTO.license_name
-            if( pluginDTO.license !== undefined ) {
+            if( pluginDTO.license !== undefined && pluginDTO.license !== null) {
               plugin.license.name = pluginDTO.license;
             }
 

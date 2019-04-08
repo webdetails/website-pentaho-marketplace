@@ -38,7 +38,7 @@
               },
               3: {
                 name: 'Limited Release',
-                description: 'Assistence given by Services Development with no contractual support for production environments.'
+                description: 'Assistance given by Services Development with no contractual support for production environments.'
               },
               4: {
                 name: 'Production Release',

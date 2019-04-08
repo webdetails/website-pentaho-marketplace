@@ -2275,10 +2275,13 @@
               </div>
               <div class="col-sm-12 col-md-3">
                 <label for="">Filters</label>
-                <button type="button" class="btn btn-default btn-block" id="filter-button"></button>
+                <button type="button" class="btn btn-default btn-block" id="filter-button">
+                  <span class="caret complexDropdown"></span>
+                </button>
                 <button class="btn clear-all-filters" ng-disabled="!isAnyFilterSelected()" ng-click="clearAllFilters()">
                   Clear all
                 </button>
+                
                 <div class="plugins-filters">
                 
                   <div class="top-plugins-filters plugins-filters-block">
