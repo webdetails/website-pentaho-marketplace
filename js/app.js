@@ -328,7 +328,7 @@ app.controller('MarketplaceController',
           {
             name: 'Limited Release',
             id: 'customer3',
-            description: 'Assistence given by Services Development with no contractual support for production environments.',
+            description: 'Assistance given by Services Development with no contractual support for production environments.',
             image: 'img/dev-stage-03.svg',
             imagePNG: 'img/dev-stage-03.png',
             imageLarge: 'img/dev-stage-03-large.svg',

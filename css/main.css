@@ -1146,7 +1146,7 @@ hr#hr-plugins-header {
 }
 
 .filter-selection-status {
-    position: absolute;
+    position: fixed;
     margin-top: -25px;
     text-align: left;
     padding-left: 24px;
@@ -4504,7 +4504,7 @@ hr#hr-plugins-header {
 }
 
 .filter-selection-status {
-    position: fixed;
+    position: absolute;
     margin-top: -25px;
     text-align: left;
     padding-left: 24px;
